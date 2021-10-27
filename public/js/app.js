@@ -37495,6 +37495,36 @@ module.exports = function getSideChannel() {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
+	"./Auth/ForgotPassword": [
+		"./resources/js/Pages/Auth/ForgotPassword.jsx",
+		7,
+		"resources_js_Pages_Auth_ForgotPassword_jsx"
+	],
+	"./Auth/ForgotPassword.jsx": [
+		"./resources/js/Pages/Auth/ForgotPassword.jsx",
+		7,
+		"resources_js_Pages_Auth_ForgotPassword_jsx"
+	],
+	"./Auth/Login": [
+		"./resources/js/Pages/Auth/Login.jsx",
+		7,
+		"resources_js_Pages_Auth_Login_jsx"
+	],
+	"./Auth/Login.jsx": [
+		"./resources/js/Pages/Auth/Login.jsx",
+		7,
+		"resources_js_Pages_Auth_Login_jsx"
+	],
+	"./Auth/Signup": [
+		"./resources/js/Pages/Auth/Signup.jsx",
+		7,
+		"resources_js_Pages_Auth_Signup_jsx"
+	],
+	"./Auth/Signup.jsx": [
+		"./resources/js/Pages/Auth/Signup.jsx",
+		7,
+		"resources_js_Pages_Auth_Signup_jsx"
+	],
 	"./Home": [
 		"./resources/js/Pages/Home.jsx",
 		9,
@@ -37505,15 +37535,45 @@ var map = {
 		9,
 		"resources_js_Pages_Home_jsx"
 	],
-	"./test": [
-		"./resources/js/Pages/test.jsx",
+	"./Layout/Footer": [
+		"./resources/js/Pages/Layout/Footer.jsx",
 		7,
-		"resources_js_Pages_test_jsx"
+		"resources_js_Pages_Layout_Footer_jsx"
 	],
-	"./test.jsx": [
-		"./resources/js/Pages/test.jsx",
+	"./Layout/Footer.jsx": [
+		"./resources/js/Pages/Layout/Footer.jsx",
 		7,
-		"resources_js_Pages_test_jsx"
+		"resources_js_Pages_Layout_Footer_jsx"
+	],
+	"./Layout/Main": [
+		"./resources/js/Pages/Layout/Main.jsx",
+		7,
+		"resources_js_Pages_Layout_Main_jsx"
+	],
+	"./Layout/Main.jsx": [
+		"./resources/js/Pages/Layout/Main.jsx",
+		7,
+		"resources_js_Pages_Layout_Main_jsx"
+	],
+	"./Layout/Navbar": [
+		"./resources/js/Pages/Layout/Navbar.jsx",
+		7,
+		"resources_js_Pages_Layout_Navbar_jsx"
+	],
+	"./Layout/Navbar.jsx": [
+		"./resources/js/Pages/Layout/Navbar.jsx",
+		7,
+		"resources_js_Pages_Layout_Navbar_jsx"
+	],
+	"./Layout/Sidebar": [
+		"./resources/js/Pages/Layout/Sidebar.jsx",
+		7,
+		"resources_js_Pages_Layout_Sidebar_jsx"
+	],
+	"./Layout/Sidebar.jsx": [
+		"./resources/js/Pages/Layout/Sidebar.jsx",
+		7,
+		"resources_js_Pages_Layout_Sidebar_jsx"
 	]
 };
 function webpackAsyncContext(req) {
@@ -37682,7 +37742,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","D:\\\\laragon\\\\www\\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Home_jsx":1,"resources_js_Pages_test_jsx":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Auth_ForgotPassword_jsx":1,"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Auth_Signup_jsx":1,"resources_js_Pages_Home_jsx":1,"resources_js_Pages_Layout_Footer_jsx":1,"resources_js_Pages_Layout_Main_jsx":1,"resources_js_Pages_Layout_Navbar_jsx":1,"resources_js_Pages_Layout_Sidebar_jsx":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
