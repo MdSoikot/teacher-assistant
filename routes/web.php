@@ -13,6 +13,11 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('login')
+    ->name('login')
+    ->uses('Auth\LoginController@showLoginForm')
+    ->middleware('guest');
+
 Route::get('/', function () {
     return inertia::render('Home');
 });
