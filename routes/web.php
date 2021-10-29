@@ -12,19 +12,13 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 Route::get('login')
     ->name('login')
     ->uses('Auth\LoginController@showLoginForm')
     ->middleware('guest');
-<<<<<<< Updated upstream
 
-=======
     
->>>>>>> Stashed changes
 Route::get('/', function () {
     return inertia::render('Home');
 });
