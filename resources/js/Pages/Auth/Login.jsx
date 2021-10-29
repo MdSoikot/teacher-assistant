@@ -2,33 +2,54 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div class="w-full h-screen md:-mx-4" style="filter: blur(6px); background-image:url('/assets/docs/master/image-01.jpg')">
-      <div class="absolute w-3/5 bg-white" style="transform: translate(-50%, -50%); top:50%; left:50%">
-        <div class="flex justify-center -mt-10">
-          <img class="border-2 w-20 h-20 rounded-full" src="/assets/docs/master/image-01.jpg" />
+    <div className="bg-grey-lighter min-h-screen flex flex-col">
+      <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+        <div className="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+          <h1 className="mb-8 text-3xl text-center">Sign up</h1>
+          <input
+            type="text"
+            className="block border border-grey-light w-full p-3 rounded mb-4"
+            name="fullname"
+            placeholder="Full Name" />
+
+          <input
+            type="text"
+            className="block border border-grey-light w-full p-3 rounded mb-4"
+            name="email"
+            placeholder="Email" />
+
+          <input
+            type="password"
+            className="block border border-grey-light w-full p-3 rounded mb-4"
+            name="password"
+            placeholder="Password" />
+          <input
+            type="password"
+            className="block border border-grey-light w-full p-3 rounded mb-4"
+            name="confirm_password"
+            placeholder="Confirm Password" />
+
+          <button
+            type="submit"
+            className="w-full text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1"
+          >Create Account</button>
+
+          <div className="text-center text-sm text-grey-dark mt-4">
+            By signing up, you agree to the
+            <a className="no-underline border-b border-grey-dark text-grey-dark" href="#">
+              Terms of Service
+            </a> and
+            <a className="no-underline border-b border-grey-dark text-grey-dark" href="#">
+              Privacy Policy
+            </a>
+          </div>
         </div>
-        <div class="px-12 py-10">
-          <div class="w-full mb-2">
-            <div class="flex items-center">
-              <i class='ml-3 fill-current text-gray-400 text-xs z-10 far fa-user'></i>
-              <input type='text' placeholder="username" class="-mx-6 px-8  w-full border rounded px-3 py-1 text-gray-700" />
-            </div>
-          </div>
-          <div class="w-full mb-2">
-            <div class="flex items-center">
-              <i class='ml-3 fill-current text-gray-400 text-xs z-10 fas fa-lock'></i>
-              <input type='text' placeholder="password" class="-mx-6 px-8 w-full border rounded px-3 py-1 text-gray-700" />
-            </div>
-          </div>
-          <div class="mt-8 flex justify-between">
-            <div class="flex items-center">
-              <input type="checkbox" class="w-4 h-4 mr-2" />
-              <span class="text-xs text-gray-700">Remember Me</span>
-            </div>
-            <div>
-              <button type='text' class="bg-yellow-400 text-xs text-gray-700 rounded px-4 py-2">SIGN IN</button>
-            </div>
-          </div>
+
+        <div className="text-grey-dark mt-6">
+          Already have an account?
+          <a className="no-underline border-b border-blue text-blue" href="../login/">
+            Log in
+          </a>.
         </div>
       </div>
     </div>

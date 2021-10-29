@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className='font-montserrat-600 text-lg'>
                 <InertiaLink className='mr-6'>About</InertiaLink>
                 <InertiaLink className='mr-6' href={route('login')}>Sign In</InertiaLink>
-                <InertiaLink className='mr-6'>Sign Up</InertiaLink>
+                <InertiaLink className='mr-6' href={route('signup')}>Sign Up</InertiaLink>
                 <InertiaLink className='mr-6'>Logout</InertiaLink>
             </div>
         </div>

@@ -12,10 +12,14 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('signup')
+    ->name('signup')
+    ->uses('App\Http\Controllers\Auth\RegisterController@showSignUpForm')
+    ->middleware('guest');
 
 Route::get('login')
     ->name('login')
-    ->uses('Auth\LoginController@showLoginForm')
+    ->uses('App\Http\Controllers\Auth\LoginController@showLoginForm')
     ->middleware('guest');
 
 Route::get('/', function () {
