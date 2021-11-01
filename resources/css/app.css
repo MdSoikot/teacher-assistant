@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 
 /* Components */
-@import 'components/style';
+@import 'components/style.scss';
 
 /* Utilities */
 @import 'tailwindcss/utilities';
