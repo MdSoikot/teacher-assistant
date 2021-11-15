@@ -1,7 +1,6 @@
 import React from 'react'
 
-const SingleSelect = ({ id, name, label, labelClass, inputClass, optionValues }) => {
-  console.log(optionValues)
+const SingleSelect = ({ id, name, label, labelClass, inputClass, optionValues, onChange }) => {
   return (
     <div>
       {label && (
@@ -12,7 +11,7 @@ const SingleSelect = ({ id, name, label, labelClass, inputClass, optionValues })
       )}
       <div>
         {
-          <select name={name} id={id} className={inputClass}>
+          <select name={name} id={id} className={inputClass} onChange={onChange}>
             {optionValues.map(({ key, value }) => {
               return <option value={key}>{value}</option>
             })

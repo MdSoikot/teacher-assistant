@@ -1,3 +1,4 @@
+import { Inertia } from '@inertiajs/inertia';
 import React, { useState } from 'react'
 import TextInput from '../../Shared/TextInput';
 import Logo from './../../Icons/Logo';
@@ -7,13 +8,42 @@ const Signup = () => {
 
   const [teacher, setTeacher] = useState(false);
   const [student, setStudent] = useState(false);
+  const [sending, setSending] = useState(false);
 
-  const handleTextInput = () => {
+  const [values, setValues] = useState({
+    email: '',
+    password: '',
+  });
 
+  const handleChange = (e) => {
+    const key = e.target.name;
+    const value = e.target.value;
+    if (key === 'usertype') {
+      if (value === 'student') {
+        setTeacher(false)
+        setStudent(true)
+      } else if (value === 'teacher') {
+        setTeacher(true)
+        setStudent(false)
+      } else {
+        setTeacher(false)
+        setStudent(false)
+      }
+    }
+    setValues(oldValues => ({
+      ...oldValues,
+      [key]: value,
+    }));
   }
-  const handleSingleSelect = () => {
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSending(true);
+    Inertia.post(route('signup.submit'), values, {
+      onFinish: () => setSending(false),
+    });
   }
+
+  console.log(values)
   const userTypes = [
     { key: '', value: 'Select One' },
     { key: 'admin', value: 'Admin' },
@@ -37,59 +67,62 @@ const Signup = () => {
           <span className="signup-rightside__sublabel font-inter-400">For the purpose of gamers regulation, your details are required.</span>
         </div>
         <div>
-          <form>
+          <form
+            onSubmit={handleSubmit}
+          >
             <div className="font-inter-400 signup-form">
-              {/* <div>
-                <span className="block">
-                  Name
-                </span>
-                <input className="signup-form__input-field" />
-              </div> */}
+
               <TextInput
                 id="name"
                 label="Name"
+                name="name"
                 type="text"
-                onChange={handleTextInput}
+                onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Name"
               />
               <TextInput
                 id="email"
+                name="email"
                 label="Email"
                 type="email"
-                onChange={handleTextInput}
+                onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Email"
 
               />
               <TextInput
                 id="password"
+                name="password"
                 label="Password"
                 type="password"
-                onChange={handleTextInput}
+                onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Password"
               />
               <SingleSelect
                 id="usertype"
+                name="usertype"
                 label="User Type"
-                onChange={handleSingleSelect}
+                onChange={handleChange}
                 inputClass="textinput-input"
                 optionValues={userTypes}
               />
               {student && <TextInput
                 id="studentId"
+                name="studentId"
                 label="Student Id"
                 type="text"
-                onChange={handleTextInput}
+                onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Id"
               />}
               {teacher && <TextInput
                 id="teacherId"
+                name="teacherId"
                 label="Teacher Id"
                 type="text"
-                onChange={handleTextInput}
+                onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Id"
               />

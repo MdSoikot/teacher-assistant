@@ -17,6 +17,11 @@ Route::get('signup')
     ->uses('App\Http\Controllers\Auth\RegisterController@showSignUpForm')
     ->middleware('guest');
 
+Route::post('signup')
+    ->name('signup.submit')
+    ->uses('App\Http\Controllers\Auth\RegisterController@register')
+    ->middleware('guest');
+
 Route::get('login')
     ->name('login')
     ->uses('App\Http\Controllers\Auth\LoginController@showLoginForm')
