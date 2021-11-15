@@ -1,0 +1,118 @@
+.nav-main {
+    height          : 80px;
+    background-color: #7e3497;
+    color           : #ffffff
+}
+
+.font-montserrat-600 {
+    font-family: montserrat;
+    font-style : normal;
+    font-weight: 600;
+}
+
+.font-inter-400 {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 400;
+}
+
+.font-inter-500 {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 500;
+}
+
+.font-inter-600 {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 600;
+}
+
+.font-inter-700 {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 700;
+}
+
+.nav-main a {
+    text-decoration: none;
+}
+
+.main-body {
+    background: #4E1661;
+}
+
+/*...............SignUp.........*/
+
+.signup-leftside {
+    background: #1565D8;
+    width     : 40%;
+    height    : 100vh;
+    padding   : 20px 40px;
+}
+
+.signup-rightside {
+    background: #ffffff;
+    height    : 100vh;
+    max-width : 60%;
+    padding   : 40px 100px;
+}
+
+.signup-rightside__label {
+    font-size  : 30px;
+    line-height: 36px;
+}
+
+.signup-leftside__block {
+    height     : 173px;
+    color      : #ffffff;
+    font-size  : 20px;
+    line-height: 38px;
+    padding-top: 45%;
+}
+
+.signup-rightside__sublabel {
+    font-size  : 18px;
+    line-height: 28px;
+    color      : #8692A6;
+}
+
+.signup-form {
+    padding-top: 30px;
+    color      : #696F79;
+    font-size  : 16px;
+}
+
+.logoname {
+    color      : #ffffff;
+    font-size  : 25px;
+    padding-top: 10px;
+}
+
+.signup-form__input-field {
+    width        : 400px;
+    height       : 40px;
+    border       : 1px solid #8692A6;
+    border-radius: 5px;
+    margin       : 5px 0;
+    padding-left : 12px;
+}
+
+.btn-signup {
+    width        : 144px;
+    height       : 48px;
+    color        : white;
+    background   : black;
+    border-radius: 10px;
+    margin-top   : 10px;
+}
+
+/*.........TextInput.........*/
+.textinput-input {
+    width        : 400px;
+    height       : 40px;
+    border       : 1px solid #8692A6;
+    border-radius: 5px;
+    margin       : 5px 0;
+    padding-left : 12px;
+}
