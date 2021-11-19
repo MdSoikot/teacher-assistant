@@ -14,4 +14,12 @@ class LoginController extends Controller
     {
         return Inertia::render('Auth/Login');
     }
+    public function showTest()
+    {
+        return Inertia::render('Test');
+    }
+    public function redirectTo()
+    {
+        return route('test');
+    }
 }

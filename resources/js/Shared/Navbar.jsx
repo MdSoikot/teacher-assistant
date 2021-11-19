@@ -11,7 +11,7 @@ const Navbar = () => {
                 <InertiaLink className='mr-6'>About</InertiaLink>
                 <InertiaLink className='mr-6' href={route('login')}>Sign In</InertiaLink>
                 <InertiaLink className='mr-6' href={route('signup')}>Sign Up</InertiaLink>
-                <InertiaLink className='mr-6'>Logout</InertiaLink>
+                <InertiaLink className='mr-6' href={route('logout')}>Logout</InertiaLink>
             </div>
         </div>
     )

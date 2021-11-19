@@ -30,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/plans';
+    protected $redirectTo = '/test';
 
     /**
      * Create a new controller instance.
@@ -58,12 +58,27 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        function getStudentId($data) {
+            if(array_key_exists('studentId', $data)) {
+                return $data['studentId'];
+            } else {
+                return NULL;
+            }
+        }
+        function getTeacherId($data) {
+            if(array_key_exists('teacherId', $data)) {
+                return $data['teacherId'];
+            } else {
+                return NULL;
+            }
+        }
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => $data['password'],
-            'role' => $data['usertype'],
-            'studentId' => $data['studentId'],
+            'role' => $data['role'],
+            'studentId' => getStudentId($data),
+            'teacherId' => getTeacherId($data),
         ]);
         return $user;
     }

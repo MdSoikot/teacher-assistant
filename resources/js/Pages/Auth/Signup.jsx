@@ -18,7 +18,7 @@ const Signup = () => {
   const handleChange = (e) => {
     const key = e.target.name;
     const value = e.target.value;
-    if (key === 'usertype') {
+    if (key === 'role') {
       if (value === 'student') {
         setTeacher(false)
         setStudent(true)
@@ -46,7 +46,6 @@ const Signup = () => {
   console.log(values)
   const userTypes = [
     { key: '', value: 'Select One' },
-    { key: 'admin', value: 'Admin' },
     { key: 'student', value: 'Student' },
     { key: 'teacher', value: 'Teacher' },
   ]
@@ -64,7 +63,7 @@ const Signup = () => {
       <div className="signup-rightside">
         <div className="flex row">
           <span className="signup-rightside__label font-inter-700">Register Individual Account!</span>
-          <span className="signup-rightside__sublabel font-inter-400">For the purpose of gamers regulation, your details are required.</span>
+          <span className="signup-rightside__sublabel font-inter-400">For the purpose of tracking, your details are required.</span>
         </div>
         <div>
           <form
@@ -101,8 +100,8 @@ const Signup = () => {
                 placeholder="Your Password"
               />
               <SingleSelect
-                id="usertype"
-                name="usertype"
+                id="role"
+                name="role"
                 label="User Type"
                 onChange={handleChange}
                 inputClass="textinput-input"

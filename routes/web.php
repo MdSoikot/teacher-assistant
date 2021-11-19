@@ -14,8 +14,8 @@ use Inertia\Inertia;
 */
 Route::get('signup')
     ->name('signup')
-    ->uses('App\Http\Controllers\Auth\RegisterController@showSignUpForm')
-    ->middleware('guest');
+    ->uses('App\Http\Controllers\Auth\RegisterController@showSignUpForm');
+    
 
 Route::post('signup')
     ->name('signup.submit')
@@ -26,6 +26,20 @@ Route::get('login')
     ->name('login')
     ->uses('App\Http\Controllers\Auth\LoginController@showLoginForm')
     ->middleware('guest');
+
+Route::post('login')
+    ->name('login.attempt')
+    ->uses('App\Http\Controllers\Auth\LoginController@login')
+    ->middleware('guest');
+    
+Route::post('logout')
+    ->name('logout')
+    ->uses('App\Http\Controllers\Auth\LoginController@logout');
+
+Route::get('test')
+    ->name('test')
+    ->uses('App\Http\Controllers\Auth\LoginController@showTest')
+    ->middleware('auth');
 
 Route::get('/', function () {
     return inertia::render('Home');
