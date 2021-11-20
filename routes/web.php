@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\Auth\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +13,11 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('login')
+    ->name('login')
+    ->uses('Auth\LoginController@showLoginForm')
+    ->middleware('guest');
 
 Route::get('/', function () {
     return inertia::render('Home');
