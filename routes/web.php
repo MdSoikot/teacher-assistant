@@ -12,10 +12,11 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('signup')
     ->name('signup')
     ->uses('App\Http\Controllers\Auth\RegisterController@showSignUpForm');
-    
+
 
 Route::post('signup')
     ->name('signup.submit')
@@ -27,12 +28,12 @@ Route::get('login')
     ->uses('App\Http\Controllers\Auth\LoginController@showLoginForm')
     ->middleware('guest');
 
-Route::post('login')
+Route::post('/login')
     ->name('login.attempt')
     ->uses('App\Http\Controllers\Auth\LoginController@login')
     ->middleware('guest');
-    
-Route::post('logout')
+
+Route::post('/logout')
     ->name('logout')
     ->uses('App\Http\Controllers\Auth\LoginController@logout');
 
@@ -42,5 +43,8 @@ Route::get('test')
     ->middleware('auth');
 
 Route::get('/', function () {
-    return inertia::render('Home');
+    return inertia::render('Auth/Login');
+});
+Route::get('/dashboard', function () {
+    return inertia::render('Dashboard/AdminDashboard');
 });

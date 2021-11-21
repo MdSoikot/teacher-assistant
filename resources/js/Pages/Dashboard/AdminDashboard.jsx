@@ -1,13 +1,11 @@
-import React from 'react'
-import Navbar from '../../Shared/Navbar'
+import Layout from "../Layout/Layout"
 
 const AdminDashboard = () => {
     return (
         <div>
-            <Navbar />
-            Login success
+            <h1>Dashboard</h1>
         </div>
     )
 }
-
+AdminDashboard.layout = (page) => <Layout>{page}</Layout>
 export default AdminDashboard

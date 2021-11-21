@@ -1,5 +1,4 @@
 import { InertiaLink } from '@inertiajs/inertia-react'
-import React from 'react'
 
 const Navbar = () => {
     return (

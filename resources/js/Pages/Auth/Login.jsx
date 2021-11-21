@@ -26,12 +26,12 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSending(true);
-    Inertia.post(route('login.submit'), values, {
+    Inertia.post(route('login.attempt'), values, {
       onFinish: () => setSending(false),
     });
   }
 
-  console.log(values)
+
   const userTypes = [
     { key: '', value: 'Select One' },
     { key: 'admin', value: 'Admin' },
