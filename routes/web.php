@@ -37,11 +37,6 @@ Route::post('/logout')
     ->name('logout')
     ->uses('App\Http\Controllers\Auth\LoginController@logout');
 
-Route::get('test')
-    ->name('test')
-    ->uses('App\Http\Controllers\Auth\LoginController@showTest')
-    ->middleware('auth');
-
 Route::get('/', function () {
     return inertia::render('Auth/Login');
 });
