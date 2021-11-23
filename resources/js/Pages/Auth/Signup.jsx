@@ -13,6 +13,9 @@ const Signup = () => {
   const [values, setValues] = useState({
     email: '',
     password: '',
+    name: '',
+    studentId: '',
+    teacherId: '',
   });
 
   const handleChange = (e) => {
@@ -79,6 +82,7 @@ const Signup = () => {
                 onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Name"
+                value={values.name}
               />
               <TextInput
                 id="email"
@@ -88,6 +92,7 @@ const Signup = () => {
                 onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Email"
+                value={values.email}
 
               />
               <TextInput
@@ -98,6 +103,7 @@ const Signup = () => {
                 onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Password"
+                value={values.password}
               />
               <SingleSelect
                 id="role"
@@ -115,6 +121,7 @@ const Signup = () => {
                 onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Id"
+                value={values.studentId}
               />}
               {teacher && <TextInput
                 id="teacherId"
@@ -124,6 +131,7 @@ const Signup = () => {
                 onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Id"
+                value={values.teacherId}
               />
               }
 

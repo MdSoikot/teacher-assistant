@@ -41,5 +41,5 @@ Route::get('/', function () {
     return inertia::render('Auth/Login');
 });
 Route::get('/dashboard', function () {
-    return inertia::render('Dashboard/AdminDashboard');
+    return inertia::render('Dashboard/Dashboard');
 });

@@ -13,7 +13,7 @@ const SingleSelect = ({ id, name, label, labelClass, inputClass, optionValues, o
         {
           <select name={name} id={id} className={inputClass} onChange={onChange}>
             {optionValues.map(({ key, value }) => {
-              return <option value={key}>{value}</option>
+              return <option key={key} value={key}>{value}</option>
             })
             }
           </select>

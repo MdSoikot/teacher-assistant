@@ -56,6 +56,7 @@ const Login = () => {
         </div>
         <div>
           <form
+            method="post"
             onSubmit={handleSubmit}
           >
             <div className="font-inter-400 signup-form">
@@ -75,6 +76,7 @@ const Login = () => {
                 onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Email"
+                value={values.email}
 
               />
               <TextInput
@@ -85,6 +87,7 @@ const Login = () => {
                 onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Password"
+                value={values.password}
               />
               <div>
                 <button className="btn-signup" type="submit">Sign In</button>

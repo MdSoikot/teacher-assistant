@@ -10,11 +10,10 @@ class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
-    protected $redirectTo = '/';
+    protected $redirectTo = '/dashboard';
 
     public function showLoginForm()
     {
-        dd("test");
         return Inertia::render('Auth/Login');
     }
 }
