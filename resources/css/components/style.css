@@ -1,6 +1,6 @@
 .nav-main {
     height          : 80px;
-    background-color: #7e3497;
+    background-color: #5b1e70;
     color           : #ffffff
 }
 
@@ -115,4 +115,19 @@
     border-radius: 5px;
     margin       : 5px 0;
     padding-left : 12px;
+}
+
+/*...........Sidebar........*/
+.sidebar-main {
+    width     : 200px;
+    height    : calc(100vh - 100px);
+    background: #002979;
+    color     : white;
+}
+
+.sidebar-main__menu {
+    flex-direction: column;
+    padding-left  : 24px;
+    padding-top   : 36px;
+    gap           : 32px;
 }
