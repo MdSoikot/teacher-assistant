@@ -43,3 +43,10 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return inertia::render('Dashboard/Dashboard');
 });
+
+//profile
+
+Route::get('profile')
+    ->name('profile')
+    ->uses('App\Http\Controllers\UserController@index')
+    ->middleware('auth');

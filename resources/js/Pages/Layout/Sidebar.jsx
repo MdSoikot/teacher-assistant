@@ -1,3 +1,4 @@
+import { InertiaLink } from '@inertiajs/inertia-react'
 import React from 'react'
 import Profile from '../../Icons/Profile'
 
@@ -7,7 +8,12 @@ export default function Sidebar() {
             <div className='flex col sidebar-main__menu'>
                 <div className='flex gap-4'>
                     <Profile />
-                    <span>Profile</span>
+                    <InertiaLink
+                        href={route('profile')}
+                    >
+                        Profile
+                        {/* <span className="cursor-pointer">Profile</span> */}
+                    </InertiaLink>
                 </div>
                 <div className='flex gap-4'>
                     <Profile />

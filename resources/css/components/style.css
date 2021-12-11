@@ -120,7 +120,8 @@
 /*...........Sidebar........*/
 .sidebar-main {
     width     : 200px;
-    height    : calc(100vh - 100px);
+    height    : 100vh;
+    overflow  : auto;
     background: #002979;
     color     : white;
 }
@@ -130,4 +131,68 @@
     padding-left  : 24px;
     padding-top   : 36px;
     gap           : 32px;
+}
+
+/*.........Login..........*/
+.login-remeverme {
+    font-size  : 16px;
+    line-height: 27px;
+    color      : #9F9F9F;
+    margin-left: 5px;
+    cursor     : pointer;
+}
+
+.login-rememberme-input {
+    position     : relative;
+    height       : 19px;
+    border-radius: 3.375px;
+    cursor       : pointer;
+}
+
+.login-rememberme-input[type="checkbox"]:checked:before {
+    /* background-color: #111; */
+    background    : url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='4' width='15' height='11'%3E%3Cpath d='M6.96275 12.5678L4.21567 9.82068C4.06776 9.67244 3.86696 9.58913 3.65755 9.58913C3.44814 9.58913 3.24733 9.67244 3.09942 9.82068C2.79067 10.1294 2.79067 10.6282 3.09942 10.9369L6.40859 14.2461C6.71734 14.5548 7.21609 14.5548 7.52484 14.2461L15.9007 5.87026C16.2094 5.56151 16.2094 5.06276 15.9007 4.75401C15.7528 4.60577 15.552 4.52246 15.3425 4.52246C15.1331 4.52246 14.9323 4.60577 14.7844 4.75401L6.96275 12.5678Z' fill='black'/%3E%3C/mask%3E%3Cg mask='url(%23mask0)'%3E%3Crect width='19' height='19' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A"), #111;
+    pointer-events: none;
+    /* left       : 50; */
+}
+
+.login-rememberme-input::before {
+    content       : "";
+    width         : 23px;
+    height        : 23px;
+    transform     : scale(0.7);
+    background    : #fff;
+    border        : 2px solid #111;
+    border-radius : 4px;
+    position      : absolute;
+    top           : -12%;
+    left          : -30%;
+    pointer-events: none;
+}
+
+/*.....Profile.......*/
+.main-card {
+    width        : 150vh;
+    height       : 80%;
+    border       : 1px solid #dce5ed;
+    box-shadow   : 0.75px 0.75px 3px rgba(0, 0, 0, 0.07);
+    border-radius: 15px;
+    padding      : 32px;
+
+}
+
+.main-div {
+    margin-top : 48px;
+    margin-left: 86px;
+}
+
+.profile-textinput-input {
+    width        : 30%;
+    max-width    : 350px;
+    min-width    : 200px;
+    height       : 40px;
+    border       : 1px solid #8692A6;
+    border-radius: 5px;
+    margin       : 5px 0;
+    padding-left : 12px;
 }

@@ -3,21 +3,23 @@ import React, { useState } from 'react'
 import TextInput from '../../Shared/TextInput';
 import Logo from './../../Icons/Logo';
 import SingleSelect from './../../Shared/SingleSelect';
+import { usePage } from '@inertiajs/inertia-react';
 
 const Login = () => {
-
+  const { errors } = usePage().props;
   const [teacher, setTeacher] = useState(false);
   const [student, setStudent] = useState(false);
   const [sending, setSending] = useState(false);
-
+  console.log('err', errors)
   const [values, setValues] = useState({
     email: '',
     password: '',
+    remember: false,
   });
 
   const handleChange = (e) => {
     const key = e.target.name;
-    const value = e.target.value;
+    const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
     setValues(oldValues => ({
       ...oldValues,
       [key]: value,
@@ -76,7 +78,8 @@ const Login = () => {
                 onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Email"
-                value={values.email}
+                value={values?.email}
+                errors={errors?.email}
 
               />
               <TextInput
@@ -87,8 +90,23 @@ const Login = () => {
                 onChange={handleChange}
                 inputClass="textinput-input"
                 placeholder="Your Password"
-                value={values.password}
+                value={values?.password}
+                errors={errors?.password}
               />
+              <label
+                className="flex items-center mt-6 select-none"
+                htmlFor="remember"
+              >
+                <input
+                  name="remember"
+                  id="remember"
+                  className="mr-1 login-rememberme-input"
+                  type="checkbox"
+                  checked={values.remember}
+                  onChange={handleChange}
+                />
+                <span className="login-remeverme font-inter-normal">Remember Me</span>
+              </label>
               <div>
                 <button className="btn-signup" type="submit">Sign In</button>
               </div>

@@ -10,7 +10,7 @@ export default function Layout({ children }) {
                 <Sidebar />
                 {children}
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
