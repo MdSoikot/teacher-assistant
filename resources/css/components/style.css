@@ -172,7 +172,7 @@
 
 /*.....Profile.......*/
 .main-card {
-    width        : 150vh;
+    width        : 140vh;
     height       : 80%;
     border       : 1px solid #dce5ed;
     box-shadow   : 0.75px 0.75px 3px rgba(0, 0, 0, 0.07);
@@ -187,7 +187,7 @@
 }
 
 .profile-textinput-input {
-    width        : 30%;
+    width        : 80%;
     max-width    : 350px;
     min-width    : 200px;
     height       : 40px;
@@ -195,4 +195,16 @@
     border-radius: 5px;
     margin       : 5px 0;
     padding-left : 12px;
+}
+
+.main-card__left {
+    width: 50%;
+}
+
+.main-card__middle {
+    width: 33%;
+}
+
+.main-card__right {
+    width: 50%;
 }

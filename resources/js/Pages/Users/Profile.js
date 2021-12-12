@@ -3,13 +3,14 @@ import Layout from "../Layout/Layout"
 import TextInput from '../../Shared/TextInput';
 
 const Profile = () => {
+    const role = 'student'
     return (
         <div className="main-div">
             <div className='font-inter-600 text-3xl mb-4'>
                 My Profile
             </div>
-            <div className="main-card">
-                <div>
+            <div className="main-card flex">
+                <div className='main-card__left'>
                     <TextInput
                         id="name"
                         name="name"
@@ -41,6 +42,16 @@ const Profile = () => {
                         placeholder="Your Password"
                     />
                     <TextInput
+                        id="phone"
+                        name="phone"
+                        label="Phone"
+                        type="phone"
+                        //onChange={handleChange}
+                        inputClass="profile-textinput-input"
+                        inputLabelClass="font-inter-600 text-md"
+                        placeholder="Your Phone"
+                    />
+                    <TextInput
                         id="role"
                         name="role"
                         label="Role"
@@ -48,7 +59,7 @@ const Profile = () => {
                         //onChange={handleChange}
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
-                        placeholder="Your Password"
+                        placeholder="Your Role"
                     />
                     <TextInput
                         id="studentId"
@@ -58,9 +69,9 @@ const Profile = () => {
                         //onChange={handleChange}
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
-                        placeholder="Your Password"
+                        placeholder="Your Id"
                     />
-                    <TextInput
+                    {role === 'teacher' && <TextInput
                         id="teacherId"
                         name="teacherId"
                         label="Teacher Id"
@@ -68,9 +79,36 @@ const Profile = () => {
                         //onChange={handleChange}
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
-                        placeholder="Your Password"
-                    />
+                        placeholder="Your Id"
+                    />}
                 </div>
+                <div className='main-card__right'>
+                    <TextInput
+                        id="batch"
+                        name="batch"
+                        label="Batch"
+                        type="text"
+                        //onChange={handleChange}
+                        inputClass="profile-textinput-input"
+                        inputLabelClass="font-inter-600 text-md"
+                        placeholder="Your Batch"
+                    />
+                    <TextInput
+                        id="department"
+                        name="department"
+                        label="Department"
+                        type="text"
+                        //onChange={handleChange}
+                        inputClass="profile-textinput-input"
+                        inputLabelClass="font-inter-600 text-md"
+                        placeholder="Your Department"
+                    />
+
+
+                </div>
+                {/* <div className='main-card__right'>
+                    hi
+                </div> */}
 
             </div>
         </div>
