@@ -1,9 +1,19 @@
 import React from 'react'
 import Layout from "../Layout/Layout"
 import TextInput from '../../Shared/TextInput';
+import SingleSelect from '../../Shared/SingleSelect';
+import { usePage } from '@inertiajs/inertia-react';
 
 const Profile = () => {
     const role = 'student'
+    const { userInfo } = usePage().props;
+    console.log(userInfo)
+    const userTypes = [
+        { key: '', value: 'Select One' },
+        { key: 'admin', value: 'Admin' },
+        { key: 'student', value: 'Student' },
+        { key: 'teacher', value: 'Teacher' },
+    ]
     return (
         <div className="main-div">
             <div className='font-inter-600 text-3xl mb-4'>
@@ -19,6 +29,7 @@ const Profile = () => {
                         //onChange={handleChange}
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
+                        value={userInfo?.name}
                         placeholder="Your Name"
                     />
                     <TextInput
@@ -29,7 +40,19 @@ const Profile = () => {
                         //onChange={handleChange}
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
+                        value={userInfo?.email}
                         placeholder="Your Email"
+                    />
+                    <SingleSelect
+                        id="role"
+                        name="role"
+                        label="Role"
+                        //onChange={handleChange}
+                        inputClass="profile-textinput-input"
+                        labelClass="font-inter-600 text-md"
+                        optionValues={userTypes}
+                        value={userInfo?.role}
+                        isDesabled
                     />
                     <TextInput
                         id="password"
@@ -40,6 +63,7 @@ const Profile = () => {
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
                         placeholder="Your Password"
+                        value={userInfo?.password}
                     />
                     <TextInput
                         id="phone"
@@ -50,16 +74,7 @@ const Profile = () => {
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
                         placeholder="Your Phone"
-                    />
-                    <TextInput
-                        id="role"
-                        name="role"
-                        label="Role"
-                        type="text"
-                        //onChange={handleChange}
-                        inputClass="profile-textinput-input"
-                        inputLabelClass="font-inter-600 text-md"
-                        placeholder="Your Role"
+                        value={userInfo?.phone}
                     />
                     <TextInput
                         id="studentId"
@@ -70,6 +85,7 @@ const Profile = () => {
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
                         placeholder="Your Id"
+                        value={userInfo?.studentId}
                     />
                     {role === 'teacher' && <TextInput
                         id="teacherId"
@@ -80,6 +96,7 @@ const Profile = () => {
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
                         placeholder="Your Id"
+                        value={userInfo?.teacherId}
                     />}
                 </div>
                 <div className='main-card__right'>
@@ -92,6 +109,7 @@ const Profile = () => {
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
                         placeholder="Your Batch"
+                        value={userInfo?.batch}
                     />
                     <TextInput
                         id="department"
@@ -102,13 +120,9 @@ const Profile = () => {
                         inputClass="profile-textinput-input"
                         inputLabelClass="font-inter-600 text-md"
                         placeholder="Your Department"
+                        value={userInfo?.department}
                     />
-
-
                 </div>
-                {/* <div className='main-card__right'>
-                    hi
-                </div> */}
 
             </div>
         </div>

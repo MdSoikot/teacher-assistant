@@ -37,6 +37,8 @@
         "node-sass": "^6.0.1",
         "react-helmet": "^6.1.0",
         "react-hot-toast": "^2.1.1",
-        "react-multiple-select-dropdown-lite": "^2.0.4"
+        "react-minimal-side-navigation": "^1.9.2",
+        "react-multiple-select-dropdown-lite": "^2.0.4",
+        "react-router-dom": "^6.1.1"
     }
 }
