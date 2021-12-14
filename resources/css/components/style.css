@@ -119,11 +119,15 @@
 
 /*...........Sidebar........*/
 .sidebar-main {
-    width     : 200px;
+    width     : 250px;
     height    : 100vh;
     overflow  : auto;
     background: #002979;
     color     : white;
+}
+
+.sidebar-svg {
+    color: white !important;
 }
 
 .sidebar-main__menu {
@@ -207,4 +211,33 @@
 
 .main-card__right {
     width: 50%;
+}
+
+/*........TreeMenu.....*/
+.makeStyles-root-1 {
+    width           : 100%;
+    max-width       : 360px;
+    background-color: #002979 !important;
+}
+
+.MuiListItem-gutters {
+    padding-left : 0px !important;
+    padding-right: 0px !important;
+}
+
+.MuiListItemIcon-root {
+    color      : rgba(0, 0, 0, 0.54);
+    display    : inline-flex;
+    min-width  : 32px !important;
+    flex-shrink: 0;
+}
+
+.makeStyles-root-4 {
+    width           : 100%;
+    max-width       : 360px;
+    background-color: #002979 !important;
+}
+
+.nounderline {
+    text-decoration: none !important;
 }
