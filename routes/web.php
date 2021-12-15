@@ -42,7 +42,7 @@ Route::get('/', function () {
 });
 Route::get('/dashboard', function () {
     return inertia::render('Dashboard/Dashboard');
-});
+})->middleware('auth');
 
 //profile
 

@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Layout_Sidebar_jsx"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Users_Profile_js"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
 /*!**********************************************************************!*\
@@ -6777,6 +6777,108 @@ function Profile(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Layout/Footer.jsx":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Layout/Footer.jsx ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Footer)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function Footer() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+      children: "Footer"
+    })
+  });
+}
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Layout/Layout.jsx":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Layout/Layout.jsx ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Layout)
+/* harmony export */ });
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar */ "./resources/js/Pages/Layout/Navbar.jsx");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./resources/js/Pages/Layout/Footer.jsx");
+/* harmony import */ var _Sidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Sidebar */ "./resources/js/Pages/Layout/Sidebar.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+function Layout(_ref) {
+  var children = _ref.children;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    className: "layout",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Navbar__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "main flex",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Sidebar__WEBPACK_IMPORTED_MODULE_2__["default"], {}), children]
+    })]
+  });
+}
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Layout/Navbar.jsx":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Layout/Navbar.jsx ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var Navbar = function Navbar() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: "flex justify-between nav-main items-center",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "font-montserrat-600 text-lg",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
+        className: "ml-6",
+        href: "/dashboard",
+        children: "Teaching Assist"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "font-montserrat-600 text-lg",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
+        className: "mr-6",
+        method: "post",
+        as: "button",
+        href: "/logout",
+        children: "Logout"
+      })
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Layout/Sidebar.jsx":
 /*!***********************************************!*\
   !*** ./resources/js/Pages/Layout/Sidebar.jsx ***!
@@ -6936,6 +7038,274 @@ function Sidebar() {
     })
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Users/Profile.js":
+/*!*********************************************!*\
+  !*** ./resources/js/Pages/Users/Profile.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Layout/Layout */ "./resources/js/Pages/Layout/Layout.jsx");
+/* harmony import */ var _Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Shared/TextInput */ "./resources/js/Shared/TextInput.jsx");
+/* harmony import */ var _Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Shared/SingleSelect */ "./resources/js/Shared/SingleSelect.jsx");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+var Profile = function Profile() {
+  var role = 'student';
+  var userInfo = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.usePage)().props.userInfo;
+  console.log(userInfo);
+  var userTypes = [{
+    key: '',
+    value: 'Select One'
+  }, {
+    key: 'admin',
+    value: 'Admin'
+  }, {
+    key: 'student',
+    value: 'Student'
+  }, {
+    key: 'teacher',
+    value: 'Teacher'
+  }];
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+    className: "main-div",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "font-inter-600 text-3xl mb-4",
+      children: "My Profile"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      className: "main-card flex",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "main-card__left",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          id: "name",
+          name: "name",
+          label: "Name",
+          type: "text" //onChange={handleChange}
+          ,
+          inputClass: "profile-textinput-input",
+          inputLabelClass: "font-inter-600 text-md",
+          value: userInfo === null || userInfo === void 0 ? void 0 : userInfo.name,
+          placeholder: "Your Name"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          id: "email",
+          name: "email",
+          label: "Email",
+          type: "email" //onChange={handleChange}
+          ,
+          inputClass: "profile-textinput-input",
+          inputLabelClass: "font-inter-600 text-md",
+          value: userInfo === null || userInfo === void 0 ? void 0 : userInfo.email,
+          placeholder: "Your Email"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          id: "role",
+          name: "role",
+          label: "Role" //onChange={handleChange}
+          ,
+          inputClass: "profile-textinput-input",
+          labelClass: "font-inter-600 text-md",
+          optionValues: userTypes,
+          value: userInfo === null || userInfo === void 0 ? void 0 : userInfo.role,
+          isDesabled: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          id: "password",
+          name: "password",
+          label: "Password",
+          type: "password" //onChange={handleChange}
+          ,
+          inputClass: "profile-textinput-input",
+          inputLabelClass: "font-inter-600 text-md",
+          placeholder: "Your Password",
+          value: userInfo === null || userInfo === void 0 ? void 0 : userInfo.password
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          id: "phone",
+          name: "phone",
+          label: "Phone",
+          type: "phone" //onChange={handleChange}
+          ,
+          inputClass: "profile-textinput-input",
+          inputLabelClass: "font-inter-600 text-md",
+          placeholder: "Your Phone",
+          value: userInfo === null || userInfo === void 0 ? void 0 : userInfo.phone
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          id: "studentId",
+          name: "studentId",
+          label: "Student Id",
+          type: "text" //onChange={handleChange}
+          ,
+          inputClass: "profile-textinput-input",
+          inputLabelClass: "font-inter-600 text-md",
+          placeholder: "Your Id",
+          value: userInfo === null || userInfo === void 0 ? void 0 : userInfo.studentId
+        }), role === 'teacher' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          id: "teacherId",
+          name: "teacherId",
+          label: "Teacher Id",
+          type: "text" //onChange={handleChange}
+          ,
+          inputClass: "profile-textinput-input",
+          inputLabelClass: "font-inter-600 text-md",
+          placeholder: "Your Id",
+          value: userInfo === null || userInfo === void 0 ? void 0 : userInfo.teacherId
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "main-card__right",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          id: "batch",
+          name: "batch",
+          label: "Batch",
+          type: "text" //onChange={handleChange}
+          ,
+          inputClass: "profile-textinput-input",
+          inputLabelClass: "font-inter-600 text-md",
+          placeholder: "Your Batch",
+          value: userInfo === null || userInfo === void 0 ? void 0 : userInfo.batch
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          id: "department",
+          name: "department",
+          label: "Department",
+          type: "text" //onChange={handleChange}
+          ,
+          inputClass: "profile-textinput-input",
+          inputLabelClass: "font-inter-600 text-md",
+          placeholder: "Your Department",
+          value: userInfo === null || userInfo === void 0 ? void 0 : userInfo.department
+        })]
+      })]
+    })]
+  });
+};
+
+Profile.layout = function (page) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    children: page
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Profile);
+
+/***/ }),
+
+/***/ "./resources/js/Shared/SingleSelect.jsx":
+/*!**********************************************!*\
+  !*** ./resources/js/Shared/SingleSelect.jsx ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var SingleSelect = function SingleSelect(_ref) {
+  var id = _ref.id,
+      name = _ref.name,
+      label = _ref.label,
+      labelClass = _ref.labelClass,
+      inputClass = _ref.inputClass,
+      optionValues = _ref.optionValues,
+      onChange = _ref.onChange,
+      value = _ref.value;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    children: [label && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("label", {
+      htmlFor: name,
+      className: labelClass,
+      children: [label, ":"]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("select", {
+        name: name,
+        id: id,
+        className: inputClass,
+        value: value,
+        onChange: onChange,
+        children: optionValues.map(function (_ref2) {
+          var key = _ref2.key,
+              value = _ref2.value;
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+            value: key,
+            children: value
+          }, key);
+        })
+      })
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SingleSelect);
+
+/***/ }),
+
+/***/ "./resources/js/Shared/TextInput.jsx":
+/*!*******************************************!*\
+  !*** ./resources/js/Shared/TextInput.jsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var TextInput = function TextInput(_ref) {
+  var label = _ref.label,
+      name = _ref.name,
+      inputLabelClass = _ref.inputLabelClass,
+      inputClass = _ref.inputClass,
+      type = _ref.type,
+      value = _ref.value,
+      _ref$errors = _ref.errors,
+      errors = _ref$errors === void 0 ? [] : _ref$errors,
+      onChange = _ref.onChange,
+      placeholder = _ref.placeholder;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    children: [label && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("label", {
+      htmlFor: name,
+      className: inputLabelClass,
+      children: [label, ":"]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+        id: name,
+        name: name,
+        type: type,
+        value: value,
+        onChange: onChange,
+        placeholder: placeholder,
+        className: inputClass
+      })
+    }), errors && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      children: errors
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TextInput);
 
 /***/ }),
 

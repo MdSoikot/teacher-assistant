@@ -3,6 +3,7 @@ import Layout from "../Layout/Layout"
 import TextInput from '../../Shared/TextInput';
 import SingleSelect from '../../Shared/SingleSelect';
 import { usePage } from '@inertiajs/inertia-react';
+import Button from '@mui/material/Button';
 
 const Profile = () => {
     const role = 'student'
@@ -122,6 +123,11 @@ const Profile = () => {
                         placeholder="Your Department"
                         value={userInfo?.department}
                     />
+                    <div className='pt-3'>
+                        <Button variant="contained" size="medium">
+                            Update
+                        </Button>
+                    </div>
                 </div>
 
             </div>

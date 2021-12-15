@@ -5,6 +5,10 @@ import Logo from './../../Icons/Logo';
 import SingleSelect from './../../Shared/SingleSelect';
 import { usePage } from '@inertiajs/inertia-react';
 
+import { FileUploader } from "react-drag-drop-files";
+//import "./styles.css";
+const fileTypes = ["JPG", "PNG", "GIF"];
+
 const Login = () => {
   const { errors } = usePage().props;
   const [teacher, setTeacher] = useState(false);
@@ -16,7 +20,11 @@ const Login = () => {
     password: '',
     remember: false,
   });
-
+  const [file, setFile] = useState(null);
+  const handleChangeNew = (file) => {
+    setFile(file);
+  };
+  console.log("file", file)
   const handleChange = (e) => {
     const key = e.target.name;
     const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
@@ -69,6 +77,8 @@ const Login = () => {
                 onChange={handleChange}
                 inputClass="textinput-input"
                 optionValues={userTypes}
+                inputLabelClass="font-inter-600 text-md"
+                labelClass="font-inter-600 text-md"
               />
               <TextInput
                 id="email"
@@ -80,6 +90,7 @@ const Login = () => {
                 placeholder="Your Email"
                 value={values?.email}
                 errors={errors?.email}
+                inputLabelClass="font-inter-600 text-md"
 
               />
               <TextInput
@@ -92,7 +103,15 @@ const Login = () => {
                 placeholder="Your Password"
                 value={values?.password}
                 errors={errors?.password}
+                inputLabelClass="font-inter-600 text-md"
               />
+              <div>
+                <label htmlFor="photo" className="font-inter-600 text-md">
+                  Photo
+                </label>
+                <FileUploader handleChange={handleChangeNew} name="file" types={fileTypes} />
+                <p>{file ? `File name: ${file.name}` : "no files uploaded yet"}</p>
+              </div>
               <label
                 className="flex items-center mt-6 select-none"
                 htmlFor="remember"

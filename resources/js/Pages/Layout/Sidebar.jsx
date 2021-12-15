@@ -72,7 +72,7 @@ export default function Sidebar() {
                                         className="nounderline"
                                         href={route('profile')}
                                     >
-                                        <ListItemText primary="View Profile" />
+                                        <ListItemText primary="My Profile" />
                                     </InertiaLink>
 
                                     {/* <ListItemText primary="View Profile" /> */}
@@ -87,38 +87,44 @@ export default function Sidebar() {
                                 </ListItem>
                             </List>
                         </Collapse>
-                        <ListItem button>
+                        <ListItem button onClick={handleClick}>
                             <ListItemIcon>
-                                <StarBorder className="sidebar-svg" />
+                                <Profile className="sidebar-svg" />
                             </ListItemIcon>
-                            <ListItemText primary="Sent mail" />
+                            <ListItemText primary="Manage User" />
+                            {open ? <ExpandLess /> : <ExpandMore />}
                         </ListItem>
+                        <Collapse in={open} timeout="auto" unmountOnExit>
+                            <List component="div" disablePadding>
+                                <ListItem
+                                    button
+                                    className={classes.nested}
+                                    onClick={handleClickSecondLevel}
+                                >
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+
+                                    <InertiaLink
+                                        className="nounderline"
+                                    //href={route('profile')}
+                                    >
+                                        <ListItemText primary="Pending User" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                            <List component="div" disablePadding>
+                                <ListItem button className={classes.nested}>
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+                                    <ListItemText primary="Approved User" />
+                                </ListItem>
+                            </List>
+                        </Collapse>
                     </List>
                 </div>
-                {/* <div className='flex gap-4'>
-                    <Profile />
-                    <span>Manage Student</span>
-                </div>
-                <div className='flex gap-4'>
-                    <Profile />
-                    <span>Manage Teacher</span>
-                </div>
-                <div className='flex gap-4'>
-                    <Profile />
-                    <span>Manage User</span>
-                </div>
-                <div className='flex gap-4'>
-                    <Profile />
-                    <span>Manage Class</span>
-                </div>
-                <div className='flex gap-4'>
-                    <Profile />
-                    <span>Manage HW</span>
-                </div>
-                <div className='flex gap-4'>
-                    <Profile />
-                    <span>Profile</span>
-                </div> */}
+
             </div>
         </div>
     )

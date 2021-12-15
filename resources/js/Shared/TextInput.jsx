@@ -20,8 +20,7 @@ const TextInput = ({ label, name, inputLabelClass, inputClass, type, value, erro
           className={inputClass}
         />
       </div>
-      {errors && <div>{errors}</div>}
-      {/* {errors && <div className="form-error">{errors}</div>} */}
+      {errors && <div className='form-error'>{errors}</div>}
     </div>
   )
 }

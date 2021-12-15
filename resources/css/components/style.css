@@ -137,6 +137,10 @@
     gap           : 32px;
 }
 
+.form-error {
+    color: #D8000C !important;
+}
+
 /*.........Login..........*/
 .login-remeverme {
     font-size  : 16px;
@@ -236,6 +240,10 @@
     width           : 100%;
     max-width       : 360px;
     background-color: #002979 !important;
+}
+
+.makeStyles-nested-2 {
+    padding-left: 16px !important;
 }
 
 .nounderline {

@@ -2982,11 +2982,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _window, _window$Ziggy;
 
- // if (window?.Ziggy?.baseProtocol === 'http') {
-//   window.Ziggy.baseProtocol = 'https'
-// }
 
+
+
+
+if (((_window = window) === null || _window === void 0 ? void 0 : (_window$Ziggy = _window.Ziggy) === null || _window$Ziggy === void 0 ? void 0 : _window$Ziggy.baseProtocol) === 'http' && window.location.protocol === 'https:') {
+  window.Ziggy.baseProtocol = 'https';
+  window.Ziggy.baseUrl = window.location.origin;
+}
 
 var app = document.getElementById('app');
 (0,react_dom__WEBPACK_IMPORTED_MODULE_1__.render)( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaApp, {
@@ -5604,6 +5609,19 @@ module.exports = isEqual;
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
   \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/app.css":
+/*!*******************************!*\
+  !*** ./resources/css/app.css ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -37507,23 +37525,33 @@ var map = {
 	],
 	"./Auth/Login": [
 		"./resources/js/Pages/Auth/Login.jsx",
-		7,
+		9,
 		"resources_js_Pages_Auth_Login_jsx"
 	],
 	"./Auth/Login.jsx": [
 		"./resources/js/Pages/Auth/Login.jsx",
-		7,
+		9,
 		"resources_js_Pages_Auth_Login_jsx"
 	],
 	"./Auth/Signup": [
 		"./resources/js/Pages/Auth/Signup.jsx",
-		7,
+		9,
 		"resources_js_Pages_Auth_Signup_jsx"
 	],
 	"./Auth/Signup.jsx": [
 		"./resources/js/Pages/Auth/Signup.jsx",
-		7,
+		9,
 		"resources_js_Pages_Auth_Signup_jsx"
+	],
+	"./Dashboard/Dashboard": [
+		"./resources/js/Pages/Dashboard/Dashboard.jsx",
+		9,
+		"resources_js_Pages_Dashboard_Dashboard_jsx"
+	],
+	"./Dashboard/Dashboard.jsx": [
+		"./resources/js/Pages/Dashboard/Dashboard.jsx",
+		9,
+		"resources_js_Pages_Dashboard_Dashboard_jsx"
 	],
 	"./Home": [
 		"./resources/js/Pages/Home.jsx",
@@ -37537,43 +37565,63 @@ var map = {
 	],
 	"./Layout/Footer": [
 		"./resources/js/Pages/Layout/Footer.jsx",
-		7,
+		9,
 		"resources_js_Pages_Layout_Footer_jsx"
 	],
 	"./Layout/Footer.jsx": [
 		"./resources/js/Pages/Layout/Footer.jsx",
-		7,
+		9,
 		"resources_js_Pages_Layout_Footer_jsx"
 	],
-	"./Layout/Main": [
-		"./resources/js/Pages/Layout/Main.jsx",
-		7,
-		"resources_js_Pages_Layout_Main_jsx"
+	"./Layout/Layout": [
+		"./resources/js/Pages/Layout/Layout.jsx",
+		9,
+		"resources_js_Pages_Layout_Layout_jsx"
 	],
-	"./Layout/Main.jsx": [
-		"./resources/js/Pages/Layout/Main.jsx",
-		7,
-		"resources_js_Pages_Layout_Main_jsx"
+	"./Layout/Layout.jsx": [
+		"./resources/js/Pages/Layout/Layout.jsx",
+		9,
+		"resources_js_Pages_Layout_Layout_jsx"
 	],
 	"./Layout/Navbar": [
 		"./resources/js/Pages/Layout/Navbar.jsx",
-		7,
+		9,
 		"resources_js_Pages_Layout_Navbar_jsx"
 	],
 	"./Layout/Navbar.jsx": [
 		"./resources/js/Pages/Layout/Navbar.jsx",
-		7,
+		9,
 		"resources_js_Pages_Layout_Navbar_jsx"
 	],
 	"./Layout/Sidebar": [
 		"./resources/js/Pages/Layout/Sidebar.jsx",
-		7,
+		9,
 		"resources_js_Pages_Layout_Sidebar_jsx"
 	],
 	"./Layout/Sidebar.jsx": [
 		"./resources/js/Pages/Layout/Sidebar.jsx",
-		7,
+		9,
 		"resources_js_Pages_Layout_Sidebar_jsx"
+	],
+	"./Test": [
+		"./resources/js/Pages/Test.jsx",
+		9,
+		"resources_js_Pages_Test_jsx"
+	],
+	"./Test.jsx": [
+		"./resources/js/Pages/Test.jsx",
+		9,
+		"resources_js_Pages_Test_jsx"
+	],
+	"./Users/Profile": [
+		"./resources/js/Pages/Users/Profile.js",
+		9,
+		"resources_js_Pages_Users_Profile_js"
+	],
+	"./Users/Profile.js": [
+		"./resources/js/Pages/Users/Profile.js",
+		9,
+		"resources_js_Pages_Users_Profile_js"
 	]
 };
 function webpackAsyncContext(req) {
@@ -37613,7 +37661,7 @@ module.exports = webpackAsyncContext;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"_args":[["axios@0.21.4","D:\\\\laragon\\\\www\\\\teacher-assistant"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"D:\\\\laragon\\\\www\\\\teacher-assistant","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
+module.exports = JSON.parse('{"_from":"axios@^0.21.1","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"axios@^0.21.1","name":"axios","escapedName":"axios","rawSpec":"^0.21.1","saveSpec":null,"fetchSpec":"^0.21.1"},"_requiredBy":["#DEV:/","/@inertiajs/inertia"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_shasum":"c67b90dc0568e5c1cf2b0b858c43ba28e2eda575","_spec":"axios@^0.21.1","_where":"D:\\\\BitCode\\\\laragon\\\\www\\\\teacher-assistant\\\\node_modules\\\\@inertiajs\\\\inertia","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundleDependencies":false,"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"deprecated":false,"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
 
 /***/ })
 
@@ -37682,6 +37730,18 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","D:\\\\laragon\\\\www\\\\
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/create fake namespace object */
 /******/ 	(() => {
 /******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
@@ -37742,7 +37802,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","D:\\\\laragon\\\\www\\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Auth_ForgotPassword_jsx":1,"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Auth_Signup_jsx":1,"resources_js_Pages_Home_jsx":1,"resources_js_Pages_Layout_Footer_jsx":1,"resources_js_Pages_Layout_Main_jsx":1,"resources_js_Pages_Layout_Navbar_jsx":1,"resources_js_Pages_Layout_Sidebar_jsx":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Auth_ForgotPassword_jsx":1,"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Auth_Signup_jsx":1,"resources_js_Pages_Dashboard_Dashboard_jsx":1,"resources_js_Pages_Home_jsx":1,"resources_js_Pages_Layout_Footer_jsx":1,"resources_js_Pages_Layout_Layout_jsx":1,"resources_js_Pages_Layout_Navbar_jsx":1,"resources_js_Pages_Layout_Sidebar_jsx":1,"resources_js_Pages_Test_jsx":1,"resources_js_Pages_Users_Profile_js":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
@@ -37942,7 +38002,8 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","D:\\\\laragon\\\\www\\\\
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
