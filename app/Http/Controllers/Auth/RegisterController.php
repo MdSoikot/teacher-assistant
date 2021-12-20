@@ -58,20 +58,23 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        function getStudentId($data) {
-            if(array_key_exists('studentId', $data)) {
+        function getStudentId($data)
+        {
+            if (array_key_exists('studentId', $data)) {
                 return $data['studentId'];
             } else {
                 return NULL;
             }
         }
-        function getTeacherId($data) {
-            if(array_key_exists('teacherId', $data)) {
+        function getTeacherId($data)
+        {
+            if (array_key_exists('teacherId', $data)) {
                 return $data['teacherId'];
             } else {
                 return NULL;
             }
         }
+        dd($data);
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],

@@ -20,11 +20,6 @@ const Login = () => {
     password: '',
     remember: false,
   });
-  const [file, setFile] = useState(null);
-  const handleChangeNew = (file) => {
-    setFile(file);
-  };
-  console.log("file", file)
   const handleChange = (e) => {
     const key = e.target.name;
     const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
@@ -105,13 +100,6 @@ const Login = () => {
                 errors={errors?.password}
                 inputLabelClass="font-inter-600 text-md"
               />
-              <div>
-                <label htmlFor="photo" className="font-inter-600 text-md">
-                  Photo
-                </label>
-                <FileUploader handleChange={handleChangeNew} name="file" types={fileTypes} />
-                <p>{file ? `File name: ${file.name}` : "no files uploaded yet"}</p>
-              </div>
               <label
                 className="flex items-center mt-6 select-none"
                 htmlFor="remember"

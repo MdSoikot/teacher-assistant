@@ -1,5 +1,7 @@
 import { Inertia } from '@inertiajs/inertia';
 import React, { useState } from 'react'
+import { FileUploader } from 'react-drag-drop-files';
+import Dropzone from '../../Shared/Dropzone';
 import TextInput from '../../Shared/TextInput';
 import Logo from './../../Icons/Logo';
 import SingleSelect from './../../Shared/SingleSelect';
@@ -16,7 +18,20 @@ const Signup = () => {
     name: '',
     studentId: '',
     teacherId: '',
+    photo: ''
   });
+
+  const fileTypes = ["JPG", "PNG", "GIF"];
+  const [file, setFile] = useState(null);
+
+  const handleFileChange = (file, name) => {
+    setValues(oldValues => ({
+      ...oldValues,
+      [name]: file,
+    }));
+  }
+
+  console.log("file", file)
 
   const handleChange = (e) => {
     const key = e.target.name;
@@ -134,6 +149,17 @@ const Signup = () => {
                 value={values.teacherId}
               />
               }
+              {/* Disable click and keydown behavior on the dropzone */}
+              <Dropzone
+                label="Photo"
+                name="photo"
+                className="w-full pb-8 pr-6 lg:w-1/2"
+                //errors={errors?.image}
+                value={values?.image}
+                accept="image/*"
+                onChange={handleFileChange}
+                multiple={false}
+              />
 
               <div>
                 <button className="btn-signup" type="submit">Sign Up</button>
