@@ -24,7 +24,11 @@ class User extends Authenticatable
         'role',
         'studentId',
         'teacherId',
-        'department'
+        'department',
+        'photo_path',
+        'status',
+        'phone',
+        'batch'
     ];
 
     /**
@@ -33,7 +37,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
+        //'password',
         'remember_token',
     ];
 

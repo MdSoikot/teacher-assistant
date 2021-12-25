@@ -58,6 +58,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        //dd($data);
         function getStudentId($data)
         {
             if (array_key_exists('studentId', $data)) {
@@ -74,7 +75,12 @@ class RegisterController extends Controller
                 return NULL;
             }
         }
-        dd($data);
+        //dd($data['photo']->getClientOriginalName());
+        $imageName = time() . '.' . $data['photo']->extension();
+        $photo_path = "images/" . $imageName;
+        //dd($photo_path);
+        $test = $data['photo']->move(public_path('images'), $imageName);
+        //dd($test);
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -82,6 +88,8 @@ class RegisterController extends Controller
             'role' => $data['role'],
             'studentId' => getStudentId($data),
             'teacherId' => getTeacherId($data),
+            'photo_path' => $photo_path,
+            'status' => 0
         ]);
         return $user;
     }

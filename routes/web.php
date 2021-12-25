@@ -50,3 +50,16 @@ Route::get('profile')
     ->name('profile')
     ->uses('App\Http\Controllers\UserController@index')
     ->middleware('auth');
+Route::put('profile/update/{id}')
+    ->name('profile_update')
+    ->uses('App\Http\Controllers\UserController@update')
+    ->middleware('auth');
+//manageuser
+Route::get('users/pending')
+    ->name('pending_user')
+    ->uses('App\Http\Controllers\UserController@getPendingUser')
+    ->middleware('auth');
+Route::get('users/approved')
+    ->name('approved_user')
+    ->uses('App\Http\Controllers\UserController@getApprovedUser')
+    ->middleware('auth');

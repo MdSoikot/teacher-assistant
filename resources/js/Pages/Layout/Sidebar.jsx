@@ -1,5 +1,5 @@
 import { InertiaLink } from '@inertiajs/inertia-react'
-import React from 'react'
+import React, { useState } from 'react'
 import Profile from '../../Icons/Profile'
 
 
@@ -31,11 +31,16 @@ const useStyles = makeStyles((theme) => ({
 export default function Sidebar() {
 
     const classes = useStyles();
-    const [open, setOpen] = React.useState(false);
-    const [openSecondLevel, setOpenSecondLevel] = React.useState(true);
-    const handleClick = () => {
-        setOpen(!open);
+    const [open, setOpen] = useState({});
+    const [openSecondLevel, setOpenSecondLevel] = useState(true);
+
+    const handleOpen = (item) => {
+        setOpen(oldValues => ({
+            ...oldValues,
+            [item]: !open[item],
+        }));
     };
+
 
     const handleClickSecondLevel = () => {
         setOpenSecondLevel(!openSecondLevel);
@@ -50,14 +55,14 @@ export default function Sidebar() {
                         aria-labelledby="nested-list-subheader"
                         className={classes.root}
                     >
-                        <ListItem button onClick={handleClick}>
+                        <ListItem button onClick={() => handleOpen("manage_profile")}>
                             <ListItemIcon>
                                 <Profile className="sidebar-svg" />
                             </ListItemIcon>
                             <ListItemText primary="Manage Profile" />
-                            {open ? <ExpandLess /> : <ExpandMore />}
+                            {open?.manage_profile ? <ExpandLess /> : <ExpandMore />}
                         </ListItem>
-                        <Collapse in={open} timeout="auto" unmountOnExit>
+                        <Collapse in={open?.manage_profile} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
                                 <ListItem
                                     button
@@ -78,23 +83,16 @@ export default function Sidebar() {
                                     {/* <ListItemText primary="View Profile" /> */}
                                 </ListItem>
                             </List>
-                            <List component="div" disablePadding>
-                                <ListItem button className={classes.nested}>
-                                    <ListItemIcon>
-                                        <StarBorder className="sidebar-svg" />
-                                    </ListItemIcon>
-                                    <ListItemText primary="Edit Profile" />
-                                </ListItem>
-                            </List>
+
                         </Collapse>
-                        <ListItem button onClick={handleClick}>
+                        <ListItem button onClick={() => handleOpen("manage_user")}>
                             <ListItemIcon>
                                 <Profile className="sidebar-svg" />
                             </ListItemIcon>
                             <ListItemText primary="Manage User" />
-                            {open ? <ExpandLess /> : <ExpandMore />}
+                            {open?.manage_user ? <ExpandLess /> : <ExpandMore />}
                         </ListItem>
-                        <Collapse in={open} timeout="auto" unmountOnExit>
+                        <Collapse in={open?.manage_user} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
                                 <ListItem
                                     button
@@ -107,7 +105,7 @@ export default function Sidebar() {
 
                                     <InertiaLink
                                         className="nounderline"
-                                    //href={route('profile')}
+                                        href={route('pending_user')}
                                     >
                                         <ListItemText primary="Pending User" />
                                     </InertiaLink>
@@ -118,7 +116,12 @@ export default function Sidebar() {
                                     <ListItemIcon>
                                         <StarBorder className="sidebar-svg" />
                                     </ListItemIcon>
-                                    <ListItemText primary="Approved User" />
+                                    <InertiaLink
+                                        className="nounderline"
+                                        href={route('approved_user')}
+                                    >
+                                        <ListItemText primary="Approved User" />
+                                    </InertiaLink>
                                 </ListItem>
                             </List>
                         </Collapse>
