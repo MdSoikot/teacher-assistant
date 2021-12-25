@@ -112,7 +112,7 @@ export default function Sidebar() {
                                 </ListItem>
                             </List>
                             <List component="div" disablePadding>
-                                <ListItem button className={classes.nested}>
+                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
                                     <ListItemIcon>
                                         <StarBorder className="sidebar-svg" />
                                     </ListItemIcon>
@@ -121,6 +121,47 @@ export default function Sidebar() {
                                         href={route('approved_user')}
                                     >
                                         <ListItemText primary="Approved User" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                        </Collapse>
+
+                        <ListItem button onClick={() => handleOpen("manage_course")}>
+                            <ListItemIcon>
+                                <Profile className="sidebar-svg" />
+                            </ListItemIcon>
+                            <ListItemText primary="Manage Course" />
+                            {open?.manage_course ? <ExpandLess /> : <ExpandMore />}
+                        </ListItem>
+                        <Collapse in={open?.manage_course} timeout="auto" unmountOnExit>
+                            <List component="div" disablePadding>
+                                <ListItem
+                                    button
+                                    className={classes.nested}
+                                    onClick={handleClickSecondLevel}
+                                >
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+
+                                    <InertiaLink
+                                        className="nounderline"
+                                    //href={route('pending_user')}
+                                    >
+                                        <ListItemText primary="View Course" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                            <List component="div" disablePadding>
+                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+                                    <InertiaLink
+                                        className="nounderline"
+                                    //href={route('approved_user')}
+                                    >
+                                        <ListItemText primary="Add Course" />
                                     </InertiaLink>
                                 </ListItem>
                             </List>
