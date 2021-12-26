@@ -2981,8 +2981,12 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _window, _window$Ziggy;
+
+
+
 
 
 
@@ -2994,13 +2998,31 @@ if (((_window = window) === null || _window === void 0 ? void 0 : (_window$Ziggy
 }
 
 var app = document.getElementById('app');
-(0,react_dom__WEBPACK_IMPORTED_MODULE_1__.render)( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaApp, {
-  initialPage: JSON.parse(app.dataset.page),
-  resolveComponent: function resolveComponent(name) {
-    return __webpack_require__("./resources/js/Pages lazy recursive ^\\.\\/.*$")("./".concat(name)).then(function (module) {
-      return module["default"];
-    });
-  }
+(0,react_dom__WEBPACK_IMPORTED_MODULE_1__.render)( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_hot_toast__WEBPACK_IMPORTED_MODULE_3__.Toaster, {
+    position: "bottom-right",
+    reverseOrder: false,
+    containerStyle: {
+      inset: '-25px 30px 20px -10px'
+    },
+    toastOptions: {
+      duration: 3000,
+      style: {
+        background: '#333',
+        color: '#fff',
+        bottom: 40,
+        padding: '15px 18px',
+        boxShadow: '0 0px 7px rgb(0 0 0 / 30%), 0 3px 30px rgb(0 0 0 / 20%)'
+      }
+    }
+  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaApp, {
+    initialPage: JSON.parse(app.dataset.page),
+    resolveComponent: function resolveComponent(name) {
+      return __webpack_require__("./resources/js/Pages lazy recursive ^\\.\\/.*$")("./".concat(name)).then(function (module) {
+        return module["default"];
+      });
+    }
+  })]
 }), app);
 
 /***/ }),
@@ -3649,6 +3671,27 @@ module.exports = function GetIntrinsic(name, allowMissing) {
 	}
 	return value;
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/goober/dist/goober.modern.js":
+/*!***************************************************!*\
+  !*** ./node_modules/goober/dist/goober.modern.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "css": () => (/* binding */ p),
+/* harmony export */   "extractCss": () => (/* binding */ r),
+/* harmony export */   "glob": () => (/* binding */ g),
+/* harmony export */   "keyframes": () => (/* binding */ b),
+/* harmony export */   "setup": () => (/* binding */ h),
+/* harmony export */   "styled": () => (/* binding */ m)
+/* harmony export */ });
+let e={data:""},t=t=>"object"==typeof window?((t?t.querySelector("#_goober"):window._goober)||Object.assign((t||document.head).appendChild(document.createElement("style")),{innerHTML:" ",id:"_goober"})).firstChild:t||e,r=e=>{let r=t(e),l=r.data;return r.data="",l},l=/(?:([\u0080-\uFFFF\w-%@]+) *:? *([^{;]+?);|([^;}{]*?) *{)|(}\s*)/g,a=/\/\*[^]*?\*\/|\s\s+|\n/g,n=(e,t)=>{let r,l="",a="",o="";for(let s in e){let c=e[s];"object"==typeof c?(r=t?t.replace(/([^,])+/g,e=>s.replace(/(^:.*)|([^,])+/g,t=>/&/.test(t)?t.replace(/&/g,e):e?e+" "+t:t)):s,a+="@"==s[0]?"f"==s[1]?n(c,s):s+"{"+n(c,"k"==s[1]?"":t)+"}":n(c,r)):"@"==s[0]&&"i"==s[1]?l=s+" "+c+";":(s=s.replace(/[A-Z]/g,"-$&").toLowerCase(),o+=n.p?n.p(s,c):s+":"+c+";")}return l+(t&&o?t+"{"+o+"}":o)+a},o={},s=e=>{if("object"==typeof e){let t="";for(let r in e)t+=r+s(e[r]);return t}return e},c=(e,t,r,c,i)=>{let p=s(e),u=o[p]||(o[p]=(e=>{let t=0,r=11;for(;t<e.length;)r=101*r+e.charCodeAt(t++)>>>0;return"go"+r})(p));if(!o[u]){let t=p!==e?e:(e=>{let t,r=[{}];for(;t=l.exec(e.replace(a,""));)t[4]?r.shift():t[3]?r.unshift(r[0][t[3]]=r[0][t[3]]||{}):r[0][t[1]]=t[2];return r[0]})(e);o[u]=n(i?{["@keyframes "+u]:t}:t,r?"":"."+u)}return((e,t,r)=>{-1==t.data.indexOf(e)&&(t.data=r?e+t.data:t.data+e)})(o[u],t,c),u},i=(e,t,r)=>e.reduce((e,l,a)=>{let o=t[a];if(o&&o.call){let e=o(r),t=e&&e.props&&e.props.className||/^go/.test(e)&&e;o=t?"."+t:e&&"object"==typeof e?e.props?"":n(e,""):!1===e?"":e}return e+l+(null==o?"":o)},"");function p(e){let r=this||{},l=e.call?e(r.p):e;return c(l.unshift?l.raw?i(l,[].slice.call(arguments,1),r.p):l.reduce((e,t)=>Object.assign(e,t&&t.call?t(r.p):t),{}):l,t(r.target),r.g,r.o,r.k)}let u,d,f,g=p.bind({g:1}),b=p.bind({k:1});function h(e,t,r,l){n.p=t,u=e,d=r,f=l}function m(e,t){let r=this||{};return function(){let l=arguments;function a(n,o){let s=Object.assign({},n),c=s.className||a.className;r.p=Object.assign({theme:d&&d()},s),r.o=/ *go\d+/.test(c),s.className=p.apply(r,l)+(c?" "+c:""),t&&(s.ref=o);let i=e;return e[0]&&(i=s.as||e,delete s.as),f&&i[0]&&f(s),u(i,s)}return t?t(a):a}}
 
 
 /***/ }),
@@ -32716,6 +32759,764 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/react-hot-toast/dist/react-hot-toast.esm.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "CheckmarkIcon": () => (/* binding */ CheckmarkIcon),
+/* harmony export */   "ErrorIcon": () => (/* binding */ ErrorIcon),
+/* harmony export */   "LoaderIcon": () => (/* binding */ LoaderIcon),
+/* harmony export */   "ToastBar": () => (/* binding */ ToastBar),
+/* harmony export */   "ToastIcon": () => (/* binding */ ToastIcon),
+/* harmony export */   "Toaster": () => (/* binding */ Toaster),
+/* harmony export */   "resolveValue": () => (/* binding */ resolveValue),
+/* harmony export */   "toast": () => (/* binding */ toast),
+/* harmony export */   "useToaster": () => (/* binding */ useToaster),
+/* harmony export */   "useToasterStore": () => (/* binding */ useStore)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var goober__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! goober */ "./node_modules/goober/dist/goober.modern.js");
+
+
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _taggedTemplateLiteralLoose(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+
+  strings.raw = raw;
+  return strings;
+}
+
+var isFunction = function isFunction(valOrFunction) {
+  return typeof valOrFunction === 'function';
+};
+
+var resolveValue = function resolveValue(valOrFunction, arg) {
+  return isFunction(valOrFunction) ? valOrFunction(arg) : valOrFunction;
+};
+
+var genId = /*#__PURE__*/function () {
+  var count = 0;
+  return function () {
+    return (++count).toString();
+  };
+}();
+var createRectRef = function createRectRef(onRect) {
+  return function (el) {
+    if (el) {
+      setTimeout(function () {
+        var boundingRect = el.getBoundingClientRect();
+        onRect(boundingRect);
+      });
+    }
+  };
+};
+var prefersReducedMotion = /*#__PURE__*/function () {
+  // Cache result
+  var shouldReduceMotion = undefined;
+  return function () {
+    if (shouldReduceMotion === undefined && typeof window !== 'undefined') {
+      var mediaQuery = matchMedia('(prefers-reduced-motion: reduce)');
+      shouldReduceMotion = !mediaQuery || mediaQuery.matches;
+    }
+
+    return shouldReduceMotion;
+  };
+}();
+
+var TOAST_LIMIT = 20;
+var ActionType;
+
+(function (ActionType) {
+  ActionType[ActionType["ADD_TOAST"] = 0] = "ADD_TOAST";
+  ActionType[ActionType["UPDATE_TOAST"] = 1] = "UPDATE_TOAST";
+  ActionType[ActionType["UPSERT_TOAST"] = 2] = "UPSERT_TOAST";
+  ActionType[ActionType["DISMISS_TOAST"] = 3] = "DISMISS_TOAST";
+  ActionType[ActionType["REMOVE_TOAST"] = 4] = "REMOVE_TOAST";
+  ActionType[ActionType["START_PAUSE"] = 5] = "START_PAUSE";
+  ActionType[ActionType["END_PAUSE"] = 6] = "END_PAUSE";
+})(ActionType || (ActionType = {}));
+
+var toastTimeouts = /*#__PURE__*/new Map();
+
+var addToRemoveQueue = function addToRemoveQueue(toastId) {
+  if (toastTimeouts.has(toastId)) {
+    return;
+  }
+
+  var timeout = setTimeout(function () {
+    toastTimeouts["delete"](toastId);
+    dispatch({
+      type: ActionType.REMOVE_TOAST,
+      toastId: toastId
+    });
+  }, 1000);
+  toastTimeouts.set(toastId, timeout);
+};
+
+var clearFromRemoveQueue = function clearFromRemoveQueue(toastId) {
+  var timeout = toastTimeouts.get(toastId);
+
+  if (timeout) {
+    clearTimeout(timeout);
+  }
+};
+
+var reducer = function reducer(state, action) {
+  switch (action.type) {
+    case ActionType.ADD_TOAST:
+      return _extends({}, state, {
+        toasts: [action.toast].concat(state.toasts).slice(0, TOAST_LIMIT)
+      });
+
+    case ActionType.UPDATE_TOAST:
+      //  ! Side effects !
+      if (action.toast.id) {
+        clearFromRemoveQueue(action.toast.id);
+      }
+
+      return _extends({}, state, {
+        toasts: state.toasts.map(function (t) {
+          return t.id === action.toast.id ? _extends({}, t, action.toast) : t;
+        })
+      });
+
+    case ActionType.UPSERT_TOAST:
+      var toast = action.toast;
+      return state.toasts.find(function (t) {
+        return t.id === toast.id;
+      }) ? reducer(state, {
+        type: ActionType.UPDATE_TOAST,
+        toast: toast
+      }) : reducer(state, {
+        type: ActionType.ADD_TOAST,
+        toast: toast
+      });
+
+    case ActionType.DISMISS_TOAST:
+      var toastId = action.toastId; // ! Side effects ! - This could be execrated into a dismissToast() action, but I'll keep it here for simplicity
+
+      if (toastId) {
+        addToRemoveQueue(toastId);
+      } else {
+        state.toasts.forEach(function (toast) {
+          addToRemoveQueue(toast.id);
+        });
+      }
+
+      return _extends({}, state, {
+        toasts: state.toasts.map(function (t) {
+          return t.id === toastId || toastId === undefined ? _extends({}, t, {
+            visible: false
+          }) : t;
+        })
+      });
+
+    case ActionType.REMOVE_TOAST:
+      if (action.toastId === undefined) {
+        return _extends({}, state, {
+          toasts: []
+        });
+      }
+
+      return _extends({}, state, {
+        toasts: state.toasts.filter(function (t) {
+          return t.id !== action.toastId;
+        })
+      });
+
+    case ActionType.START_PAUSE:
+      return _extends({}, state, {
+        pausedAt: action.time
+      });
+
+    case ActionType.END_PAUSE:
+      var diff = action.time - (state.pausedAt || 0);
+      return _extends({}, state, {
+        pausedAt: undefined,
+        toasts: state.toasts.map(function (t) {
+          return _extends({}, t, {
+            pauseDuration: t.pauseDuration + diff
+          });
+        })
+      });
+  }
+};
+var listeners = [];
+var memoryState = {
+  toasts: [],
+  pausedAt: undefined
+};
+var dispatch = function dispatch(action) {
+  memoryState = reducer(memoryState, action);
+  listeners.forEach(function (listener) {
+    listener(memoryState);
+  });
+};
+var defaultTimeouts = {
+  blank: 4000,
+  error: 4000,
+  success: 2000,
+  loading: Infinity,
+  custom: 4000
+};
+var useStore = function useStore(toastOptions) {
+  if (toastOptions === void 0) {
+    toastOptions = {};
+  }
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(memoryState),
+      state = _useState[0],
+      setState = _useState[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    listeners.push(setState);
+    return function () {
+      var index = listeners.indexOf(setState);
+
+      if (index > -1) {
+        listeners.splice(index, 1);
+      }
+    };
+  }, [state]);
+  var mergedToasts = state.toasts.map(function (t) {
+    var _toastOptions$t$type, _toastOptions, _toastOptions$t$type2;
+
+    return _extends({}, toastOptions, toastOptions[t.type], t, {
+      duration: t.duration || ((_toastOptions$t$type = toastOptions[t.type]) == null ? void 0 : _toastOptions$t$type.duration) || ((_toastOptions = toastOptions) == null ? void 0 : _toastOptions.duration) || defaultTimeouts[t.type],
+      style: _extends({}, toastOptions.style, (_toastOptions$t$type2 = toastOptions[t.type]) == null ? void 0 : _toastOptions$t$type2.style, t.style)
+    });
+  });
+  return _extends({}, state, {
+    toasts: mergedToasts
+  });
+};
+
+var createToast = function createToast(message, type, opts) {
+  if (type === void 0) {
+    type = 'blank';
+  }
+
+  return _extends({
+    createdAt: Date.now(),
+    visible: true,
+    type: type,
+    ariaProps: {
+      role: 'status',
+      'aria-live': 'polite'
+    },
+    message: message,
+    pauseDuration: 0
+  }, opts, {
+    id: (opts == null ? void 0 : opts.id) || genId()
+  });
+};
+
+var createHandler = function createHandler(type) {
+  return function (message, options) {
+    var toast = createToast(message, type, options);
+    dispatch({
+      type: ActionType.UPSERT_TOAST,
+      toast: toast
+    });
+    return toast.id;
+  };
+};
+
+var toast = function toast(message, opts) {
+  return createHandler('blank')(message, opts);
+};
+
+toast.error = /*#__PURE__*/createHandler('error');
+toast.success = /*#__PURE__*/createHandler('success');
+toast.loading = /*#__PURE__*/createHandler('loading');
+toast.custom = /*#__PURE__*/createHandler('custom');
+
+toast.dismiss = function (toastId) {
+  dispatch({
+    type: ActionType.DISMISS_TOAST,
+    toastId: toastId
+  });
+};
+
+toast.remove = function (toastId) {
+  return dispatch({
+    type: ActionType.REMOVE_TOAST,
+    toastId: toastId
+  });
+};
+
+toast.promise = function (promise, msgs, opts) {
+  var id = toast.loading(msgs.loading, _extends({}, opts, opts == null ? void 0 : opts.loading));
+  promise.then(function (p) {
+    toast.success(resolveValue(msgs.success, p), _extends({
+      id: id
+    }, opts, opts == null ? void 0 : opts.success));
+    return p;
+  })["catch"](function (e) {
+    toast.error(resolveValue(msgs.error, e), _extends({
+      id: id
+    }, opts, opts == null ? void 0 : opts.error));
+  });
+  return promise;
+};
+
+var useToaster = function useToaster(toastOptions) {
+  var _useStore = useStore(toastOptions),
+      toasts = _useStore.toasts,
+      pausedAt = _useStore.pausedAt;
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (pausedAt) {
+      return;
+    }
+
+    var now = Date.now();
+    var timeouts = toasts.map(function (t) {
+      if (t.duration === Infinity) {
+        return;
+      }
+
+      var durationLeft = (t.duration || 0) + t.pauseDuration - (now - t.createdAt);
+
+      if (durationLeft < 0) {
+        if (t.visible) {
+          toast.dismiss(t.id);
+        }
+
+        return;
+      }
+
+      return setTimeout(function () {
+        return toast.dismiss(t.id);
+      }, durationLeft);
+    });
+    return function () {
+      timeouts.forEach(function (timeout) {
+        return timeout && clearTimeout(timeout);
+      });
+    };
+  }, [toasts, pausedAt]);
+  var handlers = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
+    return {
+      startPause: function startPause() {
+        dispatch({
+          type: ActionType.START_PAUSE,
+          time: Date.now()
+        });
+      },
+      endPause: function endPause() {
+        if (pausedAt) {
+          dispatch({
+            type: ActionType.END_PAUSE,
+            time: Date.now()
+          });
+        }
+      },
+      updateHeight: function updateHeight(toastId, height) {
+        return dispatch({
+          type: ActionType.UPDATE_TOAST,
+          toast: {
+            id: toastId,
+            height: height
+          }
+        });
+      },
+      calculateOffset: function calculateOffset(toast, opts) {
+        var _relevantToasts$filte;
+
+        var _ref = opts || {},
+            _ref$reverseOrder = _ref.reverseOrder,
+            reverseOrder = _ref$reverseOrder === void 0 ? false : _ref$reverseOrder,
+            _ref$gutter = _ref.gutter,
+            gutter = _ref$gutter === void 0 ? 8 : _ref$gutter,
+            defaultPosition = _ref.defaultPosition;
+
+        var relevantToasts = toasts.filter(function (t) {
+          return (t.position || defaultPosition) === (toast.position || defaultPosition) && t.height;
+        });
+        var toastIndex = relevantToasts.findIndex(function (t) {
+          return t.id === toast.id;
+        });
+        var toastsBefore = relevantToasts.filter(function (toast, i) {
+          return i < toastIndex && toast.visible;
+        }).length;
+
+        var offset = (_relevantToasts$filte = relevantToasts.filter(function (t) {
+          return t.visible;
+        })).slice.apply(_relevantToasts$filte, reverseOrder ? [toastsBefore + 1] : [0, toastsBefore]).reduce(function (acc, t) {
+          return acc + (t.height || 0) + gutter;
+        }, 0);
+
+        return offset;
+      }
+    };
+  }, [toasts, pausedAt]);
+  return {
+    toasts: toasts,
+    handlers: handlers
+  };
+};
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteralLoose(["\n  width: 20px;\n  opacity: 0;\n  height: 20px;\n  border-radius: 10px;\n  background: ", ";\n  position: relative;\n  transform: rotate(45deg);\n\n  animation: ", " 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)\n    forwards;\n  animation-delay: 100ms;\n\n  &:after,\n  &:before {\n    content: '';\n    animation: ", " 0.15s ease-out forwards;\n    animation-delay: 150ms;\n    position: absolute;\n    border-radius: 3px;\n    opacity: 0;\n    background: ", ";\n    bottom: 9px;\n    left: 4px;\n    height: 2px;\n    width: 12px;\n  }\n\n  &:before {\n    animation: ", " 0.15s ease-out forwards;\n    animation-delay: 180ms;\n    transform: rotate(90deg);\n  }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteralLoose(["\nfrom {\n  transform: scale(0) rotate(90deg);\n\topacity: 0;\n}\nto {\n  transform: scale(1) rotate(90deg);\n\topacity: 1;\n}"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteralLoose(["\nfrom {\n  transform: scale(0);\n  opacity: 0;\n}\nto {\n  transform: scale(1);\n  opacity: 1;\n}"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteralLoose(["\nfrom {\n  transform: scale(0) rotate(45deg);\n\topacity: 0;\n}\nto {\n transform: scale(1) rotate(45deg);\n  opacity: 1;\n}"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var circleAnimation = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject());
+var firstLineAnimation = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject2());
+var secondLineAnimation = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject3());
+var ErrorIcon = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject4(), function (p) {
+  return p.primary || '#ff4b4b';
+}, circleAnimation, firstLineAnimation, function (p) {
+  return p.secondary || '#fff';
+}, secondLineAnimation);
+
+function _templateObject2$1() {
+  var data = _taggedTemplateLiteralLoose(["\n  width: 12px;\n  height: 12px;\n  box-sizing: border-box;\n  border: 2px solid;\n  border-radius: 100%;\n  border-color: ", ";\n  border-right-color: ", ";\n  animation: ", " 1s linear infinite;\n"]);
+
+  _templateObject2$1 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject$1() {
+  var data = _taggedTemplateLiteralLoose(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"]);
+
+  _templateObject$1 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var rotate = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject$1());
+var LoaderIcon = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject2$1(), function (p) {
+  return p.secondary || '#e0e0e0';
+}, function (p) {
+  return p.primary || '#616161';
+}, rotate);
+
+function _templateObject3$1() {
+  var data = _taggedTemplateLiteralLoose(["\n  width: 20px;\n  opacity: 0;\n  height: 20px;\n  border-radius: 10px;\n  background: ", ";\n  position: relative;\n  transform: rotate(45deg);\n\n  animation: ", " 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)\n    forwards;\n  animation-delay: 100ms;\n  &:after {\n    content: '';\n    box-sizing: border-box;\n    animation: ", " 0.2s ease-out forwards;\n    opacity: 0;\n    animation-delay: 200ms;\n    position: absolute;\n    border-right: 2px solid;\n    border-bottom: 2px solid;\n    border-color: ", ";\n    bottom: 6px;\n    left: 6px;\n    height: 10px;\n    width: 6px;\n  }\n"]);
+
+  _templateObject3$1 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2$2() {
+  var data = _taggedTemplateLiteralLoose(["\n0% {\n\theight: 0;\n\twidth: 0;\n\topacity: 0;\n}\n40% {\n  height: 0;\n\twidth: 6px;\n\topacity: 1;\n}\n100% {\n  opacity: 1;\n  height: 10px;\n}"]);
+
+  _templateObject2$2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject$2() {
+  var data = _taggedTemplateLiteralLoose(["\nfrom {\n  transform: scale(0) rotate(45deg);\n\topacity: 0;\n}\nto {\n  transform: scale(1) rotate(45deg);\n\topacity: 1;\n}"]);
+
+  _templateObject$2 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var circleAnimation$1 = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject$2());
+var checkmarkAnimation = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject2$2());
+var CheckmarkIcon = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject3$1(), function (p) {
+  return p.primary || '#61d345';
+}, circleAnimation$1, checkmarkAnimation, function (p) {
+  return p.secondary || '#fff';
+});
+
+function _templateObject4$1() {
+  var data = _taggedTemplateLiteralLoose(["\n  position: relative;\n  transform: scale(0.6);\n  opacity: 0.4;\n  min-width: 20px;\n  animation: ", " 0.3s 0.12s cubic-bezier(0.175, 0.885, 0.32, 1.275)\n    forwards;\n"]);
+
+  _templateObject4$1 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3$2() {
+  var data = _taggedTemplateLiteralLoose(["\nfrom {\n  transform: scale(0.6);\n  opacity: 0.4;\n}\nto {\n  transform: scale(1);\n  opacity: 1;\n}"]);
+
+  _templateObject3$2 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2$3() {
+  var data = _taggedTemplateLiteralLoose(["\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-width: 20px;\n  min-height: 20px;\n"]);
+
+  _templateObject2$3 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject$3() {
+  var data = _taggedTemplateLiteralLoose(["\n  position: absolute;\n"]);
+
+  _templateObject$3 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var StatusWrapper = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject$3());
+var IndicatorWrapper = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject2$3());
+var enter = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject3$2());
+var AnimatedIconWrapper = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject4$1(), enter);
+var ToastIcon = function ToastIcon(_ref) {
+  var toast = _ref.toast;
+  var icon = toast.icon,
+      type = toast.type,
+      iconTheme = toast.iconTheme;
+
+  if (icon !== undefined) {
+    if (typeof icon === 'string') {
+      return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(AnimatedIconWrapper, null, icon);
+    } else {
+      return icon;
+    }
+  }
+
+  if (type === 'blank') {
+    return null;
+  }
+
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(IndicatorWrapper, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(LoaderIcon, Object.assign({}, iconTheme)), type !== 'loading' && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(StatusWrapper, null, type === 'error' ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ErrorIcon, Object.assign({}, iconTheme)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(CheckmarkIcon, Object.assign({}, iconTheme))));
+};
+
+function _templateObject2$4() {
+  var data = _taggedTemplateLiteralLoose(["\n  display: flex;\n  justify-content: center;\n  margin: 4px 10px;\n  color: inherit;\n  flex: 1 1 auto;\n"]);
+
+  _templateObject2$4 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject$4() {
+  var data = _taggedTemplateLiteralLoose(["\n  display: flex;\n  align-items: center;\n  background: #fff;\n  color: #363636;\n  line-height: 1.3;\n  will-change: transform;\n  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.05);\n  max-width: 350px;\n  pointer-events: auto;\n  padding: 8px 10px;\n  border-radius: 8px;\n"]);
+
+  _templateObject$4 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var enterAnimation = function enterAnimation(factor) {
+  return "\n0% {transform: translate3d(0," + factor * -200 + "%,0) scale(.6); opacity:.5;}\n100% {transform: translate3d(0,0,0) scale(1); opacity:1;}\n";
+};
+
+var exitAnimation = function exitAnimation(factor) {
+  return "\n0% {transform: translate3d(0,0,-1px) scale(1); opacity:1;}\n100% {transform: translate3d(0," + factor * -150 + "%,-1px) scale(.6); opacity:0;}\n";
+};
+
+var fadeInAnimation = "0%{opacity:0;} 100%{opacity:1;}";
+var fadeOutAnimation = "0%{opacity:1;} 100%{opacity:0;}";
+var ToastBarBase = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div', react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)( /*#__PURE__*/_templateObject$4());
+var Message = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject2$4());
+
+var getAnimationStyle = function getAnimationStyle(position, visible) {
+  var top = position.includes('top');
+  var factor = top ? 1 : -1;
+
+  var _ref = prefersReducedMotion() ? [fadeInAnimation, fadeOutAnimation] : [enterAnimation(factor), exitAnimation(factor)],
+      enter = _ref[0],
+      exit = _ref[1];
+
+  return {
+    animation: visible ? (0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)(enter) + " 0.35s cubic-bezier(.21,1.02,.73,1) forwards" : (0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)(exit) + " 0.4s forwards cubic-bezier(.06,.71,.55,1)"
+  };
+};
+
+var ToastBar = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(function (_ref2) {
+  var toast = _ref2.toast,
+      position = _ref2.position,
+      style = _ref2.style,
+      children = _ref2.children;
+  var animationStyle = toast != null && toast.height ? getAnimationStyle(toast.position || position || 'top-center', toast.visible) : {
+    opacity: 0
+  };
+  var icon = (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToastIcon, {
+    toast: toast
+  });
+  var message = (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(Message, Object.assign({}, toast.ariaProps), resolveValue(toast.message, toast));
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToastBarBase, {
+    className: toast.className,
+    style: _extends({}, animationStyle, style, toast.style)
+  }, typeof children === 'function' ? children({
+    icon: icon,
+    message: message
+  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, icon, message));
+});
+
+function _templateObject$5() {
+  var data = _taggedTemplateLiteralLoose(["\n  z-index: 9999;\n  > * {\n    pointer-events: auto;\n  }\n"]);
+
+  _templateObject$5 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+(0,goober__WEBPACK_IMPORTED_MODULE_1__.setup)(react__WEBPACK_IMPORTED_MODULE_0__.createElement);
+
+var getPositionStyle = function getPositionStyle(position, offset) {
+  var top = position.includes('top');
+  var verticalStyle = top ? {
+    top: 0
+  } : {
+    bottom: 0
+  };
+  var horizontalStyle = position.includes('center') ? {
+    justifyContent: 'center'
+  } : position.includes('right') ? {
+    justifyContent: 'flex-end'
+  } : {};
+  return _extends({
+    left: 0,
+    right: 0,
+    display: 'flex',
+    position: 'absolute',
+    transition: prefersReducedMotion() ? undefined : "all 230ms cubic-bezier(.21,1.02,.73,1)",
+    transform: "translateY(" + offset * (top ? 1 : -1) + "px)"
+  }, verticalStyle, horizontalStyle);
+};
+
+var activeClass = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.css)( /*#__PURE__*/_templateObject$5());
+var DEFAULT_OFFSET = 16;
+var Toaster = function Toaster(_ref) {
+  var reverseOrder = _ref.reverseOrder,
+      _ref$position = _ref.position,
+      position = _ref$position === void 0 ? 'top-center' : _ref$position,
+      toastOptions = _ref.toastOptions,
+      gutter = _ref.gutter,
+      children = _ref.children,
+      containerStyle = _ref.containerStyle,
+      containerClassName = _ref.containerClassName;
+
+  var _useToaster = useToaster(toastOptions),
+      toasts = _useToaster.toasts,
+      handlers = _useToaster.handlers;
+
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: _extends({
+      position: 'fixed',
+      zIndex: 9999,
+      top: DEFAULT_OFFSET,
+      left: DEFAULT_OFFSET,
+      right: DEFAULT_OFFSET,
+      bottom: DEFAULT_OFFSET,
+      pointerEvents: 'none'
+    }, containerStyle),
+    className: containerClassName,
+    onMouseEnter: handlers.startPause,
+    onMouseLeave: handlers.endPause
+  }, toasts.map(function (t) {
+    var toastPosition = t.position || position;
+    var offset = handlers.calculateOffset(t, {
+      reverseOrder: reverseOrder,
+      gutter: gutter,
+      defaultPosition: position
+    });
+    var positionStyle = getPositionStyle(toastPosition, offset);
+    var ref = t.height ? undefined : createRectRef(function (rect) {
+      handlers.updateHeight(t.id, rect.height);
+    });
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      ref: ref,
+      className: t.visible ? activeClass : '',
+      key: t.id,
+      style: positionStyle
+    }, t.type === 'custom' ? resolveValue(t.message, t) : children ? children(t) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToastBar, {
+      toast: t,
+      position: toastPosition
+    }));
+  }));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toast);
+
+//# sourceMappingURL=react-hot-toast.esm.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/react/cjs/react-jsx-runtime.development.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/react/cjs/react-jsx-runtime.development.js ***!
@@ -37613,6 +38414,26 @@ var map = {
 		9,
 		"resources_js_Pages_Test_jsx"
 	],
+	"./Users/ApprovedUsers": [
+		"./resources/js/Pages/Users/ApprovedUsers.js",
+		9,
+		"resources_js_Pages_Users_ApprovedUsers_js"
+	],
+	"./Users/ApprovedUsers.js": [
+		"./resources/js/Pages/Users/ApprovedUsers.js",
+		9,
+		"resources_js_Pages_Users_ApprovedUsers_js"
+	],
+	"./Users/PendingUsers": [
+		"./resources/js/Pages/Users/PendingUsers.js",
+		9,
+		"resources_js_Pages_Users_PendingUsers_js"
+	],
+	"./Users/PendingUsers.js": [
+		"./resources/js/Pages/Users/PendingUsers.js",
+		9,
+		"resources_js_Pages_Users_PendingUsers_js"
+	],
 	"./Users/Profile": [
 		"./resources/js/Pages/Users/Profile.js",
 		9,
@@ -37661,7 +38482,7 @@ module.exports = webpackAsyncContext;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"_from":"axios@^0.21.1","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"axios@^0.21.1","name":"axios","escapedName":"axios","rawSpec":"^0.21.1","saveSpec":null,"fetchSpec":"^0.21.1"},"_requiredBy":["#DEV:/","/@inertiajs/inertia"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_shasum":"c67b90dc0568e5c1cf2b0b858c43ba28e2eda575","_spec":"axios@^0.21.1","_where":"D:\\\\BitCode\\\\laragon\\\\www\\\\teacher-assistant\\\\node_modules\\\\@inertiajs\\\\inertia","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundleDependencies":false,"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"deprecated":false,"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
+module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"Promise based HTTP client for the browser and node.js","main":"index.js","scripts":{"test":"grunt test","start":"node ./sandbox/server.js","build":"NODE_ENV=production grunt build","preversion":"npm test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json","postversion":"git push && git push --tags","examples":"node ./examples/server.js","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","fix":"eslint --fix lib/**/*.js"},"repository":{"type":"git","url":"https://github.com/axios/axios.git"},"keywords":["xhr","http","ajax","promise","node"],"author":"Matt Zabriskie","license":"MIT","bugs":{"url":"https://github.com/axios/axios/issues"},"homepage":"https://axios-http.com","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"jsdelivr":"dist/axios.min.js","unpkg":"dist/axios.min.js","typings":"./index.d.ts","dependencies":{"follow-redirects":"^1.14.0"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}]}');
 
 /***/ })
 
@@ -37685,7 +38506,7 @@ module.exports = JSON.parse('{"_from":"axios@^0.21.1","_id":"axios@0.21.4","_inB
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
@@ -37802,7 +38623,7 @@ module.exports = JSON.parse('{"_from":"axios@^0.21.1","_id":"axios@0.21.4","_inB
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Auth_ForgotPassword_jsx":1,"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Auth_Signup_jsx":1,"resources_js_Pages_Dashboard_Dashboard_jsx":1,"resources_js_Pages_Home_jsx":1,"resources_js_Pages_Layout_Footer_jsx":1,"resources_js_Pages_Layout_Layout_jsx":1,"resources_js_Pages_Layout_Navbar_jsx":1,"resources_js_Pages_Layout_Sidebar_jsx":1,"resources_js_Pages_Test_jsx":1,"resources_js_Pages_Users_Profile_js":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Auth_ForgotPassword_jsx":1,"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Auth_Signup_jsx":1,"resources_js_Pages_Dashboard_Dashboard_jsx":1,"resources_js_Pages_Home_jsx":1,"resources_js_Pages_Layout_Footer_jsx":1,"resources_js_Pages_Layout_Layout_jsx":1,"resources_js_Pages_Layout_Navbar_jsx":1,"resources_js_Pages_Layout_Sidebar_jsx":1,"resources_js_Pages_Test_jsx":1,"resources_js_Pages_Users_ApprovedUsers_js":1,"resources_js_Pages_Users_PendingUsers_js":1,"resources_js_Pages_Users_Profile_js":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
