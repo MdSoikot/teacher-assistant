@@ -10666,7 +10666,7 @@ video {
 .signup-leftside {
   background: #1565D8;
   width     : 40%;
-  height    : 100vh;
+  height    : 110vh;
   padding   : 20px 40px;
 }
 
@@ -10726,6 +10726,15 @@ video {
   margin-top   : 10px;
 }
 
+.pro-pic {
+  //position  : absolute;
+  //right     : 5px;
+  //top       : -18px;
+  max-height  : 40px !important;
+  max-width   : 40px !important;
+  //background: #ffffff;
+}
+
 /*.........TextInput.........*/
 
 .textinput-input {
@@ -10756,6 +10765,10 @@ video {
   padding-left  : 24px;
   padding-top   : 36px;
   gap           : 32px;
+}
+
+.form-error {
+  color: #D8000C !important;
 }
 
 /*.........Login..........*/
@@ -10861,8 +10874,88 @@ video {
   background-color: #002979 !important;
 }
 
+.makeStyles-nested-2 {
+  padding-left: 16px !important;
+}
+
 .nounderline {
   text-decoration: none !important;
+}
+
+/*...........Dropzone.......*/
+
+.browse-image {
+  font-weight    : 600;
+  text-decoration: underline;
+  margin-left    : 5px;
+}
+
+.dropzone {
+  position     : relative;
+  /* width     : 445px; */
+  height       : 76px;
+  background   : #f2f2f2;
+  border       : 1.5px dashed #919191;
+  box-sizing   : border-box;
+  border-radius: 10px;
+  overflow     : hidden;
+  /* Inside Auto Layout */
+  flex     : none;
+  order    : 1;
+  flex-grow: 0;
+  margin   : 8px 0px;
+}
+
+.dropzone p {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  height         : 100%;
+}
+
+.dropzone p svg {
+  margin-right: 5px;
+}
+
+.dropzone-thumbnail {
+  display      : flex;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  margin-right : 8px;
+  box-sizing   : 'border-box';
+  position     : absolute;
+  top          : 0;
+  overflow     : hidden;
+  height       : 100%;
+  width        : 100%;
+  background   : #f2f2f2;
+}
+
+.dropzone-thumbnail-inner {
+  display     : flex;
+  width       : 100%;
+  overflow    : hidden;
+  gap         : 18px;
+  padding-top : 7px;
+  padding-left: 18px;
+  align-items : center;
+}
+
+.dropzone-thumbnail-image {
+  position: relative;
+}
+
+.dropzone-thumbnail-image img {
+  display: block;
+  width  : 56px;
+  height : 56px;
+}
+
+.dropzone-thumbnail-close {
+  position: absolute;
+  top     : -8px;
+  right   : -8px;
+  cursor  : pointer;
 }
 
 /* Utilities */
