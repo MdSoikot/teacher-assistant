@@ -63,3 +63,11 @@ Route::get('users/approved')
     ->name('approved_user')
     ->uses('App\Http\Controllers\UserController@getApprovedUser')
     ->middleware('auth');
+Route::post('users/approved')
+    ->name('accept_user')
+    ->uses('App\Http\Controllers\UserController@approvedUser')
+    ->middleware('auth');
+Route::post('users/decline')
+    ->name('decline_user}')
+    ->uses('App\Http\Controllers\UserController@declineUser')
+    ->middleware('auth');

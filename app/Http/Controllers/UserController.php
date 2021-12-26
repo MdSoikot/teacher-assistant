@@ -39,6 +39,15 @@ class UserController extends Controller
         ]);
     }
 
+    public function approvedUser(Request $request)
+    {
+        dd($request->all());
+    }
+    public function declineUser(Request $request)
+    {
+        dd($request->all());
+    }
+
     /**
      * Show the form for creating a new resource.
      *

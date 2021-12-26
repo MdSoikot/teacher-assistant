@@ -55,6 +55,7 @@ export default function Sidebar() {
                         aria-labelledby="nested-list-subheader"
                         className={classes.root}
                     >
+                        {/* .........Manage Profile Start.......... */}
                         <ListItem button onClick={() => handleOpen("manage_profile")}>
                             <ListItemIcon>
                                 <Profile className="sidebar-svg" />
@@ -85,6 +86,9 @@ export default function Sidebar() {
                             </List>
 
                         </Collapse>
+                        {/* .........Manage Profile End.......... */}
+
+                        {/* .........Manage User Start.......... */}
                         <ListItem button onClick={() => handleOpen("manage_user")}>
                             <ListItemIcon>
                                 <Profile className="sidebar-svg" />
@@ -125,7 +129,9 @@ export default function Sidebar() {
                                 </ListItem>
                             </List>
                         </Collapse>
+                        {/* .........Manage User End.......... */}
 
+                        {/* .........Manage Course Start.......... */}
                         <ListItem button onClick={() => handleOpen("manage_course")}>
                             <ListItemIcon>
                                 <Profile className="sidebar-svg" />
@@ -166,6 +172,132 @@ export default function Sidebar() {
                                 </ListItem>
                             </List>
                         </Collapse>
+                        {/* .........Manage Course End............ */}
+
+                        {/* .........Manage Manage Substitute Teacher Start.......... */}
+                        <ListItem button onClick={() => handleOpen("manage_sub_teacher")}>
+                            <ListItemIcon>
+                                <Profile className="sidebar-svg" />
+                            </ListItemIcon>
+                            <ListItemText primary="Manage Subs. Teacher" />
+                            {open?.manage_sub_teacher ? <ExpandLess /> : <ExpandMore />}
+                        </ListItem>
+                        <Collapse in={open?.manage_sub_teacher} timeout="auto" unmountOnExit>
+                            <List component="div" disablePadding>
+                                <ListItem
+                                    button
+                                    className={classes.nested}
+                                    onClick={handleClickSecondLevel}
+                                >
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+
+                                    <InertiaLink
+                                        className="nounderline"
+                                    //href={route('pending_user')}
+                                    >
+                                        <ListItemText primary="View Subs. Teacher" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                            <List component="div" disablePadding>
+                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+                                    <InertiaLink
+                                        className="nounderline"
+                                    //href={route('approved_user')}
+                                    >
+                                        <ListItemText primary="Add Substitue Teacher" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                        </Collapse>
+                        {/* .........Manage Substitute Teacher End............ */}
+
+                        {/* .........Generate Report Start.......... */}
+                        <ListItem button onClick={() => handleOpen("generate_report")}>
+                            <ListItemIcon>
+                                <Profile className="sidebar-svg" />
+                            </ListItemIcon>
+                            <ListItemText primary="Generate Report" />
+                            {open?.generate_report ? <ExpandLess /> : <ExpandMore />}
+                        </ListItem>
+                        <Collapse in={open?.generate_report} timeout="auto" unmountOnExit>
+                            <List component="div" disablePadding>
+                                <ListItem
+                                    button
+                                    className={classes.nested}
+                                    onClick={handleClickSecondLevel}
+                                >
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+
+                                    <InertiaLink
+                                        className="nounderline"
+                                    //href={route('pending_user')}
+                                    >
+                                        <ListItemText primary="Mark Sheet" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                            <List component="div" disablePadding>
+                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+                                    <InertiaLink
+                                        className="nounderline"
+                                    //href={route('approved_user')}
+                                    >
+                                        <ListItemText primary="Student List" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                            <List component="div" disablePadding>
+                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+                                    <InertiaLink
+                                        className="nounderline"
+                                    //href={route('approved_user')}
+                                    >
+                                        <ListItemText primary="Course Outline" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                            <List component="div" disablePadding>
+                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+                                    <InertiaLink
+                                        className="nounderline"
+                                    //href={route('approved_user')}
+                                    >
+                                        <ListItemText primary="Class Routine" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                            <List component="div" disablePadding>
+                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+                                    <InertiaLink
+                                        className="nounderline"
+                                    //href={route('approved_user')}
+                                    >
+                                        <ListItemText primary="Subs. Teacher List" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                        </Collapse>
+                        {/* .........Generate Report End............ */}
                     </List>
                 </div>
 
