@@ -3,6 +3,7 @@ import { usePage } from '@inertiajs/inertia-react';
 
 const Navbar = () => {
     const { userInfo } = usePage().props;
+    console.log({ userInfo })
     const photoSrc = userInfo?.photo_path || ""
     const userName = userInfo?.name || ""
     return (
@@ -12,9 +13,9 @@ const Navbar = () => {
             </div>
             <div className='font-montserrat-600 text-lg flex flex-row'>
                 <Link className='mr-6' method='post' as="button" href='/logout'>Logout</Link>
-                {photoSrc? (
+                {photoSrc ? (
                     <img className=" w-40 h-40 rounded-3xl mr-5 pro-pic" src={photoSrc} alt="user" />
-                ):(
+                ) : (
                     <h3>{userName}</h3>
                 )}
             </div>

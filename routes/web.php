@@ -85,6 +85,19 @@ Route::get('course/view')
     ->name('view_course')
     ->uses('App\Http\Controllers\CourseController@show')
     ->middleware('auth');
+//Manage Substitue Teacher
+Route::get('substitute_teacher')
+    ->name('substitute_teacher')
+    ->uses('App\Http\Controllers\SubstituteTeacherController@index')
+    ->middleware('auth');
+Route::get('substitute_teacher/add')
+    ->name('add_substitute_teacher')
+    ->uses('App\Http\Controllers\CourseController@create')
+    ->middleware('auth');
+Route::get('course/view')
+    ->name('view_course')
+    ->uses('App\Http\Controllers\CourseController@show')
+    ->middleware('auth');
 
 
 
