@@ -152,7 +152,7 @@ export default function Sidebar() {
 
                                     <InertiaLink
                                         className="nounderline"
-                                    //href={route('pending_user')}
+                                    //href={route('course')}
                                     >
                                         <ListItemText primary="View Course" />
                                     </InertiaLink>
@@ -165,7 +165,7 @@ export default function Sidebar() {
                                     </ListItemIcon>
                                     <InertiaLink
                                         className="nounderline"
-                                    //href={route('approved_user')}
+                                        href={route('course')}
                                     >
                                         <ListItemText primary="Add Course" />
                                     </InertiaLink>

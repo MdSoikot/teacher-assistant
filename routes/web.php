@@ -71,3 +71,9 @@ Route::post('users/decline')
     ->name('decline_user}')
     ->uses('App\Http\Controllers\UserController@declineUser')
     ->middleware('auth');
+
+// Manage Courses
+Route::get('course')
+    ->name('course')
+    ->uses('App\Http\Controllers\CourseController@index')
+    ->middleware('auth');
