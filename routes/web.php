@@ -77,3 +77,11 @@ Route::get('course')
     ->name('course')
     ->uses('App\Http\Controllers\CourseController@index')
     ->middleware('auth');
+Route::get('course/add')
+    ->name('add_course')
+    ->uses('App\Http\Controllers\CourseController@create')
+    ->middleware('auth');
+Route::get('course/view')
+    ->name('view_course')
+    ->uses('App\Http\Controllers\CourseController@show')
+    ->middleware('auth');

@@ -25,7 +25,7 @@ class CourseController extends Controller
      */
     public function create()
     {
-        //
+        //create course after submit 
     }
 
     /**
@@ -47,7 +47,8 @@ class CourseController extends Controller
      */
     public function show(Course $course)
     {
-        //
+        //view course table
+        return Inertia::render('Course/ViewCourse');
     }
 
     /**
