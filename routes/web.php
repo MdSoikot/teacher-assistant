@@ -90,20 +90,11 @@ Route::get('substitute_teacher')
     ->name('substitute_teacher')
     ->uses('App\Http\Controllers\SubstituteTeacherController@index')
     ->middleware('auth');
-Route::get('substitute_teacher/add')
+Route::post('substitute_teacher/add')
     ->name('add_substitute_teacher')
-    ->uses('App\Http\Controllers\CourseController@create')
+    ->uses('App\Http\Controllers\SubstituteTeacherController@create')
     ->middleware('auth');
-Route::get('course/view')
-    ->name('view_course')
-    ->uses('App\Http\Controllers\CourseController@show')
-    ->middleware('auth');
-
-
-
-// navbar propic
-
-Route::get('Navbar')
-    ->name('navbar')
-    ->uses('App\Http\Controllers\UserController@index')
+Route::get('substitute_teacher/view')
+    ->name('view_substitute_teacher')
+    ->uses('App\Http\Controllers\SubstituteTeacherController@show')
     ->middleware('auth');
