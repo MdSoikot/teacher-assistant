@@ -20,6 +20,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var Navbar = function Navbar() {
   var userInfo = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.usePage)().props.userInfo;
+  console.log({
+    userInfo: userInfo
+  });
   var photoSrc = (userInfo === null || userInfo === void 0 ? void 0 : userInfo.photo_path) || "";
   var userName = (userInfo === null || userInfo === void 0 ? void 0 : userInfo.name) || "";
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
