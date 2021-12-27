@@ -77,3 +77,12 @@ Route::get('course')
     ->name('course')
     ->uses('App\Http\Controllers\CourseController@index')
     ->middleware('auth');
+
+
+
+// navbar propic
+
+Route::get('Navbar')
+    ->name('navbar')
+    ->uses('App\Http\Controllers\UserController@index')
+    ->middleware('auth');
