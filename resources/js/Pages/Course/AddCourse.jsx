@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import { toFormData } from "../../utils";
 import { Inertia } from "@inertiajs/inertia";
 import toast from "react-hot-toast";
+import Dropzone from "../../Shared/Dropzone";
 
 const AddCourse = () => {
     const handleChange = (e) => {
@@ -18,6 +19,12 @@ const AddCourse = () => {
             [key]: value,
         }));
     };
+    const handleFileChange = (file, name) => {
+        setValues(oldValues => ({
+            ...oldValues,
+            [name]: file,
+        }));
+    }
     return (
         <div className="main-div">
             <div className="font-inter-600 text-3xl mb-4 flex gap-4">
@@ -86,28 +93,17 @@ const AddCourse = () => {
                         />} */}
                     </div>
                     <div className="main-card__right">
-                        <TextInput
-                            id="batch"
-                            name="batch"
-                            label="Batch"
-                            type="text"
-                            onChange={handleChange}
-                            inputClass="profile-textinput-input"
-                            inputLabelClass="font-inter-600 text-md"
-                            placeholder="Batch No"
-                            // value={values?.batch}
+                    <Dropzone
+                            label="Upload PDF or IMAGE"
+                            name="pdf"
+                            className="w-full pb-8 pr-6 lg:w-1/2"
+                            //errors={errors?.image}
+                            // value={values?.photo}
+                            accept="image/*, *.pdf"
+                            onChange={handleFileChange}
+                            multiple={false}
                         />
-                        <TextInput
-                            id="department"
-                            name="department"
-                            label="Department"
-                            type="text"
-                            onChange={handleChange}
-                            inputClass="profile-textinput-input"
-                            inputLabelClass="font-inter-600 text-md"
-                            placeholder="Department Name"
-                            // value={values?.department}
-                        />
+                        
 
                         <div className="pt-3">
                             <Button
