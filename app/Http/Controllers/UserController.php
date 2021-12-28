@@ -39,13 +39,16 @@ class UserController extends Controller
         ]);
     }
 
-    public function approvedUser(Request $request)
+    public function approvedUser(Request $request, $id)
     {
-        dd($request->all());
+        $updateStatus = User::where('id', $id)->update(['status' => 1]);
+        return Redirect::back();
     }
-    public function declineUser(Request $request)
+    public function declineUser(Request $request, $id)
     {
-        dd($request->all());
+        //dd($id);
+        $deleteUser = User::where('id', $id)->delete();
+        return Redirect::back();
     }
 
     /**

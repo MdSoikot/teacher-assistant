@@ -15,7 +15,9 @@ class SubstituteTeacherController extends Controller
     }
     public function show()
     {
-        return Inertia::render('SubsTeacher/ViewSubTeacher');
+        $subsTeacher = SubstituteTeacher::all();
+        //dd($subsTeacher);
+        return Inertia::render('SubsTeacher/ViewSubTeacher', ['subsTeacher' => $subsTeacher]);
     }
     public function create(Request $request)
     {
