@@ -174,12 +174,12 @@ export default function Sidebar() {
                         </Collapse>
                         {/* .........Manage Course End............ */}
 
-                        {/* .........Manage Manage Substitute Teacher Start.......... */}
+                        {/* .........Manage Substitute Teacher Start.......... */}
                         <ListItem button onClick={() => handleOpen("manage_sub_teacher")}>
                             <ListItemIcon>
                                 <Profile className="sidebar-svg" />
                             </ListItemIcon>
-                            <ListItemText primary="Manage Subs. Teacher" />
+                            <ListItemText primary="Manage Teacher" />
                             {open?.manage_sub_teacher ? <ExpandLess /> : <ExpandMore />}
                         </ListItem>
                         <Collapse in={open?.manage_sub_teacher} timeout="auto" unmountOnExit>
@@ -197,7 +197,7 @@ export default function Sidebar() {
                                         className="nounderline"
                                         href={route('view_substitute_teacher')}
                                     >
-                                        <ListItemText primary="View Subs. Teacher" />
+                                        <ListItemText primary="View Teacher" />
                                     </InertiaLink>
                                 </ListItem>
                             </List>
@@ -210,7 +210,7 @@ export default function Sidebar() {
                                         className="nounderline"
                                         href={route('substitute_teacher')}
                                     >
-                                        <ListItemText primary="Add Substitue Teacher" />
+                                        <ListItemText primary="Add Teacher" />
                                     </InertiaLink>
                                 </ListItem>
                             </List>
