@@ -240,7 +240,7 @@ export default function Sidebar() {
                                         className="nounderline"
                                     //href={route('pending_user')}
                                     >
-                                        <ListItemText primary="Mark Sheet" />
+                                        <ListItemText primary="Static Report" />
                                     </InertiaLink>
                                 </ListItem>
                             </List>
@@ -253,46 +253,7 @@ export default function Sidebar() {
                                         className="nounderline"
                                     //href={route('approved_user')}
                                     >
-                                        <ListItemText primary="Student List" />
-                                    </InertiaLink>
-                                </ListItem>
-                            </List>
-                            <List component="div" disablePadding>
-                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
-                                    <ListItemIcon>
-                                        <StarBorder className="sidebar-svg" />
-                                    </ListItemIcon>
-                                    <InertiaLink
-                                        className="nounderline"
-                                    //href={route('approved_user')}
-                                    >
-                                        <ListItemText primary="Course Outline" />
-                                    </InertiaLink>
-                                </ListItem>
-                            </List>
-                            <List component="div" disablePadding>
-                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
-                                    <ListItemIcon>
-                                        <StarBorder className="sidebar-svg" />
-                                    </ListItemIcon>
-                                    <InertiaLink
-                                        className="nounderline"
-                                    //href={route('approved_user')}
-                                    >
-                                        <ListItemText primary="Class Routine" />
-                                    </InertiaLink>
-                                </ListItem>
-                            </List>
-                            <List component="div" disablePadding>
-                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
-                                    <ListItemIcon>
-                                        <StarBorder className="sidebar-svg" />
-                                    </ListItemIcon>
-                                    <InertiaLink
-                                        className="nounderline"
-                                    //href={route('approved_user')}
-                                    >
-                                        <ListItemText primary="Subs. Teacher List" />
+                                        <ListItemText primary="Dynamic Report" />
                                     </InertiaLink>
                                 </ListItem>
                             </List>

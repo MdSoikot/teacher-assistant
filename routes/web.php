@@ -98,3 +98,14 @@ Route::get('substitute_teacher/view')
     ->name('view_substitute_teacher')
     ->uses('App\Http\Controllers\SubstituteTeacherController@show')
     ->middleware('auth');
+
+//Manage Report
+
+Route::get('static_report_form')
+    ->name('show_static_report_form')
+    ->uses('App\Http\Controllers\reportController@showStaticReportForm')
+    ->middleware('auth');
+Route::get('dynamic_report_form')
+    ->name('show_dynamic_report_form')
+    ->uses('App\Http\Controllers\reportController@showDynamicReportForm')
+    ->middleware('auth');
