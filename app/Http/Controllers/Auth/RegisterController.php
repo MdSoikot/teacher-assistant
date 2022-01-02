@@ -75,7 +75,6 @@ class RegisterController extends Controller
                 return NULL;
             }
         }
-        //dd($data['photo']->getClientOriginalName());
         $imageName = time() . '.' . $data['photo']->extension();
         $photo_path = "images/" . $imageName;
         //dd($photo_path);

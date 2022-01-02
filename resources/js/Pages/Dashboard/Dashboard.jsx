@@ -1,6 +1,9 @@
+import { $user } from "../../GlobalStates"
 import Layout from "../Layout/Layout"
+import { useRecoilValue } from 'recoil'
 
 const Dashboard = () => {
+    //const user = useRecoilValue($user)
     return (
         <div>
             <h1>Dashboard</h1>

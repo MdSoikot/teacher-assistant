@@ -15,6 +15,13 @@ class CreateSubstituteTeachersTable extends Migration
     {
         Schema::create('substitute_teachers', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable()->default(null);
+            $table->string('email')->nullable()->default(null);
+            $table->string('department')->nullable()->default(null);
+            $table->string('phone')->nullable()->default(null);
+            $table->string('designation')->nullable()->default(null);
+            $table->string('office_room_no')->nullable()->default(null);
+            $table->string('teacher_id')->nullable()->default(null);
             $table->timestamps();
         });
     }

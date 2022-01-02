@@ -1,7 +1,7 @@
 import { usePage } from '@inertiajs/inertia-react';
 import { kaReducer, Table } from 'ka-table';
 import { DataType } from 'ka-table/enums';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../Layout/Layout'
 import "ka-table/style.scss";
 import { deleteRow } from 'ka-table/actionCreators';
@@ -9,10 +9,16 @@ import ThreeLine from '../../Icons/ThreeLine';
 import Approved from '../../Icons/Approved';
 import Decline from '../../Icons/Decline';
 import axios from 'axios';
+import { toFormData } from '../../utils';
+import { Inertia } from '@inertiajs/inertia';
+import toast from 'react-hot-toast';
 
 const PendingUsers = () => {
 
     const { pendingUsers } = usePage().props;
+    useEffect(() => {
+        console.log("i")
+    }, [])
     const dataArray = pendingUsers
     const tablePropsInit = {
         columns: [
@@ -37,10 +43,22 @@ const PendingUsers = () => {
     };
 
     const handleAction = (rowKeyValue, status) => {
+        const data = {
+        }
         if (status === 'approved') {
-            axios.post(route('accept_user', rowKeyValue))
+            const formData = toFormData(data, 'PUT');
+            Inertia.post(route('accept_user', rowKeyValue), formData, {
+                onFinish: () => {
+                    toast.success("Approved Successfully")
+                }
+            });
         } else {
-            axios.post(route('decline_user', rowKeyValue))
+            const formData = toFormData(data, 'PUT');
+            Inertia.post(route('decline_user', rowKeyValue), formData), {
+                onFinish: () => {
+                    toast.success("Decline Successfully")
+                }
+            }
         }
     }
 

@@ -63,12 +63,12 @@ Route::get('users/approved')
     ->name('approved_user')
     ->uses('App\Http\Controllers\UserController@getApprovedUser')
     ->middleware('auth');
-Route::post('users/approved')
+Route::put('users/approved_user/{id}')
     ->name('accept_user')
     ->uses('App\Http\Controllers\UserController@approvedUser')
     ->middleware('auth');
-Route::post('users/decline')
-    ->name('decline_user}')
+Route::put('users/decline/{id}')
+    ->name('decline_user')
     ->uses('App\Http\Controllers\UserController@declineUser')
     ->middleware('auth');
 
@@ -90,20 +90,11 @@ Route::get('substitute_teacher')
     ->name('substitute_teacher')
     ->uses('App\Http\Controllers\SubstituteTeacherController@index')
     ->middleware('auth');
-Route::get('substitute_teacher/add')
+Route::post('substitute_teacher/add')
     ->name('add_substitute_teacher')
-    ->uses('App\Http\Controllers\CourseController@create')
+    ->uses('App\Http\Controllers\SubstituteTeacherController@create')
     ->middleware('auth');
-Route::get('course/view')
-    ->name('view_course')
-    ->uses('App\Http\Controllers\CourseController@show')
-    ->middleware('auth');
-
-
-
-// navbar propic
-
-Route::get('Navbar')
-    ->name('navbar')
-    ->uses('App\Http\Controllers\UserController@index')
+Route::get('substitute_teacher/view')
+    ->name('view_substitute_teacher')
+    ->uses('App\Http\Controllers\SubstituteTeacherController@show')
     ->middleware('auth');

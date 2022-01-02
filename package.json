@@ -48,6 +48,7 @@
         "react-hot-toast": "^2.1.1",
         "react-minimal-side-navigation": "^1.9.2",
         "react-multiple-select-dropdown-lite": "^2.0.4",
-        "react-router-dom": "^6.1.1"
+        "react-router-dom": "^6.1.1",
+        "recoil": "^0.5.2"
     }
 }
