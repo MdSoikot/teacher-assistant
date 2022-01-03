@@ -7269,8 +7269,8 @@ function Sidebar() {
                     className: "sidebar-svg"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
-                  className: "nounderline" //href={route('pending_user')}
-                  ,
+                  className: "nounderline",
+                  href: route('view_substitute_teacher'),
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
                     primary: "View Subs. Teacher"
                   })
@@ -7288,8 +7288,8 @@ function Sidebar() {
                     className: "sidebar-svg"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
-                  className: "nounderline" //href={route('approved_user')}
-                  ,
+                  className: "nounderline",
+                  href: route('substitute_teacher'),
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
                     primary: "Add Substitue Teacher"
                   })
@@ -7441,7 +7441,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Icons_Decline__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Icons/Decline */ "./resources/js/Icons/Decline.jsx");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../utils */ "./resources/js/utils.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -7474,8 +7477,14 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
+
 var PendingUsers = function PendingUsers() {
   var pendingUsers = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.usePage)().props.pendingUsers;
+  (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(function () {
+    console.log("i");
+  }, []);
   var dataArray = pendingUsers;
   var tablePropsInit = {
     columns: [{
@@ -7539,30 +7548,43 @@ var PendingUsers = function PendingUsers() {
   };
 
   var handleAction = function handleAction(rowKeyValue, status) {
+    var data = {};
+
     if (status === 'approved') {
-      axios__WEBPACK_IMPORTED_MODULE_10___default().post(route('accept_user', rowKeyValue));
+      var formData = (0,_utils__WEBPACK_IMPORTED_MODULE_11__.toFormData)(data, 'PUT');
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_12__.Inertia.post(route('accept_user', rowKeyValue), formData, {
+        onFinish: function onFinish() {
+          react_hot_toast__WEBPACK_IMPORTED_MODULE_14__["default"].success("Approved Successfully");
+        }
+      });
     } else {
-      axios__WEBPACK_IMPORTED_MODULE_10___default().post(route('decline_user', rowKeyValue));
+      var _formData = (0,_utils__WEBPACK_IMPORTED_MODULE_11__.toFormData)(data, 'PUT');
+
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_12__.Inertia.post(route('decline_user', rowKeyValue), _formData), {
+        onFinish: function onFinish() {
+          react_hot_toast__WEBPACK_IMPORTED_MODULE_14__["default"].success("Decline Successfully");
+        }
+      };
     }
   };
 
   var DeleteRow = function DeleteRow(_ref) {
     var dispatch = _ref.dispatch,
         rowKeyValue = _ref.rowKeyValue;
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
       className: "flex gap-1",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("span", {
         className: "cursor-pointer",
         onClick: function onClick() {
           return handleAction(rowKeyValue, "approved");
         },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Icons_Approved__WEBPACK_IMPORTED_MODULE_8__["default"], {})
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Icons_Approved__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("span", {
         className: "cursor-pointer",
         onClick: function onClick() {
           return handleAction(rowKeyValue, "decline");
         },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Icons_Decline__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Icons_Decline__WEBPACK_IMPORTED_MODULE_9__["default"], {})
       })]
     }) // <img
     //     src="https://komarovalexander.github.io/ka-table/static/icons/delete.svg"
@@ -7573,23 +7595,23 @@ var PendingUsers = function PendingUsers() {
     ;
   };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
     className: "main-div",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
       className: "font-inter-600 text-3xl mb-4 flex gap-4",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("span", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("span", {
         children: "Pending User"
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
       className: "main-card",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("input", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("input", {
         type: "search",
         defaultValue: tableProps.searchText,
         onChange: function onChange(event) {
           dispatch(search(event.currentTarget.value));
         },
         className: "top-element"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(ka_table__WEBPACK_IMPORTED_MODULE_1__.Table, _objectSpread(_objectSpread({}, tableProps), {}, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(ka_table__WEBPACK_IMPORTED_MODULE_1__.Table, _objectSpread(_objectSpread({}, tableProps), {}, {
         childComponents: {
           noDataRow: {
             content: function content() {
@@ -7600,7 +7622,7 @@ var PendingUsers = function PendingUsers() {
             content: function content(props) {
               switch (props.column.key) {
                 case ':action':
-                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(DeleteRow, _objectSpread({}, props));
+                  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(DeleteRow, _objectSpread({}, props));
               }
             }
           }
@@ -7612,12 +7634,60 @@ var PendingUsers = function PendingUsers() {
 };
 
 PendingUsers.layout = function (page) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     children: page
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PendingUsers);
+
+/***/ }),
+
+/***/ "./resources/js/utils.js":
+/*!*******************************!*\
+  !*** ./resources/js/utils.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "filesize": () => (/* binding */ filesize),
+/* harmony export */   "toFormData": () => (/* binding */ toFormData),
+/* harmony export */   "uniqId": () => (/* binding */ uniqId),
+/* harmony export */   "capitalize": () => (/* binding */ capitalize)
+/* harmony export */ });
+function filesize(size) {
+  var i = Math.floor(Math.log(size) / Math.log(1024));
+  return "".concat((size / Math.pow(1024, i)).toFixed(2) * 1, " ").concat(['B', 'kB', 'MB', 'GB', 'TB'][i]);
+} // Transforms key/value pairs to FormData() object
+
+function toFormData() {
+  var values = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var method = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'POST';
+  var formData = new FormData();
+  Object.keys(values).forEach(function (field) {
+    return formData.append(field, values[field]);
+  }); // NOTE: When working with Laravel PUT/PATCH requests and FormData
+  // you SHOULD send POST request and fake the PUT request like this.
+  // More info: http://stackoverflow.com/q/50691938
+
+  if (method.toUpperCase() === 'PUT') {
+    formData.append('_method', 'PUT');
+  }
+
+  return formData;
+}
+var uniqId = function uniqId() {
+  var a = new Uint32Array(3);
+  window.crypto.getRandomValues(a);
+  return (performance.now().toString(36) + Array.from(a).map(function (A) {
+    return A.toString(36);
+  }).join('')).replace(/\./g, '');
+};
+var capitalize = function capitalize(s) {
+  return s && s[0].toUpperCase() + s.slice(1) || '';
+};
 
 /***/ }),
 

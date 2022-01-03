@@ -13,6 +13,9 @@ import { toFormData } from '../../utils';
 import { Inertia } from '@inertiajs/inertia';
 import toast from 'react-hot-toast';
 
+
+
+
 const PendingUsers = () => {
 
     const { pendingUsers } = usePage().props;

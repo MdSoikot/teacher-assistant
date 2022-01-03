@@ -6796,7 +6796,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Layout/Layout */ "./resources/js/Pages/Layout/Layout.jsx");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var ka_table_utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ka-table/utils */ "./node_modules/ka-table/utils.js");
+/* harmony import */ var ka_table_utils__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ka_table_utils__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ka-table/actionCreators */ "./node_modules/ka-table/actionCreators.js");
+/* harmony import */ var ka_table_props__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ka-table/props */ "./node_modules/ka-table/props.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -6807,14 +6811,21 @@ function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArra
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
 
@@ -6823,42 +6834,112 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
+
+
+
+
+
+var SelectionCell = function SelectionCell(_ref) {
+  var rowKeyValue = _ref.rowKeyValue,
+      dispatch = _ref.dispatch,
+      isSelectedRow = _ref.isSelectedRow,
+      selectedRows = _ref.selectedRows;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("input", {
+    type: "checkbox",
+    checked: isSelectedRow,
+    onChange: function onChange(event) {
+      if (event.nativeEvent.shiftKey) {
+        dispatch((0,ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__.selectRowsRange)(rowKeyValue, _toConsumableArray(selectedRows).pop()));
+      } else if (event.currentTarget.checked) {
+        dispatch((0,ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__.selectRow)(rowKeyValue));
+      } else {
+        dispatch((0,ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__.deselectRow)(rowKeyValue));
+      }
+    }
+  });
+};
+
+var SelectionHeader = function SelectionHeader(_ref2) {
+  var dispatch = _ref2.dispatch,
+      areAllRowsSelected = _ref2.areAllRowsSelected;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("input", {
+    type: "checkbox",
+    checked: areAllRowsSelected,
+    onChange: function onChange(event) {
+      if (event.currentTarget.checked) {
+        dispatch((0,ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__.selectAllFilteredRows)()); // also available: selectAllVisibleRows(), selectAllRows()
+      } else {
+        dispatch((0,ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__.deselectAllFilteredRows)()); // also available: deselectAllVisibleRows(), deselectAllRows()
+      }
+    }
+  });
+};
 
 var ViewCourse = function ViewCourse() {
-  var dataArray = [{}];
+  var dataArray = [{
+    courseName: "english",
+    courseCode: "106",
+    courseCradit: "3",
+    department: "CSE"
+  }, {
+    courseName: "bangla",
+    courseCode: "101",
+    courseCradit: "3",
+    department: "CSE"
+  }, {
+    courseName: "math",
+    courseCode: "101",
+    courseCradit: "3",
+    department: "CSE"
+  }, {
+    courseName: "biology",
+    courseCode: "101",
+    courseCradit: "3",
+    department: "CSE"
+  }];
   var tablePropsInit = {
     columns: [{
-      key: 'courseName',
-      title: 'Course Name',
+      key: "selection-cell"
+    }, {
+      key: "courseName",
+      title: "Course Name",
       dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.DataType.String,
       style: {
-        width: '15%'
+        width: "15%"
       }
     }, {
-      key: 'courseCode',
-      title: 'Course Code',
+      key: "courseCode",
+      title: "Course Code",
       dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.DataType.String,
       style: {
-        width: '20%'
+        width: "20%"
       }
     }, {
-      key: 'courseCradit',
-      title: 'Course Cradit',
+      key: "courseCradit",
+      title: "Course Cradit",
       dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.DataType.String,
       style: {
-        width: '15%'
+        width: "15%"
       }
     }, {
-      key: 'department',
-      title: 'Department',
+      key: "department",
+      title: "Department",
       dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.DataType.String,
       style: {
-        width: '20%'
+        width: "20%"
       }
     }],
     data: dataArray,
-    rowKeyField: 'id',
-    searchText: ''
+    rowKeyField: "id",
+    paging: {
+      enabled: true
+    },
+    selectedRows: [3, 5],
+    sortingMode: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.SortingMode.Single,
+    filteringMode: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.FilteringMode.FilterRow,
+    searchText: ""
   };
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(tablePropsInit),
@@ -6872,27 +6953,51 @@ var ViewCourse = function ViewCourse() {
     });
   };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
     className: "main-div",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
       className: "font-inter-600 text-3xl mb-4 flex gap-4",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
         children: "Course Details"
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
       className: "main-card",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("input", {
         type: "search",
         defaultValue: tableProps.searchText,
         onChange: function onChange(event) {
           dispatch(search(event.currentTarget.value));
         },
         className: "top-element"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(ka_table__WEBPACK_IMPORTED_MODULE_2__.Table, _objectSpread(_objectSpread({}, tableProps), {}, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(ka_table__WEBPACK_IMPORTED_MODULE_2__.Table, _objectSpread(_objectSpread({}, tableProps), {}, {
         childComponents: {
+          cellText: {
+            content: function content(props) {
+              if (props.column.key === "selection-cell") {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(SelectionCell, _objectSpread({}, props));
+              }
+            }
+          },
           noDataRow: {
             content: function content() {
-              return 'No Data Found';
+              return "No Data Found";
+            }
+          },
+          filterRowCell: {
+            content: function content(props) {
+              if (props.column.key === "selection-cell") {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {});
+              }
+            }
+          },
+          headCell: {
+            content: function content(props) {
+              if (props.column.key === "selection-cell") {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(SelectionHeader, _objectSpread(_objectSpread({}, props), {}, {
+                  areAllRowsSelected: ka_table_utils__WEBPACK_IMPORTED_MODULE_6__.kaPropsUtils.areAllFilteredRowsSelected(tableProps) // areAllRowsSelected={kaPropsUtils.areAllVisibleRowsSelected(tableProps)}
+
+                }));
+              }
             }
           }
         },
@@ -6903,7 +7008,7 @@ var ViewCourse = function ViewCourse() {
 };
 
 ViewCourse.layout = function (page) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     children: page
   });
 };
@@ -7305,8 +7410,8 @@ function Sidebar() {
                     className: "sidebar-svg"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
-                  className: "nounderline" //href={route('pending_user')}
-                  ,
+                  className: "nounderline",
+                  href: route('view_substitute_teacher'),
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
                     primary: "View Subs. Teacher"
                   })
@@ -7324,8 +7429,8 @@ function Sidebar() {
                     className: "sidebar-svg"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
-                  className: "nounderline" //href={route('approved_user')}
-                  ,
+                  className: "nounderline",
+                  href: route('substitute_teacher'),
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
                     primary: "Add Substitue Teacher"
                   })
@@ -16626,6 +16731,19 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 __export(__webpack_require__(/*! ./Components/Table/Table */ "./node_modules/ka-table/Components/Table/Table.js"));
 __export(__webpack_require__(/*! ./Reducers/kaReducer */ "./node_modules/ka-table/Reducers/kaReducer.js"));
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/props.js":
+/*!****************************************!*\
+  !*** ./node_modules/ka-table/props.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 
 /***/ }),
