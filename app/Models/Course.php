@@ -11,6 +11,8 @@ class Course extends Model
     protected $fillable = [
         'course_title',
         'course_code',
+        'corse_credit',
         'course_outline',
+        'department'
     ];
 }

@@ -77,7 +77,7 @@ Route::get('course')
     ->name('course')
     ->uses('App\Http\Controllers\CourseController@index')
     ->middleware('auth');
-Route::get('course/add')
+Route::post('course/add')
     ->name('add_course')
     ->uses('App\Http\Controllers\CourseController@create')
     ->middleware('auth');
