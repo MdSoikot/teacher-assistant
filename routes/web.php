@@ -109,3 +109,7 @@ Route::get('dynamic_report_form')
     ->name('show_dynamic_report_form')
     ->uses('App\Http\Controllers\reportController@showDynamicReportForm')
     ->middleware('auth');
+
+Route::get('verify_email/{email}')
+    ->name('verify_email')
+    ->uses('App\Http\Controllers\Auth\RegisterController@verifyEmail');

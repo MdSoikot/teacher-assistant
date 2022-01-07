@@ -3,11 +3,14 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Mail\EmailValidation;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
 class RegisterController extends Controller
@@ -30,7 +33,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/login';
 
     /**
      * Create a new controller instance.
@@ -43,11 +46,13 @@ class RegisterController extends Controller
     }
     protected function validator(array $data)
     {
-        return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:3'],
-        ]);
+        $valided =
+            Validator::make($data, [
+                'name' => ['required', 'string', 'max:255'],
+                'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+                'password' => ['required', 'string', 'min:3'],
+            ]);
+        return $valided;
     }
 
     /**
@@ -58,7 +63,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        //dd($data);
         function getStudentId($data)
         {
             if (array_key_exists('studentId', $data)) {
@@ -88,12 +92,21 @@ class RegisterController extends Controller
             'studentId' => getStudentId($data),
             'teacherId' => getTeacherId($data),
             'photo_path' => $photo_path,
-            'status' => 0
+            'status' => null
         ]);
+        $userEmail = $data['email'];
+        $test = Mail::to($userEmail)->send(new EmailValidation($userEmail, $data['name']));
+        // dd($test);
         return $user;
     }
     public function showSignUpForm()
     {
         return Inertia::render('Auth/Signup');
+    }
+
+    public function verifyEmail($email)
+    {
+        $pending = User::where('email', $email)->update(['status' => 0]);
+        return Inertia::render('Auth/Login');
     }
 }

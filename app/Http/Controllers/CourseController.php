@@ -30,7 +30,6 @@ class CourseController extends Controller
         $data = $request->all();
         $fileName = "outline_" . $data['course_title'] . "." . $data['course_outline']->extension();
         $file_path = "outline/" . $fileName;
-        //dd($photo_path);
         $test = $data['course_outline']->move(public_path('outline'), $fileName);
         $data['course_outline'] = $file_path;
         //dd($data);

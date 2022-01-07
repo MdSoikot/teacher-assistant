@@ -3,16 +3,16 @@ import { usePage } from '@inertiajs/inertia-react';
 import { kaReducer, Table } from 'ka-table';
 import { DataType } from 'ka-table/enums';
 import Layout from '../Layout/Layout'
-import axios from 'axios';
+import "ka-table/style.scss";
 
 const ViewCourse = () => {
     const { courses } = usePage().props;
     const dataArray = courses
     const tablePropsInit = {
         columns: [
-            { key: 'courseName', title: 'Course Name', dataType: DataType.String, style: { width: '15%' } },
-            { key: 'courseCode', title: 'Course Code', dataType: DataType.String, style: { width: '20%' } },
-            { key: 'courseCradit', title: 'Course Cradit', dataType: DataType.String, style: { width: '15%' } },
+            { key: 'course_title', title: 'Course Name', dataType: DataType.String, style: { width: '15%' } },
+            { key: 'course_code', title: 'Course Code', dataType: DataType.String, style: { width: '20%' } },
+            { key: 'course_credit', title: 'Course Credit', dataType: DataType.String, style: { width: '15%' } },
             { key: 'department', title: 'Department', dataType: DataType.String, style: { width: '20%' } },
 
         ],
@@ -36,9 +36,6 @@ const ViewCourse = () => {
                 <span>Course Details</span>
             </div>
             <div className="main-card">
-                <input type='search' defaultValue={tableProps.searchText} onChange={(event) => {
-                    dispatch(search(event.currentTarget.value));
-                }} className='top-element' />
                 <Table
                     {...tableProps}
                     childComponents={{
