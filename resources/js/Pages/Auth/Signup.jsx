@@ -1,7 +1,9 @@
 import { Inertia } from '@inertiajs/inertia';
 import React, { useState } from 'react'
 import { FileUploader } from 'react-drag-drop-files';
+import toast from 'react-hot-toast';
 import Dropzone from '../../Shared/Dropzone';
+import LoadingButton from '../../Shared/LoadingButton';
 import TextInput from '../../Shared/TextInput';
 import Logo from './../../Icons/Logo';
 import SingleSelect from './../../Shared/SingleSelect';
@@ -54,11 +56,20 @@ const Signup = () => {
     }));
   }
   const handleSubmit = (e) => {
+
     e.preventDefault();
     setSending(true);
-    Inertia.post(route('signup.submit'), values, {
-      onFinish: () => setSending(false),
-    });
+    const emptyCheck = Object.values(values).filter((it) => it === '')
+    console.log("G", emptyCheck);
+    if (emptyCheck.length > 1 || (values.teacherId === '' && values.studentId === '')) {
+      toast.error("Field can't be empty")
+    } else {
+      console.log({ values })
+      Inertia.post(route('signup.submit'), values, {
+        onFinish: () => setSending(false),
+      });
+    }
+
   }
 
   console.log(values)
@@ -162,7 +173,13 @@ const Signup = () => {
               />
 
               <div>
-                <button className="btn-signup" type="submit">Sign Up</button>
+                <LoadingButton
+                  type="submit"
+                  loading={sending}
+                  className="btn-signup"
+                >
+                  Sign Up
+                </LoadingButton>
               </div>
               <div>
                 Already have an account?{" "}
