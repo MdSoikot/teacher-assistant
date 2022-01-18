@@ -420,3 +420,29 @@
     width     : 100%;
     margin-top: -20px;
 }
+
+.extras-ele-label {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 17px;
+    line-height: 20px;
+    color      : #484848;
+}
+
+.extras-subele-label {
+    font-family   : Inter;
+    font-style    : normal;
+    font-weight   : normal;
+    font-size     : 12px;
+    line-height   : 20px;
+    text-transform: lowercase;
+    color         : #717171;
+}
+
+.MuiInputLabel-root {
+    color      : black !important;
+    font-size  : 20px !important;
+    font-weight: 600 !important;
+    font-family: 'Inter' !important;
+}

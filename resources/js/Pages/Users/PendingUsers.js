@@ -1,6 +1,6 @@
 import { usePage } from '@inertiajs/inertia-react';
 import { kaReducer, Table } from 'ka-table';
-import { DataType } from 'ka-table/enums';
+import { DataType, PagingPosition, SortingMode } from 'ka-table/enums';
 import React, { useState, useEffect } from 'react'
 import Layout from '../Layout/Layout'
 import "ka-table/style.scss";
@@ -13,6 +13,11 @@ import { toFormData } from '../../utils';
 import { Inertia } from '@inertiajs/inertia';
 import toast from 'react-hot-toast';
 import ModalCommon from '../../Shared/ModalCommon';
+import TableCheckBox from '../../Shared/TableCheckBox';
+import { kaPropsUtils } from 'ka-table/utils';
+import {
+    deselectAllFilteredRows, deselectRow, selectAllFilteredRows, selectRow, selectRowsRange,
+} from 'ka-table/actionCreators';
 
 const PendingUsers = () => {
 
@@ -20,12 +25,15 @@ const PendingUsers = () => {
     const [actionMdl, setActionMdl] = useState({})
     const [loading, setLoading] = useState(false)
     const [userId, setUserId] = useState('')
+    const [selectRows, setSelectRows] = useState([])
     useEffect(() => {
         console.log("i")
     }, [])
     const dataArray = pendingUsers
     const tablePropsInit = {
         columns: [
+
+            { key: 'selection-cell', style: { maxHeight: 30, width: 100 } },
             { key: 'name', title: 'Name', dataType: DataType.String, style: { width: '20%' } },
             { key: 'email', title: 'Email', dataType: DataType.String, style: { width: '20%' } },
             { key: 'role', title: 'Role', dataType: DataType.String, style: { width: '20%' } },
@@ -34,6 +42,16 @@ const PendingUsers = () => {
         ],
         data: dataArray,
         rowKeyField: 'id',
+        paging: {
+            enabled: true,
+            pageIndex: 0,
+            pageSize: 10,
+            pageSizes: [5, 10, 15],
+            position: PagingPosition.Bottom,
+        },
+
+        sortingMode: SortingMode.Single,
+        selectedRows: [],
         searchText: '',
     };
 
@@ -118,6 +136,49 @@ const PendingUsers = () => {
             // />
         );
     };
+    const SelectionCell = ({
+        rowKeyValue, dispatch, isSelectedRow, selectedRows,
+    }) => (
+        <TableCheckBox
+            className="flex-shrink-0 w-1/3 mt-3"
+            checked={isSelectedRow}
+            onChange={(event) => {
+                if (event.nativeEvent.shiftKey) {
+                    dispatch(selectRowsRange(rowKeyValue, [...selectedRows].pop()));
+                } else if (event.currentTarget.checked) {
+                    setSelectRows(currentArray => [...currentArray, rowKeyValue])
+                    dispatch(selectRow(rowKeyValue));
+                } else {
+                    const ara = [...selectRows]
+                    const ind = ara.indexOf(rowKeyValue)
+                    ara.splice(ind, 1)
+                    setSelectRows(ara)
+                    dispatch(deselectRow(rowKeyValue));
+                }
+            }}
+        />
+    );
+    const SelectionHeader = ({
+        dispatch, areAllRowsSelected,
+    }) => (
+        <TableCheckBox
+            className=""
+            checked={areAllRowsSelected}
+            onChange={(event) => {
+                if (event.currentTarget.checked) {
+                    const temp = []
+                    pendingUsers?.map((item) => {
+                        temp.push(item.id)
+                    })
+                    setSelectRows(temp);
+                    dispatch(selectAllFilteredRows()); // also available: selectAllVisibleRows(), selectAllRows()
+                } else {
+                    setSelectRows([])
+                    dispatch(deselectAllFilteredRows()); // also available: deselectAllVisibleRows(), deselectAllRows()
+                }
+            }}
+        />
+    );
 
     return (
         <div className="main-div">
@@ -139,9 +200,44 @@ const PendingUsers = () => {
                                 switch (props.column.key) {
                                     case ':action':
                                         return <DeleteRow {...props} />;
+
+                                    case 'selection-cell': return <SelectionCell {...props} />;
                                 }
+
+                                return ''
                             }
-                        }
+                        },
+                        filterRowCell: {
+                            content: (props) => {
+                                if (props.column.key === 'selection-cell') {
+                                    return <></>;
+                                }
+                            },
+                        },
+                        headCell: {
+                            content: (props) => {
+                                if (props.column.key === 'selection-cell') {
+                                    return (
+                                        <SelectionHeader
+                                            {...props}
+                                            areAllRowsSelected={kaPropsUtils.areAllFilteredRowsSelected(tableProps)}
+                                        // areAllRowsSelected={kaPropsUtils.areAllVisibleRowsSelected(tableProps)}
+                                        />
+                                    );
+                                }
+                            },
+                        },
+                        detailsRow: {
+                            elementAttributes: () => ({
+                                style: {
+                                    backgroundColor: '#eee',
+                                },
+                            }),
+                            content: (props) => DetailsRow(props.rowKeyValue),
+                        },
+                        noDataRow: {
+                            content: () => 'No Data Found',
+                        },
                     }}
                     dispatch={dispatch}
                 />

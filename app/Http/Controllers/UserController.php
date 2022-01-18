@@ -46,7 +46,7 @@ class UserController extends Controller
     }
     public function declineUser(Request $request, $id)
     {
-        //dd($id);
+        // dd($id);
         $deleteUser = User::where('id', $id)->delete();
         return Redirect::back();
     }
