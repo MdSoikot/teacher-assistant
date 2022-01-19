@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Users_Profile_js"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Student_AddStudent_jsx"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
 /*!**********************************************************************!*\
@@ -7449,10 +7449,10 @@ function Sidebar() {
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Users/Profile.js":
-/*!*********************************************!*\
-  !*** ./resources/js/Pages/Users/Profile.js ***!
-  \*********************************************/
+/***/ "./resources/js/Pages/Student/AddStudent.jsx":
+/*!***************************************************!*\
+  !*** ./resources/js/Pages/Student/AddStudent.jsx ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -7465,11 +7465,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Shared/TextInput */ "./resources/js/Shared/TextInput.jsx");
 /* harmony import */ var _Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Shared/SingleSelect */ "./resources/js/Shared/SingleSelect.jsx");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _Shared_Dropzone__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Shared/Dropzone */ "./resources/js/Shared/Dropzone.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../utils */ "./resources/js/utils.js");
-/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils */ "./resources/js/utils.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js");
+/* harmony import */ var _Shared_Dropzone__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Shared/Dropzone */ "./resources/js/Shared/Dropzone.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -7501,57 +7503,18 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var Profile = function Profile() {
-  var role = 'student';
-  var userInfo = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.usePage)().props.userInfo;
-
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-      _useState2 = _slicedToArray(_useState, 2),
-      sending = _useState2[0],
-      setSending = _useState2[1];
-
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-    email: (userInfo === null || userInfo === void 0 ? void 0 : userInfo.email) || '',
-    password: (userInfo === null || userInfo === void 0 ? void 0 : userInfo.password) || '',
-    name: (userInfo === null || userInfo === void 0 ? void 0 : userInfo.name) || '',
-    studentId: (userInfo === null || userInfo === void 0 ? void 0 : userInfo.studentId) || '',
-    teacherId: (userInfo === null || userInfo === void 0 ? void 0 : userInfo.teacherId) || '',
-    photo: userInfo.photo_path || '',
-    department: userInfo === null || userInfo === void 0 ? void 0 : userInfo.department,
-    batch: (userInfo === null || userInfo === void 0 ? void 0 : userInfo.batch) || '',
-    role: (userInfo === null || userInfo === void 0 ? void 0 : userInfo.role) || '',
-    phone: (userInfo === null || userInfo === void 0 ? void 0 : userInfo.phone) || ''
+var AddStudent = function AddStudent() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    student_name: "",
+    student_batch: "",
+    student_id: "",
+    student_department: "",
+    student_email: "",
+    student_phone: ""
   }),
-      _useState4 = _slicedToArray(_useState3, 2),
-      values = _useState4[0],
-      setValues = _useState4[1];
-
-  var userTypes = [{
-    key: '',
-    value: 'Select One'
-  }, {
-    key: 'admin',
-    value: 'Admin'
-  }, {
-    key: 'student',
-    value: 'Student'
-  }, {
-    key: 'teacher',
-    value: 'Teacher'
-  }];
-
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
-      _useState6 = _slicedToArray(_useState5, 2),
-      file = _useState6[0],
-      setFile = _useState6[1];
-
-  var handleFileChange = function handleFileChange(file, name) {
-    setValues(function (oldValues) {
-      return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, name, file));
-    });
-  };
-
-  console.log(userInfo, file);
+      _useState2 = _slicedToArray(_useState, 2),
+      values = _useState2[0],
+      setValues = _useState2[1];
 
   var handleChange = function handleChange(e) {
     var key = e.target.name;
@@ -7561,30 +7524,46 @@ var Profile = function Profile() {
     });
   };
 
-  var handleSubmit = function handleSubmit(e) {
-    var formData = (0,_utils__WEBPACK_IMPORTED_MODULE_6__.toFormData)(values, 'PUT');
-    e.preventDefault();
-    setSending(true);
-    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_7__.Inertia.post(route('profile_update', userInfo.id), formData, {
-      onFinish: function onFinish() {
-        return react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].success("Update Successfully");
-      }
+  var handleFileChange = function handleFileChange(file, name) {
+    setValues(function (oldValues) {
+      return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, name, file));
     });
   };
 
-  var photoSrc = (userInfo === null || userInfo === void 0 ? void 0 : userInfo.photo_path) || "";
-  console.log("photo", photoSrc, values);
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    console.log(_typeof(values.course_outline), values.course_outline.preview);
+    var mapping = Object.values(values).filter(function (item) {
+      var _values$course_outlin;
+
+      return !(values !== null && values !== void 0 && (_values$course_outlin = values.course_outline) !== null && _values$course_outlin !== void 0 && _values$course_outlin.preview) && !item.length;
+    });
+
+    if (!mapping.length) {
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_6__.Inertia.post(route("add_course"), values, {
+        onFinish: function onFinish() {
+          setValues({
+            student_name: "",
+            student_batch: "",
+            student_id: "",
+            student_department: "",
+            student_email: "",
+            student_phone: ""
+          }), react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].success("Save Successfuly!");
+        }
+      });
+    } else {
+      react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].error("Field Can't be empty!");
+    }
+  };
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
     className: "main-div",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
       className: "font-inter-600 text-3xl mb-4 flex gap-4",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
-        children: "My Profile"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("img", {
-        className: "rounded-full pro-pic",
-        src: photoSrc,
-        alt: "user"
-      })]
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+        children: "Add Student"
+      })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("form", {
       onSubmit: handleSubmit,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
@@ -7592,118 +7571,89 @@ var Profile = function Profile() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
           className: "main-card__left",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "name",
-            name: "name",
-            label: "Name",
+            id: "student_name",
+            name: "student_name",
+            label: "Student Name",
             type: "text",
             onChange: handleChange,
             inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md",
-            value: values === null || values === void 0 ? void 0 : values.name,
-            placeholder: "Your Name"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "email",
-            name: "email",
-            label: "Email",
-            type: "email",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md",
-            value: values === null || values === void 0 ? void 0 : values.email,
-            placeholder: "Your Email"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_3__["default"], {
-            id: "role",
-            name: "role",
-            label: "Role" //onChange={handleChange}
+            inputLabelClass: "font-inter-600 text-md" // value={values?.name}
             ,
-            inputClass: "profile-textinput-input",
-            labelClass: "font-inter-600 text-md",
-            optionValues: userTypes,
-            value: values === null || values === void 0 ? void 0 : values.role,
-            isDesabled: true
+            placeholder: "Student Name"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "phone",
-            name: "phone",
-            label: "Phone",
-            type: "phone",
+            id: "student_batch",
+            name: "student_batch",
+            label: "Student Batch",
+            type: "text",
             onChange: handleChange,
             inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md",
-            placeholder: "Your Phone",
-            value: values === null || values === void 0 ? void 0 : values.phone
+            inputLabelClass: "font-inter-600 text-md" // value={values?.email}
+            ,
+            placeholder: "Student Batch"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "studentId",
-            name: "studentId",
+            id: "student_id",
+            name: "student_id",
             label: "Student Id",
             type: "text",
             onChange: handleChange,
             inputClass: "profile-textinput-input",
             inputLabelClass: "font-inter-600 text-md",
-            placeholder: "Your Id",
-            value: values === null || values === void 0 ? void 0 : values.studentId
-          }), role === 'teacher' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "teacherId",
-            name: "teacherId",
-            label: "Teacher Id",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md",
-            placeholder: "Your Id",
-            value: values === null || values === void 0 ? void 0 : values.teacherId
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-          className: "main-card__right",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "batch",
-            name: "batch",
-            label: "Batch",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md",
-            placeholder: "Your Batch",
-            value: values === null || values === void 0 ? void 0 : values.batch
+            placeholder: "Student Id" // value={values?.phone}
+
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "department",
-            name: "department",
-            label: "Department",
+            id: "student_department",
+            name: "student_department",
+            label: "Student Department",
             type: "text",
             onChange: handleChange,
             inputClass: "profile-textinput-input",
             inputLabelClass: "font-inter-600 text-md",
-            placeholder: "Your Department",
-            value: values === null || values === void 0 ? void 0 : values.department
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_Dropzone__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            label: "Photo",
-            name: "photo",
-            className: "w-full pb-8 pr-6 lg:w-1/2" //errors={errors?.image}
-            ,
-            value: values === null || values === void 0 ? void 0 : values.photo,
-            accept: "image/*",
-            onChange: handleFileChange,
-            multiple: false
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+            placeholder: "student Department" // value={values?.studentId}
+
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            id: "student_email",
+            name: "student_email",
+            label: "Student Email",
+            type: "text",
+            onChange: handleChange,
+            inputClass: "profile-textinput-input",
+            inputLabelClass: "font-inter-600 text-md",
+            placeholder: "student Email" // value={values?.studentId}
+
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            id: "student_phone",
+            name: "student_phone",
+            label: "Student Phone",
+            type: "text",
+            onChange: handleChange,
+            inputClass: "profile-textinput-input",
+            inputLabelClass: "font-inter-600 text-md",
+            placeholder: "student Phone" // value={values?.studentId}
+
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+          className: "main-card__right font-inter-600 text-md",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
             className: "pt-3",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("button", {
               className: "btn-signup",
               type: "submit",
-              children: "Update"
+              children: "Submit"
             })
-          })]
+          })
         })]
       })
     })]
   });
 };
 
-Profile.layout = function (page) {
+AddStudent.layout = function (page) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     children: page
   });
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Profile);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddStudent);
 
 /***/ }),
 

@@ -12,8 +12,7 @@ function _interopRequireDefault(obj) {
   };
 }
 
-module.exports = _interopRequireDefault;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 
@@ -23,7 +22,7 @@ module.exports["default"] = module.exports, module.exports.__esModule = true;
   \***********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
+var _typeof = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
 
 function _getRequireWildcardCache(nodeInterop) {
   if (typeof WeakMap !== "function") return null;
@@ -75,8 +74,7 @@ function _interopRequireWildcard(obj, nodeInterop) {
   return newObj;
 }
 
-module.exports = _interopRequireWildcard;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _interopRequireWildcard, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 
@@ -89,25 +87,14 @@ module.exports["default"] = module.exports, module.exports.__esModule = true;
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    module.exports = _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-
-    module.exports["default"] = module.exports, module.exports.__esModule = true;
-  } else {
-    module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-
-    module.exports["default"] = module.exports, module.exports.__esModule = true;
-  }
-
-  return _typeof(obj);
+  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
 }
 
-module.exports = _typeof;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 
@@ -6794,13 +6781,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ka_table__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(ka_table__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var ka_table_enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ka-table/enums */ "./node_modules/ka-table/enums.js");
 /* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Layout/Layout */ "./resources/js/Pages/Layout/Layout.jsx");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var ka_table_utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ka-table/utils */ "./node_modules/ka-table/utils.js");
-/* harmony import */ var ka_table_utils__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ka_table_utils__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ka-table/actionCreators */ "./node_modules/ka-table/actionCreators.js");
-/* harmony import */ var ka_table_props__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ka-table/props */ "./node_modules/ka-table/props.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var ka_table_style_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ka-table/style.scss */ "./node_modules/ka-table/style.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -6811,21 +6793,14 @@ function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArra
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
 
@@ -6834,101 +6809,38 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
-
-
-
-
-
-
-
-var SelectionCell = function SelectionCell(_ref) {
-  var rowKeyValue = _ref.rowKeyValue,
-      dispatch = _ref.dispatch,
-      isSelectedRow = _ref.isSelectedRow,
-      selectedRows = _ref.selectedRows;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("input", {
-    type: "checkbox",
-    checked: isSelectedRow,
-    onChange: function onChange(event) {
-      if (event.nativeEvent.shiftKey) {
-        dispatch((0,ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__.selectRowsRange)(rowKeyValue, _toConsumableArray(selectedRows).pop()));
-      } else if (event.currentTarget.checked) {
-        dispatch((0,ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__.selectRow)(rowKeyValue));
-      } else {
-        dispatch((0,ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__.deselectRow)(rowKeyValue));
-      }
-    }
-  });
-};
-
-var SelectionHeader = function SelectionHeader(_ref2) {
-  var dispatch = _ref2.dispatch,
-      areAllRowsSelected = _ref2.areAllRowsSelected;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("input", {
-    type: "checkbox",
-    checked: areAllRowsSelected,
-    onChange: function onChange(event) {
-      if (event.currentTarget.checked) {
-        dispatch((0,ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__.selectAllFilteredRows)()); // also available: selectAllVisibleRows(), selectAllRows()
-      } else {
-        dispatch((0,ka_table_actionCreators__WEBPACK_IMPORTED_MODULE_7__.deselectAllFilteredRows)()); // also available: deselectAllVisibleRows(), deselectAllRows()
-      }
-    }
-  });
-};
 
 var ViewCourse = function ViewCourse() {
-  var dataArray = [{
-    courseName: "english",
-    courseCode: "106",
-    courseCradit: "3",
-    department: "CSE"
-  }, {
-    courseName: "bangla",
-    courseCode: "101",
-    courseCradit: "3",
-    department: "CSE"
-  }, {
-    courseName: "math",
-    courseCode: "101",
-    courseCradit: "3",
-    department: "CSE"
-  }, {
-    courseName: "biology",
-    courseCode: "101",
-    courseCradit: "3",
-    department: "CSE"
-  }];
+  var courses = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.usePage)().props.courses;
+  var dataArray = courses;
   var tablePropsInit = {
     columns: [{
-      key: "selection-cell"
-    }, {
-      key: "courseName",
-      title: "Course Name",
+      key: 'course_title',
+      title: 'Course Name',
       dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.DataType.String,
       style: {
-        width: "15%"
+        width: '15%'
       }
     }, {
-      key: "courseCode",
-      title: "Course Code",
+      key: 'course_code',
+      title: 'Course Code',
       dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.DataType.String,
       style: {
-        width: "20%"
+        width: '20%'
       }
     }, {
-      key: "courseCradit",
-      title: "Course Cradit",
+      key: 'course_credit',
+      title: 'Course Credit',
       dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.DataType.String,
       style: {
-        width: "15%"
+        width: '15%'
       }
     }, {
-      key: "department",
-      title: "Department",
+      key: 'department',
+      title: 'Department',
       dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.DataType.String,
       style: {
-        width: "20%"
+        width: '20%'
       }
     }],
     data: dataArray,
@@ -6937,8 +6849,8 @@ var ViewCourse = function ViewCourse() {
       enabled: true
     },
     selectedRows: [3, 5],
-    sortingMode: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.SortingMode.Single,
-    filteringMode: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.FilteringMode.FilterRow,
+    sortingMode: SortingMode.Single,
+    filteringMode: FilteringMode.FilterRow,
     searchText: ""
   };
 
@@ -6953,62 +6865,31 @@ var ViewCourse = function ViewCourse() {
     });
   };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
     className: "main-div",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       className: "font-inter-600 text-3xl mb-4 flex gap-4",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
         children: "Course Details"
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       className: "main-card",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("input", {
-        type: "search",
-        defaultValue: tableProps.searchText,
-        onChange: function onChange(event) {
-          dispatch(search(event.currentTarget.value));
-        },
-        className: "top-element"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(ka_table__WEBPACK_IMPORTED_MODULE_2__.Table, _objectSpread(_objectSpread({}, tableProps), {}, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(ka_table__WEBPACK_IMPORTED_MODULE_2__.Table, _objectSpread(_objectSpread({}, tableProps), {}, {
         childComponents: {
-          cellText: {
-            content: function content(props) {
-              if (props.column.key === "selection-cell") {
-                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(SelectionCell, _objectSpread({}, props));
-              }
-            }
-          },
           noDataRow: {
             content: function content() {
-              return "No Data Found";
-            }
-          },
-          filterRowCell: {
-            content: function content(props) {
-              if (props.column.key === "selection-cell") {
-                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {});
-              }
-            }
-          },
-          headCell: {
-            content: function content(props) {
-              if (props.column.key === "selection-cell") {
-                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(SelectionHeader, _objectSpread(_objectSpread({}, props), {}, {
-                  areAllRowsSelected: ka_table_utils__WEBPACK_IMPORTED_MODULE_6__.kaPropsUtils.areAllFilteredRowsSelected(tableProps) // areAllRowsSelected={kaPropsUtils.areAllVisibleRowsSelected(tableProps)}
-
-                }));
-              }
+              return 'No Data Found';
             }
           }
         },
         dispatch: dispatch
-      }))]
+      }))
     })]
   });
 };
 
 ViewCourse.layout = function (page) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     children: page
   });
 };
@@ -7392,7 +7273,7 @@ function Sidebar() {
                 className: "sidebar-svg"
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
-              primary: "Manage Subs. Teacher"
+              primary: "Manage Teacher"
             }), open !== null && open !== void 0 && open.manage_sub_teacher ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_9__["default"], {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_10__["default"], {})]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_11__["default"], {
             "in": open === null || open === void 0 ? void 0 : open.manage_sub_teacher,
@@ -7413,7 +7294,7 @@ function Sidebar() {
                   className: "nounderline",
                   href: route('view_substitute_teacher'),
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
-                    primary: "View Subs. Teacher"
+                    primary: "View Teacher"
                   })
                 })]
               })
@@ -7432,7 +7313,172 @@ function Sidebar() {
                   className: "nounderline",
                   href: route('substitute_teacher'),
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
-                    primary: "Add Substitue Teacher"
+                    primary: "Add Teacher"
+                  })
+                })]
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            button: true,
+            onClick: function onClick() {
+              return handleOpen("manage_student");
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Icons_Profile__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                className: "sidebar-svg"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
+              primary: "Manage Student"
+            }), open !== null && open !== void 0 && open.manage_student ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_9__["default"], {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_10__["default"], {})]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_11__["default"], {
+            "in": open === null || open === void 0 ? void 0 : open.manage_student,
+            timeout: "auto",
+            unmountOnExit: true,
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              component: "div",
+              disablePadding: true,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                button: true,
+                className: classes.nested,
+                onClick: handleClickSecondLevel,
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_StarBorder__WEBPACK_IMPORTED_MODULE_12__["default"], {
+                    className: "sidebar-svg"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
+                  className: "nounderline",
+                  href: route('add_student'),
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                    primary: "View Student"
+                  })
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              component: "div",
+              disablePadding: true,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                button: true,
+                className: classes.nested,
+                onClick: handleClickSecondLevel,
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_StarBorder__WEBPACK_IMPORTED_MODULE_12__["default"], {
+                    className: "sidebar-svg"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
+                  className: "nounderline",
+                  href: route('student'),
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                    primary: "Add Student"
+                  })
+                })]
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            button: true,
+            onClick: function onClick() {
+              return handleOpen("manage_routine");
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Icons_Profile__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                className: "sidebar-svg"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
+              primary: "Manage Routine"
+            }), open !== null && open !== void 0 && open.manage_routine ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_9__["default"], {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_10__["default"], {})]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_11__["default"], {
+            "in": open === null || open === void 0 ? void 0 : open.manage_routine,
+            timeout: "auto",
+            unmountOnExit: true,
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              component: "div",
+              disablePadding: true,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                button: true,
+                className: classes.nested,
+                onClick: handleClickSecondLevel,
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_StarBorder__WEBPACK_IMPORTED_MODULE_12__["default"], {
+                    className: "sidebar-svg"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
+                  className: "nounderline",
+                  href: route('view_routine'),
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                    primary: "View Routine"
+                  })
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              component: "div",
+              disablePadding: true,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                button: true,
+                className: classes.nested,
+                onClick: handleClickSecondLevel,
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_StarBorder__WEBPACK_IMPORTED_MODULE_12__["default"], {
+                    className: "sidebar-svg"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
+                  className: "nounderline",
+                  href: route('routine'),
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                    primary: "Add Routine"
+                  })
+                })]
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            button: true,
+            onClick: function onClick() {
+              return handleOpen("manage_marks");
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Icons_Profile__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                className: "sidebar-svg"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
+              primary: "Manage Marks"
+            }), open !== null && open !== void 0 && open.manage_marks ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_9__["default"], {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_10__["default"], {})]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_11__["default"], {
+            "in": open === null || open === void 0 ? void 0 : open.manage_marks,
+            timeout: "auto",
+            unmountOnExit: true,
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              component: "div",
+              disablePadding: true,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                button: true,
+                className: classes.nested,
+                onClick: handleClickSecondLevel,
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_StarBorder__WEBPACK_IMPORTED_MODULE_12__["default"], {
+                    className: "sidebar-svg"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
+                  className: "nounderline",
+                  href: route('view_marks'),
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                    primary: "View Marks"
+                  })
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              component: "div",
+              disablePadding: true,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                button: true,
+                className: classes.nested,
+                onClick: handleClickSecondLevel,
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_StarBorder__WEBPACK_IMPORTED_MODULE_12__["default"], {
+                    className: "sidebar-svg"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
+                  className: "nounderline",
+                  href: route('marks'),
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                    primary: "Add Marks"
                   })
                 })]
               })
@@ -7468,7 +7514,7 @@ function Sidebar() {
                   className: "nounderline" //href={route('pending_user')}
                   ,
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
-                    primary: "Mark Sheet"
+                    primary: "Static Report"
                   })
                 })]
               })
@@ -7487,64 +7533,7 @@ function Sidebar() {
                   className: "nounderline" //href={route('approved_user')}
                   ,
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
-                    primary: "Student List"
-                  })
-                })]
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              component: "div",
-              disablePadding: true,
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                button: true,
-                className: classes.nested,
-                onClick: handleClickSecondLevel,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_StarBorder__WEBPACK_IMPORTED_MODULE_12__["default"], {
-                    className: "sidebar-svg"
-                  })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
-                  className: "nounderline" //href={route('approved_user')}
-                  ,
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
-                    primary: "Course Outline"
-                  })
-                })]
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              component: "div",
-              disablePadding: true,
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                button: true,
-                className: classes.nested,
-                onClick: handleClickSecondLevel,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_StarBorder__WEBPACK_IMPORTED_MODULE_12__["default"], {
-                    className: "sidebar-svg"
-                  })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
-                  className: "nounderline" //href={route('approved_user')}
-                  ,
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
-                    primary: "Class Routine"
-                  })
-                })]
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              component: "div",
-              disablePadding: true,
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                button: true,
-                className: classes.nested,
-                onClick: handleClickSecondLevel,
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_icons_StarBorder__WEBPACK_IMPORTED_MODULE_12__["default"], {
-                    className: "sidebar-svg"
-                  })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
-                  className: "nounderline" //href={route('approved_user')}
-                  ,
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
-                    primary: "Subs. Teacher List"
+                    primary: "Dynamic Report"
                   })
                 })]
               })
@@ -7610,6 +7599,106 @@ function toVal(mix) {
 	return str;
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./node_modules/ka-table/style.scss":
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./node_modules/ka-table/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"icons\";\n  src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOYAA0AAAAACIwAAANEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCXhEICoVkhBELGAABNgIkAyAEIAWDGwd3G7wGIB6FccN9E8MSQ5TJpF8+Kh6+t+Pr3H79IWQDyGtnGznKjFTOdqrnf1z+g5yUiMkVTqLPrm6X95YUF/revX4rMPI/7p3+9bhAwsmLIKM/dpMmheGeGFCXBhJmYyycIKFmXZZqg+4GoD75LAR8vcb1B99t3n90zw5UoxWZECqFHBlSLp4CJWQvQz/wJGgnfjEmKgRLUe91Z4ofS9L+YtLLacLLCAD0CyQkdAuwURLolpuKSuUymdD/Y0lxvyigSHgnxXaEJFQCCIkoJRIQGTLwnwly4RNDFIU6UAVaUYn38D8gBwSCurIEzdoGMEUiMSG6XNmbvBmcPh4yOeEnZG4Hjdtcbr7UvDqZOW5R3gwcI6EreQSlMZhji1XdJtomxyXVxz0xOqA0iV2poyEGvkUrb+JXErcttqPmckjrhP24zVE3pQd1nKm6TSndsCV60yq9k46E8sVaxjuLbzjQizxKDhBMB2rtAYm4yWaJQlNtzuaxN2cL9Lms6+3NivaelBNhybVa61y+Dui65A50TRLHAWDkX8MLpTlWTY+l++ycXbLW0qOxNhWKr7xRS3zDZdOO1+cmLU2lVT2/AspTZdIy1RHOLQL+4EuSLTA+03urCoW1lm7tCMkgz8VBbbHw5ito81fAqJGVuiF/FEOqE4wTUnzVgPN6Y3XI/x+x3vffdzB/W0UOauDX9/phBrRQ/ND5izv5sMi2JevqHCEQa5Zt7mJv8WwDvbj3ytdtaz5R+U2Vryb7U/043rZdKf/YcnwyJgcvliuvf0HdByAQuP/D+ztI1v/Kq3Lzhv0UcpAOoFwGgum5AznI+ZeAkhwQ64AcvgXPesZ8gSqjZSAT/LXexXkIZeqLaAYD0QQz0Rw2qktUuaguVea55ZU6fSyJvEKoBaAZtKMJRqI5LFSXaLVTXarW3R0rjfWaQ/Y44ZgTTjjOoZWcYxYXgNX2OeCco3Y5zb3i6gGD1NhkuN4+p51xKL/fKMONZPuySZVcObh1flX2Wf0O2Of4yPR3OWufvdG7XdJvEYJl/uHsSC/b+PB3jC7+n8QWgEy4RhWRySJJkUdJlEZZlEdF6YGj20tTKtS549PKwGRVLUalElSgBg1oZR0=) format(\"woff2\"), url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAcYAAsAAAAABswAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgD2oEfGNtYXAAAAFoAAAAVAAAAFQYVtCMZ2FzcAAAAbwAAAAIAAAACAAAABBnbHlmAAABxAAAAvAAAALwNeDULGhlYWQAAAS0AAAANgAAADYdwj7iaGhlYQAABOwAAAAkAAAAJAdWA3JobXR4AAAFEAAAACgAAAAoIAACqmxvY2EAAAU4AAAAFgAAABYDHgI6bWF4cAAABVAAAAAgAAAAIAANADRuYW1lAAAFcAAAAYYAAAGGmUoJ+3Bvc3QAAAb4AAAAIAAAACAAAwAAAAMEAAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA6AUDZv9nAJkDZgCZAAAAAQAAAAAAAAAAAAAAIAAAAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADgAAAAKAAgAAgACAAEAIOgF//3//wAAAAAAIOgA//3//wAB/+MYBAADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQDy/3QDJANMABYAAAkBBiInJjQ3CQEmNDc2MhcBHgEVFAYHAw/+SBU8FBYWAYX+exYWFDwVAbgKCwsKAS7+RhQUFjsVAYYBhhU7FhQU/kcLGg4OGgoAAAEAEv9gA+4DTgAmAAAJATY0JyYiBwkBJiIHBhQXCQEGFBceATMyNjcJAR4BMzI2NzY0JwECWgGUEhIUNBT+bv5uFDQUEhIBlP5sEhIKGA0MFwoBkgGSChgNDBcKEhL+bAFgAZIUNBQSEv5sAZQSEhQ0FP5u/m4UNBQJCQkJAZT+bAkJCQkUNBQBkgAAAQAWADwD7AJvABUAACUBJjQ3NjIXCQE2MhcWFAcBDgEjIiYBzv5IFhYUOxYBhQGGFTsWFBT+RwsaDg4aUgG4FTsVFRX+egGGFRUVOxX+SAsLCwAAAQCj/2ADXgNgAB4AACU2MhcWFAcBDgEjIiYnASY0NzYyHwERNDYzMhYVETcDExErDxAQ/sgHEwwLEwj+yRAQDysQ3x4WFh7f8hAQECsP/scHCAgHATkPKxAQEN8DGRYeHhb8598AAAABAKL/YANeA2AAHgAAEwYiJyY0NwE+ATMyFhcBFhQHBiIvAREUBiMiJjURB+0RKw8QEAE4BxMMCxMIATgQEBArEN8eFhYe3wHOEBAQKw8BOQcICAf+xw8rEBAQ4PzmFh4eFgMZ3wAAAAIAS/9nA6kDZwAkADEAAAkBLgE3PgEzITIWFxYGBwEOARcRDgEHDgEjIiYvAS4BNxEuASc3HgEXERcRJjY3ASEBAXH+4AgDBQUWDQMODRUGBQII/uQGBgEBCwoGDgcECQSeDA4BAQoIMA0PAoMBDA0BC/0pARMBigGWCRkMCw4OCwwZCf5qChcM/jYLFAYEAwECPgUWDQGNDRYKIxEpFv5/NAG1FSkRAX/+ggABAAAAAQAAv9IV/18PPPUACwQAAAAAAN1afY8AAAAA3Vp9jwAA/2AD7gNnAAAACAACAAAAAAAAAAEAAANm/2cAAAQAAAAAAAPuAAEAAAAAAAAAAAAAAAAAAAAKBAAAAAAAAAAAAAAABAAAAAQAAPIEAAASBAAAFgQAAKMEAACiBAAASwAAAAAACgAUAB4ASgCQALoA7gEiAXgAAAABAAAACgAyAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEABwAAAAEAAAAAAAIABwBgAAEAAAAAAAMABwA2AAEAAAAAAAQABwB1AAEAAAAAAAUACwAVAAEAAAAAAAYABwBLAAEAAAAAAAoAGgCKAAMAAQQJAAEADgAHAAMAAQQJAAIADgBnAAMAAQQJAAMADgA9AAMAAQQJAAQADgB8AAMAAQQJAAUAFgAgAAMAAQQJAAYADgBSAAMAAQQJAAoANACkaWNvbW9vbgBpAGMAbwBtAG8AbwBuVmVyc2lvbiAxLjAAVgBlAHIAcwBpAG8AbgAgADEALgAwaWNvbW9vbgBpAGMAbwBtAG8AbwBuaWNvbW9vbgBpAGMAbwBtAG8AbwBuUmVndWxhcgBSAGUAZwB1AGwAYQByaWNvbW9vbgBpAGMAbwBtAG8AbwBuRm9udCBnZW5lcmF0ZWQgYnkgSWNvTW9vbi4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format(\"woff\");\n  font-weight: normal;\n  font-style: normal;\n}\n.ka-icon-tree-arrow-collapsed:before {\n  content: \"\\e800\";\n}\n\n.ka-icon-group-arrow-collapsed:before {\n  content: \"\\e800\";\n}\n\n.ka-icon-close:before {\n  content: \"\\e801\";\n}\n\n.ka-icon-tree-arrow-expanded:before {\n  content: \"\\e802\";\n}\n\n.ka-icon-group-arrow-expanded:before {\n  content: \"\\e802\";\n}\n\n.ka-icon-sort-arrow-down:before {\n  content: \"\\e803\";\n}\n\n.ka-icon-sort-arrow-up:before {\n  content: \"\\e804\";\n}\n\n.ka-icon-filter:before {\n  content: \"\\e805\";\n}\n\n.ka {\n  overflow: hidden;\n  background-color: white;\n  font-size: 14px;\n  display: flex;\n  flex-direction: column;\n}\n\n.ka-table-wrapper {\n  height: 100%;\n  width: 100%;\n  overflow-y: auto;\n}\n\n.ka-table {\n  width: 100%;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n\n.ka-thead-background {\n  background-color: #F1F5F7;\n}\n\n.ka-thead-cell-height {\n  box-sizing: border-box;\n  height: 47px;\n}\n\n.ka-thead-fixed {\n  position: -webkit-sticky;\n  position: sticky;\n}\n\n.ka-thead-row:nth-child(1) .ka-thead-fixed {\n  top: 0px;\n}\n\n.ka-thead-row:nth-child(2) .ka-thead-fixed {\n  top: 47px;\n}\n\n.ka-thead-row:nth-child(3) .ka-thead-fixed {\n  top: 94px;\n}\n\n.ka-thead-row:nth-child(4) .ka-thead-fixed {\n  top: 141px;\n}\n\n.ka-thead-row:nth-child(5) .ka-thead-fixed {\n  top: 188px;\n}\n\n.ka-thead-row:nth-child(6) .ka-thead-fixed {\n  top: 235px;\n}\n\n.ka-thead-cell {\n  padding: 15px 20px;\n  color: #747D86;\n}\n\n.ka-thead-cell-wrapper {\n  display: flex;\n}\n\n.ka-thead-cell-content-wrapper {\n  width: 100%;\n}\n\n.ka-thead-cell-content {\n  width: 100%;\n}\n\n.ka-tbody {\n  height: 100%;\n}\n\n.ka-thead-cell, .ka-cell {\n  text-align: left;\n}\n\n.ka-cell {\n  padding: 8px 20px;\n  line-height: 29px;\n  color: #353C44;\n}\n\n.ka-tree-cell {\n  display: flex;\n}\n\n.ka-icon {\n  font-weight: 100;\n  font-size: 10px;\n  font-family: \"icons\";\n}\n\n.ka-input {\n  max-width: 100%;\n  border: 1px solid;\n}\n\n.ka-cell-editor-validation-error .ka-input {\n  background: #FFE7E7;\n  border: 1px solid #FF0C0C;\n}\n\n.ka-validation-message-container {\n  position: absolute;\n}\n\n.ka-validation-message {\n  font-size: 12px;\n  color: white;\n  background-color: #FF0C0C;\n  padding: 0 10px;\n  max-width: 200px;\n}\n\n.ka-empty-cell {\n  width: 40px;\n  min-width: 40px;\n}\n\n.ka-tree-empty-space {\n  width: 20px;\n}\n\n.ka-tr {\n  width: 100%;\n}\n\n.ka-no-data-row {\n  height: 100px;\n  text-align: center;\n}\n\n.ka-row {\n  box-sizing: border-box;\n  border-bottom: 2px solid #F9FBFC;\n  border-top: 2px solid #F9FBFC;\n}\n\n.ka-dragged-row {\n  opacity: 0.5;\n}\n\n.ka-drag-over-row {\n  box-shadow: inset 0 7px 0px -4px #e1ebf0;\n}\n\n.ka-dragged-row ~ .ka-drag-over-row {\n  box-shadow: inset 0 -7px 0px -4px #e1ebf0;\n}\n\n.ka-drag-over-column {\n  box-shadow: inset 7px 0 0px -4px #e1ebf0;\n}\n\n.ka-dragged-column ~ .ka-drag-over-column {\n  box-shadow: inset -7px 0 0px -4px #e1ebf0;\n}\n\n.ka-row-selected {\n  background-color: #F7FcFd;\n}\n\n.ka-group-row {\n  background-color: #F9FBFC;\n  box-sizing: border-box;\n  border-bottom: 1px solid white;\n  border-top: 1px solid white;\n}\n\n.ka-group-cell {\n  padding: 8px 10px;\n}\n\n.ka-group-cell-content {\n  display: flex;\n  align-items: center;\n}\n\n.ka-icon-group-arrow {\n  padding: 10px 5px 10px 10px;\n  margin-right: 5px;\n  cursor: pointer;\n}\n\n.ka-icon-tree-arrow {\n  padding: 0 10px 0 10px;\n  margin-left: -10px;\n  cursor: pointer;\n}\n\n.ka-icon-sort {\n  margin-left: 3px;\n}\n\n.ka-pointer {\n  cursor: pointer;\n}\n\n.ka-filter-row-cell {\n  padding: 0 20px 15px 20px;\n}\n\n.ka-loading {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background-color: #ffffff88;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.ka-loading-active {\n  position: relative;\n}\n\n.ka-loading-icon {\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  -webkit-animation: typing 1s linear infinite alternate;\n          animation: typing 1s linear infinite alternate;\n  position: relative;\n  left: -20px;\n}\n\n.ka-thead-cell-resize {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  width: 2px;\n  cursor: col-resize;\n  background-color: #d7e4eb;\n  position: relative;\n  left: 19px;\n}\n\n.ka-thead-cell-resize:active:after {\n  content: \"\";\n  display: block;\n  position: fixed;\n  cursor: col-resize;\n  z-index: 2;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.ka-thead-background:active {\n  z-index: 1;\n}\n\n.ka-summary-cell {\n  padding: 12px 20px;\n}\n\n@-webkit-keyframes typing {\n  0% {\n    background-color: #747d86;\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  25% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px #747d86, 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  75% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px #747d86;\n  }\n  100% {\n    box-shadow: none;\n  }\n}\n\n@keyframes typing {\n  0% {\n    background-color: #747d86;\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  25% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px #747d86, 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  75% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px #747d86;\n  }\n  100% {\n    box-shadow: none;\n  }\n}\n.ka-loading-text {\n  margin-top: 15px;\n  color: #353C44;\n}\n\n.ka-paging-sizes-active {\n  display: flex;\n  justify-content: space-between;\n}\n\n.ka-paging-pages, .ka-paging-sizes {\n  list-style: none;\n  display: flex;\n  flex-direction: row;\n  padding: 0 10px;\n  margin: 0;\n}\n\n.ka-paging-pages {\n  justify-content: flex-end;\n}\n\n.ka-paging-page-index, .ka-paging-size {\n  cursor: pointer;\n  padding: 5px;\n  margin: 10px 5px;\n  min-width: 18px;\n  border-radius: 50%;\n  text-align: center;\n  color: #747D86;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n\n.ka-paging-page-index-active, .ka-paging-size-active {\n  background-color: #F1F5F7;\n  font-weight: bold;\n  color: #747D86;\n}\n\n.ka-popup {\n  background-color: white;\n  border: 1px solid #ddd;\n  border-radius: 6px;\n  box-sizing: border-box;\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);\n  color: #747D86;\n  padding: 15px 20px;\n  position: absolute;\n  text-align: center;\n  width: 245px;\n  max-height: 325px;\n  overflow-y: auto;\n  z-index: 1000;\n}\n\n.ka-popup-content-item {\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #F9FBFC;\n}\n\n.ka-popup-content-item-value {\n  padding: 8px 20px;\n}\n\n.ka-header-filter-button {\n  font-size: 16px;\n  margin-left: 3px;\n}\n\n.ka-header-filter-button-has-value {\n  font-weight: bold;\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (cssWithMappingToString) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], " {").concat(content, "}");
+      }
+
+      return content;
+    }).join("");
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
+
+
+  list.i = function (modules, mediaQuery, dedupe) {
+    if (typeof modules === "string") {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, ""]];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var i = 0; i < this.length; i++) {
+        // eslint-disable-next-line prefer-destructuring
+        var id = this[i][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = [].concat(modules[_i]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        // eslint-disable-next-line no-continue
+        continue;
+      }
+
+      if (mediaQuery) {
+        if (!item[2]) {
+          item[2] = mediaQuery;
+        } else {
+          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
 
 /***/ }),
 
@@ -16735,19 +16824,6 @@ __export(__webpack_require__(/*! ./Reducers/kaReducer */ "./node_modules/ka-tabl
 
 /***/ }),
 
-/***/ "./node_modules/ka-table/props.js":
-/*!****************************************!*\
-  !*** ./node_modules/ka-table/props.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-
-
-/***/ }),
-
 /***/ "./node_modules/ka-table/utils.js":
 /*!****************************************!*\
   !*** ./node_modules/ka-table/utils.js ***!
@@ -18830,6 +18906,315 @@ var classNamesShape =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default().
 
 /***/ }),
 
+/***/ "./node_modules/ka-table/style.scss":
+/*!******************************************!*\
+  !*** ./node_modules/ka-table/style.scss ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_2_sass_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!../postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!../sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./style.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./node_modules/ka-table/style.scss");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_2_sass_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_2_sass_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var isOldIE = function isOldIE() {
+  var memo;
+  return function memorize() {
+    if (typeof memo === 'undefined') {
+      // Test for IE <= 9 as proposed by Browserhacks
+      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+      // Tests for existence of standard globals is to allow style-loader
+      // to operate correctly into non-standard environments
+      // @see https://github.com/webpack-contrib/style-loader/issues/177
+      memo = Boolean(window && document && document.all && !window.atob);
+    }
+
+    return memo;
+  };
+}();
+
+var getTarget = function getTarget() {
+  var memo = {};
+  return function memorize(target) {
+    if (typeof memo[target] === 'undefined') {
+      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+        try {
+          // This will throw an exception if access to iframe is blocked
+          // due to cross-origin restrictions
+          styleTarget = styleTarget.contentDocument.head;
+        } catch (e) {
+          // istanbul ignore next
+          styleTarget = null;
+        }
+      }
+
+      memo[target] = styleTarget;
+    }
+
+    return memo[target];
+  };
+}();
+
+var stylesInDom = [];
+
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+
+  for (var i = 0; i < stylesInDom.length; i++) {
+    if (stylesInDom[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+
+  return result;
+}
+
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var index = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3]
+    };
+
+    if (index !== -1) {
+      stylesInDom[index].references++;
+      stylesInDom[index].updater(obj);
+    } else {
+      stylesInDom.push({
+        identifier: identifier,
+        updater: addStyle(obj, options),
+        references: 1
+      });
+    }
+
+    identifiers.push(identifier);
+  }
+
+  return identifiers;
+}
+
+function insertStyleElement(options) {
+  var style = document.createElement('style');
+  var attributes = options.attributes || {};
+
+  if (typeof attributes.nonce === 'undefined') {
+    var nonce =  true ? __webpack_require__.nc : 0;
+
+    if (nonce) {
+      attributes.nonce = nonce;
+    }
+  }
+
+  Object.keys(attributes).forEach(function (key) {
+    style.setAttribute(key, attributes[key]);
+  });
+
+  if (typeof options.insert === 'function') {
+    options.insert(style);
+  } else {
+    var target = getTarget(options.insert || 'head');
+
+    if (!target) {
+      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+    }
+
+    target.appendChild(style);
+  }
+
+  return style;
+}
+
+function removeStyleElement(style) {
+  // istanbul ignore if
+  if (style.parentNode === null) {
+    return false;
+  }
+
+  style.parentNode.removeChild(style);
+}
+/* istanbul ignore next  */
+
+
+var replaceText = function replaceText() {
+  var textStore = [];
+  return function replace(index, replacement) {
+    textStore[index] = replacement;
+    return textStore.filter(Boolean).join('\n');
+  };
+}();
+
+function applyToSingletonTag(style, index, remove, obj) {
+  var css = remove ? '' : obj.media ? "@media ".concat(obj.media, " {").concat(obj.css, "}") : obj.css; // For old IE
+
+  /* istanbul ignore if  */
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = replaceText(index, css);
+  } else {
+    var cssNode = document.createTextNode(css);
+    var childNodes = style.childNodes;
+
+    if (childNodes[index]) {
+      style.removeChild(childNodes[index]);
+    }
+
+    if (childNodes.length) {
+      style.insertBefore(cssNode, childNodes[index]);
+    } else {
+      style.appendChild(cssNode);
+    }
+  }
+}
+
+function applyToTag(style, options, obj) {
+  var css = obj.css;
+  var media = obj.media;
+  var sourceMap = obj.sourceMap;
+
+  if (media) {
+    style.setAttribute('media', media);
+  } else {
+    style.removeAttribute('media');
+  }
+
+  if (sourceMap && typeof btoa !== 'undefined') {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    while (style.firstChild) {
+      style.removeChild(style.firstChild);
+    }
+
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var singleton = null;
+var singletonCounter = 0;
+
+function addStyle(obj, options) {
+  var style;
+  var update;
+  var remove;
+
+  if (options.singleton) {
+    var styleIndex = singletonCounter++;
+    style = singleton || (singleton = insertStyleElement(options));
+    update = applyToSingletonTag.bind(null, style, styleIndex, false);
+    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+  } else {
+    style = insertStyleElement(options);
+    update = applyToTag.bind(null, style, options);
+
+    remove = function remove() {
+      removeStyleElement(style);
+    };
+  }
+
+  update(obj);
+  return function updateStyle(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
+        return;
+      }
+
+      update(obj = newObj);
+    } else {
+      remove();
+    }
+  };
+}
+
+module.exports = function (list, options) {
+  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+  // tags it will allow on a page
+
+  if (!options.singleton && typeof options.singleton !== 'boolean') {
+    options.singleton = isOldIE();
+  }
+
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+
+    if (Object.prototype.toString.call(newList) !== '[object Array]') {
+      return;
+    }
+
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDom[index].references--;
+    }
+
+    var newLastIdentifiers = modulesToDom(newList, options);
+
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+
+      var _index = getIndexByIdentifier(_identifier);
+
+      if (stylesInDom[_index].references === 0) {
+        stylesInDom[_index].updater();
+
+        stylesInDom.splice(_index, 1);
+      }
+    }
+
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
+
+/***/ }),
+
 /***/ "./node_modules/tiny-warning/dist/tiny-warning.esm.js":
 /*!************************************************************!*\
   !*** ./node_modules/tiny-warning/dist/tiny-warning.esm.js ***!
@@ -18969,6 +19354,9 @@ function _defineProperties(target, props) {
 function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
+  Object.defineProperty(Constructor, "prototype", {
+    writable: false
+  });
   return Constructor;
 }
 
@@ -19296,17 +19684,11 @@ __webpack_require__.r(__webpack_exports__);
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
+  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, _typeof(obj);
 }
 
 /***/ }),
