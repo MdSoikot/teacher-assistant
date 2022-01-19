@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Student;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
 class StudentController extends Controller
@@ -13,8 +15,13 @@ class StudentController extends Controller
     }
     public function show()
     {
-        $students = [];
-        //dd($subsTeacher);
+        $students = Student::all();
         return Inertia::render('Student/ViewStudent', ['students' => $students]);
+    }
+    public function create(Request $request)
+    {
+        $data = $request->all();
+        $user = Student::create($data);
+        return Redirect::back();
     }
 }

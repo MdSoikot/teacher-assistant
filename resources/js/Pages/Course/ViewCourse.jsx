@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { usePage } from '@inertiajs/inertia-react';
 import { kaReducer, Table } from 'ka-table';
-import { DataType } from 'ka-table/enums';
+import { DataType, FilteringMode, SortingMode } from 'ka-table/enums';
 import Layout from '../Layout/Layout'
 import "ka-table/style.scss";
 
