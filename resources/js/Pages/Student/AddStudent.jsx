@@ -60,6 +60,12 @@ const AddStudent = () => {
             toast.error("Field Can't be empty!");
         }
     };
+    const userTypes = [
+        { key: "", value: "Select One" },
+        { key: "cse", value: "cse" },
+        { key: "eee", value: "eee" },
+        { key: "tex", value: "tex" },
+    ];
     return (
         <div className="main-div">
             <div className="font-inter-600 text-3xl mb-4 flex gap-4">
@@ -102,16 +108,13 @@ const AddStudent = () => {
                             placeholder="Student Id"
                             // value={values?.phone}
                         />
-                        <TextInput
-                            id="student_department"
-                            name="student_department"
-                            label="Student Department"
-                            type="text"
+                        <SingleSelect
+                            id="role"
+                            name="role"
+                            label="Depertment"
                             onChange={handleChange}
-                            inputClass="profile-textinput-input"
-                            inputLabelClass="font-inter-600 text-md"
-                            placeholder="student Department"
-                            // value={values?.studentId}
+                            inputClass="textinput-input"
+                            optionValues={userTypes}
                         />
                         <TextInput
                             id="student_email"
@@ -137,8 +140,6 @@ const AddStudent = () => {
                         />
                     </div>
                     <div className="main-card__right font-inter-600 text-md">
-                        
-
                         <div className="pt-3">
                             <button className="btn-signup" type="submit">
                                 Submit

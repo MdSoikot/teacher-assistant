@@ -7249,7 +7249,7 @@ function Sidebar() {
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.InertiaLink, {
                   className: "nounderline",
-                  href: route('add_student'),
+                  href: route('view_student'),
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
                     primary: "View Student"
                   })
@@ -7557,6 +7557,19 @@ var AddStudent = function AddStudent() {
     }
   };
 
+  var userTypes = [{
+    key: "",
+    value: "Select One"
+  }, {
+    key: "cse",
+    value: "cse"
+  }, {
+    key: "eee",
+    value: "eee"
+  }, {
+    key: "tex",
+    value: "tex"
+  }];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
     className: "main-div",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
@@ -7600,16 +7613,13 @@ var AddStudent = function AddStudent() {
             inputLabelClass: "font-inter-600 text-md",
             placeholder: "Student Id" // value={values?.phone}
 
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "student_department",
-            name: "student_department",
-            label: "Student Department",
-            type: "text",
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            id: "role",
+            name: "role",
+            label: "Depertment",
             onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md",
-            placeholder: "student Department" // value={values?.studentId}
-
+            inputClass: "textinput-input",
+            optionValues: userTypes
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
             id: "student_email",
             name: "student_email",

@@ -11,4 +11,10 @@ class StudentController extends Controller
     {
         return Inertia::render('Student/AddStudent');
     }
+    public function show()
+    {
+        $students = [];
+        //dd($subsTeacher);
+        return Inertia::render('Student/ViewStudent', ['students' => $students]);
+    }
 }
