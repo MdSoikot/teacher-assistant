@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Users_ApprovedUsers_js"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_SubsTeacher_ViewSubTeacher_jsx"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
 /*!**********************************************************************!*\
@@ -7318,10 +7318,10 @@ function Sidebar() {
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Users/ApprovedUsers.js":
-/*!***************************************************!*\
-  !*** ./resources/js/Pages/Users/ApprovedUsers.js ***!
-  \***************************************************/
+/***/ "./resources/js/Pages/SubsTeacher/ViewSubTeacher.jsx":
+/*!***********************************************************!*\
+  !*** ./resources/js/Pages/SubsTeacher/ViewSubTeacher.jsx ***!
+  \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -7329,13 +7329,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var ka_table__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ka-table */ "./node_modules/ka-table/index.js");
-/* harmony import */ var ka_table__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ka_table__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var ka_table_enums__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ka-table/enums */ "./node_modules/ka-table/enums.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Layout/Layout */ "./resources/js/Pages/Layout/Layout.jsx");
-/* harmony import */ var ka_table_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ka-table/style.scss */ "./node_modules/ka-table/style.scss");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var ka_table__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ka-table */ "./node_modules/ka-table/index.js");
+/* harmony import */ var ka_table__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ka_table__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var ka_table_enums__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ka-table/enums */ "./node_modules/ka-table/enums.js");
+/* harmony import */ var ka_table_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ka-table/style.scss */ "./node_modules/ka-table/style.scss");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Layout/Layout */ "./resources/js/Pages/Layout/Layout.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
@@ -7364,44 +7364,59 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var ApprovedUsers = function ApprovedUsers() {
-  var approvedUsers = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_5__.usePage)().props.approvedUsers;
-  var dataArray = approvedUsers;
+var ViewSubTeacher = function ViewSubTeacher() {
+  var subsTeacher = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.usePage)().props.subsTeacher;
+  console.log("s", subsTeacher);
+  var dataArray = subsTeacher;
   var tablePropsInit = {
     columns: [{
       key: 'name',
       title: 'Name',
-      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_1__.DataType.String,
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_2__.DataType.String,
       style: {
-        width: '20%'
+        width: '15%'
+      }
+    }, {
+      key: 'teacher_id',
+      title: 'ID',
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_2__.DataType.String,
+      style: {
+        width: '15%'
       }
     }, {
       key: 'email',
       title: 'Email',
-      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_1__.DataType.String,
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_2__.DataType.String,
       style: {
-        width: '20%'
-      }
-    }, {
-      key: 'role',
-      title: 'Role',
-      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_1__.DataType.String,
-      style: {
-        width: '20%'
+        width: '15%'
       }
     }, {
       key: 'department',
       title: 'Department',
-      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_1__.DataType.String,
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_2__.DataType.String,
       style: {
-        width: '20%'
+        width: '10%'
+      }
+    }, {
+      key: 'designation',
+      title: 'Designation',
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_2__.DataType.String,
+      style: {
+        width: '15%'
       }
     }, {
       key: 'phone',
       title: 'Phone',
-      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_1__.DataType.String,
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_2__.DataType.String,
       style: {
-        width: '20%'
+        width: '15%'
+      }
+    }, {
+      key: 'office_room_no',
+      title: 'Room',
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_2__.DataType.String,
+      style: {
+        width: '15%'
       }
     }],
     data: dataArray,
@@ -7409,7 +7424,7 @@ var ApprovedUsers = function ApprovedUsers() {
     searchText: ''
   };
 
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(tablePropsInit),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)(tablePropsInit),
       _useState2 = _slicedToArray(_useState, 2),
       tableProps = _useState2[0],
       changeTableProps = _useState2[1];
@@ -7425,7 +7440,7 @@ var ApprovedUsers = function ApprovedUsers() {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       className: "font-inter-600 text-3xl mb-4 flex gap-4",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-        children: "Approved User"
+        children: "Substitute Teacher List"
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
       className: "main-card",
@@ -7436,7 +7451,7 @@ var ApprovedUsers = function ApprovedUsers() {
           dispatch(search(event.currentTarget.value));
         },
         className: "top-element"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(ka_table__WEBPACK_IMPORTED_MODULE_0__.Table, _objectSpread(_objectSpread({}, tableProps), {}, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(ka_table__WEBPACK_IMPORTED_MODULE_1__.Table, _objectSpread(_objectSpread({}, tableProps), {}, {
         childComponents: {
           noDataRow: {
             content: function content() {
@@ -7450,13 +7465,13 @@ var ApprovedUsers = function ApprovedUsers() {
   });
 };
 
-ApprovedUsers.layout = function (page) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+ViewSubTeacher.layout = function (page) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
     children: page
   });
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ApprovedUsers);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ViewSubTeacher);
 
 /***/ }),
 

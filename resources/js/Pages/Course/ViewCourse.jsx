@@ -17,8 +17,14 @@ const ViewCourse = () => {
 
         ],
         data: dataArray,
-        rowKeyField: 'id',
-        searchText: '',
+        rowKeyField: "id",
+        paging: {
+            enabled: true,
+        },
+        selectedRows: [3, 5],
+        sortingMode: SortingMode.Single,
+        filteringMode: FilteringMode.FilterRow,
+        searchText: "",
     };
 
 
@@ -51,5 +57,5 @@ const ViewCourse = () => {
     )
 }
 
-ViewCourse.layout = (page) => <Layout>{page}</Layout>
-export default ViewCourse
+ViewCourse.layout = (page) => <Layout>{page}</Layout>;
+export default ViewCourse;
