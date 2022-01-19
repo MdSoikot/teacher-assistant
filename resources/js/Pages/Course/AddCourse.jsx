@@ -10,6 +10,13 @@ import toast from "react-hot-toast";
 import Dropzone from "../../Shared/Dropzone";
 
 const AddCourse = () => {
+    const [values, setValues] = useState({
+        course_title: '',
+        course_code: '',
+        department: '',
+        course_credit: '',
+        course_outline: ''
+    })
     const handleChange = (e) => {
         const key = e.target.name;
         const value = e.target.value;
@@ -25,19 +32,39 @@ const AddCourse = () => {
             [name]: file,
         }));
     }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(typeof (values.course_outline), values.course_outline.preview)
+        const mapping = Object.values(values).filter((item => !values?.course_outline?.preview && !item.length))
+        if (!mapping.length) {
+            Inertia.post(route('add_course'), values, {
+                onFinish: () => {
+                    setValues({
+                        course_title: '',
+                        course_code: '',
+                        course_credit: '',
+                        course_outline: '',
+                    }),
+                        toast.success("Save Successfuly!")
+                }
+            });
+        } else {
+            toast.error("Field Can't be empty!")
+        }
+    }
     return (
         <div className="main-div">
             <div className="font-inter-600 text-3xl mb-4 flex gap-4">
-                <span>Add Course Here...</span>
+                <span>Add Course</span>
             </div>
             <form
-            // onSubmit={handleSubmit}
+                onSubmit={handleSubmit}
             >
                 <div className="main-card flex">
                     <div className="main-card__left">
                         <TextInput
-                            id="name"
-                            name="name"
+                            id="course_title"
+                            name="course_title"
                             label="Course Name"
                             type="text"
                             onChange={handleChange}
@@ -47,8 +74,8 @@ const AddCourse = () => {
                             placeholder="Course Name"
                         />
                         <TextInput
-                            id="code"
-                            name="code"
+                            id="course_code"
+                            name="course_code"
                             label="Course Code"
                             type="text"
                             onChange={handleChange}
@@ -59,43 +86,32 @@ const AddCourse = () => {
                         />
 
                         <TextInput
-                            id="cradit"
-                            name="cradit"
+                            id="course_credit"
+                            name="course_credit"
                             label="Course Cradit"
-                            type="cradit"
+                            type="text"
                             onChange={handleChange}
                             inputClass="profile-textinput-input"
                             inputLabelClass="font-inter-600 text-md"
                             placeholder="Course Cradit"
-                            // value={values?.phone}
+                        // value={values?.phone}
                         />
                         <TextInput
-                            id="studentId"
-                            name="studentId"
+                            id="department"
+                            name="department"
                             label="Department"
                             type="text"
                             onChange={handleChange}
                             inputClass="profile-textinput-input"
                             inputLabelClass="font-inter-600 text-md"
                             placeholder="Department"
-                            // value={values?.studentId}
+                        // value={values?.studentId}
                         />
-                        {/* {role === 'teacher' && <TextInput
-                            id="teacherId"
-                            name="teacherId"
-                            label="Teacher Id"
-                            type="text"
-                            onChange={handleChange}
-                            inputClass="profile-textinput-input"
-                            inputLabelClass="font-inter-600 text-md"
-                            placeholder="Your Id"
-                            value={values?.teacherId}
-                        />} */}
                     </div>
-                    <div className="main-card__right">
-                    <Dropzone
-                            label="Upload PDF or IMAGE"
-                            name="pdf"
+                    <div className="main-card__right font-inter-600 text-md">
+                        <Dropzone
+                            label="Outline"
+                            name="course_outline"
                             className="w-full pb-8 pr-6 lg:w-1/2"
                             //errors={errors?.image}
                             // value={values?.photo}
@@ -103,16 +119,12 @@ const AddCourse = () => {
                             onChange={handleFileChange}
                             multiple={false}
                         />
-                        
+
 
                         <div className="pt-3">
-                            <Button
-                                className="btn-signup"
-                                variant="contained"
-                                type="submit"
-                            >
+                            <button className="btn-signup" type="submit">
                                 Submit
-                            </Button>
+                            </button>
                         </div>
                     </div>
                 </div>

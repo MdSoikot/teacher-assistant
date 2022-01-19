@@ -18,6 +18,8 @@ class CreateCoursesTable extends Migration
             $table->string('course_title')->nullable()->default(null);
             $table->string('course_code')->nullable()->default(null);
             $table->string('course_outline')->nullable()->default(null);
+            $table->string('course_credit')->nullable()->default(null);
+            $table->string('department')->nullable()->default(null);
             $table->timestamps();
         });
     }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Course;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
 class CourseController extends Controller
@@ -23,8 +24,19 @@ class CourseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
+        // dd($request->all());
+        $data = $request->all();
+        $fileName = "outline_" . $data['course_title'] . "." . $data['course_outline']->extension();
+        $file_path = "outline/" . $fileName;
+        $test = $data['course_outline']->move(public_path('outline'), $fileName);
+        $data['course_outline'] = $file_path;
+        //dd($data);
+
+        $user = Course::create($data);
+        return Redirect::back();
+
         //create course after submit 
     }
 
@@ -48,7 +60,8 @@ class CourseController extends Controller
     public function show(Course $course)
     {
         //view course table
-        return Inertia::render('Course/ViewCourse');
+        $courses = Course::all();
+        return Inertia::render('Course/ViewCourse', ['courses' => $courses]);
     }
 
     /**

@@ -6,6 +6,8 @@ import SingleSelect from './../../Shared/SingleSelect';
 import { usePage } from '@inertiajs/inertia-react';
 
 import { FileUploader } from "react-drag-drop-files";
+import toast from 'react-hot-toast';
+import LoadingButton from '../../Shared/LoadingButton';
 //import "./styles.css";
 const fileTypes = ["JPG", "PNG", "GIF"];
 
@@ -16,6 +18,7 @@ const Login = () => {
   const [sending, setSending] = useState(false);
   console.log('err', errors)
   const [values, setValues] = useState({
+    role: '',
     email: '',
     password: '',
     remember: false,
@@ -29,10 +32,17 @@ const Login = () => {
     }));
   }
   const handleSubmit = (e) => {
+    const emptyCheck = Object.values(values).filter((it) => it === '')
+    if (emptyCheck.length) {
+      toast.error("Field can't be empty")
+    }
+    console.log("er", errors)
+
     e.preventDefault();
     setSending(true);
     Inertia.post(route('login.attempt'), values, {
       onFinish: () => setSending(false),
+      onError: () => toast.error("Credintial doesn't exist")
     });
   }
 
@@ -115,7 +125,14 @@ const Login = () => {
                 <span className="login-remeverme font-inter-normal">Remember Me</span>
               </label>
               <div>
-                <button className="btn-signup" type="submit">Sign In</button>
+                <LoadingButton
+                  type="submit"
+                  loading={sending}
+                  className="btn-signup"
+                >
+                  Sign In
+                </LoadingButton>
+                {/* <button className="btn-signup" type="submit">Sign In</button> */}
               </div>
               <div>
                 Don't have an account?{" "}

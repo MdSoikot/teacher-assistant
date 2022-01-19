@@ -10,6 +10,18 @@
     font-weight: 600;
 }
 
+.font-montserrat-700 {
+    font-family: montserrat;
+    font-style : normal;
+    font-weight: 600;
+}
+
+.font-inter-normal {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: normal;
+}
+
 .font-inter-400 {
     font-family: Inter;
     font-style : normal;
@@ -99,12 +111,17 @@
 }
 
 .btn-signup {
-    width        : 144px;
-    height       : 48px;
-    color        : white;
-    background   : black;
-    border-radius: 10px;
-    margin-top   : 10px;
+    padding        : 0 5px;
+    min-height     : 48px;
+    min-width      : 144px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    white-space    : nowrap;
+    color          : #ffffff;
+    background     : black;
+    border-radius  : 10px;
+    margin-top     : 10px;
 }
 
 .pro-pic {
@@ -337,4 +354,95 @@
     top     : -8px;
     right   : -8px;
     cursor  : pointer;
+}
+
+.auth-ml6 {
+    margin-left: 6px;
+}
+
+.auth-btn {
+    padding        : 0 5px;
+    min-height     : 48px;
+    min-width      : 144px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    white-space    : nowrap;
+    color          : #ffffff;
+    background     : black;
+    border-radius  : 10px;
+    margin-top     : 10px;
+}
+
+
+.loading-btn>svg {
+    animation: spinning 1s infinite linear;
+}
+
+/*.....Modal.....*/
+.confirmmodal-children {
+    font-size  : 15px;
+    line-height: 140%;
+    color      : #0f0422;
+}
+
+.btn-modal-children {
+    width        : 100px;
+    height       : 35px;
+    background   : black;
+    border-radius: 6px;
+    font-size    : 16px;
+    line-height  : 16px;
+    color        : #ffffff;
+}
+
+.modal-left {
+    width  : 50%;
+    padding: 20px 40px;
+}
+
+.modal-right {
+    width  : 50%;
+    padding: 20px 40px;
+}
+
+.user-label {
+    width: 50%;
+}
+
+.user-value {
+    width: 50%;
+}
+
+.image-box {
+    max-width : 300px;
+    max-height: 300px;
+    width     : 100%;
+    margin-top: -20px;
+}
+
+.extras-ele-label {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 17px;
+    line-height: 20px;
+    color      : #484848;
+}
+
+.extras-subele-label {
+    font-family   : Inter;
+    font-style    : normal;
+    font-weight   : normal;
+    font-size     : 12px;
+    line-height   : 20px;
+    text-transform: lowercase;
+    color         : #717171;
+}
+
+.MuiInputLabel-root {
+    color      : black !important;
+    font-size  : 20px !important;
+    font-weight: 600 !important;
+    font-family: 'Inter' !important;
 }

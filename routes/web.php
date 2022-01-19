@@ -67,7 +67,7 @@ Route::put('users/approved_user/{id}')
     ->name('accept_user')
     ->uses('App\Http\Controllers\UserController@approvedUser')
     ->middleware('auth');
-Route::put('users/decline/{id}')
+Route::delete('users/decline/{id}')
     ->name('decline_user')
     ->uses('App\Http\Controllers\UserController@declineUser')
     ->middleware('auth');
@@ -77,13 +77,39 @@ Route::get('course')
     ->name('course')
     ->uses('App\Http\Controllers\CourseController@index')
     ->middleware('auth');
-Route::get('course/add')
+Route::post('course/add')
     ->name('add_course')
     ->uses('App\Http\Controllers\CourseController@create')
     ->middleware('auth');
 Route::get('course/view')
     ->name('view_course')
     ->uses('App\Http\Controllers\CourseController@show')
+    ->middleware('auth');
+// Manage Routine
+Route::get('routine')
+    ->name('routine')
+    ->uses('App\Http\Controllers\RoutineController@index')
+    ->middleware('auth');
+Route::post('routine/add')
+    ->name('add_routine')
+    ->uses('App\Http\Controllers\RoutineController@create')
+    ->middleware('auth');
+Route::get('routine/view')
+    ->name('view_routine')
+    ->uses('App\Http\Controllers\RoutineController@show')
+    ->middleware('auth');
+// Manage Marks
+Route::get('marks')
+    ->name('marks')
+    ->uses('App\Http\Controllers\MarkController@index')
+    ->middleware('auth');
+Route::post('marks/add')
+    ->name('add_marks')
+    ->uses('App\Http\Controllers\MarkController@create')
+    ->middleware('auth');
+Route::get('marks/view')
+    ->name('view_marks')
+    ->uses('App\Http\Controllers\MarkController@show')
     ->middleware('auth');
 //Manage Substitue Teacher
 Route::get('substitute_teacher')
@@ -98,3 +124,18 @@ Route::get('substitute_teacher/view')
     ->name('view_substitute_teacher')
     ->uses('App\Http\Controllers\SubstituteTeacherController@show')
     ->middleware('auth');
+
+//Manage Report
+
+Route::get('static_report_form')
+    ->name('show_static_report_form')
+    ->uses('App\Http\Controllers\reportController@showStaticReportForm')
+    ->middleware('auth');
+Route::get('dynamic_report_form')
+    ->name('show_dynamic_report_form')
+    ->uses('App\Http\Controllers\reportController@showDynamicReportForm')
+    ->middleware('auth');
+
+Route::get('verify_email/{email}')
+    ->name('verify_email')
+    ->uses('App\Http\Controllers\Auth\RegisterController@verifyEmail');
