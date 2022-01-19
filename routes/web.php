@@ -139,3 +139,18 @@ Route::get('dynamic_report_form')
 Route::get('verify_email/{email}')
     ->name('verify_email')
     ->uses('App\Http\Controllers\Auth\RegisterController@verifyEmail');
+
+
+// Manage Student
+Route::get('student')
+    ->name('student')
+    ->uses('App\Http\Controllers\StudentController@index')
+    ->middleware('auth');
+Route::post('student/add')
+    ->name('add_student')
+    ->uses('App\Http\Controllers\StudentController@create')
+    ->middleware('auth');
+Route::get('student/view')
+    ->name('view_student')
+    ->uses('App\Http\Controllers\StudentController@show')
+    ->middleware('auth');

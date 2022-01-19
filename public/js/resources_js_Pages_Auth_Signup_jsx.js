@@ -786,6 +786,148 @@ exports["default"] = function (file, acceptedFiles) {
 
 /***/ }),
 
+/***/ "./resources/js/Icons/LoadingIcn.jsx":
+/*!*******************************************!*\
+  !*** ./resources/js/Icons/LoadingIcn.jsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ LoadingIcn)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+/* eslint-disable no-tabs */
+function LoadingIcn() {
+  return (
+    /*#__PURE__*/
+    // <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //   <g clipPath="url(#clip0)">
+    //     <path d="M5.27964 15.4173L4.97841 15.1571L2.51106 13.026L2.51105 13.026C2.38844 12.9201 2.44743 12.7191 2.60784 12.6962L3.5481 12.5624L3.80668 12.5256L3.7586 12.2689C3.73852 12.1617 3.72051 12.0544 3.70519 11.9468C3.43086 10.0192 3.92326 8.10153 5.09224 6.54455C5.09224 6.54454 5.09225 6.54454 5.09225 6.54454L5.27964 15.4173ZM5.27964 15.4173L6.46198 13.5954L6.46199 13.5953L7.27118 12.3485L5.27964 15.4173Z" fill="white" stroke="#01519F" strokeWidth="0.5" />
+    //     <path d="M7.43919 17.3236L8.4856 15.6762C9.4347 16.1636 10.5382 16.373 11.6727 16.2115C14.4659 15.814 16.45 13.3128 16.2507 10.5403L16.2315 10.2729L15.9661 10.3107L14.8511 10.4694C14.6907 10.4922 14.578 10.3157 14.6662 10.1797L15.6376 8.68294L16.6577 7.11099L17.586 7.91277L19.4263 9.50229C19.4263 9.50229 19.4263 9.50229 19.4263 9.5023C19.5489 9.60822 19.4899 9.80921 19.3295 9.83206C19.3295 9.83206 19.3295 9.83206 19.3295 9.83206L18.3885 9.96598L18.1522 9.99961L18.1749 10.2372C18.3474 12.0476 17.8468 13.831 16.7472 15.2956C15.5782 16.8525 13.874 17.8604 11.9464 18.1347C10.3735 18.3586 8.80778 18.0714 7.43919 17.3236Z" fill="white" stroke="#01519F" strokeWidth="0.5" />
+    //   </g>
+    //   <defs>
+    //     <clipPath id="clip0">
+    //       <rect width="17.8378" height="17.8378" fill="white" transform="translate(0.833496 3.34674) rotate(-8.1)" />
+    //     </clipPath>
+    //   </defs>
+    // </svg>
+    // <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //   <g clipPath="url(#clip0)">
+    //     <path d="M5.27964 15.4173L4.97841 15.1571L2.51106 13.026L2.51105 13.026C2.38844 12.9201 2.44743 12.7191 2.60784 12.6962L3.5481 12.5624L3.80668 12.5256L3.7586 12.2689C3.73852 12.1617 3.72051 12.0544 3.70519 11.9468C3.43086 10.0192 3.92326 8.10153 5.09224 6.54455C5.09224 6.54454 5.09225 6.54454 5.09225 6.54454L5.27964 15.4173ZM5.27964 15.4173L6.46198 13.5954L6.46199 13.5953L7.27118 12.3485L5.27964 15.4173Z" fill="black" stroke="#01519F" strokeWidth="0.5" />
+    //     <path d="M7.43919 17.3236L8.4856 15.6762C9.4347 16.1636 10.5382 16.373 11.6727 16.2115C14.4659 15.814 16.45 13.3128 16.2507 10.5403L16.2315 10.2729L15.9661 10.3107L14.8511 10.4694C14.6907 10.4922 14.578 10.3157 14.6662 10.1797L15.6376 8.68294L16.6577 7.11099L17.586 7.91277L19.4263 9.50229C19.4263 9.50229 19.4263 9.50229 19.4263 9.5023C19.5489 9.60822 19.4899 9.80921 19.3295 9.83206C19.3295 9.83206 19.3295 9.83206 19.3295 9.83206L18.3885 9.96598L18.1522 9.99961L18.1749 10.2372C18.3474 12.0476 17.8468 13.831 16.7472 15.2956C15.5782 16.8525 13.874 17.8604 11.9464 18.1347C10.3735 18.3586 8.80778 18.0714 7.43919 17.3236Z" fill="black" stroke="#01519F" strokeWidth="0.5" />
+    //   </g>
+    //   <defs>
+    //     <clipPath id="clip0">
+    //       <rect width="17.8378" height="17.8378" fill="white" transform="translate(0.833496 3.34674) rotate(-8.1)" />
+    //     </clipPath>
+    //   </defs>
+    // </svg>
+    // <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //   <path fillRule="evenodd" clipRule="evenodd" d="M2.09671 8.50011C2.09671 5.28711 4.60138 2.09677 8.50005 2.09677C11.6484 2.09677 13.2056 4.42691 13.8686 5.66677H11.9C11.7498 5.66677 11.6056 5.72648 11.4994 5.83275C11.3931 5.93902 11.3334 6.08315 11.3334 6.23344C11.3334 6.38373 11.3931 6.52786 11.4994 6.63413C11.6056 6.7404 11.7498 6.80011 11.9 6.80011H15.3C15.4503 6.80011 15.5945 6.7404 15.7007 6.63413C15.807 6.52786 15.8667 6.38373 15.8667 6.23344V2.83344C15.8667 2.68315 15.807 2.53902 15.7007 2.43275C15.5945 2.32648 15.4503 2.26677 15.3 2.26677C15.1498 2.26677 15.0056 2.32648 14.8994 2.43275C14.7931 2.53902 14.7334 2.68315 14.7334 2.83344V4.88817C13.9355 3.48057 12.0882 0.96344 8.50005 0.96344C3.89531 0.96344 0.963379 4.74311 0.963379 8.50011C0.963379 12.2571 3.89531 16.0368 8.50005 16.0368C10.7032 16.0368 12.537 15.1641 13.8426 13.8358C14.5354 13.1292 15.0849 12.2953 15.461 11.3799C15.4893 11.3111 15.5037 11.2373 15.5035 11.1629C15.5033 11.0885 15.4884 11.0149 15.4597 10.9462C15.431 10.8775 15.3891 10.8152 15.3363 10.7627C15.2836 10.7102 15.221 10.6687 15.1521 10.6404C15.0833 10.6121 15.0096 10.5977 14.9352 10.5979C14.8607 10.5981 14.7871 10.613 14.7184 10.6417C14.6498 10.6703 14.5874 10.7123 14.535 10.765C14.4825 10.8178 14.4409 10.8804 14.4126 10.9492C14.0924 11.7289 13.6244 12.4393 13.0345 13.0414C11.934 14.1634 10.387 14.9034 8.50005 14.9034C4.60138 14.9034 2.09671 11.7131 2.09671 8.50011Z" fill="black" />
+    // </svg>
+    // <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //   <g clipPath="url(#clip0)">
+    //     <path d="M8.29387 12.9834C8.54133 12.6995 8.33975 12.2563 7.96315 12.2563H6.83562C6.82828 12.1447 6.82417 12.0323 6.82417 11.9189C6.82417 9.10963 9.10966 6.82414 11.9189 6.82414C13.269 6.82414 14.4978 7.35212 15.4104 8.21222L17.0003 6.3522C15.6085 5.07899 13.8174 4.38159 11.9189 4.38159C9.90564 4.38159 8.01286 5.16563 6.58924 6.58921C5.16566 8.01283 4.38162 9.90561 4.38162 11.9189C4.38162 12.0318 4.38444 12.1442 4.38935 12.2563H3.43962C3.06302 12.2563 2.86141 12.6995 3.1089 12.9833L5.25136 15.4409L5.70137 15.957L7.31706 14.1037L8.29387 12.9834Z" fill="black" />
+    //     <path d="M20.7284 11.5496L19.1304 9.71665L18.1359 8.57593L16.716 10.2046L15.5435 11.5496C15.296 11.8335 15.4976 12.2767 15.8742 12.2767H17.0004C16.8162 14.9197 14.6074 17.0137 11.9184 17.0137C10.7446 17.0137 9.66239 16.6145 8.8 15.945L7.20996 17.8052C8.542 18.8749 10.1854 19.4563 11.9184 19.4563C13.9317 19.4563 15.8245 18.6723 17.2481 17.2487C18.5871 15.9097 19.36 14.1557 19.4472 12.2768H20.3977C20.7743 12.2767 20.9759 11.8335 20.7284 11.5496V11.5496Z" fill="black" />
+    //   </g>
+    //   <defs>
+    //     <clipPath id="clip0">
+    //       <rect width="17.8378" height="17.8378" fill="white" transform="translate(3 3)" />
+    //     </clipPath>
+    //   </defs>
+    // </svg>
+    // <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //   <g clipPath="url(#clip0)">
+    //     <path d="M21.5003 9.93587L20.2213 12.8001L17.3571 11.5211L18.7982 10.9717L18.51 10.152C17.5462 7.35086 14.9072 5.46839 11.9529 5.46839C9.35886 5.46839 6.972 6.92753 5.78308 9.22432L4.396 8.71992C5.80109 5.83768 8.72837 4.00024 11.9529 4.00024C15.4926 4.00024 18.6721 6.24299 19.861 9.57559L20.1763 10.4403L21.5003 9.93587Z" fill="black" />
+    //     <path d="M19.0953 16.0606C17.6902 18.9339 14.772 20.7713 11.5474 20.7713C8.00768 20.7713 4.8282 18.5285 3.63928 15.1959L3.33304 14.3313L2 14.8357L3.279 11.9714L6.14323 13.2594L4.70211 13.8089L4.99033 14.6285C5.95408 17.4297 8.59314 19.3122 11.5474 19.3122C14.1415 19.3122 16.5283 17.853 17.7172 15.5562L19.0953 16.0606Z" fill="black" />
+    //   </g>
+    //   <defs>
+    //     <clipPath id="clip0">
+    //       <rect width="19.5002" height="16.7711" fill="white" transform="translate(2 4)" />
+    //     </clipPath>
+    //   </defs>
+    // </svg>
+    // <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //   <g clipPath="url(#clip0)">
+    //     <path d="M16.1433 6.56778L15.0262 7.87532C14.1439 7.12634 13.0331 6.71694 11.8716 6.71694C9.17079 6.71694 6.9778 8.91311 6.9778 11.6107C6.9778 11.7154 6.98097 11.8233 6.98732 11.9344L7.00318 12.1724H8.26947C8.35516 12.1724 8.39007 12.2327 8.40276 12.2581C8.41546 12.2835 8.4345 12.3502 8.38055 12.4136L6.20977 14.9018L4.039 12.4136C3.98187 12.3502 4.00409 12.2835 4.01678 12.2581C4.02948 12.2327 4.06439 12.1724 4.15008 12.1724H5.27989L5.2672 11.909C5.26403 11.8043 5.26085 11.7091 5.26085 11.6139C5.26085 9.84616 5.94953 8.18634 7.19678 6.9391C8.44402 5.68868 10.1038 5 11.8716 5C13.4457 5 14.9532 5.55539 16.1433 6.56778Z" fill="black" />
+    //     <path d="M16.1433 6.56778L15.0262 7.87532C14.1439 7.12634 13.0331 6.71694 11.8716 6.71694C9.17079 6.71694 6.9778 8.91311 6.9778 11.6107C6.9778 11.7154 6.98097 11.8233 6.98732 11.9344L7.00318 12.1724H8.26947C8.35516 12.1724 8.39007 12.2327 8.40276 12.2581C8.41546 12.2835 8.4345 12.3502 8.38055 12.4136L6.20977 14.9018L4.039 12.4136C3.98187 12.3502 4.00409 12.2835 4.01678 12.2581C4.02948 12.2327 4.06439 12.1724 4.15008 12.1724H5.27989L5.2672 11.909C5.26403 11.8043 5.26085 11.7091 5.26085 11.6139C5.26085 9.84616 5.94953 8.18634 7.19678 6.9391C8.44402 5.68868 10.1038 5 11.8716 5C13.4457 5 14.9532 5.55539 16.1433 6.56778Z" fill="black" />
+    //     <path d="M11.8704 18.2246C10.4359 18.2246 9.08709 17.7803 7.94775 16.9361L9.06805 15.6254C9.8932 16.203 10.8548 16.5076 11.8704 16.5076C14.4315 16.5076 16.5737 14.5082 16.7514 11.9566L16.7705 11.6837H15.4725C15.3868 11.6837 15.3519 11.6234 15.3392 11.598C15.3265 11.5726 15.3074 11.506 15.3614 11.4425L17.5322 8.95435L19.7029 11.4425C19.7601 11.506 19.7379 11.5726 19.7252 11.598C19.7125 11.6234 19.6776 11.6837 19.5919 11.6837H18.4843L18.4716 11.9249C18.3954 13.5688 17.7099 15.1176 16.542 16.2855C15.2979 17.5359 13.6381 18.2246 11.8704 18.2246Z" fill="black" />
+    //   </g>
+    //   <defs>
+    //     <clipPath id="clip0">
+    //       <rect width="15.7413" height="13.2246" fill="white" transform="translate(4 5)" />
+    //     </clipPath>
+    //   </defs>
+    // </svg>
+    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
+      width: "24",
+      height: "24",
+      viewBox: "0 0 24 24",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+        d: "M6.77246 7.92073C7.89926 6.56102 9.61396 5.65454 11.5246 5.65454C14.954 5.65454 17.6975 8.47468 17.6975 11.9999C17.6975 12.302 17.6975 12.6545 17.6485 12.9567",
+        stroke: "black",
+        strokeMiterlimit: "10"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+        d: "M16.2278 16.0789C15.101 17.489 13.3863 18.3451 11.4756 18.3451C8.04625 18.3451 5.30273 15.525 5.30273 11.9998C5.30273 11.6473 5.30273 11.3451 5.35173 11.043",
+        stroke: "black",
+        strokeMiterlimit: "10"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+        d: "M15.6887 10.9927L17.5994 12.9567L19.51 10.9927",
+        stroke: "black",
+        strokeMiterlimit: "10"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+        d: "M3.44092 13.0574L5.40057 11.043L7.31123 13.0574",
+        stroke: "black",
+        strokeMiterlimit: "10"
+      })]
+    })
+  );
+}
+
+/***/ }),
+
+/***/ "./resources/js/Icons/LoadingIcn2.jsx":
+/*!********************************************!*\
+  !*** ./resources/js/Icons/LoadingIcn2.jsx ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ LoadingIcn2)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+/* eslint-disable no-tabs */
+function LoadingIcn2(_ref) {
+  var className = _ref.className;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
+    className: className,
+    width: "17",
+    height: "17",
+    viewBox: "0 0 17 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      fillRule: "evenodd",
+      clipRule: "evenodd",
+      d: "M2.0972 8.50011C2.0972 5.28711 4.60187 2.09677 8.50053 2.09677C11.6489 2.09677 13.2061 4.42691 13.8691 5.66677H11.9005C11.7502 5.66677 11.6061 5.72648 11.4998 5.83275C11.3936 5.93902 11.3339 6.08315 11.3339 6.23344C11.3339 6.38373 11.3936 6.52786 11.4998 6.63413C11.6061 6.7404 11.7502 6.80011 11.9005 6.80011H15.3005C15.4508 6.80011 15.595 6.7404 15.7012 6.63413C15.8075 6.52786 15.8672 6.38373 15.8672 6.23344V2.83344C15.8672 2.68315 15.8075 2.53902 15.7012 2.43275C15.595 2.32648 15.4508 2.26677 15.3005 2.26677C15.1502 2.26677 15.0061 2.32648 14.8998 2.43275C14.7936 2.53902 14.7339 2.68315 14.7339 2.83344V4.88817C13.936 3.48057 12.0887 0.96344 8.50053 0.96344C3.8958 0.96344 0.963867 4.74311 0.963867 8.50011C0.963867 12.2571 3.8958 16.0368 8.50053 16.0368C10.7037 16.0368 12.5375 15.1641 13.8431 13.8358C14.5359 13.1292 15.0854 12.2953 15.4615 11.3799C15.4897 11.3111 15.5042 11.2373 15.504 11.1629C15.5038 11.0885 15.4889 11.0149 15.4602 10.9462C15.4315 10.8775 15.3896 10.8152 15.3368 10.7627C15.2841 10.7102 15.2215 10.6687 15.1526 10.6404C15.0838 10.6121 15.0101 10.5977 14.9357 10.5979C14.8612 10.5981 14.7876 10.613 14.7189 10.6417C14.6503 10.6703 14.5879 10.7123 14.5354 10.765C14.483 10.8178 14.4414 10.8804 14.4131 10.9492C14.0929 11.7289 13.6249 12.4393 13.035 13.0414C11.9345 14.1634 10.3875 14.9034 8.50053 14.9034C4.60187 14.9034 2.0972 11.7131 2.0972 8.50011Z",
+      fill: "white"
+    })
+  });
+}
+
+/***/ }),
+
 /***/ "./resources/js/Icons/Logo.jsx":
 /*!*************************************!*\
   !*** ./resources/js/Icons/Logo.jsx ***!
@@ -842,11 +984,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_drag_drop_files__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-drag-drop-files */ "./node_modules/react-drag-drop-files/dist/react-drag-drop-files.esm.js");
+/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js");
 /* harmony import */ var _Shared_Dropzone__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Shared/Dropzone */ "./resources/js/Shared/Dropzone.js");
-/* harmony import */ var _Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Shared/TextInput */ "./resources/js/Shared/TextInput.jsx");
-/* harmony import */ var _Icons_Logo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../Icons/Logo */ "./resources/js/Icons/Logo.jsx");
-/* harmony import */ var _Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../Shared/SingleSelect */ "./resources/js/Shared/SingleSelect.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Shared_LoadingButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Shared/LoadingButton */ "./resources/js/Shared/LoadingButton.js");
+/* harmony import */ var _Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Shared/TextInput */ "./resources/js/Shared/TextInput.jsx");
+/* harmony import */ var _Icons_Logo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../Icons/Logo */ "./resources/js/Icons/Logo.jsx");
+/* harmony import */ var _Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../Shared/SingleSelect */ "./resources/js/Shared/SingleSelect.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -864,6 +1008,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
@@ -943,11 +1089,23 @@ var Signup = function Signup() {
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
     setSending(true);
-    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__.Inertia.post(route('signup.submit'), values, {
-      onFinish: function onFinish() {
-        return setSending(false);
-      }
+    var emptyCheck = Object.values(values).filter(function (it) {
+      return it === '';
     });
+    console.log("G", emptyCheck);
+
+    if (emptyCheck.length > 1 || values.teacherId === '' && values.studentId === '') {
+      react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].error("Field can't be empty");
+    } else {
+      console.log({
+        values: values
+      });
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__.Inertia.post(route('signup.submit'), values, {
+        onFinish: function onFinish() {
+          return setSending(false);
+        }
+      });
+    }
   };
 
   console.log(values);
@@ -961,40 +1119,40 @@ var Signup = function Signup() {
     key: 'teacher',
     value: 'Teacher'
   }];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
     className: "flex",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       className: "signup-leftside",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "flex",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Icons_Logo__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Icons_Logo__WEBPACK_IMPORTED_MODULE_6__["default"], {
           width: "53",
           height: "53"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
           className: "font-inter-400 logoname",
           children: "Teacher Assistant"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
         className: "signup-leftside__block font-inter-400",
         children: "Education is our passport to the future, for tommorow belongs to the people who prepare for it today.."
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       className: "signup-rightside",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
         className: "flex row",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
           className: "signup-rightside__label font-inter-700",
           children: "Register Individual Account!"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
           className: "signup-rightside__sublabel font-inter-400",
           children: "For the purpose of tracking, your details are required."
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("form", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("form", {
           onSubmit: handleSubmit,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
             className: "font-inter-400 signup-form",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
               id: "name",
               label: "Name",
               name: "name",
@@ -1003,7 +1161,7 @@ var Signup = function Signup() {
               inputClass: "textinput-input",
               placeholder: "Your Name",
               value: values.name
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
               id: "email",
               name: "email",
               label: "Email",
@@ -1012,7 +1170,7 @@ var Signup = function Signup() {
               inputClass: "textinput-input",
               placeholder: "Your Email",
               value: values.email
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
               id: "password",
               name: "password",
               label: "Password",
@@ -1021,14 +1179,14 @@ var Signup = function Signup() {
               inputClass: "textinput-input",
               placeholder: "Your Password",
               value: values.password
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_7__["default"], {
               id: "role",
               name: "role",
               label: "User Type",
               onChange: handleChange,
               inputClass: "textinput-input",
               optionValues: userTypes
-            }), student && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            }), student && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
               id: "studentId",
               name: "studentId",
               label: "Student Id",
@@ -1037,7 +1195,7 @@ var Signup = function Signup() {
               inputClass: "textinput-input",
               placeholder: "Your Id",
               value: values.studentId
-            }), teacher && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            }), teacher && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
               id: "teacherId",
               name: "teacherId",
               label: "Teacher Id",
@@ -1046,7 +1204,7 @@ var Signup = function Signup() {
               inputClass: "textinput-input",
               placeholder: "Your Id",
               value: values.teacherId
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_Dropzone__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_Dropzone__WEBPACK_IMPORTED_MODULE_3__["default"], {
               label: "Photo",
               name: "photo",
               className: "w-full pb-8 pr-6 lg:w-1/2" //errors={errors?.image}
@@ -1055,14 +1213,15 @@ var Signup = function Signup() {
               accept: "image/*",
               onChange: handleFileChange,
               multiple: false
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("button", {
-                className: "btn-signup",
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_LoadingButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
                 type: "submit",
+                loading: sending,
+                className: "btn-signup",
                 children: "Sign Up"
               })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-              children: ["Already have an account?", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("a", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+              children: ["Already have an account?", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
                 href: "/login",
                 children: "Login"
               })]
@@ -1322,6 +1481,58 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 /***/ }),
 
+/***/ "./resources/js/Shared/LoadingButton.js":
+/*!**********************************************!*\
+  !*** ./resources/js/Shared/LoadingButton.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Icons_LoadingIcn2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Icons/LoadingIcn2 */ "./resources/js/Icons/LoadingIcn2.jsx");
+/* harmony import */ var _Icons_LoadingIcn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Icons/LoadingIcn */ "./resources/js/Icons/LoadingIcn.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function (_ref) {
+  var loading = _ref.loading,
+      type = _ref.type,
+      className = _ref.className,
+      children = _ref.children,
+      onClick = _ref.onClick,
+      isBgWhite = _ref.isBgWhite,
+      isShow = _ref.isShow;
+  var classNames = classnames__WEBPACK_IMPORTED_MODULE_0___default()('flex items-center', // 'focus:outline-none',
+  {
+    'pointer-events-none bg-opacity-75 select-none loading-btn': loading
+  }, className);
+  return (
+    /*#__PURE__*/
+    // eslint-disable-next-line react/button-has-type
+    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("button", {
+      type: type || 'button',
+      disabled: loading,
+      className: classNames,
+      onClick: onClick,
+      children: [children, !isBgWhite && isShow || loading && !isBgWhite ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Icons_LoadingIcn2__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        className: "auth-ml6"
+      }) : (isBgWhite && isShow || loading) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Icons_LoadingIcn__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        className: "auth-ml6"
+      })]
+    })
+  );
+});
+
+/***/ }),
+
 /***/ "./resources/js/Shared/SingleSelect.jsx":
 /*!**********************************************!*\
   !*** ./resources/js/Shared/SingleSelect.jsx ***!
@@ -1428,6 +1639,73 @@ var TextInput = function TextInput(_ref) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TextInput);
+
+/***/ }),
+
+/***/ "./node_modules/classnames/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
+/***/ ((module, exports) => {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2018 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames() {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg)) {
+				if (arg.length) {
+					var inner = classNames.apply(null, arg);
+					if (inner) {
+						classes.push(inner);
+					}
+				}
+			} else if (argType === 'object') {
+				if (arg.toString === Object.prototype.toString) {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(key);
+						}
+					}
+				} else {
+					classes.push(arg.toString());
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if ( true && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
+
 
 /***/ }),
 
