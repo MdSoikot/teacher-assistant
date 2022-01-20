@@ -8,10 +8,51 @@ import TextInput from "../../Shared/TextInput";
 import { usePage } from "@inertiajs/inertia-react";
 const AddMarks = () => {
     const [sending, setSending] = useState(false)
-    const handleSubmit = () => {
+    const [courseCode, setCourseCode] = useState([])
 
+    const [values, setValues] = useState({
+        course_title: "",
+        course_code: "",
+        department: "",
+        batch: "",
+        session: "",
+        student_id: "",
+        term: "",
+        mark: "",
+    });
+    const handleChange = (e) => {
+        const key = e.target.name;
+        const value = e.target.value;
+
+        console.log(`val`, value)
+        setValues((oldValues) => ({
+            ...oldValues,
+            [key]: value,
+        }));
+    };
+    const handleSelect = (val, key) => {
+        if (key === 'course_title') {
+            console.log("ddd", key, val);
+            const course = courseInfo.find(o => o.course_title === val);
+            if (courseCode) {
+                let tmpKey = "course_code"
+                setValues((oldValues) => ({
+                    ...oldValues,
+                    [tmpKey]: course?.course_code,
+                }));
+            }
+        }
+        setValues((oldValues) => ({
+            ...oldValues,
+            [key]: val,
+        }));
     }
-    const handleChange = () => {
+
+    // useEffect(() => {
+    //     const course_code = 
+    // }, [values?.course]);
+
+    const handleSubmit = () => {
 
     }
     const department = [
@@ -42,7 +83,8 @@ const AddMarks = () => {
         { value: 'mid', label: 'Mid' },
         { value: 'final', label: 'Final' },
     ]
-    const { courseInfo } = usePage().props
+    const { courseInfo, courseTitles } = usePage().props
+    console.log('courseInfo', courseInfo);
     return (
         <div className="main-div">
             <div className="font-inter-600 text-3xl mb-4 flex gap-4">
@@ -58,7 +100,7 @@ const AddMarks = () => {
                             <MultiSelect
                                 className="w-full"
                                 // defaultValue={flowMap[flowKey]?.trigger?.event}
-                                // onChange={val => handleMapping('trigger', val, flowKey)}
+                                onChange={val => handleSelect(val, 'department')}
                                 options={department}
                                 singleSelect
                             />
@@ -68,7 +110,7 @@ const AddMarks = () => {
                             <MultiSelect
                                 className="w-full"
                                 // defaultValue={flowMap[flowKey]?.trigger?.event}
-                                // onChange={val => handleMapping('trigger', val, flowKey)}
+                                onChange={val => handleSelect(val, 'batch')}
                                 options={batch}
                                 singleSelect
                             />
@@ -78,21 +120,32 @@ const AddMarks = () => {
                             <MultiSelect
                                 className="w-full"
                                 // defaultValue={flowMap[flowKey]?.trigger?.event}
-                                // onChange={val => handleMapping('trigger', val, flowKey)}
-                                // options={[flowData.elementorpro]}
+                                onChange={val => handleSelect(val, 'course_title')}
+                                options={courseTitles}
                                 singleSelect
                             />
                         </div>
-                        <div>
+                        <TextInput
+                            id="course_code"
+                            name="course_code"
+                            label="Course Code"
+                            type="text"
+                            onChange={handleChange}
+                            inputClass="profile-textinput-input"
+                            inputLabelClass="font-inter-600 text-md"
+                            value={values?.course_code}
+                            placeholder="Course Code..."
+                        />
+                        {/* <div>
                             <h3 className="font-inter-600 text-md mb-2 mt-2">Course Code</h3>
                             <MultiSelect
                                 className="w-full"
                                 // defaultValue={flowMap[flowKey]?.trigger?.event}
-                                // onChange={val => handleMapping('trigger', val, flowKey)}
-                                // options={[flowData.elementorpro]}
+                                onChange={val => handleSelect(val, 'course_code')}
+                                options={courseCode}
                                 singleSelect
                             />
-                        </div>
+                        </div> */}
                         <div>
                             <h3 className="font-inter-600 text-md mb-2 mt-2">Exam</h3>
                             <MultiSelect

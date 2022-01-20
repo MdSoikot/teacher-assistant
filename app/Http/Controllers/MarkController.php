@@ -19,10 +19,10 @@ class MarkController extends Controller
                 'course_code' => $val['course_code']
             ];
             $courseTitles[] = [
-                'course_title' => $val['course_title'],
+                'label' => $val['course_title'],
+                'value' => $val['course_title']
             ];
         }
-        dd($courseInfo);
         return Inertia::render('Marks/AddMarks', ['courseInfo' => $courseInfo, 'courseTitles' => $courseTitles]);
     }
 }
