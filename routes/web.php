@@ -98,6 +98,7 @@ Route::get('routine/view')
     ->name('view_routine')
     ->uses('App\Http\Controllers\RoutineController@show')
     ->middleware('auth');
+
 // Manage Marks
 Route::get('marks')
     ->name('marks')
@@ -111,6 +112,7 @@ Route::get('marks/view')
     ->name('view_marks')
     ->uses('App\Http\Controllers\MarkController@show')
     ->middleware('auth');
+
 //Manage Substitue Teacher
 Route::get('substitute_teacher')
     ->name('substitute_teacher')

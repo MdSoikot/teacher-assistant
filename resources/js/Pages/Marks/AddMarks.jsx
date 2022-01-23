@@ -6,6 +6,8 @@ import MultiSelect from 'react-multiple-select-dropdown-lite';
 import 'react-multiple-select-dropdown-lite/dist/index.css';
 import TextInput from "../../Shared/TextInput";
 import { usePage } from "@inertiajs/inertia-react";
+import toast from "react-hot-toast";
+import { Inertia } from "@inertiajs/inertia";
 const AddMarks = () => {
     const [sending, setSending] = useState(false)
     const [courseCode, setCourseCode] = useState([])
@@ -18,17 +20,27 @@ const AddMarks = () => {
         session: "",
         student_id: "",
         term: "",
-        mark: "",
+        marks: {},
     });
     const handleChange = (e) => {
         const key = e.target.name;
         const value = e.target.value;
 
-        console.log(`val`, value)
-        setValues((oldValues) => ({
-            ...oldValues,
-            [key]: value,
-        }));
+        console.log(`key`, key)
+        if (key === 'ct_mark' || key === 'ass_mark' || key === 'written_mark' || key === 'att_mark') {
+            let conf = { ...values }
+            console.log('conf', conf);
+            if (conf?.marks?.[key]) conf.marks[key] = ""
+            conf.marks[key] = value
+            console.log('conf', conf);
+            setValues(conf);
+
+        } else {
+            setValues((oldValues) => ({
+                ...oldValues,
+                [key]: value,
+            }));
+        }
     };
     const handleSelect = (val, key) => {
         if (key === 'course_title') {
@@ -52,8 +64,34 @@ const AddMarks = () => {
     //     const course_code = 
     // }, [values?.course]);
 
-    const handleSubmit = () => {
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // console.log(`values`, values)
+        const mapping = Object.values(values).filter(
+            (item) => !item.length && Object.keys(values?.marks).length === 4
+        );
+        // const mapping = []
+        console.log("map", mapping);
+        if (mapping.length <= 1) {
+            Inertia.post(route("add_marks"), values, {
+                onFinish: () => {
+                    setValues({
+                        course_title: "",
+                        course_code: "",
+                        department: "",
+                        batch: "",
+                        session: "",
+                        student_id: "",
+                        term: "",
+                        marks: {},
+                    }),
+                        toast.success("Save Successfuly!");
+                },
+                // onError: () => toast.error("Credintial doesn't exist")
+            });
+        } else {
+            toast.error("Field Can't be empty!");
+        }
     }
     const department = [
         { value: '', label: 'Select One' },
@@ -83,8 +121,14 @@ const AddMarks = () => {
         { value: 'mid', label: 'Mid' },
         { value: 'final', label: 'Final' },
     ]
+    const session = [
+        { value: '', label: 'Select One' },
+        { value: 'spring-2022', label: 'Spring-2022' },
+        { value: 'fall-2022', label: 'Fall-2022' },
+        { value: 'summer-2022', label: 'Summer-2022' },
+    ]
     const { courseInfo, courseTitles } = usePage().props
-    console.log('courseInfo', courseInfo);
+    console.log('values', values);
     return (
         <div className="main-div">
             <div className="font-inter-600 text-3xl mb-4 flex gap-4">
@@ -151,8 +195,18 @@ const AddMarks = () => {
                             <MultiSelect
                                 className="w-full"
                                 // defaultValue={flowMap[flowKey]?.trigger?.event}
-                                // onChange={val => handleMapping('trigger', val, flowKey)}
+                                onChange={val => handleSelect(val, 'term')}
                                 options={exam}
+                                singleSelect
+                            />
+                        </div>
+                        <div>
+                            <h3 className="font-inter-600 text-md mb-2 mt-2">Session</h3>
+                            <MultiSelect
+                                className="w-full"
+                                // defaultValue={flowMap[flowKey]?.trigger?.event}
+                                onChange={val => handleSelect(val, 'session')}
+                                options={session}
                                 singleSelect
                             />
                         </div>
