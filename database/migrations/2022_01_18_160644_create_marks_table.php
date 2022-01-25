@@ -22,7 +22,11 @@ class CreateMarksTable extends Migration
             $table->string('session')->nullable()->default(null);
             $table->string('student_id')->nullable()->default(null);
             $table->string('term')->nullable()->default(null);
-            $table->longText('marks')->nullable()->default(null);
+            $table->float('ct_mark', 5, 2)->nullable()->default(null);
+            $table->float('att_mark', 5, 2)->nullable()->default(null);
+            $table->float('ass_mark', 5, 2)->nullable()->default(null);
+            $table->float('written_mark', 5, 2)->nullable()->default(null);
+            // $table->longText('marks')->nullable()->default(null);
             $table->timestamps();
         });
     }

@@ -29,14 +29,15 @@ class MarkController extends Controller
     }
     public function show()
     {
-        $marks = Mark::all();
+        $marks = Mark::all()->toArray();
+        // dd($marks);
         return Inertia::render('Marks/ViewMarks', ['marks' => $marks]);
     }
     public function create(Request $request)
     {
         $data = $request->all();
         $data['marks'] = json_encode($data['marks']);
-        // dd($data);
+        //dd($data);
         $user = Mark::create($data);
         return Redirect::back();
     }

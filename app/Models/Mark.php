@@ -16,6 +16,9 @@ class Mark extends Model
         'session',
         'student_id',
         'term',
-        'marks'
+        'ct_mark',
+        'ass_mark',
+        'att_mark',
+        'written_mark'
     ];
 }

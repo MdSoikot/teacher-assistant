@@ -26,21 +26,10 @@ const AddMarks = () => {
         const key = e.target.name;
         const value = e.target.value;
 
-        console.log(`key`, key)
-        if (key === 'ct_mark' || key === 'ass_mark' || key === 'written_mark' || key === 'att_mark') {
-            let conf = { ...values }
-            console.log('conf', conf);
-            if (conf?.marks?.[key]) conf.marks[key] = ""
-            conf.marks[key] = value
-            console.log('conf', conf);
-            setValues(conf);
-
-        } else {
-            setValues((oldValues) => ({
-                ...oldValues,
-                [key]: value,
-            }));
-        }
+        setValues((oldValues) => ({
+            ...oldValues,
+            [key]: value,
+        }));
     };
     const handleSelect = (val, key) => {
         if (key === 'course_title') {
