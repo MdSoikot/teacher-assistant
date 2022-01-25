@@ -379,9 +379,9 @@ export default function Sidebar() {
                                     </ListItemIcon>
                                     <InertiaLink
                                         className="nounderline"
-                                    //href={route('approved_user')}
+                                        href={route('marks_report')}
                                     >
-                                        <ListItemText primary="Dynamic Report" />
+                                        <ListItemText primary="Marks Report" />
                                     </InertiaLink>
                                 </ListItem>
                             </List>

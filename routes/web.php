@@ -156,3 +156,9 @@ Route::get('student/view')
     ->name('view_student')
     ->uses('App\Http\Controllers\StudentController@show')
     ->middleware('auth');
+
+//Manage Report
+Route::get('report/marks')
+    ->name('marks_report')
+    ->uses('App\Http\Controllers\ReportController@index')
+    ->middleware('auth');
