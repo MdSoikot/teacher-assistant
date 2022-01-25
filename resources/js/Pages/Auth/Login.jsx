@@ -1,34 +1,147 @@
-import React from 'react'
+import { Inertia } from '@inertiajs/inertia';
+import React, { useState } from 'react'
+import TextInput from '../../Shared/TextInput';
+import Logo from './../../Icons/Logo';
+import SingleSelect from './../../Shared/SingleSelect';
+import { usePage } from '@inertiajs/inertia-react';
+
+import { FileUploader } from "react-drag-drop-files";
+import toast from 'react-hot-toast';
+import LoadingButton from '../../Shared/LoadingButton';
+//import "./styles.css";
+const fileTypes = ["JPG", "PNG", "GIF"];
 
 const Login = () => {
+  const { errors } = usePage().props;
+  const [teacher, setTeacher] = useState(false);
+  const [student, setStudent] = useState(false);
+  const [sending, setSending] = useState(false);
+  console.log('err', errors)
+  const [values, setValues] = useState({
+    role: '',
+    email: '',
+    password: '',
+    remember: false,
+  });
+  const handleChange = (e) => {
+    const key = e.target.name;
+    const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
+    setValues(oldValues => ({
+      ...oldValues,
+      [key]: value,
+    }));
+  }
+  const handleSubmit = (e) => {
+    const emptyCheck = Object.values(values).filter((it) => it === '')
+    if (emptyCheck.length) {
+      toast.error("Field can't be empty")
+    }
+    console.log("er", errors)
+
+    e.preventDefault();
+    setSending(true);
+    Inertia.post(route('login.attempt'), values, {
+      onFinish: () => setSending(false),
+      onError: () => toast.error("Credintial doesn't exist")
+    });
+  }
+
+
+  const userTypes = [
+    { key: '', value: 'Select One' },
+    { key: 'admin', value: 'Admin' },
+    { key: 'student', value: 'Student' },
+    { key: 'teacher', value: 'Teacher' },
+  ]
   return (
-    <div class="w-full h-screen md:-mx-4" style="filter: blur(6px); background-image:url('/assets/docs/master/image-01.jpg')">
-      <div class="absolute w-3/5 bg-white" style="transform: translate(-50%, -50%); top:50%; left:50%">
-        <div class="flex justify-center -mt-10">
-          <img class="border-2 w-20 h-20 rounded-full" src="/assets/docs/master/image-01.jpg" />
+    <div className="flex">
+      <div className="signup-leftside">
+        <div className="flex">
+          <Logo width="53" height="53" />
+          <span className="font-inter-400 logoname">Teacher Assistant</span>
         </div>
-        <div class="px-12 py-10">
-          <div class="w-full mb-2">
-            <div class="flex items-center">
-              <i class='ml-3 fill-current text-gray-400 text-xs z-10 far fa-user'></i>
-              <input type='text' placeholder="username" class="-mx-6 px-8  w-full border rounded px-3 py-1 text-gray-700" />
+        <div className="signup-leftside__block font-inter-400">
+          Education is our passport to the future, for tommorow belongs to the people who prepare for it today..
+        </div>
+      </div>
+      <div className="signup-rightside">
+        <div className="flex row">
+          <span className="signup-rightside__label font-inter-700">Login Individual Account!</span>
+          <span className="signup-rightside__sublabel font-inter-400">For the purpose of Access your account, your details are required.</span>
+        </div>
+        <div>
+          <form
+            method="post"
+            onSubmit={handleSubmit}
+          >
+            <div className="font-inter-400 signup-form">
+              <SingleSelect
+                id="role"
+                name="role"
+                label="User Type"
+                onChange={handleChange}
+                inputClass="textinput-input"
+                optionValues={userTypes}
+                inputLabelClass="font-inter-600 text-md"
+                labelClass="font-inter-600 text-md"
+              />
+              <TextInput
+                id="email"
+                name="email"
+                label="Email"
+                type="email"
+                onChange={handleChange}
+                inputClass="textinput-input"
+                placeholder="Your Email"
+                value={values?.email}
+                errors={errors?.email}
+                inputLabelClass="font-inter-600 text-md"
+
+              />
+              <TextInput
+                id="password"
+                name="password"
+                label="Password"
+                type="password"
+                onChange={handleChange}
+                inputClass="textinput-input"
+                placeholder="Your Password"
+                value={values?.password}
+                errors={errors?.password}
+                inputLabelClass="font-inter-600 text-md"
+              />
+              <label
+                className="flex items-center mt-6 select-none"
+                htmlFor="remember"
+              >
+                <input
+                  name="remember"
+                  id="remember"
+                  className="mr-1 login-rememberme-input"
+                  type="checkbox"
+                  checked={values.remember}
+                  onChange={handleChange}
+                />
+                <span className="login-remeverme font-inter-normal">Remember Me</span>
+              </label>
+              <div>
+                <LoadingButton
+                  type="submit"
+                  loading={sending}
+                  className="btn-signup"
+                >
+                  Sign In
+                </LoadingButton>
+                {/* <button className="btn-signup" type="submit">Sign In</button> */}
+              </div>
+              <div>
+                Don't have an account?{" "}
+                <a href="/signup">
+                  Sign up
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="w-full mb-2">
-            <div class="flex items-center">
-              <i class='ml-3 fill-current text-gray-400 text-xs z-10 fas fa-lock'></i>
-              <input type='text' placeholder="password" class="-mx-6 px-8 w-full border rounded px-3 py-1 text-gray-700" />
-            </div>
-          </div>
-          <div class="mt-8 flex justify-between">
-            <div class="flex items-center">
-              <input type="checkbox" class="w-4 h-4 mr-2" />
-              <span class="text-xs text-gray-700">Remember Me</span>
-            </div>
-            <div>
-              <button type='text' class="bg-yellow-400 text-xs text-gray-700 rounded px-4 py-2">SIGN IN</button>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

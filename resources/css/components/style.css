@@ -1,12 +1,448 @@
 .nav-main {
     height          : 80px;
-    background-color: #ffffff;
+    background-color: #5b1e70;
+    color           : #ffffff
 }
 
 .font-montserrat-600 {
+    font-family: montserrat;
+    font-style : normal;
     font-weight: 600;
+}
+
+.font-montserrat-700 {
+    font-family: montserrat;
+    font-style : normal;
+    font-weight: 600;
+}
+
+.font-inter-normal {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: normal;
+}
+
+.font-inter-400 {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 400;
+}
+
+.font-inter-500 {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 500;
+}
+
+.font-inter-600 {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 600;
+}
+
+.font-inter-700 {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 700;
 }
 
 .nav-main a {
     text-decoration: none;
+}
+
+.main-body {
+    background: #4E1661;
+}
+
+/*...............SignUp.........*/
+
+.signup-leftside {
+    background: #1565D8;
+    width     : 40%;
+    height    : 110vh;
+    padding   : 20px 40px;
+}
+
+.signup-rightside {
+    background: #ffffff;
+    height    : 100vh;
+    max-width : 60%;
+    padding   : 40px 100px;
+}
+
+.signup-rightside__label {
+    font-size  : 30px;
+    line-height: 36px;
+}
+
+.signup-leftside__block {
+    height     : 173px;
+    color      : #ffffff;
+    font-size  : 20px;
+    line-height: 38px;
+    padding-top: 45%;
+}
+
+.signup-rightside__sublabel {
+    font-size  : 18px;
+    line-height: 28px;
+    color      : #8692A6;
+}
+
+.signup-form {
+    padding-top: 30px;
+    color      : #696F79;
+    font-size  : 16px;
+}
+
+.logoname {
+    color      : #ffffff;
+    font-size  : 25px;
+    padding-top: 10px;
+}
+
+.signup-form__input-field {
+    width        : 400px;
+    height       : 40px;
+    border       : 1px solid #8692A6;
+    border-radius: 5px;
+    margin       : 5px 0;
+    padding-left : 12px;
+}
+
+.btn-signup {
+    padding        : 0 5px;
+    min-height     : 48px;
+    min-width      : 144px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    white-space    : nowrap;
+    color          : #ffffff;
+    background     : black;
+    border-radius  : 10px;
+    margin-top     : 10px;
+}
+
+.pro-pic {
+    /* //position  : absolute;
+    //right     : 5px;
+    //top       : -18px; */
+    /* width: 45px;
+    height: 45px;
+    border-radius: 20px; */
+    max-height     : 45px !important;
+    max-width      : 45px !important;
+    /* //background: #ffffff; */
+}
+
+/*.........TextInput.........*/
+.textinput-input {
+    width        : 400px;
+    height       : 40px;
+    border       : 1px solid #8692A6;
+    border-radius: 5px;
+    margin       : 5px 0;
+    padding-left : 12px;
+}
+
+/*...........Sidebar........*/
+.sidebar-main {
+    width     : 250px;
+    height    : 100vh;
+    overflow  : auto;
+    background: #002979;
+    color     : white;
+}
+
+.sidebar-svg {
+    color: white !important;
+}
+
+.sidebar-main__menu {
+    flex-direction: column;
+    padding-left  : 24px;
+    padding-top   : 36px;
+    gap           : 32px;
+}
+
+.form-error {
+    color: #D8000C !important;
+}
+
+/*.........Login..........*/
+.login-remeverme {
+    font-size  : 16px;
+    line-height: 27px;
+    color      : #9F9F9F;
+    margin-left: 5px;
+    cursor     : pointer;
+}
+
+.login-rememberme-input {
+    position     : relative;
+    height       : 19px;
+    border-radius: 3.375px;
+    cursor       : pointer;
+}
+
+.login-rememberme-input[type="checkbox"]:checked:before {
+    /* background-color: #111; */
+    background    : url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='4' width='15' height='11'%3E%3Cpath d='M6.96275 12.5678L4.21567 9.82068C4.06776 9.67244 3.86696 9.58913 3.65755 9.58913C3.44814 9.58913 3.24733 9.67244 3.09942 9.82068C2.79067 10.1294 2.79067 10.6282 3.09942 10.9369L6.40859 14.2461C6.71734 14.5548 7.21609 14.5548 7.52484 14.2461L15.9007 5.87026C16.2094 5.56151 16.2094 5.06276 15.9007 4.75401C15.7528 4.60577 15.552 4.52246 15.3425 4.52246C15.1331 4.52246 14.9323 4.60577 14.7844 4.75401L6.96275 12.5678Z' fill='black'/%3E%3C/mask%3E%3Cg mask='url(%23mask0)'%3E%3Crect width='19' height='19' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A"), #111;
+    pointer-events: none;
+    /* left       : 50; */
+}
+
+.login-rememberme-input::before {
+    content       : "";
+    width         : 23px;
+    height        : 23px;
+    transform     : scale(0.7);
+    background    : #fff;
+    border        : 2px solid #111;
+    border-radius : 4px;
+    position      : absolute;
+    top           : -12%;
+    left          : -30%;
+    pointer-events: none;
+}
+
+/*.....Profile.......*/
+.main-card {
+    width        : 140vh;
+    height       : 80%;
+    border       : 1px solid #dce5ed;
+    box-shadow   : 0.75px 0.75px 3px rgba(0, 0, 0, 0.07);
+    border-radius: 15px;
+    padding      : 32px;
+
+}
+
+.main-div {
+    margin-top : 48px;
+    margin-left: 86px;
+}
+
+.profile-textinput-input {
+    width        : 80%;
+    max-width    : 350px;
+    min-width    : 200px;
+    height       : 40px;
+    border       : 1px solid #8692A6;
+    border-radius: 5px;
+    margin       : 5px 0;
+    padding-left : 12px;
+}
+
+.main-card__left {
+    width: 50%;
+}
+
+.main-card__middle {
+    width: 33%;
+}
+
+.main-card__right {
+    width: 50%;
+}
+
+/*........TreeMenu.....*/
+.makeStyles-root-1 {
+    width           : 100%;
+    max-width       : 360px;
+    background-color: #002979 !important;
+}
+
+.MuiListItem-gutters {
+    padding-left : 0px !important;
+    padding-right: 0px !important;
+}
+
+.MuiListItemIcon-root {
+    color      : rgba(0, 0, 0, 0.54);
+    display    : inline-flex;
+    min-width  : 32px !important;
+    flex-shrink: 0;
+}
+
+.makeStyles-root-4 {
+    width           : 100%;
+    max-width       : 360px;
+    background-color: #002979 !important;
+}
+
+.makeStyles-nested-2 {
+    padding-left: 16px !important;
+}
+
+.nounderline {
+    text-decoration: none !important;
+}
+
+/*...........Dropzone.......*/
+.browse-image {
+    font-weight    : 600;
+    text-decoration: underline;
+    margin-left    : 5px;
+}
+
+.dropzone {
+    position     : relative;
+    /* width     : 445px; */
+    height       : 76px;
+    background   : #f2f2f2;
+    border       : 1.5px dashed #919191;
+    box-sizing   : border-box;
+    border-radius: 10px;
+    overflow     : hidden;
+    /* Inside Auto Layout */
+
+    flex     : none;
+    order    : 1;
+    flex-grow: 0;
+    margin   : 8px 0px;
+}
+
+.dropzone p {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    height         : 100%;
+}
+
+.dropzone p svg {
+    margin-right: 5px;
+}
+
+.dropzone-thumbnail {
+    display      : flex;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    margin-right : 8px;
+    box-sizing   : 'border-box';
+    position     : absolute;
+    top          : 0;
+    overflow     : hidden;
+    height       : 100%;
+    width        : 100%;
+    background   : #f2f2f2;
+}
+
+.dropzone-thumbnail-inner {
+    display     : flex;
+    width       : 100%;
+    overflow    : hidden;
+    gap         : 18px;
+    padding-top : 7px;
+    padding-left: 18px;
+    align-items : center;
+
+}
+
+.dropzone-thumbnail-image {
+    position: relative;
+}
+
+.dropzone-thumbnail-image img {
+    display: block;
+    width  : 56px;
+    height : 56px;
+}
+
+.dropzone-thumbnail-close {
+    position: absolute;
+    top     : -8px;
+    right   : -8px;
+    cursor  : pointer;
+}
+
+.auth-ml6 {
+    margin-left: 6px;
+}
+
+.auth-btn {
+    padding        : 0 5px;
+    min-height     : 48px;
+    min-width      : 144px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    white-space    : nowrap;
+    color          : #ffffff;
+    background     : black;
+    border-radius  : 10px;
+    margin-top     : 10px;
+}
+
+
+.loading-btn>svg {
+    animation: spinning 1s infinite linear;
+}
+
+/*.....Modal.....*/
+.confirmmodal-children {
+    font-size  : 15px;
+    line-height: 140%;
+    color      : #0f0422;
+}
+
+.btn-modal-children {
+    width        : 100px;
+    height       : 35px;
+    background   : black;
+    border-radius: 6px;
+    font-size    : 16px;
+    line-height  : 16px;
+    color        : #ffffff;
+}
+
+.modal-left {
+    width  : 50%;
+    padding: 20px 40px;
+}
+
+.modal-right {
+    width  : 50%;
+    padding: 20px 40px;
+}
+
+.user-label {
+    width: 50%;
+}
+
+.user-value {
+    width: 50%;
+}
+
+.image-box {
+    max-width : 300px;
+    max-height: 300px;
+    width     : 100%;
+    margin-top: -20px;
+}
+
+.extras-ele-label {
+    font-family: Inter;
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 17px;
+    line-height: 20px;
+    color      : #484848;
+}
+
+.extras-subele-label {
+    font-family   : Inter;
+    font-style    : normal;
+    font-weight   : normal;
+    font-size     : 12px;
+    line-height   : 20px;
+    text-transform: lowercase;
+    color         : #717171;
+}
+
+.MuiInputLabel-root {
+    color      : black !important;
+    font-size  : 20px !important;
+    font-weight: 600 !important;
+    font-family: 'Inter' !important;
 }
