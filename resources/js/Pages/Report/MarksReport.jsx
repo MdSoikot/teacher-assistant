@@ -3,9 +3,15 @@ import React, { useState } from 'react';
 import 'react-multiple-select-dropdown-lite/dist/index.css';
 import MultiSelect from 'react-multiple-select-dropdown-lite';
 import Layout from '../Layout/Layout';
+import axios from 'axios';
+import * as FileSaver from "file-saver";
+import * as XLSX from "xlsx";
 
 const MarksReport = () => {
     const { courseInfo, courseTitles } = usePage().props
+
+    const [open, setOpen] = useState(false);
+    const [response, setResponse] = useState();
     const [values, setValues] = useState({
         batch: "",
         department: "",
@@ -63,8 +69,49 @@ const MarksReport = () => {
         { value: 'fall-2022', label: 'Fall-2022' },
         { value: 'summer-2022', label: 'Summer-2022' },
     ]
+    const fileType =
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8";
+    const fileExtension = ".xlsx";
+    const exportToCSV = (apiData, fileName) => {
+        let ws = XLSX.utils.json_to_sheet(apiData.marksInfo, fileName);
+        //ws.A1.v = "Name";
+        // ws['A2'].v = "https://docs.sheetjs.com/#hyperlinks";
+        // console.log(apiData)
+        // console.log(ws)
+        //const secondData = apiData.data.length + 5;
+        //const call_summary = [];
+        // call_summary.push(["Summary of Calls", ""]);
+        // Object.keys(apiData.call_summary).forEach((cf) => {
+        //     call_summary.push([cf, apiData.call_summary[cf]]);
+        // });
+        //const thirdData = apiData.data.length + call_summary.length + 6;
+        // const category = [];
+        // category.push(["Category", "Total Calls", "Total Revenue"]);
+        // Object.keys(apiData.tag_count).forEach((cat) => {
+        //     category.push(Object.values(apiData.tag_count[cat]));
+        // });
+
+        // XLSX.utils.sheet_add_aoa(ws, call_summary, { origin: `C${secondData}` });
+        // XLSX.utils.sheet_add_aoa(ws, category, { origin: `C${thirdData}` });
+        const wb = { Sheets: { data: ws }, SheetNames: ["data"] };
+        const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
+        const data = new Blob([excelBuffer], { type: fileType });
+        FileSaver.saveAs(data, fileName + fileExtension);
+        setOpen(true);
+        setResponse("Report Generated Successfully");
+    };
+    let fileName = 'marks_report'
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(values)
+        axios.post(route("marks_report_generator"), values).then((r) => {
+            console.log('fir', r);
+            if (r?.data.status == 500) {
+                setOpen(true);
+                setResponse(r.data.msg);
+            }
+            exportToCSV(r.data, fileName);
+        });
     }
     return (
         <div className="main-div">

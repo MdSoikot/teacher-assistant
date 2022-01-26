@@ -162,3 +162,7 @@ Route::get('report/marks')
     ->name('marks_report')
     ->uses('App\Http\Controllers\ReportController@index')
     ->middleware('auth');
+Route::post('report/marks/generation')
+    ->name('marks_report_generator')
+    ->uses('App\Http\Controllers\ReportController@marksReportGerneration')
+    ->middleware('auth');
