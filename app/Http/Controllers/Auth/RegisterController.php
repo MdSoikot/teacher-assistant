@@ -68,7 +68,7 @@ class RegisterController extends Controller
             if (array_key_exists('studentId', $data)) {
                 return $data['studentId'];
             } else {
-                return NULL;
+                return null;
             }
         }
         function getTeacherId($data)
@@ -76,7 +76,7 @@ class RegisterController extends Controller
             if (array_key_exists('teacherId', $data)) {
                 return $data['teacherId'];
             } else {
-                return NULL;
+                return null;
             }
         }
         $imageName = time() . '.' . $data['photo']->extension();
@@ -95,7 +95,7 @@ class RegisterController extends Controller
             'status' => null
         ]);
         $userEmail = $data['email'];
-        $test = Mail::to($userEmail)->send(new EmailValidation($userEmail, $data['name']));
+        // $test = Mail::to($userEmail)->send(new EmailValidation($userEmail, $data['name']));
         // dd($test);
         return $user;
     }
