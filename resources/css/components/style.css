@@ -53,7 +53,9 @@
 .main-body {
     background: #4E1661;
 }
-
+.main{
+    min-height: 100vh;
+}
 /*...............SignUp.........*/
 
 .signup-leftside {
@@ -149,7 +151,6 @@
 /*...........Sidebar........*/
 .sidebar-main {
     width     : 250px;
-    height    : 100vh;
     overflow  : auto;
     background: #002979;
     color     : white;
@@ -161,9 +162,9 @@
 
 .sidebar-main__menu {
     flex-direction: column;
-    padding-left  : 24px;
     padding-top   : 36px;
     gap           : 32px;
+    padding: 20px;
 }
 
 .form-error {
@@ -209,8 +210,6 @@
 
 /*.....Profile.......*/
 .main-card {
-    width        : 140vh;
-    height       : 80%;
     border       : 1px solid #dce5ed;
     box-shadow   : 0.75px 0.75px 3px rgba(0, 0, 0, 0.07);
     border-radius: 15px;
@@ -219,8 +218,9 @@
 }
 
 .main-div {
+    width: calc(100% - 250px);
     margin-top : 48px;
-    margin-left: 86px;
+    margin-left: 40px;
 }
 
 .profile-textinput-input {
@@ -445,4 +445,15 @@
     font-size  : 20px !important;
     font-weight: 600 !important;
     font-family: 'Inter' !important;
+}
+
+
+/*--ka-table--*/
+
+.ka-paging-page-index, .ka-paging-size{
+    min-width: 30px!important;
+    height: 30px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

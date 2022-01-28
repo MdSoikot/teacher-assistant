@@ -67,6 +67,8 @@ const PendingUsers = () => {
     };
 
     const handleAction = (rowKeyValue, status) => {
+        console.log(rowKeyValue)
+        console.log(tablePropsInit)
         const data = {
         }
         if (status === 'approved') {
@@ -74,6 +76,10 @@ const PendingUsers = () => {
             Inertia.post(route('accept_user', rowKeyValue), formData, {
                 onFinish: () => {
                     toast.success("Approved Successfully")
+                    let tempData = { ...tableProps }
+                    const filteredData = tempData.data.filter(item => item.id !== rowKeyValue)
+                    tempData.data = filteredData
+                    changeTableProps(tempData)
                 }
             });
         } else {

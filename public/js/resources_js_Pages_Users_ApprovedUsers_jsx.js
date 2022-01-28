@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Marks_AddMarks_jsx"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Users_ApprovedUsers_jsx"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
 /*!**********************************************************************!*\
@@ -6711,148 +6711,6 @@ var refType = prop_types__WEBPACK_IMPORTED_MODULE_0___default().oneOfType([(prop
 
 /***/ }),
 
-/***/ "./resources/js/Icons/LoadingIcn.jsx":
-/*!*******************************************!*\
-  !*** ./resources/js/Icons/LoadingIcn.jsx ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ LoadingIcn)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-/* eslint-disable no-tabs */
-function LoadingIcn() {
-  return (
-    /*#__PURE__*/
-    // <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-    //   <g clipPath="url(#clip0)">
-    //     <path d="M5.27964 15.4173L4.97841 15.1571L2.51106 13.026L2.51105 13.026C2.38844 12.9201 2.44743 12.7191 2.60784 12.6962L3.5481 12.5624L3.80668 12.5256L3.7586 12.2689C3.73852 12.1617 3.72051 12.0544 3.70519 11.9468C3.43086 10.0192 3.92326 8.10153 5.09224 6.54455C5.09224 6.54454 5.09225 6.54454 5.09225 6.54454L5.27964 15.4173ZM5.27964 15.4173L6.46198 13.5954L6.46199 13.5953L7.27118 12.3485L5.27964 15.4173Z" fill="white" stroke="#01519F" strokeWidth="0.5" />
-    //     <path d="M7.43919 17.3236L8.4856 15.6762C9.4347 16.1636 10.5382 16.373 11.6727 16.2115C14.4659 15.814 16.45 13.3128 16.2507 10.5403L16.2315 10.2729L15.9661 10.3107L14.8511 10.4694C14.6907 10.4922 14.578 10.3157 14.6662 10.1797L15.6376 8.68294L16.6577 7.11099L17.586 7.91277L19.4263 9.50229C19.4263 9.50229 19.4263 9.50229 19.4263 9.5023C19.5489 9.60822 19.4899 9.80921 19.3295 9.83206C19.3295 9.83206 19.3295 9.83206 19.3295 9.83206L18.3885 9.96598L18.1522 9.99961L18.1749 10.2372C18.3474 12.0476 17.8468 13.831 16.7472 15.2956C15.5782 16.8525 13.874 17.8604 11.9464 18.1347C10.3735 18.3586 8.80778 18.0714 7.43919 17.3236Z" fill="white" stroke="#01519F" strokeWidth="0.5" />
-    //   </g>
-    //   <defs>
-    //     <clipPath id="clip0">
-    //       <rect width="17.8378" height="17.8378" fill="white" transform="translate(0.833496 3.34674) rotate(-8.1)" />
-    //     </clipPath>
-    //   </defs>
-    // </svg>
-    // <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-    //   <g clipPath="url(#clip0)">
-    //     <path d="M5.27964 15.4173L4.97841 15.1571L2.51106 13.026L2.51105 13.026C2.38844 12.9201 2.44743 12.7191 2.60784 12.6962L3.5481 12.5624L3.80668 12.5256L3.7586 12.2689C3.73852 12.1617 3.72051 12.0544 3.70519 11.9468C3.43086 10.0192 3.92326 8.10153 5.09224 6.54455C5.09224 6.54454 5.09225 6.54454 5.09225 6.54454L5.27964 15.4173ZM5.27964 15.4173L6.46198 13.5954L6.46199 13.5953L7.27118 12.3485L5.27964 15.4173Z" fill="black" stroke="#01519F" strokeWidth="0.5" />
-    //     <path d="M7.43919 17.3236L8.4856 15.6762C9.4347 16.1636 10.5382 16.373 11.6727 16.2115C14.4659 15.814 16.45 13.3128 16.2507 10.5403L16.2315 10.2729L15.9661 10.3107L14.8511 10.4694C14.6907 10.4922 14.578 10.3157 14.6662 10.1797L15.6376 8.68294L16.6577 7.11099L17.586 7.91277L19.4263 9.50229C19.4263 9.50229 19.4263 9.50229 19.4263 9.5023C19.5489 9.60822 19.4899 9.80921 19.3295 9.83206C19.3295 9.83206 19.3295 9.83206 19.3295 9.83206L18.3885 9.96598L18.1522 9.99961L18.1749 10.2372C18.3474 12.0476 17.8468 13.831 16.7472 15.2956C15.5782 16.8525 13.874 17.8604 11.9464 18.1347C10.3735 18.3586 8.80778 18.0714 7.43919 17.3236Z" fill="black" stroke="#01519F" strokeWidth="0.5" />
-    //   </g>
-    //   <defs>
-    //     <clipPath id="clip0">
-    //       <rect width="17.8378" height="17.8378" fill="white" transform="translate(0.833496 3.34674) rotate(-8.1)" />
-    //     </clipPath>
-    //   </defs>
-    // </svg>
-    // <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-    //   <path fillRule="evenodd" clipRule="evenodd" d="M2.09671 8.50011C2.09671 5.28711 4.60138 2.09677 8.50005 2.09677C11.6484 2.09677 13.2056 4.42691 13.8686 5.66677H11.9C11.7498 5.66677 11.6056 5.72648 11.4994 5.83275C11.3931 5.93902 11.3334 6.08315 11.3334 6.23344C11.3334 6.38373 11.3931 6.52786 11.4994 6.63413C11.6056 6.7404 11.7498 6.80011 11.9 6.80011H15.3C15.4503 6.80011 15.5945 6.7404 15.7007 6.63413C15.807 6.52786 15.8667 6.38373 15.8667 6.23344V2.83344C15.8667 2.68315 15.807 2.53902 15.7007 2.43275C15.5945 2.32648 15.4503 2.26677 15.3 2.26677C15.1498 2.26677 15.0056 2.32648 14.8994 2.43275C14.7931 2.53902 14.7334 2.68315 14.7334 2.83344V4.88817C13.9355 3.48057 12.0882 0.96344 8.50005 0.96344C3.89531 0.96344 0.963379 4.74311 0.963379 8.50011C0.963379 12.2571 3.89531 16.0368 8.50005 16.0368C10.7032 16.0368 12.537 15.1641 13.8426 13.8358C14.5354 13.1292 15.0849 12.2953 15.461 11.3799C15.4893 11.3111 15.5037 11.2373 15.5035 11.1629C15.5033 11.0885 15.4884 11.0149 15.4597 10.9462C15.431 10.8775 15.3891 10.8152 15.3363 10.7627C15.2836 10.7102 15.221 10.6687 15.1521 10.6404C15.0833 10.6121 15.0096 10.5977 14.9352 10.5979C14.8607 10.5981 14.7871 10.613 14.7184 10.6417C14.6498 10.6703 14.5874 10.7123 14.535 10.765C14.4825 10.8178 14.4409 10.8804 14.4126 10.9492C14.0924 11.7289 13.6244 12.4393 13.0345 13.0414C11.934 14.1634 10.387 14.9034 8.50005 14.9034C4.60138 14.9034 2.09671 11.7131 2.09671 8.50011Z" fill="black" />
-    // </svg>
-    // <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    //   <g clipPath="url(#clip0)">
-    //     <path d="M8.29387 12.9834C8.54133 12.6995 8.33975 12.2563 7.96315 12.2563H6.83562C6.82828 12.1447 6.82417 12.0323 6.82417 11.9189C6.82417 9.10963 9.10966 6.82414 11.9189 6.82414C13.269 6.82414 14.4978 7.35212 15.4104 8.21222L17.0003 6.3522C15.6085 5.07899 13.8174 4.38159 11.9189 4.38159C9.90564 4.38159 8.01286 5.16563 6.58924 6.58921C5.16566 8.01283 4.38162 9.90561 4.38162 11.9189C4.38162 12.0318 4.38444 12.1442 4.38935 12.2563H3.43962C3.06302 12.2563 2.86141 12.6995 3.1089 12.9833L5.25136 15.4409L5.70137 15.957L7.31706 14.1037L8.29387 12.9834Z" fill="black" />
-    //     <path d="M20.7284 11.5496L19.1304 9.71665L18.1359 8.57593L16.716 10.2046L15.5435 11.5496C15.296 11.8335 15.4976 12.2767 15.8742 12.2767H17.0004C16.8162 14.9197 14.6074 17.0137 11.9184 17.0137C10.7446 17.0137 9.66239 16.6145 8.8 15.945L7.20996 17.8052C8.542 18.8749 10.1854 19.4563 11.9184 19.4563C13.9317 19.4563 15.8245 18.6723 17.2481 17.2487C18.5871 15.9097 19.36 14.1557 19.4472 12.2768H20.3977C20.7743 12.2767 20.9759 11.8335 20.7284 11.5496V11.5496Z" fill="black" />
-    //   </g>
-    //   <defs>
-    //     <clipPath id="clip0">
-    //       <rect width="17.8378" height="17.8378" fill="white" transform="translate(3 3)" />
-    //     </clipPath>
-    //   </defs>
-    // </svg>
-    // <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    //   <g clipPath="url(#clip0)">
-    //     <path d="M21.5003 9.93587L20.2213 12.8001L17.3571 11.5211L18.7982 10.9717L18.51 10.152C17.5462 7.35086 14.9072 5.46839 11.9529 5.46839C9.35886 5.46839 6.972 6.92753 5.78308 9.22432L4.396 8.71992C5.80109 5.83768 8.72837 4.00024 11.9529 4.00024C15.4926 4.00024 18.6721 6.24299 19.861 9.57559L20.1763 10.4403L21.5003 9.93587Z" fill="black" />
-    //     <path d="M19.0953 16.0606C17.6902 18.9339 14.772 20.7713 11.5474 20.7713C8.00768 20.7713 4.8282 18.5285 3.63928 15.1959L3.33304 14.3313L2 14.8357L3.279 11.9714L6.14323 13.2594L4.70211 13.8089L4.99033 14.6285C5.95408 17.4297 8.59314 19.3122 11.5474 19.3122C14.1415 19.3122 16.5283 17.853 17.7172 15.5562L19.0953 16.0606Z" fill="black" />
-    //   </g>
-    //   <defs>
-    //     <clipPath id="clip0">
-    //       <rect width="19.5002" height="16.7711" fill="white" transform="translate(2 4)" />
-    //     </clipPath>
-    //   </defs>
-    // </svg>
-    // <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    //   <g clipPath="url(#clip0)">
-    //     <path d="M16.1433 6.56778L15.0262 7.87532C14.1439 7.12634 13.0331 6.71694 11.8716 6.71694C9.17079 6.71694 6.9778 8.91311 6.9778 11.6107C6.9778 11.7154 6.98097 11.8233 6.98732 11.9344L7.00318 12.1724H8.26947C8.35516 12.1724 8.39007 12.2327 8.40276 12.2581C8.41546 12.2835 8.4345 12.3502 8.38055 12.4136L6.20977 14.9018L4.039 12.4136C3.98187 12.3502 4.00409 12.2835 4.01678 12.2581C4.02948 12.2327 4.06439 12.1724 4.15008 12.1724H5.27989L5.2672 11.909C5.26403 11.8043 5.26085 11.7091 5.26085 11.6139C5.26085 9.84616 5.94953 8.18634 7.19678 6.9391C8.44402 5.68868 10.1038 5 11.8716 5C13.4457 5 14.9532 5.55539 16.1433 6.56778Z" fill="black" />
-    //     <path d="M16.1433 6.56778L15.0262 7.87532C14.1439 7.12634 13.0331 6.71694 11.8716 6.71694C9.17079 6.71694 6.9778 8.91311 6.9778 11.6107C6.9778 11.7154 6.98097 11.8233 6.98732 11.9344L7.00318 12.1724H8.26947C8.35516 12.1724 8.39007 12.2327 8.40276 12.2581C8.41546 12.2835 8.4345 12.3502 8.38055 12.4136L6.20977 14.9018L4.039 12.4136C3.98187 12.3502 4.00409 12.2835 4.01678 12.2581C4.02948 12.2327 4.06439 12.1724 4.15008 12.1724H5.27989L5.2672 11.909C5.26403 11.8043 5.26085 11.7091 5.26085 11.6139C5.26085 9.84616 5.94953 8.18634 7.19678 6.9391C8.44402 5.68868 10.1038 5 11.8716 5C13.4457 5 14.9532 5.55539 16.1433 6.56778Z" fill="black" />
-    //     <path d="M11.8704 18.2246C10.4359 18.2246 9.08709 17.7803 7.94775 16.9361L9.06805 15.6254C9.8932 16.203 10.8548 16.5076 11.8704 16.5076C14.4315 16.5076 16.5737 14.5082 16.7514 11.9566L16.7705 11.6837H15.4725C15.3868 11.6837 15.3519 11.6234 15.3392 11.598C15.3265 11.5726 15.3074 11.506 15.3614 11.4425L17.5322 8.95435L19.7029 11.4425C19.7601 11.506 19.7379 11.5726 19.7252 11.598C19.7125 11.6234 19.6776 11.6837 19.5919 11.6837H18.4843L18.4716 11.9249C18.3954 13.5688 17.7099 15.1176 16.542 16.2855C15.2979 17.5359 13.6381 18.2246 11.8704 18.2246Z" fill="black" />
-    //   </g>
-    //   <defs>
-    //     <clipPath id="clip0">
-    //       <rect width="15.7413" height="13.2246" fill="white" transform="translate(4 5)" />
-    //     </clipPath>
-    //   </defs>
-    // </svg>
-    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
-      width: "24",
-      height: "24",
-      viewBox: "0 0 24 24",
-      fill: "none",
-      xmlns: "http://www.w3.org/2000/svg",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-        d: "M6.77246 7.92073C7.89926 6.56102 9.61396 5.65454 11.5246 5.65454C14.954 5.65454 17.6975 8.47468 17.6975 11.9999C17.6975 12.302 17.6975 12.6545 17.6485 12.9567",
-        stroke: "black",
-        strokeMiterlimit: "10"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-        d: "M16.2278 16.0789C15.101 17.489 13.3863 18.3451 11.4756 18.3451C8.04625 18.3451 5.30273 15.525 5.30273 11.9998C5.30273 11.6473 5.30273 11.3451 5.35173 11.043",
-        stroke: "black",
-        strokeMiterlimit: "10"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-        d: "M15.6887 10.9927L17.5994 12.9567L19.51 10.9927",
-        stroke: "black",
-        strokeMiterlimit: "10"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-        d: "M3.44092 13.0574L5.40057 11.043L7.31123 13.0574",
-        stroke: "black",
-        strokeMiterlimit: "10"
-      })]
-    })
-  );
-}
-
-/***/ }),
-
-/***/ "./resources/js/Icons/LoadingIcn2.jsx":
-/*!********************************************!*\
-  !*** ./resources/js/Icons/LoadingIcn2.jsx ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ LoadingIcn2)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-/* eslint-disable no-tabs */
-function LoadingIcn2(_ref) {
-  var className = _ref.className;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
-    className: className,
-    width: "17",
-    height: "17",
-    viewBox: "0 0 17 17",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-      fillRule: "evenodd",
-      clipRule: "evenodd",
-      d: "M2.0972 8.50011C2.0972 5.28711 4.60187 2.09677 8.50053 2.09677C11.6489 2.09677 13.2061 4.42691 13.8691 5.66677H11.9005C11.7502 5.66677 11.6061 5.72648 11.4998 5.83275C11.3936 5.93902 11.3339 6.08315 11.3339 6.23344C11.3339 6.38373 11.3936 6.52786 11.4998 6.63413C11.6061 6.7404 11.7502 6.80011 11.9005 6.80011H15.3005C15.4508 6.80011 15.595 6.7404 15.7012 6.63413C15.8075 6.52786 15.8672 6.38373 15.8672 6.23344V2.83344C15.8672 2.68315 15.8075 2.53902 15.7012 2.43275C15.595 2.32648 15.4508 2.26677 15.3005 2.26677C15.1502 2.26677 15.0061 2.32648 14.8998 2.43275C14.7936 2.53902 14.7339 2.68315 14.7339 2.83344V4.88817C13.936 3.48057 12.0887 0.96344 8.50053 0.96344C3.8958 0.96344 0.963867 4.74311 0.963867 8.50011C0.963867 12.2571 3.8958 16.0368 8.50053 16.0368C10.7037 16.0368 12.5375 15.1641 13.8431 13.8358C14.5359 13.1292 15.0854 12.2953 15.4615 11.3799C15.4897 11.3111 15.5042 11.2373 15.504 11.1629C15.5038 11.0885 15.4889 11.0149 15.4602 10.9462C15.4315 10.8775 15.3896 10.8152 15.3368 10.7627C15.2841 10.7102 15.2215 10.6687 15.1526 10.6404C15.0838 10.6121 15.0101 10.5977 14.9357 10.5979C14.8612 10.5981 14.7876 10.613 14.7189 10.6417C14.6503 10.6703 14.5879 10.7123 14.5354 10.765C14.483 10.8178 14.4414 10.8804 14.4131 10.9492C14.0929 11.7289 13.6249 12.4393 13.035 13.0414C11.9345 14.1634 10.3875 14.9034 8.50053 14.9034C4.60187 14.9034 2.0972 11.7131 2.0972 8.50011Z",
-      fill: "white"
-    })
-  });
-}
-
-/***/ }),
-
 /***/ "./resources/js/Icons/Profile.jsx":
 /*!****************************************!*\
   !*** ./resources/js/Icons/Profile.jsx ***!
@@ -7555,10 +7413,10 @@ function Sidebar() {
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Marks/AddMarks.jsx":
-/*!***********************************************!*\
-  !*** ./resources/js/Pages/Marks/AddMarks.jsx ***!
-  \***********************************************/
+/***/ "./resources/js/Pages/Users/ApprovedUsers.jsx":
+/*!****************************************************!*\
+  !*** ./resources/js/Pages/Users/ApprovedUsers.jsx ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -7566,16 +7424,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Layout/Layout */ "./resources/js/Pages/Layout/Layout.jsx");
-/* harmony import */ var _Shared_LoadingButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Shared/LoadingButton */ "./resources/js/Shared/LoadingButton.js");
-/* harmony import */ var react_multiple_select_dropdown_lite__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-multiple-select-dropdown-lite */ "./node_modules/react-multiple-select-dropdown-lite/dist/index.modern.js");
-/* harmony import */ var react_multiple_select_dropdown_lite_dist_index_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-multiple-select-dropdown-lite/dist/index.css */ "./node_modules/react-multiple-select-dropdown-lite/dist/index.css");
-/* harmony import */ var _Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Shared/TextInput */ "./resources/js/Shared/TextInput.jsx");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js");
-/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var ka_table__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ka-table */ "./node_modules/ka-table/index.js");
+/* harmony import */ var ka_table__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ka_table__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var ka_table_enums__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ka-table/enums */ "./node_modules/ka-table/enums.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Layout/Layout */ "./resources/js/Pages/Layout/Layout.jsx");
+/* harmony import */ var ka_table_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ka-table/style.scss */ "./node_modules/ka-table/style.scss");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -7603,528 +7459,99 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
-
-
-var AddMarks = function AddMarks() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-      _useState2 = _slicedToArray(_useState, 2),
-      sending = _useState2[0],
-      setSending = _useState2[1];
-
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-      _useState4 = _slicedToArray(_useState3, 2),
-      courseCode = _useState4[0],
-      setCourseCode = _useState4[1];
-
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-    course_title: "",
-    course_code: "",
-    department: "",
-    batch: "",
-    session: "",
-    student_id: "",
-    term: "",
-    marks: {}
-  }),
-      _useState6 = _slicedToArray(_useState5, 2),
-      values = _useState6[0],
-      setValues = _useState6[1];
-
-  var handleChange = function handleChange(e) {
-    var key = e.target.name;
-    var value = e.target.value;
-    console.log("key", key);
-
-    if (key === 'ct_mark' || key === 'ass_mark' || key === 'written_mark' || key === 'att_mark') {
-      var _conf$marks;
-
-      var conf = _objectSpread({}, values);
-
-      console.log('conf', conf);
-      if (conf !== null && conf !== void 0 && (_conf$marks = conf.marks) !== null && _conf$marks !== void 0 && _conf$marks[key]) conf.marks[key] = "";
-      conf.marks[key] = value;
-      console.log('conf', conf);
-      setValues(conf);
-    } else {
-      setValues(function (oldValues) {
-        return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, key, value));
-      });
-    }
-  };
-
-  var handleSelect = function handleSelect(val, key) {
-    if (key === 'course_title') {
-      console.log("ddd", key, val);
-      var course = courseInfo.find(function (o) {
-        return o.course_title === val;
-      });
-
-      if (courseCode) {
-        var tmpKey = "course_code";
-        setValues(function (oldValues) {
-          return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, tmpKey, course === null || course === void 0 ? void 0 : course.course_code));
-        });
+var ApprovedUsers = function ApprovedUsers() {
+  var approvedUsers = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_5__.usePage)().props.approvedUsers;
+  var dataArray = approvedUsers;
+  var tablePropsInit = {
+    columns: [{
+      key: 'name',
+      title: 'Name',
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_1__.DataType.String,
+      style: {
+        width: '20%'
       }
-    }
-
-    setValues(function (oldValues) {
-      return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, key, val));
-    });
-  }; // useEffect(() => {
-  //     const course_code = 
-  // }, [values?.course]);
-
-
-  var handleSubmit = function handleSubmit(e) {
-    e.preventDefault(); // console.log(`values`, values)
-
-    var mapping = Object.values(values).filter(function (item) {
-      return !item.length && Object.keys(values === null || values === void 0 ? void 0 : values.marks).length === 4;
-    }); // const mapping = []
-
-    console.log("map", mapping);
-
-    if (mapping.length <= 1) {
-      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_7__.Inertia.post(route("add_marks"), values, {
-        onFinish: function onFinish() {
-          setValues({
-            course_title: "",
-            course_code: "",
-            department: "",
-            batch: "",
-            session: "",
-            student_id: "",
-            term: "",
-            marks: {}
-          }), react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].success("Save Successfuly!");
-        } // onError: () => toast.error("Credintial doesn't exist")
-
-      });
-    } else {
-      react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].error("Field Can't be empty!");
-    }
+    }, {
+      key: 'email',
+      title: 'Email',
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_1__.DataType.String,
+      style: {
+        width: '20%'
+      }
+    }, {
+      key: 'role',
+      title: 'Role',
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_1__.DataType.String,
+      style: {
+        width: '20%'
+      }
+    }, {
+      key: 'department',
+      title: 'Department',
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_1__.DataType.String,
+      style: {
+        width: '20%'
+      }
+    }, {
+      key: 'phone',
+      title: 'Phone',
+      dataType: ka_table_enums__WEBPACK_IMPORTED_MODULE_1__.DataType.String,
+      style: {
+        width: '20%'
+      }
+    }],
+    data: dataArray,
+    rowKeyField: 'id',
+    searchText: ''
   };
 
-  var department = [{
-    value: '',
-    label: 'Select One'
-  }, {
-    value: 'cse',
-    label: 'CSE'
-  }, {
-    value: 'eee',
-    label: 'EEE'
-  }, {
-    value: 'bba',
-    label: 'BBA'
-  }, {
-    value: 'cen',
-    label: 'CEN'
-  }, {
-    value: 'tex',
-    label: 'TEX'
-  }, {
-    value: 'llb',
-    label: 'LLB'
-  }, {
-    value: 'eng',
-    label: 'ENG'
-  }];
-  var batch = [{
-    value: '',
-    label: 'Select One'
-  }, {
-    value: 'cse-16',
-    label: 'CSE-16'
-  }, {
-    value: 'cse-17',
-    label: 'CSE-17'
-  }, {
-    value: 'cse-18',
-    label: 'CSE-18'
-  }, {
-    value: 'cse-19',
-    label: 'CSE-19'
-  }, {
-    value: 'cse-20',
-    label: 'CSE-20'
-  }, {
-    value: 'cse-21',
-    label: 'CSE-21'
-  }, {
-    value: 'cse-22',
-    label: 'CSE-22'
-  }, {
-    value: 'cse-23',
-    label: 'CSE-23'
-  }, {
-    value: 'cse-24',
-    label: 'CSE-24'
-  }, {
-    value: 'cse-25',
-    label: 'CSE-25'
-  }];
-  var exam = [{
-    value: '',
-    label: 'Select One'
-  }, {
-    value: 'mid',
-    label: 'Mid'
-  }, {
-    value: 'final',
-    label: 'Final'
-  }];
-  var session = [{
-    value: '',
-    label: 'Select One'
-  }, {
-    value: 'spring-2022',
-    label: 'Spring-2022'
-  }, {
-    value: 'fall-2022',
-    label: 'Fall-2022'
-  }, {
-    value: 'summer-2022',
-    label: 'Summer-2022'
-  }];
-  var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.usePage)().props,
-      courseInfo = _usePage$props.courseInfo,
-      courseTitles = _usePage$props.courseTitles;
-  console.log('values', values);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(tablePropsInit),
+      _useState2 = _slicedToArray(_useState, 2),
+      tableProps = _useState2[0],
+      changeTableProps = _useState2[1];
+
+  var dispatch = function dispatch(action) {
+    changeTableProps(function (prevState) {
+      return kaReducer(prevState, action);
+    });
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
     className: "main-div",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       className: "font-inter-600 text-3xl mb-4 flex gap-4",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
-        children: "Add Student Mark"
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+        children: "Approved User"
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("form", {
-      onSubmit: handleSubmit,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-        className: "main-card flex",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-          className: "main-card__left",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h3", {
-              className: "font-inter-600 text-md mb-2",
-              children: "Department"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_multiple_select_dropdown_lite__WEBPACK_IMPORTED_MODULE_3__["default"], {
-              className: "w-full" // defaultValue={flowMap[flowKey]?.trigger?.event}
-              ,
-              onChange: function onChange(val) {
-                return handleSelect(val, 'department');
-              },
-              options: department,
-              singleSelect: true
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h3", {
-              className: "font-inter-600 text-md mb-2 mt-2",
-              children: "Batch"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_multiple_select_dropdown_lite__WEBPACK_IMPORTED_MODULE_3__["default"], {
-              className: "w-full" // defaultValue={flowMap[flowKey]?.trigger?.event}
-              ,
-              onChange: function onChange(val) {
-                return handleSelect(val, 'batch');
-              },
-              options: batch,
-              singleSelect: true
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h3", {
-              className: "font-inter-600 text-md mb-2 mt-2",
-              children: "Course Name"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_multiple_select_dropdown_lite__WEBPACK_IMPORTED_MODULE_3__["default"], {
-              className: "w-full" // defaultValue={flowMap[flowKey]?.trigger?.event}
-              ,
-              onChange: function onChange(val) {
-                return handleSelect(val, 'course_title');
-              },
-              options: courseTitles,
-              singleSelect: true
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            id: "course_code",
-            name: "course_code",
-            label: "Course Code",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md",
-            value: values === null || values === void 0 ? void 0 : values.course_code,
-            placeholder: "Course Code..."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h3", {
-              className: "font-inter-600 text-md mb-2 mt-2",
-              children: "Exam"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_multiple_select_dropdown_lite__WEBPACK_IMPORTED_MODULE_3__["default"], {
-              className: "w-full" // defaultValue={flowMap[flowKey]?.trigger?.event}
-              ,
-              onChange: function onChange(val) {
-                return handleSelect(val, 'term');
-              },
-              options: exam,
-              singleSelect: true
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h3", {
-              className: "font-inter-600 text-md mb-2 mt-2",
-              children: "Session"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_multiple_select_dropdown_lite__WEBPACK_IMPORTED_MODULE_3__["default"], {
-              className: "w-full" // defaultValue={flowMap[flowKey]?.trigger?.event}
-              ,
-              onChange: function onChange(val) {
-                return handleSelect(val, 'session');
-              },
-              options: session,
-              singleSelect: true
-            })]
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-          className: "main-card__right",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            id: "student_id",
-            name: "student_id",
-            label: "Student ID",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md" // value={values?.name}
-            ,
-            placeholder: "Student ID..."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            id: "ct_mark",
-            name: "ct_mark",
-            label: "CT Mark",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md" // value={values?.name}
-            ,
-            placeholder: "CT Mark..."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            id: "ass_mark",
-            name: "ass_mark",
-            label: "Assignment Mark",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md" // value={values?.name}
-            ,
-            placeholder: "Assignment Mark..."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            id: "written_mark",
-            name: "written_mark",
-            label: "Written Mark",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md" // value={values?.name}
-            ,
-            placeholder: "Written Mark..."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            id: "att_mark",
-            name: "att_mark",
-            label: "Attendence Mark",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md" // value={values?.name}
-            ,
-            placeholder: "Attendence Mark..."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_LoadingButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            type: "submit",
-            loading: sending,
-            className: "btn-signup mt-4",
-            children: "Submit"
-          })]
-        })]
-      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      className: "main-card",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("input", {
+        type: "search",
+        defaultValue: tableProps.searchText,
+        onChange: function onChange(event) {
+          dispatch(search(event.currentTarget.value));
+        },
+        className: "top-element"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(ka_table__WEBPACK_IMPORTED_MODULE_0__.Table, _objectSpread(_objectSpread({}, tableProps), {}, {
+        childComponents: {
+          noDataRow: {
+            content: function content() {
+              return 'No Data Found';
+            }
+          }
+        },
+        dispatch: dispatch
+      }))]
     })]
   });
 };
 
-AddMarks.layout = function (page) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+ApprovedUsers.layout = function (page) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     children: page
   });
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddMarks);
-
-/***/ }),
-
-/***/ "./resources/js/Shared/LoadingButton.js":
-/*!**********************************************!*\
-  !*** ./resources/js/Shared/LoadingButton.js ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Icons_LoadingIcn2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Icons/LoadingIcn2 */ "./resources/js/Icons/LoadingIcn2.jsx");
-/* harmony import */ var _Icons_LoadingIcn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Icons/LoadingIcn */ "./resources/js/Icons/LoadingIcn.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function (_ref) {
-  var loading = _ref.loading,
-      type = _ref.type,
-      className = _ref.className,
-      children = _ref.children,
-      onClick = _ref.onClick,
-      isBgWhite = _ref.isBgWhite,
-      isShow = _ref.isShow;
-  var classNames = classnames__WEBPACK_IMPORTED_MODULE_0___default()('flex items-center', // 'focus:outline-none',
-  {
-    'pointer-events-none bg-opacity-75 select-none loading-btn': loading
-  }, className);
-  return (
-    /*#__PURE__*/
-    // eslint-disable-next-line react/button-has-type
-    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("button", {
-      type: type || 'button',
-      disabled: loading,
-      className: classNames,
-      onClick: onClick,
-      children: [children, !isBgWhite && isShow || loading && !isBgWhite ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Icons_LoadingIcn2__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        className: "auth-ml6"
-      }) : (isBgWhite && isShow || loading) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Icons_LoadingIcn__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        className: "auth-ml6"
-      })]
-    })
-  );
-});
-
-/***/ }),
-
-/***/ "./resources/js/Shared/TextInput.jsx":
-/*!*******************************************!*\
-  !*** ./resources/js/Shared/TextInput.jsx ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-var TextInput = function TextInput(_ref) {
-  var label = _ref.label,
-      name = _ref.name,
-      inputLabelClass = _ref.inputLabelClass,
-      inputClass = _ref.inputClass,
-      type = _ref.type,
-      value = _ref.value,
-      _ref$errors = _ref.errors,
-      errors = _ref$errors === void 0 ? [] : _ref$errors,
-      onChange = _ref.onChange,
-      placeholder = _ref.placeholder;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    children: [label && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("label", {
-      htmlFor: name,
-      className: inputLabelClass,
-      children: [label, ":"]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-        id: name,
-        name: name,
-        type: type,
-        value: value,
-        onChange: onChange,
-        placeholder: placeholder,
-        className: inputClass
-      })
-    }), errors && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "form-error",
-      children: errors
-    })]
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TextInput);
-
-/***/ }),
-
-/***/ "./node_modules/classnames/index.js":
-/*!******************************************!*\
-  !*** ./node_modules/classnames/index.js ***!
-  \******************************************/
-/***/ ((module, exports) => {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-  Copyright (c) 2018 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-/* global define */
-
-(function () {
-	'use strict';
-
-	var hasOwn = {}.hasOwnProperty;
-
-	function classNames() {
-		var classes = [];
-
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
-
-			var argType = typeof arg;
-
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg)) {
-				if (arg.length) {
-					var inner = classNames.apply(null, arg);
-					if (inner) {
-						classes.push(inner);
-					}
-				}
-			} else if (argType === 'object') {
-				if (arg.toString === Object.prototype.toString) {
-					for (var key in arg) {
-						if (hasOwn.call(arg, key) && arg[key]) {
-							classes.push(key);
-						}
-					}
-				} else {
-					classes.push(arg.toString());
-				}
-			}
-		}
-
-		return classes.join(' ');
-	}
-
-	if ( true && module.exports) {
-		classNames.default = classNames;
-		module.exports = classNames;
-	} else if (true) {
-		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-			return classNames;
-		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {}
-}());
-
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ApprovedUsers);
 
 /***/ }),
 
@@ -8183,10 +7610,10 @@ function toVal(mix) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/react-multiple-select-dropdown-lite/dist/index.css":
-/*!***********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/react-multiple-select-dropdown-lite/dist/index.css ***!
-  \***********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./node_modules/ka-table/style.scss":
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./node_modules/ka-table/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -8194,13 +7621,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".msl-flx{display:inline-flex;align-items:center}.msl-vars{--menu-max-height:400px;--input-width:300px;--font-size:16px;--border-radius:8px 8px 8px 8px;--active-menu-shadow:1px 1px 5px 0px grey;--line-height:1.4;--active-menu-background:#fff;--active-menu-radius:var(--border-radius)}.msl-wrp *{line-height:var(--line-height)}.msl-wrp{width:var(--input-width);outline:none;position:relative;border-radius:var(--border-radius)}.msl-disabled{pointer-events:none!important}.msl-disabled>.msl{background-color:#f6f6f6}.msl{overflow:hidden;border:1px solid #9c9c9c;border-radius:var(--border-radius);outline:none;cursor:text;transition:border-radius .2s}.msl:not(.msl-active,.msl-active-up):hover{border-color:#505050}.msl-active{background:var(--active-menu-background);box-shadow:var(--active-menu-shadow);z-index:9999;border-color:transparent;border-radius:var(--active-menu-radius);border-bottom-left-radius:0;border-bottom-right-radius:0;border-bottom:0;transition:border-top-left-radius .4s,border-top-right-radius .4s}.msl-active-up{border-color:transparent;transition:border-bottom-left-radius .4s,border-bottom-right-radius .4s}.msl-active-up,.msl-active~.msl-options{background:var(--active-menu-background);box-shadow:var(--active-menu-shadow);z-index:9999;border-radius:var(--active-menu-radius);border-top-left-radius:0;border-top-right-radius:0}.msl-active~.msl-options{-webkit-clip-path:inset(0 -10px -10px -10px);clip-path:inset(0 -10px -10px -10px);max-height:var(--menu-max-height);transition:border-bottom-left-radius .5s ease-in,border-bottom-right-radius .5s ease-in}.msl-active-up~.msl-options{background:var(--active-menu-background);z-index:9999;bottom:99%;box-shadow:var(--active-menu-shadow);-webkit-clip-path:inset(-10px -10px 0 -10px);clip-path:inset(-10px -10px 0 -10px);max-height:var(--menu-max-height);border-radius:var(--active-menu-radius);border-bottom:0;border-bottom-right-radius:0;border-bottom-left-radius:0;transition:border-top-left-radius .7s,border-top-right-radius .7s}.msl-options{position:absolute;width:100%;background:#fff;max-height:0;overflow:auto;scrollbar-color:rgba(0,0,0,.1) transparent;scrollbar-width:thin;border-radius:var(--border-radius)}.msl-input,.msl-input-wrp{display:inline-block;vertical-align:top}.msl-input{outline:none;margin:5px;padding:3px;font-size:var(--font-size)}.msl-input:before{line-height:var(--line-height);color:#929292}.msl-input[data-placeholder]:not([data-placeholder=\"\"]):empty:before{content:attr(data-placeholder)}.msl-chip{background:#eee;border-radius:5px;padding:3px 3px 3px 6px;white-space:nowrap;display:inline-flex;align-items:center;line-break:anywhere;white-space:break-spaces}.msl-chip,.msl-single-value{margin:5px;font-size:var(--font-size)}.msl-single-value{display:inline-block;padding:3px;vertical-align:top;overflow:hidden;text-overflow:ellipsis;line-break:strict;white-space:nowrap}.msl-options::-webkit-scrollbar{width:8px}.msl-options::-webkit-scrollbar-track{background:transparent}.msl-options::-webkit-scrollbar-thumb{background:rgba(0,0,0,.1);border-radius:20px}.msl-options::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,.2)}.msl-grp-title,.msl-options .msl-option{font-size:var(--font-size);border-radius:5px;padding:7px 5px;cursor:pointer;margin:4px 6px;line-break:anywhere;line-height:var(--line-height);outline:none;white-space:break-spaces;transition:background .2s}.msl-btn:focus-visible,.msl-option:focus-visible,.msl-wrp:focus-visible{outline:2px solid #07f}.msl-grp-title{font-size:calc(var(--font-size) - 2px);cursor:default;background:#fafafa;opacity:.7}.msl-options .msl-option:last-child{margin-bottom:5px}.msl-option:focus,.msl-options .msl-option:hover{background:#e9e9e9}.msl-option-active{background:#e6f4fa;color:#0351ff}.msl-option-disable{color:rgba(0,0,0,.3)}.msl-btn{border-radius:50%;border:none;outline:none;padding:0;justify-content:center;cursor:pointer;background:transparent}.msl-actions{position:absolute;right:5px;top:50%;transform:translatey(-50%)}.msl-arrow-btn,.msl-clear-btn{width:25px;height:25px}.msl-arrow-btn:hover,.msl-clear-btn:hover{background:#d3d3d3}.msl-arrow-icn>line,.msl-close-icn>line{stroke-width:1}.msl-arrow-icn,.msl-chip-delete{height:20px;width:20px}.msl-chip-delete{min-width:20px;min-height:20px;margin-left:3px;background:#dadada;color:rgba(0,0,0,.6)}.msl-chip-delete:hover{background:#d3d3d3}.msl-chip-delete .msl-close-icn>line{stroke-width:1}.msl-close-icn{height:10px;width:10px}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"icons\";\n  src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOYAA0AAAAACIwAAANEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCXhEICoVkhBELGAABNgIkAyAEIAWDGwd3G7wGIB6FccN9E8MSQ5TJpF8+Kh6+t+Pr3H79IWQDyGtnGznKjFTOdqrnf1z+g5yUiMkVTqLPrm6X95YUF/revX4rMPI/7p3+9bhAwsmLIKM/dpMmheGeGFCXBhJmYyycIKFmXZZqg+4GoD75LAR8vcb1B99t3n90zw5UoxWZECqFHBlSLp4CJWQvQz/wJGgnfjEmKgRLUe91Z4ofS9L+YtLLacLLCAD0CyQkdAuwURLolpuKSuUymdD/Y0lxvyigSHgnxXaEJFQCCIkoJRIQGTLwnwly4RNDFIU6UAVaUYn38D8gBwSCurIEzdoGMEUiMSG6XNmbvBmcPh4yOeEnZG4Hjdtcbr7UvDqZOW5R3gwcI6EreQSlMZhji1XdJtomxyXVxz0xOqA0iV2poyEGvkUrb+JXErcttqPmckjrhP24zVE3pQd1nKm6TSndsCV60yq9k46E8sVaxjuLbzjQizxKDhBMB2rtAYm4yWaJQlNtzuaxN2cL9Lms6+3NivaelBNhybVa61y+Dui65A50TRLHAWDkX8MLpTlWTY+l++ycXbLW0qOxNhWKr7xRS3zDZdOO1+cmLU2lVT2/AspTZdIy1RHOLQL+4EuSLTA+03urCoW1lm7tCMkgz8VBbbHw5ito81fAqJGVuiF/FEOqE4wTUnzVgPN6Y3XI/x+x3vffdzB/W0UOauDX9/phBrRQ/ND5izv5sMi2JevqHCEQa5Zt7mJv8WwDvbj3ytdtaz5R+U2Vryb7U/043rZdKf/YcnwyJgcvliuvf0HdByAQuP/D+ztI1v/Kq3Lzhv0UcpAOoFwGgum5AznI+ZeAkhwQ64AcvgXPesZ8gSqjZSAT/LXexXkIZeqLaAYD0QQz0Rw2qktUuaguVea55ZU6fSyJvEKoBaAZtKMJRqI5LFSXaLVTXarW3R0rjfWaQ/Y44ZgTTjjOoZWcYxYXgNX2OeCco3Y5zb3i6gGD1NhkuN4+p51xKL/fKMONZPuySZVcObh1flX2Wf0O2Of4yPR3OWufvdG7XdJvEYJl/uHsSC/b+PB3jC7+n8QWgEy4RhWRySJJkUdJlEZZlEdF6YGj20tTKtS549PKwGRVLUalElSgBg1oZR0=) format(\"woff2\"), url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAcYAAsAAAAABswAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgD2oEfGNtYXAAAAFoAAAAVAAAAFQYVtCMZ2FzcAAAAbwAAAAIAAAACAAAABBnbHlmAAABxAAAAvAAAALwNeDULGhlYWQAAAS0AAAANgAAADYdwj7iaGhlYQAABOwAAAAkAAAAJAdWA3JobXR4AAAFEAAAACgAAAAoIAACqmxvY2EAAAU4AAAAFgAAABYDHgI6bWF4cAAABVAAAAAgAAAAIAANADRuYW1lAAAFcAAAAYYAAAGGmUoJ+3Bvc3QAAAb4AAAAIAAAACAAAwAAAAMEAAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA6AUDZv9nAJkDZgCZAAAAAQAAAAAAAAAAAAAAIAAAAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADgAAAAKAAgAAgACAAEAIOgF//3//wAAAAAAIOgA//3//wAB/+MYBAADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQDy/3QDJANMABYAAAkBBiInJjQ3CQEmNDc2MhcBHgEVFAYHAw/+SBU8FBYWAYX+exYWFDwVAbgKCwsKAS7+RhQUFjsVAYYBhhU7FhQU/kcLGg4OGgoAAAEAEv9gA+4DTgAmAAAJATY0JyYiBwkBJiIHBhQXCQEGFBceATMyNjcJAR4BMzI2NzY0JwECWgGUEhIUNBT+bv5uFDQUEhIBlP5sEhIKGA0MFwoBkgGSChgNDBcKEhL+bAFgAZIUNBQSEv5sAZQSEhQ0FP5u/m4UNBQJCQkJAZT+bAkJCQkUNBQBkgAAAQAWADwD7AJvABUAACUBJjQ3NjIXCQE2MhcWFAcBDgEjIiYBzv5IFhYUOxYBhQGGFTsWFBT+RwsaDg4aUgG4FTsVFRX+egGGFRUVOxX+SAsLCwAAAQCj/2ADXgNgAB4AACU2MhcWFAcBDgEjIiYnASY0NzYyHwERNDYzMhYVETcDExErDxAQ/sgHEwwLEwj+yRAQDysQ3x4WFh7f8hAQECsP/scHCAgHATkPKxAQEN8DGRYeHhb8598AAAABAKL/YANeA2AAHgAAEwYiJyY0NwE+ATMyFhcBFhQHBiIvAREUBiMiJjURB+0RKw8QEAE4BxMMCxMIATgQEBArEN8eFhYe3wHOEBAQKw8BOQcICAf+xw8rEBAQ4PzmFh4eFgMZ3wAAAAIAS/9nA6kDZwAkADEAAAkBLgE3PgEzITIWFxYGBwEOARcRDgEHDgEjIiYvAS4BNxEuASc3HgEXERcRJjY3ASEBAXH+4AgDBQUWDQMODRUGBQII/uQGBgEBCwoGDgcECQSeDA4BAQoIMA0PAoMBDA0BC/0pARMBigGWCRkMCw4OCwwZCf5qChcM/jYLFAYEAwECPgUWDQGNDRYKIxEpFv5/NAG1FSkRAX/+ggABAAAAAQAAv9IV/18PPPUACwQAAAAAAN1afY8AAAAA3Vp9jwAA/2AD7gNnAAAACAACAAAAAAAAAAEAAANm/2cAAAQAAAAAAAPuAAEAAAAAAAAAAAAAAAAAAAAKBAAAAAAAAAAAAAAABAAAAAQAAPIEAAASBAAAFgQAAKMEAACiBAAASwAAAAAACgAUAB4ASgCQALoA7gEiAXgAAAABAAAACgAyAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEABwAAAAEAAAAAAAIABwBgAAEAAAAAAAMABwA2AAEAAAAAAAQABwB1AAEAAAAAAAUACwAVAAEAAAAAAAYABwBLAAEAAAAAAAoAGgCKAAMAAQQJAAEADgAHAAMAAQQJAAIADgBnAAMAAQQJAAMADgA9AAMAAQQJAAQADgB8AAMAAQQJAAUAFgAgAAMAAQQJAAYADgBSAAMAAQQJAAoANACkaWNvbW9vbgBpAGMAbwBtAG8AbwBuVmVyc2lvbiAxLjAAVgBlAHIAcwBpAG8AbgAgADEALgAwaWNvbW9vbgBpAGMAbwBtAG8AbwBuaWNvbW9vbgBpAGMAbwBtAG8AbwBuUmVndWxhcgBSAGUAZwB1AGwAYQByaWNvbW9vbgBpAGMAbwBtAG8AbwBuRm9udCBnZW5lcmF0ZWQgYnkgSWNvTW9vbi4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format(\"woff\");\n  font-weight: normal;\n  font-style: normal;\n}\n.ka-icon-tree-arrow-collapsed:before {\n  content: \"\\e800\";\n}\n\n.ka-icon-group-arrow-collapsed:before {\n  content: \"\\e800\";\n}\n\n.ka-icon-close:before {\n  content: \"\\e801\";\n}\n\n.ka-icon-tree-arrow-expanded:before {\n  content: \"\\e802\";\n}\n\n.ka-icon-group-arrow-expanded:before {\n  content: \"\\e802\";\n}\n\n.ka-icon-sort-arrow-down:before {\n  content: \"\\e803\";\n}\n\n.ka-icon-sort-arrow-up:before {\n  content: \"\\e804\";\n}\n\n.ka-icon-filter:before {\n  content: \"\\e805\";\n}\n\n.ka {\n  overflow: hidden;\n  background-color: white;\n  font-size: 14px;\n  display: flex;\n  flex-direction: column;\n}\n\n.ka-table-wrapper {\n  height: 100%;\n  width: 100%;\n  overflow-y: auto;\n}\n\n.ka-table {\n  width: 100%;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n\n.ka-thead-background {\n  background-color: #F1F5F7;\n}\n\n.ka-thead-cell-height {\n  box-sizing: border-box;\n  height: 47px;\n}\n\n.ka-thead-fixed {\n  position: -webkit-sticky;\n  position: sticky;\n}\n\n.ka-thead-row:nth-child(1) .ka-thead-fixed {\n  top: 0px;\n}\n\n.ka-thead-row:nth-child(2) .ka-thead-fixed {\n  top: 47px;\n}\n\n.ka-thead-row:nth-child(3) .ka-thead-fixed {\n  top: 94px;\n}\n\n.ka-thead-row:nth-child(4) .ka-thead-fixed {\n  top: 141px;\n}\n\n.ka-thead-row:nth-child(5) .ka-thead-fixed {\n  top: 188px;\n}\n\n.ka-thead-row:nth-child(6) .ka-thead-fixed {\n  top: 235px;\n}\n\n.ka-thead-cell {\n  padding: 15px 20px;\n  color: #747D86;\n}\n\n.ka-thead-cell-wrapper {\n  display: flex;\n}\n\n.ka-thead-cell-content-wrapper {\n  width: 100%;\n}\n\n.ka-thead-cell-content {\n  width: 100%;\n}\n\n.ka-tbody {\n  height: 100%;\n}\n\n.ka-thead-cell, .ka-cell {\n  text-align: left;\n}\n\n.ka-cell {\n  padding: 8px 20px;\n  line-height: 29px;\n  color: #353C44;\n}\n\n.ka-tree-cell {\n  display: flex;\n}\n\n.ka-icon {\n  font-weight: 100;\n  font-size: 10px;\n  font-family: \"icons\";\n}\n\n.ka-input {\n  max-width: 100%;\n  border: 1px solid;\n}\n\n.ka-cell-editor-validation-error .ka-input {\n  background: #FFE7E7;\n  border: 1px solid #FF0C0C;\n}\n\n.ka-validation-message-container {\n  position: absolute;\n}\n\n.ka-validation-message {\n  font-size: 12px;\n  color: white;\n  background-color: #FF0C0C;\n  padding: 0 10px;\n  max-width: 200px;\n}\n\n.ka-empty-cell {\n  width: 40px;\n  min-width: 40px;\n}\n\n.ka-tree-empty-space {\n  width: 20px;\n}\n\n.ka-tr {\n  width: 100%;\n}\n\n.ka-no-data-row {\n  height: 100px;\n  text-align: center;\n}\n\n.ka-row {\n  box-sizing: border-box;\n  border-bottom: 2px solid #F9FBFC;\n  border-top: 2px solid #F9FBFC;\n}\n\n.ka-dragged-row {\n  opacity: 0.5;\n}\n\n.ka-drag-over-row {\n  box-shadow: inset 0 7px 0px -4px #e1ebf0;\n}\n\n.ka-dragged-row ~ .ka-drag-over-row {\n  box-shadow: inset 0 -7px 0px -4px #e1ebf0;\n}\n\n.ka-drag-over-column {\n  box-shadow: inset 7px 0 0px -4px #e1ebf0;\n}\n\n.ka-dragged-column ~ .ka-drag-over-column {\n  box-shadow: inset -7px 0 0px -4px #e1ebf0;\n}\n\n.ka-row-selected {\n  background-color: #F7FcFd;\n}\n\n.ka-group-row {\n  background-color: #F9FBFC;\n  box-sizing: border-box;\n  border-bottom: 1px solid white;\n  border-top: 1px solid white;\n}\n\n.ka-group-cell {\n  padding: 8px 10px;\n}\n\n.ka-group-cell-content {\n  display: flex;\n  align-items: center;\n}\n\n.ka-icon-group-arrow {\n  padding: 10px 5px 10px 10px;\n  margin-right: 5px;\n  cursor: pointer;\n}\n\n.ka-icon-tree-arrow {\n  padding: 0 10px 0 10px;\n  margin-left: -10px;\n  cursor: pointer;\n}\n\n.ka-icon-sort {\n  margin-left: 3px;\n}\n\n.ka-pointer {\n  cursor: pointer;\n}\n\n.ka-filter-row-cell {\n  padding: 0 20px 15px 20px;\n}\n\n.ka-loading {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background-color: #ffffff88;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.ka-loading-active {\n  position: relative;\n}\n\n.ka-loading-icon {\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  -webkit-animation: typing 1s linear infinite alternate;\n          animation: typing 1s linear infinite alternate;\n  position: relative;\n  left: -20px;\n}\n\n.ka-thead-cell-resize {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  width: 2px;\n  cursor: col-resize;\n  background-color: #d7e4eb;\n  position: relative;\n  left: 19px;\n}\n\n.ka-thead-cell-resize:active:after {\n  content: \"\";\n  display: block;\n  position: fixed;\n  cursor: col-resize;\n  z-index: 2;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.ka-thead-background:active {\n  z-index: 1;\n}\n\n.ka-summary-cell {\n  padding: 12px 20px;\n}\n\n@-webkit-keyframes typing {\n  0% {\n    background-color: #747d86;\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  25% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px #747d86, 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  75% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px #747d86;\n  }\n  100% {\n    box-shadow: none;\n  }\n}\n\n@keyframes typing {\n  0% {\n    background-color: #747d86;\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  25% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px #747d86, 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  75% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px #747d86;\n  }\n  100% {\n    box-shadow: none;\n  }\n}\n.ka-loading-text {\n  margin-top: 15px;\n  color: #353C44;\n}\n\n.ka-paging-sizes-active {\n  display: flex;\n  justify-content: space-between;\n}\n\n.ka-paging-pages, .ka-paging-sizes {\n  list-style: none;\n  display: flex;\n  flex-direction: row;\n  padding: 0 10px;\n  margin: 0;\n}\n\n.ka-paging-pages {\n  justify-content: flex-end;\n}\n\n.ka-paging-page-index, .ka-paging-size {\n  cursor: pointer;\n  padding: 5px;\n  margin: 10px 5px;\n  min-width: 18px;\n  border-radius: 50%;\n  text-align: center;\n  color: #747D86;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n\n.ka-paging-page-index-active, .ka-paging-size-active {\n  background-color: #F1F5F7;\n  font-weight: bold;\n  color: #747D86;\n}\n\n.ka-popup {\n  background-color: white;\n  border: 1px solid #ddd;\n  border-radius: 6px;\n  box-sizing: border-box;\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);\n  color: #747D86;\n  padding: 15px 20px;\n  position: absolute;\n  text-align: center;\n  width: 245px;\n  max-height: 325px;\n  overflow-y: auto;\n  z-index: 1000;\n}\n\n.ka-popup-content-item {\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #F9FBFC;\n}\n\n.ka-popup-content-item-value {\n  padding: 8px 20px;\n}\n\n.ka-header-filter-button {\n  font-size: 16px;\n  margin-left: 3px;\n}\n\n.ka-header-filter-button-has-value {\n  font-weight: bold;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -12247,6 +11674,5192 @@ var index = createJss();
 
 /***/ }),
 
+/***/ "./node_modules/ka-table/Components/CellComponent/CellComponent.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellComponent/CellComponent.js ***!
+  \*************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellEditor_1 = __importDefault(__webpack_require__(/*! ../CellEditor/CellEditor */ "./node_modules/ka-table/Components/CellEditor/CellEditor.js"));
+var CellText_1 = __importDefault(__webpack_require__(/*! ../CellText/CellText */ "./node_modules/ka-table/Components/CellText/CellText.js"));
+var CellComponent = function (props) {
+    var treeDeep = props.treeDeep, treeArrowElement = props.treeArrowElement, childComponents = props.childComponents, style = props.column.style, isEditableCell = props.isEditableCell;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.cell + " " + (treeDeep != null ? defaultOptions_1.default.css.treeCell : ''),
+        style: style
+    }, props, childComponents.cell), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("td", __assign({}, elementAttributes),
+        treeDeep ? Array(treeDeep).fill(undefined).map(function (_, index) { return React.createElement("div", { key: index, className: defaultOptions_1.default.css.treeCellEmptySpace }); }) : null,
+        content ||
+            (React.createElement(React.Fragment, null,
+                treeArrowElement,
+                isEditableCell ?
+                    (React.createElement(CellEditor_1.default, __assign({}, props)))
+                    :
+                        (React.createElement(CellText_1.default, __assign({}, props)))))));
+};
+exports["default"] = CellComponent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorBoolean/CellEditorBoolean.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorBoolean/CellEditorBoolean.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CommonUtils_1 = __webpack_require__(/*! ../../Utils/CommonUtils */ "./node_modules/ka-table/Utils/CommonUtils.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellEditorBoolean = function (props) {
+    var _a;
+    var column = props.column, dispatch = props.dispatch, value = props.value, rowKeyValue = props.rowKeyValue, autoFocus = props.autoFocus, childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.checkbox,
+        autoFocus: autoFocus,
+        type: 'checkbox',
+        checked: value || false,
+        onChange: function (event) { return dispatch(actionCreators_1.updateCellValue(rowKeyValue, column.key, event.currentTarget.checked)); },
+        onBlur: function () { return dispatch(actionCreators_1.closeEditor(rowKeyValue, column.key)); }
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.cellEditorInput), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (content ||
+        (react_1.default.createElement("input", __assign({ ref: function (elem) { return elem && (elem.indeterminate = CommonUtils_1.isEmpty(value)); } }, elementAttributes))));
+};
+exports["default"] = CellEditorBoolean;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorDataType/CellEditorDataType.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorDataType/CellEditorDataType.js ***!
+  \***********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var CellEditorBoolean_1 = __importDefault(__webpack_require__(/*! ../CellEditorBoolean/CellEditorBoolean */ "./node_modules/ka-table/Components/CellEditorBoolean/CellEditorBoolean.js"));
+var CellEditorDate_1 = __importDefault(__webpack_require__(/*! ../CellEditorDate/CellEditorDate */ "./node_modules/ka-table/Components/CellEditorDate/CellEditorDate.js"));
+var CellEditorNumber_1 = __importDefault(__webpack_require__(/*! ../CellEditorNumber/CellEditorNumber */ "./node_modules/ka-table/Components/CellEditorNumber/CellEditorNumber.js"));
+var CellEditorString_1 = __importDefault(__webpack_require__(/*! ../CellEditorString/CellEditorString */ "./node_modules/ka-table/Components/CellEditorString/CellEditorString.js"));
+var CellEditorDataType = function (props) {
+    switch (props.column.dataType) {
+        case enums_1.DataType.Boolean: return react_1.default.createElement(CellEditorBoolean_1.default, __assign({}, props));
+        case enums_1.DataType.Date: return react_1.default.createElement(CellEditorDate_1.default, __assign({}, props));
+        case enums_1.DataType.Number: return react_1.default.createElement(CellEditorNumber_1.default, __assign({}, props));
+        default: return react_1.default.createElement(CellEditorString_1.default, __assign({}, props));
+    }
+};
+exports["default"] = CellEditorDataType;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorDate/CellEditorDate.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorDate/CellEditorDate.js ***!
+  \***************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var DateUtils_1 = __webpack_require__(/*! ../../Utils/DateUtils */ "./node_modules/ka-table/Utils/DateUtils.js");
+var CellEditorDate = function (props) {
+    var _a;
+    var column = props.column, dispatch = props.dispatch, value = props.value, rowKeyValue = props.rowKeyValue, autoFocus = props.autoFocus, childComponents = props.childComponents;
+    var inputValue = value && DateUtils_1.getDateInputValue(value);
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.dateInput,
+        autoFocus: autoFocus,
+        type: 'date',
+        value: inputValue || '',
+        onChange: function (event) {
+            var targetValue = event.currentTarget.value;
+            var newValue = targetValue ? new Date(targetValue) : null;
+            dispatch(actionCreators_1.updateCellValue(rowKeyValue, column.key, newValue));
+        },
+        onBlur: function () { return dispatch(actionCreators_1.closeEditor(rowKeyValue, column.key)); }
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.cellEditorInput), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (content ||
+        (react_1.default.createElement("input", __assign({}, elementAttributes))));
+};
+exports["default"] = CellEditorDate;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorNumber/CellEditorNumber.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorNumber/CellEditorNumber.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellEditorNumber = function (props) {
+    var _a;
+    var column = props.column, dispatch = props.dispatch, value = props.value, rowKeyValue = props.rowKeyValue, autoFocus = props.autoFocus, childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.numberInput,
+        autoFocus: autoFocus,
+        type: 'number',
+        value: value === null || value === undefined ? '' : value,
+        onChange: function (event) {
+            var newValue = event.currentTarget.value !== '' ? Number(event.currentTarget.value) : null;
+            dispatch(actionCreators_1.updateCellValue(rowKeyValue, column.key, newValue));
+        },
+        onBlur: function () {
+            dispatch(actionCreators_1.closeEditor(rowKeyValue, column.key));
+        }
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.cellEditorInput), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (content ||
+        (react_1.default.createElement("input", __assign({}, elementAttributes))));
+};
+exports["default"] = CellEditorNumber;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorState/CellEditorState.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorState/CellEditorState.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var DataUtils_1 = __webpack_require__(/*! ../../Utils/DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var EffectUtils_1 = __webpack_require__(/*! ../../Utils/EffectUtils */ "./node_modules/ka-table/Utils/EffectUtils.js");
+var Validation_1 = __webpack_require__(/*! ../../Utils/Validation */ "./node_modules/ka-table/Utils/Validation.js");
+var CellEditorValidation_1 = __importDefault(__webpack_require__(/*! ../CellEditorValidation/CellEditorValidation */ "./node_modules/ka-table/Components/CellEditorValidation/CellEditorValidation.js"));
+var CellEditorState = function (props) {
+    var column = props.column, dispatch = props.dispatch, editingMode = props.editingMode, rowData = props.rowData, rowKeyValue = props.rowKeyValue, validation = props.validation, value = props.value;
+    var validationMessage = props.validationMessage;
+    var _a = react_1.useState(rowData), rowDataState = _a[0], changeRowData = _a[1];
+    var _b = react_1.useState(value), editorValueState = _b[0], changeEditorValue = _b[1];
+    var isCellEditingMode = editingMode === enums_1.EditingMode.Cell;
+    validationMessage = isCellEditingMode || validationMessage
+        ? Validation_1.getValidationValue(editorValueState, rowDataState, column, validation) || ''
+        : validationMessage;
+    var onValueStateChange = function (action) {
+        var newRowValue = DataUtils_1.replaceValue(rowData, column, action.value);
+        changeRowData(newRowValue);
+        changeEditorValue(action.value);
+    };
+    var close = react_1.useCallback(function () {
+        dispatch(actionCreators_1.closeEditor(rowKeyValue, column.key));
+    }, [dispatch, column, rowKeyValue]);
+    var closeHandler = react_1.useCallback(function () {
+        if (!isCellEditingMode || !validationMessage) {
+            if (editorValueState !== value) {
+                dispatch(actionCreators_1.updateEditorValue(rowKeyValue, column.key, editorValueState));
+            }
+            if (isCellEditingMode) {
+                close();
+            }
+        }
+    }, [validationMessage, dispatch, close, column, editorValueState, rowKeyValue, value, isCellEditingMode]);
+    react_1.useEffect(function () {
+        return EffectUtils_1.addEscEnterKeyEffect(close, closeHandler);
+    }, [close, closeHandler]);
+    var dispatchHandler = function (action) {
+        if (action.type === enums_1.ActionType.CloseEditor) {
+            closeHandler();
+        }
+        else if (action.type === enums_1.ActionType.UpdateCellValue) {
+            onValueStateChange(action);
+        }
+        else {
+            dispatch(action);
+        }
+    };
+    var stateProps = __assign(__assign({}, props), {
+        dispatch: dispatchHandler,
+        value: editorValueState,
+        editorValue: editorValueState,
+        rowData: rowDataState,
+        validationMessage: validationMessage || undefined
+    });
+    return (react_1.default.createElement(CellEditorValidation_1.default, __assign({}, stateProps)));
+};
+exports["default"] = CellEditorState;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorString/CellEditorString.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorString/CellEditorString.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellEditorString = function (props) {
+    var _a;
+    var column = props.column, dispatch = props.dispatch, value = props.value, rowKeyValue = props.rowKeyValue, autoFocus = props.autoFocus, childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.textInput,
+        autoFocus: autoFocus,
+        type: 'text',
+        value: value || '',
+        onChange: function (event) {
+            dispatch(actionCreators_1.updateCellValue(rowKeyValue, column.key, event.currentTarget.value));
+        },
+        onBlur: function () {
+            dispatch(actionCreators_1.closeEditor(rowKeyValue, column.key));
+        }
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.cellEditorInput), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (content ||
+        (react_1.default.createElement("input", __assign({}, elementAttributes))));
+};
+exports["default"] = CellEditorString;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorValidationMessage/CellEditorValidationMessage.js":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorValidationMessage/CellEditorValidationMessage.js ***!
+  \*****************************************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var CellEditorValidationMessage = function (props) {
+    var message = props.message;
+    return (react_1.default.createElement("div", { className: 'ka-validation-message-container' },
+        react_1.default.createElement("div", { className: 'ka-validation-message' }, message)));
+};
+exports["default"] = CellEditorValidationMessage;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorValidation/CellEditorValidation.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorValidation/CellEditorValidation.js ***!
+  \***************************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CellEditorDataType_1 = __importDefault(__webpack_require__(/*! ../CellEditorDataType/CellEditorDataType */ "./node_modules/ka-table/Components/CellEditorDataType/CellEditorDataType.js"));
+var CellEditorValidationMessage_1 = __importDefault(__webpack_require__(/*! ../CellEditorValidationMessage/CellEditorValidationMessage */ "./node_modules/ka-table/Components/CellEditorValidationMessage/CellEditorValidationMessage.js"));
+var CellEditorValidation = function (props) {
+    var validationMessage = props.validationMessage;
+    return (react_1.default.createElement("div", { className: "" + (validationMessage ? defaultOptions_1.default.css.kaCellEditorValidationError : '') },
+        react_1.default.createElement(CellEditorDataType_1.default, __assign({}, props)),
+        validationMessage && react_1.default.createElement(CellEditorValidationMessage_1.default, { message: validationMessage })));
+};
+exports["default"] = CellEditorValidation;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditor/CellEditor.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditor/CellEditor.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var CellUtils_1 = __webpack_require__(/*! ../../Utils/CellUtils */ "./node_modules/ka-table/Utils/CellUtils.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellEditorState_1 = __importDefault(__webpack_require__(/*! ../CellEditorState/CellEditorState */ "./node_modules/ka-table/Components/CellEditorState/CellEditorState.js"));
+var CellEditor = function (props) {
+    var childComponents = props.childComponents, dispatch = props.dispatch, editingMode = props.editingMode;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.cellEditor
+    }, props, childComponents.cellEditor), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content || (editingMode === enums_1.EditingMode.Cell
+        ? React.createElement(CellEditorState_1.default, __assign({}, props, { dispatch: CellUtils_1.getCellEditorDispatchHandler(dispatch), autoFocus: true }))
+        : React.createElement(CellEditorState_1.default, __assign({}, props)))));
+};
+exports["default"] = CellEditor;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellText/CellText.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellText/CellText.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellText = function (props) {
+    var _a;
+    var childComponents = props.childComponents, column = props.column, format = props.format, dispatch = props.dispatch, editingMode = props.editingMode, rowKeyValue = props.rowKeyValue, value = props.value;
+    var formatedValue = (format && format({ column: column, value: value }))
+        || ((_a = value) === null || _a === void 0 ? void 0 : _a.toString());
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.cellText,
+        onClick: function () {
+            if (editingMode === enums_1.EditingMode.Cell) {
+                dispatch(actionCreators_1.openEditor(rowKeyValue, column.key));
+            }
+        },
+    }, props, childComponents.cellText), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content || formatedValue || React.createElement(React.Fragment, null, "\u00A0")));
+};
+exports["default"] = CellText;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/ColGroup/ColGroup.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/ka-table/Components/ColGroup/ColGroup.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+exports.ColGroup = function (_a) {
+    var columns = _a.columns, groupColumnsCount = _a.groupColumnsCount;
+    return (React.createElement("colgroup", null,
+        React.createElement(EmptyCells_1.default, { count: groupColumnsCount, isColGroup: true }),
+        columns.map(function (c) { var _a, _b, _c; return React.createElement("col", __assign({ key: c.key }, c.colGroup, { width: c.width || ((_a = c.colGroup) === null || _a === void 0 ? void 0 : _a.width) || ((_c = (_b = c.colGroup) === null || _b === void 0 ? void 0 : _b.style) === null || _c === void 0 ? void 0 : _c.width) })); })));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/DataAndDetailsRows/DataAndDetailsRows.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/DataAndDetailsRows/DataAndDetailsRows.js ***!
+  \***********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var DataRow_1 = __importDefault(__webpack_require__(/*! ../DataRow/DataRow */ "./node_modules/ka-table/Components/DataRow/DataRow.js"));
+var DetailsRow_1 = __importDefault(__webpack_require__(/*! ../DetailsRow/DetailsRow */ "./node_modules/ka-table/Components/DetailsRow/DetailsRow.js"));
+var DataAndDetailsRows = function (props) {
+    var isDetailsRowShown = props.isDetailsRowShown;
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement(DataRow_1.default, __assign({}, props)),
+        isDetailsRowShown && react_1.default.createElement(DetailsRow_1.default, __assign({}, props))));
+};
+exports["default"] = DataAndDetailsRows;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/DataRowContent/DataRowContent.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/DataRowContent/DataRowContent.js ***!
+  \***************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CellUtils_1 = __webpack_require__(/*! ../../Utils/CellUtils */ "./node_modules/ka-table/Utils/CellUtils.js");
+var ColumnUtils_1 = __webpack_require__(/*! ../../Utils/ColumnUtils */ "./node_modules/ka-table/Utils/ColumnUtils.js");
+var DataUtils_1 = __webpack_require__(/*! ../../Utils/DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var CellComponent_1 = __importDefault(__webpack_require__(/*! ../CellComponent/CellComponent */ "./node_modules/ka-table/Components/CellComponent/CellComponent.js"));
+var DataRowContent = function (_a) {
+    var childComponents = _a.childComponents, columns = _a.columns, treeDeep = _a.treeDeep, dispatch = _a.dispatch, editingMode = _a.editingMode, format = _a.format, isDetailsRowShown = _a.isDetailsRowShown, isSelectedRow = _a.isSelectedRow, isTreeExpanded = _a.isTreeExpanded, isTreeGroup = _a.isTreeGroup, rowData = _a.rowData, rowEditableCells = _a.rowEditableCells, rowKeyField = _a.rowKeyField, rowKeyValue = _a.rowKeyValue, selectedRows = _a.selectedRows, validation = _a.validation;
+    var arrow = isTreeGroup ? [(react_1.default.createElement("div", { onClick: function () { return dispatch(actionCreators_1.updateTreeGroupsExpanded(rowKeyValue)); }, className: isTreeExpanded
+                ? defaultOptions_1.default.css.iconTreeArrowExpanded : defaultOptions_1.default.css.iconTreeArrowCollapsed }))] : undefined;
+    return (react_1.default.createElement(react_1.default.Fragment, null, columns.map(function (column, index) {
+        var _a;
+        var editableCell = CellUtils_1.getEditableCell(column, rowEditableCells);
+        var hasEditorValue = editableCell && editableCell.hasOwnProperty('editorValue');
+        var editorValue = editableCell && editableCell.editorValue;
+        var value = hasEditorValue ? editorValue : DataUtils_1.getValueByColumn(rowData, column);
+        var cellDeep = treeDeep != null && index === 0 ? treeDeep : undefined;
+        return (react_1.default.createElement(CellComponent_1.default, { treeArrowElement: (_a = arrow) === null || _a === void 0 ? void 0 : _a.pop(), childComponents: childComponents, treeDeep: cellDeep, column: column, dispatch: dispatch, editingMode: editingMode, editorValue: editorValue, field: ColumnUtils_1.getField(column), format: format, hasEditorValue: editableCell && editableCell.hasOwnProperty('editorValue'), isDetailsRowShown: isDetailsRowShown, isEditableCell: !!editableCell, isSelectedRow: isSelectedRow, key: column.key, rowData: rowData, rowKeyField: rowKeyField, rowKeyValue: rowKeyValue, selectedRows: selectedRows, validation: validation, validationMessage: editableCell && editableCell.validationMessage, value: value }));
+    })));
+};
+exports["default"] = DataRowContent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/DataRow/DataRow.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/ka-table/Components/DataRow/DataRow.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PropsUtils_1 = __webpack_require__(/*! ../../Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var DataRowContent_1 = __importDefault(__webpack_require__(/*! ../DataRowContent/DataRowContent */ "./node_modules/ka-table/Components/DataRowContent/DataRowContent.js"));
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var DataRow = function (props) {
+    var dispatch = props.dispatch, groupColumnsCount = props.groupColumnsCount, isSelectedRow = props.isSelectedRow, rowKeyValue = props.rowKeyValue, rowReordering = props.rowReordering, trRef = props.trRef;
+    var dataRow = props.childComponents.dataRow;
+    if (rowReordering) {
+        var reorderedRowProps = PropsUtils_1.getDraggableProps(rowKeyValue, dispatch, actionCreators_1.reorderRows, defaultOptions_1.default.css.draggedRow, defaultOptions_1.default.css.dragOverRow);
+        dataRow = ComponentUtils_1.addElementAttributes(reorderedRowProps, props, dataRow);
+    }
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.row + " " + (isSelectedRow ? defaultOptions_1.default.css.rowSelected : '')
+    }, props, dataRow), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement("tr", __assign({ ref: trRef }, elementAttributes), content
+        ? react_1.default.createElement(react_1.default.Fragment, null, content)
+        : (react_1.default.createElement(react_1.default.Fragment, null,
+            react_1.default.createElement(EmptyCells_1.default, { count: groupColumnsCount }),
+            react_1.default.createElement(DataRowContent_1.default, __assign({}, props))))));
+};
+exports["default"] = DataRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/DetailsRow/DetailsRow.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/DetailsRow/DetailsRow.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var DetailsRow = function (props) {
+    var groupColumnsCount = props.groupColumnsCount, childComponents = props.childComponents, columns = props.columns;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.detailsRow,
+    }, props, childComponents.detailsRow), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement("tr", __assign({}, elementAttributes),
+        react_1.default.createElement(EmptyCells_1.default, { count: groupColumnsCount }),
+        content
+            && react_1.default.createElement("td", { className: defaultOptions_1.default.css.cell, colSpan: columns.length }, content)));
+};
+exports["default"] = DetailsRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/EmptyCells/EmptyCells.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var EmptyCells = function (_a) {
+    var count = _a.count, isTh = _a.isTh, isColGroup = _a.isColGroup;
+    return (React.createElement(React.Fragment, null, __spreadArrays(Array(count)).map(function (item, index) {
+        return isColGroup ?
+            React.createElement("col", { key: index })
+            : isTh ?
+                React.createElement("th", { key: index, className: "ka-empty-cell " + defaultOptions_1.default.css.theadBackground }) :
+                React.createElement("td", { key: index, className: 'ka-empty-cell' });
+    })));
+};
+exports["default"] = EmptyCells;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterCell/FilterCell.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterCell/FilterCell.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var FilterRowDataType_1 = __importDefault(__webpack_require__(/*! ../FilterRowDataType/FilterRowDataType */ "./node_modules/ka-table/Components/FilterRowDataType/FilterRowDataType.js"));
+var FilterCell = function (props) {
+    var childComponents = props.childComponents, style = props.column.style;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.theadCell + " ka-filter-row-cell " + defaultOptions_1.default.css.theadBackground + " " + defaultOptions_1.default.css.theadFixed,
+        style: style
+    }, props, childComponents.filterRowCell), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("td", __assign({}, elementAttributes), content ? content :
+        (React.createElement(FilterRowDataType_1.default, __assign({}, props)))));
+};
+exports["default"] = FilterCell;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRowBoolean/FilterRowBoolean.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRowBoolean/FilterRowBoolean.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CommonUtils_1 = __webpack_require__(/*! ../../Utils/CommonUtils */ "./node_modules/ka-table/Utils/CommonUtils.js");
+var FilterRowBoolean = function (_a) {
+    var column = _a.column, dispatch = _a.dispatch;
+    var value = column.filterRowValue;
+    return (react_1.default.createElement("input", { className: defaultOptions_1.default.css.checkbox, type: 'checkbox', ref: function (elem) { return elem && (elem.indeterminate = CommonUtils_1.isEmpty(value)); }, checked: value || false, onChange: function (event) {
+            var filterRowValue = event.currentTarget.checked;
+            if (value === false) {
+                if (filterRowValue === true) {
+                    filterRowValue = undefined;
+                }
+            }
+            dispatch(actionCreators_1.updateFilterRowValue(column.key, filterRowValue));
+        } }));
+};
+exports["default"] = FilterRowBoolean;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRowDataType/FilterRowDataType.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRowDataType/FilterRowDataType.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var FilterRowBoolean_1 = __importDefault(__webpack_require__(/*! ../FilterRowBoolean/FilterRowBoolean */ "./node_modules/ka-table/Components/FilterRowBoolean/FilterRowBoolean.js"));
+var FilterRowDate_1 = __importDefault(__webpack_require__(/*! ../FilterRowDate/FilterRowDate */ "./node_modules/ka-table/Components/FilterRowDate/FilterRowDate.js"));
+var FilterRowNumber_1 = __importDefault(__webpack_require__(/*! ../FilterRowNumber/FilterRowNumber */ "./node_modules/ka-table/Components/FilterRowNumber/FilterRowNumber.js"));
+var FilterRowString_1 = __importDefault(__webpack_require__(/*! ../FilterRowString/FilterRowString */ "./node_modules/ka-table/Components/FilterRowString/FilterRowString.js"));
+var FilterRowDataType = function (props) {
+    switch (props.column.dataType) {
+        case enums_1.DataType.Boolean: return react_1.default.createElement(FilterRowBoolean_1.default, __assign({}, props));
+        case enums_1.DataType.Date: return react_1.default.createElement(FilterRowDate_1.default, __assign({}, props));
+        case enums_1.DataType.Number: return react_1.default.createElement(FilterRowNumber_1.default, __assign({}, props));
+        default: return react_1.default.createElement(FilterRowString_1.default, __assign({}, props));
+    }
+};
+exports["default"] = FilterRowDataType;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRowDate/FilterRowDate.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRowDate/FilterRowDate.js ***!
+  \*************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var DateUtils_1 = __webpack_require__(/*! ../../Utils/DateUtils */ "./node_modules/ka-table/Utils/DateUtils.js");
+var FilterRowDate = function (_a) {
+    var column = _a.column, dispatch = _a.dispatch;
+    var fieldValue = column.filterRowValue;
+    var value = fieldValue && DateUtils_1.getDateInputValue(fieldValue);
+    return (react_1.default.createElement("input", { className: defaultOptions_1.default.css.dateInput, type: 'date', value: value || '', onChange: function (event) {
+            var targetValue = event.currentTarget.value;
+            var filterRowValue = targetValue ? new Date(targetValue) : null;
+            dispatch(actionCreators_1.updateFilterRowValue(column.key, filterRowValue));
+        } }));
+};
+exports["default"] = FilterRowDate;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRowNumber/FilterRowNumber.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRowNumber/FilterRowNumber.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var FilterRowNumber = function (_a) {
+    var column = _a.column, dispatch = _a.dispatch;
+    var value = column.filterRowValue;
+    return (react_1.default.createElement("input", { className: defaultOptions_1.default.css.numberInput, type: 'number', value: value === null || value === undefined ? '' : value, onChange: function (event) {
+            var filterRowValue = event.currentTarget.value !== '' ? Number(event.currentTarget.value) : null;
+            dispatch(actionCreators_1.updateFilterRowValue(column.key, filterRowValue));
+        } }));
+};
+exports["default"] = FilterRowNumber;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRowString/FilterRowString.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRowString/FilterRowString.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var FilterRowString = function (_a) {
+    var column = _a.column, dispatch = _a.dispatch;
+    return (react_1.default.createElement("input", { type: 'text', className: defaultOptions_1.default.css.textInput, value: column.filterRowValue || '', onChange: function (event) {
+            dispatch(actionCreators_1.updateFilterRowValue(column.key, event.currentTarget.value));
+        } }));
+};
+exports["default"] = FilterRowString;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRow/FilterRow.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRow/FilterRow.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var FilterCell_1 = __importDefault(__webpack_require__(/*! ../FilterCell/FilterCell */ "./node_modules/ka-table/Components/FilterCell/FilterCell.js"));
+var FilterRow = function (_a) {
+    var childComponents = _a.childComponents, columns = _a.columns, dispatch = _a.dispatch, groupColumnsCount = _a.groupColumnsCount;
+    return (react_1.default.createElement("tr", { className: "ka-filter-row " + defaultOptions_1.default.css.theadRow + " ka-tr" },
+        react_1.default.createElement(EmptyCells_1.default, { count: groupColumnsCount, isTh: true }),
+        columns.map(function (column) {
+            return (react_1.default.createElement(FilterCell_1.default, { key: column.key, column: column, childComponents: childComponents, dispatch: dispatch }));
+        })));
+};
+exports["default"] = FilterRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/GroupRowContent/GroupRowContent.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/GroupRowContent/GroupRowContent.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var GroupRowContent = function (props) {
+    var childComponents = props.childComponents, contentColSpan = props.contentColSpan, dispatch = props.dispatch, groupIndex = props.groupIndex, groupKey = props.groupKey, isExpanded = props.isExpanded, text = props.text;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.groupCell,
+        colSpan: contentColSpan
+    }, props, childComponents.groupCell), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement(EmptyCells_1.default, { count: groupIndex }),
+        react_1.default.createElement("td", __assign({}, elementAttributes),
+            react_1.default.createElement("div", { className: 'ka-group-cell-content' },
+                react_1.default.createElement("div", { onClick: function () {
+                        dispatch(actionCreators_1.updateGroupsExpanded(groupKey));
+                    }, className: isExpanded
+                        ? defaultOptions_1.default.css.iconGroupArrowExpanded : defaultOptions_1.default.css.iconGroupArrowCollapsed }),
+                content || react_1.default.createElement("div", { className: 'ka-group-text' }, text)))));
+};
+exports["default"] = GroupRowContent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/GroupRow/GroupRow.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/ka-table/Components/GroupRow/GroupRow.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var GroupRowContent_1 = __importDefault(__webpack_require__(/*! ../GroupRowContent/GroupRowContent */ "./node_modules/ka-table/Components/GroupRowContent/GroupRowContent.js"));
+var GroupRow = function (props) {
+    var childComponents = props.childComponents;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.groupRow
+    }, props, childComponents.groupRow), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement("tr", __assign({}, elementAttributes), content ? content : react_1.default.createElement(GroupRowContent_1.default, __assign({}, props))));
+};
+exports["default"] = GroupRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/GroupSummaryCell/GroupSummaryCell.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/GroupSummaryCell/GroupSummaryCell.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+exports.GroupSummaryCell = function (props) {
+    var _a;
+    var style = props.column.style, childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.groupSummaryCell,
+        style: style
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.groupSummaryCell), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("td", __assign({}, elementAttributes), content));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/GroupSummaryRow/GroupSummaryRow.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/GroupSummaryRow/GroupSummaryRow.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var GroupSummaryCell_1 = __webpack_require__(/*! ../GroupSummaryCell/GroupSummaryCell */ "./node_modules/ka-table/Components/GroupSummaryCell/GroupSummaryCell.js");
+exports.GroupSummaryRow = function (props) {
+    var _a;
+    var childComponents = props.childComponents, columns = props.columns, groupColumnsCount = props.groupColumnsCount;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.groupSummaryRow,
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.groupSummaryRow), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("tr", __assign({}, elementAttributes), content || (React.createElement(React.Fragment, null,
+        React.createElement(EmptyCells_1.default, { count: groupColumnsCount }),
+        columns.map(function (column) { return React.createElement(GroupSummaryCell_1.GroupSummaryCell, __assign({ key: column.key }, props, { column: column })); })))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/GroupedColumnsRow/GroupedColumnsRow.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/GroupedColumnsRow/GroupedColumnsRow.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var GroupedColumnsUtils_1 = __webpack_require__(/*! ../../Utils/GroupedColumnsUtils */ "./node_modules/ka-table/Utils/GroupedColumnsUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var HeadCell_1 = __importDefault(__webpack_require__(/*! ../HeadCell/HeadCell */ "./node_modules/ka-table/Components/HeadCell/HeadCell.js"));
+exports.GroupedColumnsRow = function (props) {
+    var columns = props.columns, _a = props.groupedColumns, groupedColumns = _a === void 0 ? [] : _a;
+    var rows = GroupedColumnsUtils_1.getRowsWithGroupedColumns(columns, groupedColumns);
+    var columnsKeys = columns.map(function (c) { return c.key; });
+    return (React.createElement(React.Fragment, null, rows.map(function (row, index) { return ((React.createElement("tr", { className: defaultOptions_1.default.css.theadRow, key: index },
+        React.createElement(EmptyCells_1.default, { count: 0, isTh: true }),
+        row.map(function (item, columnIndex) {
+            return (React.createElement(HeadCell_1.default, __assign({}, props, { colSpan: item.colSpan, rowSpan: item.rowSpan, column: item.column, hasChildren: !columnsKeys.includes(item.column.key), isGrouped: true, key: columnIndex })));
+        })))); })));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/HeadCellContent/HeadCellContent.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/HeadCellContent/HeadCellContent.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var CellUtils_1 = __webpack_require__(/*! ../../Utils/CellUtils */ "./node_modules/ka-table/Utils/CellUtils.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var SortUtils_1 = __webpack_require__(/*! ../../Utils/SortUtils */ "./node_modules/ka-table/Utils/SortUtils.js");
+var HeaderFilterButton_1 = __importDefault(__webpack_require__(/*! ../HeaderFilterButton/HeaderFilterButton */ "./node_modules/ka-table/Components/HeaderFilterButton/HeaderFilterButton.js"));
+var HeadCellContent = function (props) {
+    var column = props.column, dispatch = props.dispatch, sortingMode = props.sortingMode, filteringMode = props.filteringMode, headCellContent = props.childComponents.headCellContent;
+    var sortingEnabled = SortUtils_1.isSortingEnabled(sortingMode);
+    var onClick = sortingEnabled ? function () {
+        dispatch(actionCreators_1.updateSortDirection(column.key));
+    } : undefined;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.theadCellContent + " " + (sortingEnabled ? 'ka-pointer' : ''),
+        onClick: onClick
+    }, props, headCellContent), elementAttributes = _a.elementAttributes, content = _a.content;
+    var refToElement = React.useRef(document.createElement('div'));
+    React.useLayoutEffect(function () {
+        CellUtils_1.checkPopupPosition(column, refToElement, dispatch);
+    }, [column, dispatch]);
+    return (React.createElement(React.Fragment, null,
+        React.createElement("div", __assign({}, elementAttributes, { ref: refToElement }),
+            content || React.createElement("span", null, column.title),
+            column.sortDirection && sortingEnabled && (React.createElement("span", { className: column.sortDirection === enums_1.SortDirection.Ascend
+                    ? defaultOptions_1.default.css.iconSortArrowUp
+                    : defaultOptions_1.default.css.iconSortArrowDown }, column.sortIndex)),
+            (filteringMode === enums_1.FilteringMode.HeaderFilter) && (React.createElement(HeaderFilterButton_1.default, { column: column, dispatch: dispatch })))));
+};
+exports["default"] = HeadCellContent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/HeadCellResize/HeadCellResize.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/HeadCellResize/HeadCellResize.js ***!
+  \***************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CellResizeUtils_1 = __webpack_require__(/*! ../../Utils/CellResizeUtils */ "./node_modules/ka-table/Utils/CellResizeUtils.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EffectUtils_1 = __webpack_require__(/*! ../../Utils/EffectUtils */ "./node_modules/ka-table/Utils/EffectUtils.js");
+var HeadCellResize = function (props) {
+    var _a, _b, _c, _d, _e;
+    var _f = props.column, key = _f.key, style = _f.style, colGroup = _f.colGroup, width = _f.width, dispatch = props.dispatch, childComponents = props.childComponents;
+    var minWidth = CellResizeUtils_1.getMinWidth(style) || CellResizeUtils_1.getMinWidth((_a = colGroup) === null || _a === void 0 ? void 0 : _a.style);
+    var currentWidth = width || ((_b = colGroup) === null || _b === void 0 ? void 0 : _b.width) || ((_d = (_c = colGroup) === null || _c === void 0 ? void 0 : _c.style) === null || _d === void 0 ? void 0 : _d.width) || ((_e = style) === null || _e === void 0 ? void 0 : _e.width);
+    var _g = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.theadCellResize,
+        draggable: false,
+        onMouseDown: function (mouseDownEvent) {
+            mouseDownEvent.preventDefault();
+            var startX = mouseDownEvent.screenX - (CellResizeUtils_1.isNumberWidth(currentWidth) ? currentWidth : mouseDownEvent.currentTarget.parentElement.offsetWidth);
+            var mouseMoveStop = EffectUtils_1.getEventListenerEffect('mousemove', CellResizeUtils_1.getMouseMove(currentWidth, minWidth, startX, key, dispatch));
+            var mouseUpStop = EffectUtils_1.getEventListenerEffect('mouseup', function (event) {
+                var newWidth = CellResizeUtils_1.getValidatedWidth(event.screenX - startX, minWidth);
+                dispatch(actionCreators_1.resizeColumn(key, newWidth));
+                mouseUpStop();
+                mouseMoveStop();
+            });
+        }
+    }, props, childComponents.headCellResize), elementAttributes = _g.elementAttributes, content = _g.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content || React.createElement(React.Fragment, null, "\u00A0")));
+};
+exports["default"] = HeadCellResize;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/HeadCell/HeadCell.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/ka-table/Components/HeadCell/HeadCell.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CellResizeUtils_1 = __webpack_require__(/*! ../../Utils/CellResizeUtils */ "./node_modules/ka-table/Utils/CellResizeUtils.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PropsUtils_1 = __webpack_require__(/*! ../../Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var SortUtils_1 = __webpack_require__(/*! ../../Utils/SortUtils */ "./node_modules/ka-table/Utils/SortUtils.js");
+var HeadCellContent_1 = __importDefault(__webpack_require__(/*! ../HeadCellContent/HeadCellContent */ "./node_modules/ka-table/Components/HeadCellContent/HeadCellContent.js"));
+var HeadCellResize_1 = __importDefault(__webpack_require__(/*! ../HeadCellResize/HeadCellResize */ "./node_modules/ka-table/Components/HeadCellResize/HeadCellResize.js"));
+var HeadCell = function (props) {
+    var childComponents = props.childComponents, colSpan = props.colSpan, column = props.column, _a = props.column, style = _a.style, isResizable = _a.isResizable, key = _a.key, columnReordering = props.columnReordering, columnResizing = props.columnResizing, dispatch = props.dispatch, hasChildren = props.hasChildren, isGrouped = props.isGrouped, rowSpan = props.rowSpan, sortingMode = props.sortingMode;
+    var headCell = props.childComponents.headCell;
+    if (columnReordering) {
+        var reorderedRowProps = PropsUtils_1.getDraggableProps(key, dispatch, actionCreators_1.reorderColumns, defaultOptions_1.default.css.draggedColumn, defaultOptions_1.default.css.dragOverColumn);
+        headCell = ComponentUtils_1.addElementAttributes(reorderedRowProps, props, headCell);
+    }
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.theadCell + " " + defaultOptions_1.default.css.theadCellHeight + " " + defaultOptions_1.default.css.theadFixed + " " + defaultOptions_1.default.css.theadBackground + " " + (SortUtils_1.isSortingEnabled(sortingMode) ? 'ka-pointer' : '') + " " + (isGrouped ? 'ka-thead-grouped-cell' : ''),
+        colSpan: colSpan,
+        rowSpan: rowSpan,
+        scope: 'col',
+        style: style,
+        id: key,
+    }, props, headCell), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("th", __assign({}, elementAttributes),
+        React.createElement("div", { className: defaultOptions_1.default.css.theadCellWrapper },
+            React.createElement("div", { className: defaultOptions_1.default.css.theadCellContentWrapper }, content || React.createElement(HeadCellContent_1.default, __assign({}, props))),
+            CellResizeUtils_1.isCellResizeShown(isResizable, columnResizing) && !hasChildren && (React.createElement(HeadCellResize_1.default, { column: column, dispatch: dispatch, childComponents: childComponents })))));
+};
+exports["default"] = HeadCell;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/HeadRow/HeadRow.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/ka-table/Components/HeadRow/HeadRow.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var HeadCell_1 = __importDefault(__webpack_require__(/*! ../HeadCell/HeadCell */ "./node_modules/ka-table/Components/HeadCell/HeadCell.js"));
+var HeadRow = function (props) {
+    var areAllRowsSelected = props.areAllRowsSelected, childComponents = props.childComponents, columnReordering = props.columnReordering, columnResizing = props.columnResizing, columns = props.columns, dispatch = props.dispatch, filteringMode = props.filteringMode, groupColumnsCount = props.groupColumnsCount, sortingMode = props.sortingMode;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.theadRow
+    }, props, childComponents.headRow), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement("tr", __assign({}, elementAttributes), content ||
+        (react_1.default.createElement(react_1.default.Fragment, null,
+            react_1.default.createElement(EmptyCells_1.default, { count: groupColumnsCount, isTh: true }),
+            columns.map(function (column) {
+                return (react_1.default.createElement(HeadCell_1.default, { areAllRowsSelected: areAllRowsSelected, childComponents: childComponents, columnReordering: columnReordering, columnResizing: columnResizing, column: column, dispatch: dispatch, filteringMode: filteringMode, key: column.key, sortingMode: sortingMode }));
+            })))));
+};
+exports["default"] = HeadRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/HeaderFilterButton/HeaderFilterButton.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/HeaderFilterButton/HeaderFilterButton.js ***!
+  \***********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var HeaderFilterButton = function (_a) {
+    var column = _a.column, dispatch = _a.dispatch;
+    var _b;
+    return (React.createElement("span", { onClick: function (event) {
+            event.stopPropagation();
+            dispatch(actionCreators_1.updateHeaderFilterPopupState(column.key, !column.isHeaderFilterPopupShown));
+        }, className: defaultOptions_1.default.css.iconFilter + " ka-header-filter-button " + (((_b = column.headerFilterValues) === null || _b === void 0 ? void 0 : _b.length) ? 'ka-header-filter-button-has-value' : '') }));
+};
+exports["default"] = HeaderFilterButton;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/Loading/Loading.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/ka-table/Components/Loading/Loading.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var Loading = function (props) {
+    var enabled = props.enabled, text = props.text;
+    if (enabled) {
+        return (React.createElement("div", { className: 'ka-loading' },
+            React.createElement("div", { className: 'ka-loading-icon' }),
+            text && (React.createElement("div", { className: 'ka-loading-text' }, text))));
+    }
+    return (React.createElement(React.Fragment, null));
+};
+exports["default"] = Loading;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/NewRow/NewRow.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/ka-table/Components/NewRow/NewRow.js ***!
+  \***********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var const_1 = __webpack_require__(/*! ../../const */ "./node_modules/ka-table/const.js");
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var DataRow_1 = __importDefault(__webpack_require__(/*! ../DataRow/DataRow */ "./node_modules/ka-table/Components/DataRow/DataRow.js"));
+var NewRow = function (_a) {
+    var childComponents = _a.childComponents, columns = _a.columns, dispatch = _a.dispatch, editableCells = _a.editableCells, format = _a.format, groupColumnsCount = _a.groupColumnsCount, rowKeyField = _a.rowKeyField, validation = _a.validation;
+    return (react_1.default.createElement(DataRow_1.default, { childComponents: childComponents, columns: columns, dispatch: dispatch, format: format, editableCells: editableCells, editingMode: enums_1.EditingMode.None, groupColumnsCount: groupColumnsCount, isDetailsRowShown: false, isSelectedRow: false, rowData: {}, rowKeyField: rowKeyField, rowKeyValue: const_1.newRowId, rowReordering: false, validation: validation, selectedRows: [], rowEditableCells: editableCells }));
+};
+exports["default"] = NewRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/NoDataRow/NoDataRow.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/ka-table/Components/NoDataRow/NoDataRow.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var NoDataRow = function (props) {
+    var childComponents = props.childComponents, columns = props.columns, groupColumnsCount = props.groupColumnsCount;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: 'ka-tr ka-no-data-row'
+    }, props, childComponents.noDataRow), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement("tr", __assign({}, elementAttributes),
+        react_1.default.createElement("td", { className: 'ka-no-data-cell', colSpan: columns.length + groupColumnsCount }, content)));
+};
+exports["default"] = NoDataRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PagingIndex/PagingIndex.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PagingIndex/PagingIndex.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingIndex = function (props) {
+    var childComponents = props.childComponents, dispatch = props.dispatch, isActive = props.isActive, pageIndex = props.pageIndex, text = props.text;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.pagingPageIndex + " " + (isActive ? 'ka-paging-page-index-active' : ''),
+        onClick: function () { return dispatch(actionCreators_1.updatePageIndex(pageIndex)); }
+    }, props, childComponents.pagingIndex), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("li", __assign({}, elementAttributes), content || text));
+};
+exports["default"] = PagingIndex;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PagingPages/PagingPages.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PagingPages/PagingPages.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingUtils_1 = __webpack_require__(/*! ../../Utils/PagingUtils */ "./node_modules/ka-table/Utils/PagingUtils.js");
+var PagingIndex_1 = __importDefault(__webpack_require__(/*! ../PagingIndex/PagingIndex */ "./node_modules/ka-table/Components/PagingIndex/PagingIndex.js"));
+var PagingPages = function (props) {
+    var childComponents = props.childComponents, dispatch = props.dispatch, pagesCount = props.pagesCount, _a = props.pageIndex, pageIndex = _a === void 0 ? 0 : _a;
+    var pages = PagingUtils_1.getPagesArrayBySize(pagesCount);
+    React.useEffect(function () {
+        if (pageIndex !== 0 && pageIndex >= pages.length) {
+            dispatch(actionCreators_1.updatePageIndex(0));
+        }
+    }, [dispatch, pageIndex, pages]);
+    var isEndShown = pageIndex < pages.length - PagingUtils_1.centerLength && pages.length > PagingUtils_1.centerLength + Math.ceil(PagingUtils_1.centerLength / 2);
+    var isStartShown = pageIndex >= PagingUtils_1.centerLength && pages.length > PagingUtils_1.centerLength + Math.ceil(PagingUtils_1.centerLength / 2);
+    var centerPages = PagingUtils_1.getPagesForCenter(pages, isStartShown, isEndShown, pageIndex);
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.pagingPages
+    }, props, childComponents.pagingPages), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("ul", __assign({}, elementAttributes), content || (React.createElement(React.Fragment, null,
+        isStartShown &&
+            (React.createElement(React.Fragment, null,
+                React.createElement(PagingIndex_1.default, __assign({}, props, { pageIndex: 0, isActive: pageIndex === 0, text: 1 })),
+                React.createElement(PagingIndex_1.default, __assign({}, props, { pageIndex: centerPages[0] - 1, isActive: false, text: '...' })))),
+        centerPages.map(function (value, index) {
+            return (React.createElement(PagingIndex_1.default, __assign({}, props, { pageIndex: value, isActive: pageIndex === value, key: value, text: value + 1 })));
+        }),
+        isEndShown &&
+            (React.createElement(React.Fragment, null,
+                React.createElement(PagingIndex_1.default, __assign({}, props, { pageIndex: __spreadArrays(centerPages).pop() + 1, isActive: false, text: '...' })),
+                React.createElement(PagingIndex_1.default, __assign({}, props, { pageIndex: pages[pages.length - 1], isActive: pageIndex === pages[pages.length - 1], text: pages[pages.length - 1] + 1 }))))))));
+};
+exports["default"] = PagingPages;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PagingSize/PagingSize.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PagingSize/PagingSize.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingSize = function (props) {
+    var childComponents = props.childComponents, dispatch = props.dispatch, pageSize = props.pageSize, value = props.value;
+    var isActive = pageSize === value;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.pagingSize + " " + (isActive ? 'ka-paging-size-active' : ''),
+        onClick: function () { return dispatch(actionCreators_1.updatePageSize(value)); }
+    }, props, childComponents.pagingSize), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("li", __assign({}, elementAttributes), content || value));
+};
+exports["default"] = PagingSize;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PagingSizes/PagingSizes.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PagingSizes/PagingSizes.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingSize_1 = __importDefault(__webpack_require__(/*! ../PagingSize/PagingSize */ "./node_modules/ka-table/Components/PagingSize/PagingSize.js"));
+var PagingSizes = function (props) {
+    var childComponents = props.childComponents, _a = props.pageSizes, pageSizes = _a === void 0 ? [] : _a;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.pagingSizes
+    }, props, childComponents.pagingSizes), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("ul", __assign({}, elementAttributes), content || (pageSizes.map(function (value) { return React.createElement(PagingSize_1.default, __assign({}, props, { key: value, value: value })); }))));
+};
+exports["default"] = PagingSizes;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/Paging/Paging.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/ka-table/Components/Paging/Paging.js ***!
+  \***********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingPages_1 = __importDefault(__webpack_require__(/*! ../PagingPages/PagingPages */ "./node_modules/ka-table/Components/PagingPages/PagingPages.js"));
+var PagingSizes_1 = __importDefault(__webpack_require__(/*! ../PagingSizes/PagingSizes */ "./node_modules/ka-table/Components/PagingSizes/PagingSizes.js"));
+var Paging = function (props) {
+    var childComponents = props.childComponents, pageSizes = props.pageSizes;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.paging + " " + (pageSizes ? 'ka-paging-sizes-active' : ''),
+    }, props, childComponents.paging), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content ||
+        (React.createElement(React.Fragment, null,
+            pageSizes && React.createElement(PagingSizes_1.default, __assign({}, props)),
+            React.createElement(PagingPages_1.default, __assign({}, props))))));
+};
+exports["default"] = Paging;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PopupContentItem/PopupContentItem.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PopupContentItem/PopupContentItem.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PopupContentItem = function (props) {
+    var _a, _b, _c;
+    var column = props.column, childComponents = props.childComponents, dispatch = props.dispatch, item = props.item;
+    var checked = (_b = (_a = column.headerFilterValues) === null || _a === void 0 ? void 0 : _a.includes(item), (_b !== null && _b !== void 0 ? _b : false));
+    var handleChange = function (event) {
+        dispatch(actionCreators_1.updateHeaderFilterValues(column.key, item, event.currentTarget.checked));
+    };
+    var _d = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.popupContentItem
+    }, props, (_c = childComponents) === null || _c === void 0 ? void 0 : _c.popupContentItem), elementAttributes = _d.elementAttributes, content = _d.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content || (React.createElement(React.Fragment, null,
+        React.createElement("div", { className: 'ka-popup-content-checkbox' },
+            React.createElement("input", { className: 'ka-input', type: 'checkbox', checked: checked, onChange: handleChange })),
+        React.createElement("div", { className: 'ka-popup-content-item-value' }, item)))));
+};
+exports["default"] = PopupContentItem;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PopupContent/PopupContent.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PopupContent/PopupContent.js ***!
+  \***********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var DataUtils_1 = __webpack_require__(/*! ../../Utils/DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var PopupContentItem_1 = __importDefault(__webpack_require__(/*! ../PopupContentItem/PopupContentItem */ "./node_modules/ka-table/Components/PopupContentItem/PopupContentItem.js"));
+var PopupContent = function (props) {
+    var _a, _b, _c;
+    var column = props.column, childComponents = props.childComponents, data = props.data, dispatch = props.dispatch, format = props.format;
+    var headerFilterValues = (_a = data) === null || _a === void 0 ? void 0 : _a.map(function (item) {
+        var _a;
+        var value = DataUtils_1.getValueByColumn(item, column);
+        var formatedValue = (format && format({ column: column, value: value }))
+            || ((_a = value) === null || _a === void 0 ? void 0 : _a.toString());
+        return formatedValue;
+    });
+    headerFilterValues = Array.from(new Set(headerFilterValues));
+    var _d = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.popupContent
+    }, props, (_b = childComponents) === null || _b === void 0 ? void 0 : _b.popupContent), elementAttributes = _d.elementAttributes, content = _d.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content || ((_c = headerFilterValues) === null || _c === void 0 ? void 0 : _c.map(function (item, index) { return (React.createElement(PopupContentItem_1.default, { key: index, column: column, childComponents: childComponents, dispatch: dispatch, item: item })); }))));
+};
+exports["default"] = PopupContent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/Popup/Popup.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/ka-table/Components/Popup/Popup.js ***!
+  \*********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var UseOuterClick_1 = __webpack_require__(/*! ../../hooks/UseOuterClick */ "./node_modules/ka-table/hooks/UseOuterClick.js");
+var PopupContent_1 = __importDefault(__webpack_require__(/*! ../PopupContent/PopupContent */ "./node_modules/ka-table/Components/PopupContent/PopupContent.js"));
+var Popup = function (props) {
+    var _a, _b;
+    var column = props.column, childComponents = props.childComponents, data = props.data, dispatch = props.dispatch, format = props.format;
+    var refToElement = UseOuterClick_1.useOuterClick(function () {
+        dispatch(actionCreators_1.updateHeaderFilterPopupState(column.key, !column.isHeaderFilterPopupShown));
+    });
+    return (React.createElement("div", { className: 'ka-popup', ref: refToElement, style: {
+            left: (_a = column.headerFilterPopupPosition) === null || _a === void 0 ? void 0 : _a.x,
+            top: (_b = column.headerFilterPopupPosition) === null || _b === void 0 ? void 0 : _b.y,
+        } },
+        React.createElement(PopupContent_1.default, { column: column, childComponents: childComponents, data: data, dispatch: dispatch, format: format })));
+};
+exports["default"] = Popup;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/Rows/Rows.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/ka-table/Components/Rows/Rows.js ***!
+  \*******************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var DataUtils_1 = __webpack_require__(/*! ../../Utils/DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var FilterUtils_1 = __webpack_require__(/*! ../../Utils/FilterUtils */ "./node_modules/ka-table/Utils/FilterUtils.js");
+var GroupUtils_1 = __webpack_require__(/*! ../../Utils/GroupUtils */ "./node_modules/ka-table/Utils/GroupUtils.js");
+var TreeUtils_1 = __webpack_require__(/*! ../../Utils/TreeUtils */ "./node_modules/ka-table/Utils/TreeUtils.js");
+var DataAndDetailsRows_1 = __importDefault(__webpack_require__(/*! ../DataAndDetailsRows/DataAndDetailsRows */ "./node_modules/ka-table/Components/DataAndDetailsRows/DataAndDetailsRows.js"));
+var GroupRow_1 = __importDefault(__webpack_require__(/*! ../GroupRow/GroupRow */ "./node_modules/ka-table/Components/GroupRow/GroupRow.js"));
+var GroupSummaryRow_1 = __webpack_require__(/*! ../GroupSummaryRow/GroupSummaryRow */ "./node_modules/ka-table/Components/GroupSummaryRow/GroupSummaryRow.js");
+var Rows = function (props) {
+    var childComponents = props.childComponents, columns = props.columns, data = props.data, _a = props.detailsRows, detailsRows = _a === void 0 ? [] : _a, dispatch = props.dispatch, editableCells = props.editableCells, format = props.format, groupedColumns = props.groupedColumns, _b = props.groups, groups = _b === void 0 ? [] : _b, _c = props.groupsExpanded, groupsExpanded = _c === void 0 ? [] : _c, onFirstRowRendered = props.onFirstRowRendered, treeGroupsExpanded = props.treeGroupsExpanded, rowKeyField = props.rowKeyField, rowReordering = props.rowReordering, selectedRows = props.selectedRows, validation = props.validation;
+    var groupMark = GroupUtils_1.getGroupMark();
+    var firstRowRef = react_1.useRef(null);
+    react_1.useEffect(function () {
+        onFirstRowRendered(firstRowRef);
+    }, [firstRowRef, onFirstRowRendered]);
+    var rowRefLink = firstRowRef;
+    return (react_1.default.createElement(react_1.default.Fragment, null, data.map(function (d) {
+        if (d.groupMark === groupMark) {
+            var groupIndex = d.key.length - 1;
+            var group_1 = groups && groups[groupIndex];
+            var column = group_1 && groupedColumns.find(function (c) { return c.key === group_1.columnKey; });
+            return (react_1.default.createElement(GroupRow_1.default, { childComponents: childComponents, column: column, contentColSpan: columns.length - groupIndex + groups.length, dispatch: dispatch, groupIndex: groupIndex, groupKey: d.key, isExpanded: groupsExpanded.some(function (ge) { return JSON.stringify(ge) === JSON.stringify(d.key); }), text: GroupUtils_1.getGroupText(d.value, column, format), key: JSON.stringify(d.key) }));
+        }
+        else if (d.groupSummaryMark === GroupUtils_1.groupSummaryMark) {
+            return react_1.default.createElement(GroupSummaryRow_1.GroupSummaryRow, __assign({}, props, { groupData: d.groupData, key: d.key, groupIndex: d.groupIndex }));
+        }
+        else {
+            var isTreeGroup = d.treeGroupMark === TreeUtils_1.treeGroupMark;
+            var isTreeData = d.treeDataMark === TreeUtils_1.treeDataMark;
+            var isTreeRow = isTreeGroup || isTreeData;
+            var rowData = isTreeRow ? d.rowData : d;
+            var rowKeyValue_1 = DataUtils_1.getValueByField(rowData, rowKeyField);
+            var isTreeExpanded = isTreeGroup && (!treeGroupsExpanded || treeGroupsExpanded.includes(rowKeyValue_1));
+            var isSelectedRow = selectedRows.some(function (s) { return s === rowKeyValue_1; });
+            var isDetailsRowShown = detailsRows.some(function (r) { return r === rowKeyValue_1; });
+            var rowEditableCells = FilterUtils_1.getRowEditableCells(rowKeyValue_1, editableCells);
+            var dataRow = (react_1.default.createElement(DataAndDetailsRows_1.default, { childComponents: props.childComponents, columns: props.columns, dispatch: dispatch, editableCells: props.editableCells, editingMode: props.editingMode, isTreeGroup: isTreeGroup, isTreeExpanded: isTreeExpanded, treeDeep: isTreeRow === true ? d.treeDeep : undefined, format: format, groupColumnsCount: props.groupColumnsCount, isDetailsRowShown: isDetailsRowShown, isSelectedRow: isSelectedRow, key: rowKeyValue_1, rowData: rowData, rowEditableCells: rowEditableCells, rowKeyField: props.rowKeyField, rowKeyValue: rowKeyValue_1, rowReordering: rowReordering, selectedRows: props.selectedRows, trRef: rowRefLink, validation: validation }));
+            rowRefLink = undefined;
+            return dataRow;
+        }
+    })));
+};
+exports["default"] = Rows;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/SummaryCell/SummaryCell.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/SummaryCell/SummaryCell.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+exports.SummaryCell = function (props) {
+    var _a;
+    var style = props.column.style, childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.summaryCell,
+        style: style
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.summaryCell), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("td", __assign({}, elementAttributes), content));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/SummaryRow/SummaryRow.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/SummaryRow/SummaryRow.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var SummaryCell_1 = __webpack_require__(/*! ../SummaryCell/SummaryCell */ "./node_modules/ka-table/Components/SummaryCell/SummaryCell.js");
+exports.SummaryRow = function (props) {
+    var _a;
+    var childComponents = props.childComponents, columns = props.columns, groupColumnsCount = props.groupColumnsCount;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.summaryRow,
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.summaryRow), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("tr", __assign({}, elementAttributes), content || (React.createElement(React.Fragment, null,
+        React.createElement(EmptyCells_1.default, { count: groupColumnsCount }),
+        columns.map(function (column) { return React.createElement(SummaryCell_1.SummaryCell, __assign({ key: column.key }, props, { column: column })); })))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TableBodyContent/TableBodyContent.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TableBodyContent/TableBodyContent.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var const_1 = __webpack_require__(/*! ../../const */ "./node_modules/ka-table/const.js");
+var NewRow_1 = __importDefault(__webpack_require__(/*! ../NewRow/NewRow */ "./node_modules/ka-table/Components/NewRow/NewRow.js"));
+var NoDataRow_1 = __importDefault(__webpack_require__(/*! ../NoDataRow/NoDataRow */ "./node_modules/ka-table/Components/NoDataRow/NoDataRow.js"));
+var VirtualizedRows_1 = __importDefault(__webpack_require__(/*! ../VirtualizedRows/VirtualizedRows */ "./node_modules/ka-table/Components/VirtualizedRows/VirtualizedRows.js"));
+var TableBodyContent = function (props) {
+    var childComponents = props.childComponents, columns = props.columns, data = props.data, dispatch = props.dispatch, editableCells = props.editableCells, format = props.format, groupColumnsCount = props.groupColumnsCount, rowKeyField = props.rowKeyField, validation = props.validation;
+    var newRowEditableCells = editableCells && editableCells.filter(function (c) { return c.rowKeyValue === const_1.newRowId; });
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        newRowEditableCells && !!newRowEditableCells.length && (react_1.default.createElement(NewRow_1.default, { childComponents: childComponents, columns: columns, dispatch: dispatch, editableCells: newRowEditableCells, format: format, groupColumnsCount: groupColumnsCount, rowKeyField: rowKeyField, validation: validation })),
+        !data.length
+            ? react_1.default.createElement(NoDataRow_1.default, __assign({}, props))
+            : react_1.default.createElement(VirtualizedRows_1.default, __assign({}, props))));
+};
+exports["default"] = TableBodyContent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TableBody/TableBody.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TableBody/TableBody.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var TableBodyContent_1 = __importDefault(__webpack_require__(/*! ../TableBodyContent/TableBodyContent */ "./node_modules/ka-table/Components/TableBodyContent/TableBodyContent.js"));
+var TableBody = function (props) {
+    var childComponents = props.childComponents;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.tbody,
+    }, props, childComponents.tableBody), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("tbody", __assign({}, elementAttributes), content || React.createElement(TableBodyContent_1.default, __assign({}, props))));
+};
+exports["default"] = TableBody;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TableFoot/TableFoot.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TableFoot/TableFoot.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var SummaryRow_1 = __webpack_require__(/*! ../SummaryRow/SummaryRow */ "./node_modules/ka-table/Components/SummaryRow/SummaryRow.js");
+exports.TableFoot = function (props) {
+    var _a;
+    var childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.tfoot,
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.tableFoot), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("tfoot", __assign({}, elementAttributes), content || React.createElement(SummaryRow_1.SummaryRow, __assign({}, props))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TableHead/TableHead.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TableHead/TableHead.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var FilterRow_1 = __importDefault(__webpack_require__(/*! ../FilterRow/FilterRow */ "./node_modules/ka-table/Components/FilterRow/FilterRow.js"));
+var GroupedColumnsRow_1 = __webpack_require__(/*! ../GroupedColumnsRow/GroupedColumnsRow */ "./node_modules/ka-table/Components/GroupedColumnsRow/GroupedColumnsRow.js");
+var HeadRow_1 = __importDefault(__webpack_require__(/*! ../HeadRow/HeadRow */ "./node_modules/ka-table/Components/HeadRow/HeadRow.js"));
+exports.TableHead = function (props) {
+    var areAllRowsSelected = props.areAllRowsSelected, childComponents = props.childComponents, columnReordering = props.columnReordering, columnResizing = props.columnResizing, columns = props.columns, dispatch = props.dispatch, filteringMode = props.filteringMode, groupColumnsCount = props.groupColumnsCount, sortingMode = props.sortingMode, _a = props.groupedColumns, groupedColumns = _a === void 0 ? [] : _a;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.thead,
+    }, props, childComponents.tableHead), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("thead", __assign({}, elementAttributes), content || (React.createElement(React.Fragment, null,
+        groupedColumns.length ? React.createElement(GroupedColumnsRow_1.GroupedColumnsRow, __assign({}, props)) : (React.createElement(HeadRow_1.default, { areAllRowsSelected: areAllRowsSelected, childComponents: childComponents, columnReordering: columnReordering, columnResizing: columnResizing, columns: columns, dispatch: dispatch, groupColumnsCount: groupColumnsCount, sortingMode: sortingMode, filteringMode: filteringMode })),
+        filteringMode === enums_1.FilteringMode.FilterRow &&
+            (React.createElement(FilterRow_1.default, __assign({}, props, { dispatch: dispatch })))))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TablePaging/TablePaging.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TablePaging/TablePaging.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var PropsUtils_1 = __webpack_require__(/*! ../../Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var Paging_1 = __importDefault(__webpack_require__(/*! ../Paging/Paging */ "./node_modules/ka-table/Components/Paging/Paging.js"));
+exports.TablePaging = function (props) {
+    var _a = props.childComponents, childComponents = _a === void 0 ? {} : _a, dispatch = props.dispatch, paging = props.paging;
+    return (React.createElement(Paging_1.default, __assign({}, paging, { dispatch: dispatch, childComponents: childComponents, pagesCount: PropsUtils_1.getPagesCountByProps(props) })));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TableWrapper/TableWrapper.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TableWrapper/TableWrapper.js ***!
+  \***********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var GroupUtils_1 = __webpack_require__(/*! ../../Utils/GroupUtils */ "./node_modules/ka-table/Utils/GroupUtils.js");
+var PropsUtils_1 = __webpack_require__(/*! ../../Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var Virtualize_1 = __webpack_require__(/*! ../../Utils/Virtualize */ "./node_modules/ka-table/Utils/Virtualize.js");
+var ColGroup_1 = __webpack_require__(/*! ../ColGroup/ColGroup */ "./node_modules/ka-table/Components/ColGroup/ColGroup.js");
+var TableBody_1 = __importDefault(__webpack_require__(/*! ../TableBody/TableBody */ "./node_modules/ka-table/Components/TableBody/TableBody.js"));
+var TableFoot_1 = __webpack_require__(/*! ../TableFoot/TableFoot */ "./node_modules/ka-table/Components/TableFoot/TableFoot.js");
+var TableHead_1 = __webpack_require__(/*! ../TableHead/TableHead */ "./node_modules/ka-table/Components/TableHead/TableHead.js");
+exports.TableWrapper = function (props) {
+    var _a = props.childComponents, childComponents = _a === void 0 ? {} : _a, columnReordering = props.columnReordering, columnResizing = props.columnResizing, _b = props.data, data = _b === void 0 ? [] : _b, dispatch = props.dispatch, _c = props.editableCells, editableCells = _c === void 0 ? [] : _c, _d = props.editingMode, editingMode = _d === void 0 ? enums_1.EditingMode.None : _d, _e = props.filteringMode, filteringMode = _e === void 0 ? enums_1.FilteringMode.None : _e, groups = props.groups, _f = props.rowReordering, rowReordering = _f === void 0 ? false : _f, _g = props.selectedRows, selectedRows = _g === void 0 ? [] : _g, _h = props.sortingMode, sortingMode = _h === void 0 ? enums_1.SortingMode.None : _h, virtualScrolling = props.virtualScrolling;
+    var groupsExpanded = props.groupsExpanded;
+    var preparedOptions = PropsUtils_1.prepareTableOptions(props);
+    if (groups && !groupsExpanded) {
+        groupsExpanded = GroupUtils_1.getExpandedGroups(preparedOptions.groupedData);
+    }
+    var areAllRowsSelected = data.length === selectedRows.length;
+    var tableWrapper = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.tableWrapper,
+        onScroll: Virtualize_1.isVirtualScrollingEnabled(virtualScrolling) ? function (event) {
+            dispatch({
+                scrollTop: event.currentTarget.scrollTop,
+                type: enums_1.ActionType.ScrollTable,
+            });
+        } : undefined,
+    }, props, childComponents.tableWrapper);
+    var _j = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.table,
+    }, props, childComponents.table), elementAttributes = _j.elementAttributes, content = _j.content;
+    return (React.createElement("div", __assign({}, tableWrapper.elementAttributes), content || tableWrapper.content || (React.createElement("table", __assign({}, elementAttributes),
+        React.createElement(ColGroup_1.ColGroup, { columns: preparedOptions.columns, groupColumnsCount: preparedOptions.groupColumnsCount }),
+        React.createElement(TableHead_1.TableHead, __assign({}, props, { areAllRowsSelected: areAllRowsSelected, childComponents: childComponents, columnReordering: columnReordering, columnResizing: columnResizing, columns: preparedOptions.columns, dispatch: dispatch, filteringMode: filteringMode, groupColumnsCount: preparedOptions.groupColumnsCount, sortingMode: sortingMode })),
+        React.createElement(TableBody_1.default, __assign({}, props, { childComponents: childComponents, columns: preparedOptions.columns, data: preparedOptions.groupedData, editableCells: editableCells, editingMode: editingMode, groupColumnsCount: preparedOptions.groupColumnsCount, groupedColumns: preparedOptions.groupedColumns, groupsExpanded: groupsExpanded, rowReordering: rowReordering, selectedRows: selectedRows })),
+        (childComponents.tableFoot || childComponents.summaryRow || childComponents.summaryCell) && (React.createElement(TableFoot_1.TableFoot, __assign({}, props, { data: data, columns: preparedOptions.columns, groupColumnsCount: preparedOptions.groupColumnsCount })))))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/Table/Table.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/ka-table/Components/Table/Table.js ***!
+  \*********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingUtils_1 = __webpack_require__(/*! ../../Utils/PagingUtils */ "./node_modules/ka-table/Utils/PagingUtils.js");
+var Loading_1 = __importDefault(__webpack_require__(/*! ../Loading/Loading */ "./node_modules/ka-table/Components/Loading/Loading.js"));
+var TablePaging_1 = __webpack_require__(/*! ../TablePaging/TablePaging */ "./node_modules/ka-table/Components/TablePaging/TablePaging.js");
+var TableWrapper_1 = __webpack_require__(/*! ../TableWrapper/TableWrapper */ "./node_modules/ka-table/Components/TableWrapper/TableWrapper.js");
+var Popup_1 = __importDefault(__webpack_require__(/*! ../Popup/Popup */ "./node_modules/ka-table/Components/Popup/Popup.js"));
+exports.Table = function (props) {
+    var _a;
+    var childComponents = props.childComponents, columns = props.columns, dispatch = props.dispatch, data = props.data, format = props.format, height = props.height, loading = props.loading, width = props.width, paging = props.paging, singleAction = props.singleAction;
+    var isLoadingActive = loading && loading.enabled;
+    var kaCss = isLoadingActive ? 'ka ka-loading-active' : 'ka';
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: kaCss
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.rootDiv), elementAttributes = _b.elementAttributes, rootDivContent = _b.content;
+    elementAttributes.style = __assign({ width: width, height: height }, elementAttributes.style);
+    React.useEffect(function () {
+        if (singleAction) {
+            dispatch(singleAction);
+            dispatch(actionCreators_1.clearSingleAction());
+        }
+    });
+    return (React.createElement("div", __assign({}, elementAttributes), rootDivContent || (React.createElement(React.Fragment, null,
+        PagingUtils_1.isPagingShown(enums_1.PagingPosition.Top, paging) && React.createElement(TablePaging_1.TablePaging, __assign({}, props)),
+        React.createElement(TableWrapper_1.TableWrapper, __assign({}, props)),
+        PagingUtils_1.isPagingShown(enums_1.PagingPosition.Bottom, paging) && React.createElement(TablePaging_1.TablePaging, __assign({}, props)),
+        React.createElement(Loading_1.default, __assign({}, loading)),
+        columns.map(function (column) {
+            return column.isHeaderFilterPopupShown
+                && (React.createElement(Popup_1.default, { key: column.key, column: column, childComponents: childComponents, data: data, dispatch: dispatch, format: format }));
+        })))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/VirtualizedRows/VirtualizedRows.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/VirtualizedRows/VirtualizedRows.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var Virtualize_1 = __webpack_require__(/*! ../../Utils/Virtualize */ "./node_modules/ka-table/Utils/Virtualize.js");
+var Rows_1 = __importDefault(__webpack_require__(/*! ../Rows/Rows */ "./node_modules/ka-table/Components/Rows/Rows.js"));
+var VirtualizedRows = function (props) {
+    var data = props.data, dispatch = props.dispatch, virtualScrolling = props.virtualScrolling;
+    var onFirstRowRendered = function (firstRowRef) {
+        if (firstRowRef
+            && firstRowRef.current
+            && (virtualScrolling
+                && (!virtualScrolling.itemHeight
+                    || !virtualScrolling.tbodyHeight))) {
+            var itemHeight = firstRowRef.current.offsetHeight || 40;
+            var rootElement = firstRowRef.current.closest("." + defaultOptions_1.default.css.root);
+            var tbodyHeight = (rootElement && rootElement.offsetHeight)
+                || 600;
+            var newVirtualScrolling = __assign({ itemHeight: itemHeight,
+                tbodyHeight: tbodyHeight }, virtualScrolling);
+            dispatch({ type: enums_1.ActionType.UpdateVirtualScrolling, virtualScrolling: newVirtualScrolling });
+        }
+    };
+    var virtualizedData = data;
+    var virtualized;
+    if (virtualScrolling) {
+        virtualized = Virtualize_1.getVirtualized(virtualScrolling, virtualizedData);
+        virtualizedData = virtualized.virtualizedData;
+    }
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        virtualized && virtualized.beginHeight !== 0 && react_1.default.createElement("tr", { style: { height: virtualized.beginHeight } },
+            react_1.default.createElement("td", { style: { height: virtualized.beginHeight } })),
+        react_1.default.createElement(Rows_1.default, __assign({}, props, { data: virtualizedData, onFirstRowRendered: onFirstRowRendered })),
+        virtualized && virtualized.endHeight !== 0 && (react_1.default.createElement("tr", { style: { height: virtualized.endHeight } },
+            react_1.default.createElement("td", { style: { height: virtualized.endHeight } })))));
+};
+exports["default"] = VirtualizedRows;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Models/CssClasses.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Models/CssClasses.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var CssClasses = /** @class */ (function () {
+    function CssClasses() {
+        this.root = 'ka';
+        this.cell = 'ka-cell';
+        this.treeCell = 'ka-tree-cell';
+        this.treeCellEmptySpace = 'ka-tree-empty-space';
+        this.cellEditor = 'ka-cell-editor';
+        this.cellText = 'ka-cell-text';
+        this.groupCell = 'ka-group-cell';
+        this.groupSummaryRow = 'ka-group-summary-row';
+        this.detailsRow = 'ka-tr ka-details-row';
+        this.groupRow = 'ka-tr ka-group-row';
+        this.groupSummaryCell = 'ka-cell ka-group-summary-cell';
+        this.kaCellEditorValidationError = 'ka-cell-editor-validation-error';
+        this.row = 'ka-tr ka-row';
+        this.rowSelected = 'ka-row-selected';
+        this.tableWrapper = 'ka-table-wrapper';
+        this.table = 'ka-table';
+        this.tbody = 'ka-tbody';
+        this.tfoot = 'ka-tfoot';
+        this.thead = 'ka-thead';
+        this.theadBackground = 'ka-thead-background';
+        this.theadFixed = 'ka-thead-fixed';
+        this.theadCell = 'ka-thead-cell';
+        this.theadCellHeight = 'ka-thead-cell-height';
+        this.summaryCell = 'ka-summary-cell';
+        this.summaryRow = 'ka-summary-row';
+        this.theadCellContent = 'ka-thead-cell-content';
+        this.theadCellContentWrapper = 'ka-thead-cell-content-wrapper';
+        this.theadCellResize = 'ka-thead-cell-resize';
+        this.theadCellWrapper = 'ka-thead-cell-wrapper';
+        this.theadRow = 'ka-tr ka-thead-row';
+        this.draggedRow = 'ka-dragged-row';
+        this.dragOverRow = 'ka-drag-over-row';
+        this.draggedColumn = 'ka-dragged-column';
+        this.dragOverColumn = 'ka-drag-over-column';
+        this.paging = 'ka-paging';
+        this.pagingPages = 'ka-paging-pages';
+        this.pagingPageIndex = 'ka-paging-page-index';
+        this.pagingSize = 'ka-paging-size';
+        this.pagingSizes = 'ka-paging-sizes';
+        this.popupContent = 'ka-popup-content';
+        this.popupContentItem = 'ka-popup-content-item';
+        this.iconClose = 'ka-icon ka-icon-close';
+        this.iconGroupArrowCollapsed = 'ka-icon ka-icon-group-arrow ka-icon-group-arrow-collapsed';
+        this.iconGroupArrowExpanded = 'ka-icon ka-icon-group-arrow ka-icon-group-arrow-expanded';
+        this.iconFilter = 'ka-icon ka-icon-filter ka-pointer';
+        this.iconTreeArrowCollapsed = 'ka-icon ka-icon-tree-arrow ka-icon-tree-arrow-collapsed';
+        this.iconTreeArrowExpanded = 'ka-icon ka-icon-tree-arrow ka-icon-tree-arrow-expanded';
+        this.iconSortArrowDown = 'ka-icon ka-icon-sort ka-icon-sort-arrow-down';
+        this.iconSortArrowUp = 'ka-icon ka-icon-sort ka-icon-sort-arrow-up';
+        this.checkbox = 'ka-input';
+        this.dateInput = 'ka-input';
+        this.numberInput = 'ka-input';
+        this.textInput = 'ka-input';
+    }
+    return CssClasses;
+}());
+exports.CssClasses = CssClasses;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Reducers/kaReducer.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/ka-table/Reducers/kaReducer.js ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var const_1 = __webpack_require__(/*! ../const */ "./node_modules/ka-table/const.js");
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var utils_1 = __webpack_require__(/*! ../utils */ "./node_modules/ka-table/utils.js");
+var ArrayUtils_1 = __webpack_require__(/*! ../Utils/ArrayUtils */ "./node_modules/ka-table/Utils/ArrayUtils.js");
+var CellUtils_1 = __webpack_require__(/*! ../Utils/CellUtils */ "./node_modules/ka-table/Utils/CellUtils.js");
+var DataUtils_1 = __webpack_require__(/*! ../Utils/DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var FilterUtils_1 = __webpack_require__(/*! ../Utils/FilterUtils */ "./node_modules/ka-table/Utils/FilterUtils.js");
+var GroupUtils_1 = __webpack_require__(/*! ../Utils/GroupUtils */ "./node_modules/ka-table/Utils/GroupUtils.js");
+var HeadRowUtils_1 = __webpack_require__(/*! ../Utils/HeadRowUtils */ "./node_modules/ka-table/Utils/HeadRowUtils.js");
+var NavigationUtils_1 = __webpack_require__(/*! ../Utils/NavigationUtils */ "./node_modules/ka-table/Utils/NavigationUtils.js");
+var PropsUtils_1 = __webpack_require__(/*! ../Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var ReducerUtils_1 = __webpack_require__(/*! ../Utils/ReducerUtils */ "./node_modules/ka-table/Utils/ReducerUtils.js");
+var TreeUtils_1 = __webpack_require__(/*! ../Utils/TreeUtils */ "./node_modules/ka-table/Utils/TreeUtils.js");
+var kaReducer = function (props, action) {
+    var _a;
+    var columns = props.columns, _b = props.data, data = _b === void 0 ? [] : _b, _c = props.detailsRows, detailsRows = _c === void 0 ? [] : _c, _d = props.editableCells, editableCells = _d === void 0 ? [] : _d, groupsExpanded = props.groupsExpanded, loading = props.loading, paging = props.paging, treeGroupsExpanded = props.treeGroupsExpanded, rowKeyField = props.rowKeyField, _e = props.selectedRows, selectedRows = _e === void 0 ? [] : _e, validation = props.validation, _f = props.sortingMode, sortingMode = _f === void 0 ? enums_1.SortingMode.None : _f, virtualScrolling = props.virtualScrolling;
+    switch (action.type) {
+        case enums_1.ActionType.InsertRow: {
+            var rowData = action.rowData, options = action.options;
+            var _g = options || {}, rowKeyValue_1 = _g.rowKeyValue, insertRowPosition = _g.insertRowPosition;
+            var newData = __spreadArrays(data);
+            if (rowKeyValue_1 != null) {
+                var rowIndex = newData.findIndex(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === rowKeyValue_1; });
+                if (insertRowPosition === enums_1.InsertRowPosition.after) {
+                    rowIndex++;
+                }
+                newData.splice(rowIndex, 0, rowData);
+            }
+            else {
+                insertRowPosition === enums_1.InsertRowPosition.after ? newData.push(rowData) : newData.unshift(rowData);
+            }
+            return __assign(__assign({}, props), { data: newData });
+        }
+        case enums_1.ActionType.UpdateHeaderFilterValues: {
+            var newColumns = columns.map(function (c) {
+                var _a;
+                if (c.key === action.columnKey) {
+                    var headerFilterValues = c.headerFilterValues;
+                    if (action.checked) {
+                        if (headerFilterValues === undefined) {
+                            headerFilterValues = [];
+                        }
+                        if (!headerFilterValues.includes(action.item)) {
+                            headerFilterValues.push(action.item);
+                        }
+                    }
+                    else {
+                        headerFilterValues = (_a = headerFilterValues) === null || _a === void 0 ? void 0 : _a.filter(function (value) { return value !== action.item; });
+                    }
+                    c.headerFilterValues = headerFilterValues;
+                }
+                return c;
+            });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.UpdatePopupPosition: {
+            var newColumns = columns.map(function (c) { return (__assign(__assign({}, c), { headerFilterPopupPosition: action.popupPosition })); });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.UpdateHeaderFilterPopupState: {
+            var newColumns = columns.map(function (c) { return (__assign(__assign({}, c), { isHeaderFilterPopupShown: c.key === action.columnKey ? !c.isHeaderFilterPopupShown : false })); });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.MoveFocusedRight: {
+            return ReducerUtils_1.getUpdatedFocused(props, action, NavigationUtils_1.getRightCell);
+        }
+        case enums_1.ActionType.MoveFocusedLeft: {
+            return ReducerUtils_1.getUpdatedFocused(props, action, NavigationUtils_1.getLeftCell);
+        }
+        case enums_1.ActionType.MoveFocusedUp: {
+            return ReducerUtils_1.getUpdatedFocused(props, action, NavigationUtils_1.getUpCell);
+        }
+        case enums_1.ActionType.MoveFocusedDown: {
+            return ReducerUtils_1.getUpdatedFocused(props, action, NavigationUtils_1.getDownCell);
+        }
+        case enums_1.ActionType.SetFocused: {
+            return __assign(__assign({}, props), { focused: action.focused });
+        }
+        case enums_1.ActionType.ClearFocused: {
+            return __assign(__assign({}, props), { focused: undefined });
+        }
+        case enums_1.ActionType.ClearSingleAction: {
+            return __assign(__assign({}, props), { singleAction: undefined });
+        }
+        case enums_1.ActionType.SetSingleAction: {
+            return __assign(__assign({}, props), { singleAction: action.singleAction });
+        }
+        case enums_1.ActionType.ShowColumn: {
+            var newColumns = __spreadArrays(columns);
+            var columnIndex = newColumns.findIndex(function (c) { return c.key === action.columnKey; });
+            newColumns[columnIndex] = __assign(__assign({}, newColumns[columnIndex]), { visible: true });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.HideColumn: {
+            var newColumns = __spreadArrays(columns);
+            var columnIndex = newColumns.findIndex(function (c) { return c.key === action.columnKey; });
+            newColumns[columnIndex] = __assign(__assign({}, newColumns[columnIndex]), { visible: false });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.ReorderRows: {
+            var newData = DataUtils_1.reorderData(data, function (d) { return DataUtils_1.getValueByField(d, rowKeyField); }, action.rowKeyValue, action.targetRowKeyValue);
+            return __assign(__assign({}, props), { data: newData });
+        }
+        case enums_1.ActionType.ReorderColumns: {
+            var newData = DataUtils_1.reorderData(columns, function (d) { return d.key; }, action.columnKey, action.targetColumnKey);
+            return __assign(__assign({}, props), { columns: newData });
+        }
+        case enums_1.ActionType.ResizeColumn: {
+            var columnKey_1 = action.columnKey, width_1 = action.width;
+            var newColumns = columns.map(function (column) {
+                var _a, _b, _c, _d, _e;
+                if (column.key === columnKey_1) {
+                    var newColumn = __assign({}, column);
+                    if (((_a = newColumn.style) === null || _a === void 0 ? void 0 : _a.width) != null) {
+                        newColumn.style = __assign(__assign({}, newColumn.style), { width: width_1 });
+                    }
+                    if (((_b = newColumn.style) === null || _b === void 0 ? void 0 : _b.width) == null || newColumn.width != null) {
+                        newColumn.width = width_1;
+                    }
+                    if (((_d = (_c = newColumn.colGroup) === null || _c === void 0 ? void 0 : _c.style) === null || _d === void 0 ? void 0 : _d.width) != null) {
+                        newColumn.colGroup.style = __assign(__assign({}, newColumn.colGroup.style), { width: width_1 });
+                    }
+                    if (((_e = newColumn.colGroup) === null || _e === void 0 ? void 0 : _e.width) != null) {
+                        newColumn.colGroup.width = width_1;
+                    }
+                    return newColumn;
+                }
+                return column;
+            });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.UpdatePageIndex: {
+            return __assign(__assign({}, props), { paging: __assign(__assign({}, paging), { pageIndex: action.pageIndex }) });
+        }
+        case enums_1.ActionType.UpdatePageSize: {
+            return __assign(__assign({}, props), { paging: __assign(__assign({}, paging), { pageSize: action.pageSize }) });
+        }
+        case enums_1.ActionType.UpdatePagesCount: {
+            return __assign(__assign({}, props), { paging: __assign(__assign({}, paging), { pagesCount: action.pagesCount }) });
+        }
+        case enums_1.ActionType.HideLoading: {
+            return __assign(__assign({}, props), { loading: __assign(__assign({}, loading), { enabled: false }) });
+        }
+        case enums_1.ActionType.ShowLoading: {
+            var newLoading = __assign(__assign({}, loading), { enabled: true });
+            if (action.text !== undefined) {
+                newLoading.text = action.text;
+            }
+            return __assign(__assign({}, props), { loading: newLoading });
+        }
+        case enums_1.ActionType.ShowDetailsRow: {
+            var newDetailsRows = __spreadArrays(detailsRows);
+            newDetailsRows.push(action.rowKeyValue);
+            return __assign(__assign({}, props), { detailsRows: newDetailsRows });
+        }
+        case enums_1.ActionType.HideDetailsRow: {
+            var newDetailsRows = detailsRows.filter(function (row) { return row !== action.rowKeyValue; });
+            return __assign(__assign({}, props), { detailsRows: newDetailsRows });
+        }
+        case enums_1.ActionType.OpenEditor: {
+            var newEditableCells = CellUtils_1.addItemToEditableCells(action, editableCells);
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.CloseEditor: {
+            var newEditableCells = CellUtils_1.removeItemFromEditableCells(action, editableCells);
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.UpdateFilterRowValue: {
+            var column = columns.find(function (c) { return c.key === action.columnKey; });
+            var newColumn = __assign(__assign({}, column), { filterRowValue: action.filterRowValue });
+            var newColumns = ArrayUtils_1.getCopyOfArrayAndInsertOrReplaceItem(newColumn, 'key', columns);
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.UpdateFilterRowOperator: {
+            var column = columns.find(function (c) { return c.key === action.columnKey; });
+            var newColumn = __assign(__assign({}, column), { filterRowOperator: action.filterRowOperator });
+            var newColumns = ArrayUtils_1.getCopyOfArrayAndInsertOrReplaceItem(newColumn, 'key', columns);
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.UpdateEditorValue: {
+            var newEditableCells = __spreadArrays(editableCells);
+            var editableCellIndex = newEditableCells.findIndex(function (c) { return c.columnKey === action.columnKey && c.rowKeyValue === action.rowKeyValue; });
+            var editableCell = __assign(__assign({}, newEditableCells[editableCellIndex]), { editorValue: action.value });
+            newEditableCells[editableCellIndex] = editableCell;
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.UpdateCellValue: {
+            var row = data.find(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === action.rowKeyValue; });
+            var column = columns.find(function (c) { return c.key === action.columnKey; });
+            var updatedRowData = DataUtils_1.replaceValue(row, column, action.value);
+            var newData = ArrayUtils_1.getCopyOfArrayAndInsertOrReplaceItem(updatedRowData, rowKeyField, data);
+            return __assign(__assign({}, props), { data: newData });
+        }
+        case enums_1.ActionType.DeleteRow: {
+            var newData = data.filter(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) !== action.rowKeyValue; });
+            return __assign(__assign({}, props), { data: newData });
+        }
+        case enums_1.ActionType.SelectAllRows: {
+            var newSelectedRows = data.map(function (d) { return DataUtils_1.getValueByField(d, rowKeyField); });
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.SelectAllFilteredRows: {
+            var newData = FilterUtils_1.filterAndSearchData(props);
+            var newSelectedRows = ReducerUtils_1.removeDataKeysFromSelectedRows(selectedRows, newData, rowKeyField);
+            newSelectedRows = __spreadArrays(newSelectedRows, newData.map(function (d) { return DataUtils_1.getValueByField(d, rowKeyField); }));
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.SelectAllVisibleRows: {
+            var newData = PropsUtils_1.getData(props);
+            var newSelectedRows = ReducerUtils_1.removeDataKeysFromSelectedRows(selectedRows, newData, rowKeyField);
+            newSelectedRows = __spreadArrays(newSelectedRows, newData.map(function (d) { return DataUtils_1.getValueByField(d, rowKeyField); }));
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.Search: {
+            return __assign(__assign({}, props), { searchText: action.searchText });
+        }
+        case enums_1.ActionType.SelectSingleRow: {
+            var newSelectedRows = [action.rowKeyValue];
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.DeselectAllRows:
+            return __assign(__assign({}, props), { selectedRows: [] });
+        case enums_1.ActionType.DeselectAllFilteredRows: {
+            var newData = FilterUtils_1.filterAndSearchData(props);
+            var newSelectedRows = ReducerUtils_1.removeDataKeysFromSelectedRows(selectedRows, newData, rowKeyField);
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.DeselectAllVisibleRows: {
+            var newData = PropsUtils_1.getData(props);
+            var newSelectedRows = ReducerUtils_1.removeDataKeysFromSelectedRows(selectedRows, newData, rowKeyField);
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.SelectRow:
+            return __assign(__assign({}, props), { selectedRows: __spreadArrays(selectedRows, [action.rowKeyValue]) });
+        case enums_1.ActionType.SelectRowsRange: {
+            var rowKeyValueTo_1 = action.rowKeyValueTo;
+            if (rowKeyValueTo_1) {
+                var shownData = utils_1.kaPropsUtils.getData(props);
+                var rowKeyValueToIndex = shownData.findIndex(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === rowKeyValueTo_1; });
+                var rowKeyValueFromIndex = shownData.findIndex(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === action.rowKeyValueFrom; });
+                if (rowKeyValueToIndex != null && rowKeyValueFromIndex != null) {
+                    var _h = rowKeyValueToIndex > rowKeyValueFromIndex ? [rowKeyValueFromIndex, rowKeyValueToIndex] : [rowKeyValueToIndex, rowKeyValueFromIndex], start = _h[0], end = _h[1];
+                    var rowsToSelect = [];
+                    for (var i = start; i <= end; i++) {
+                        var value = DataUtils_1.getValueByField(shownData[i], rowKeyField);
+                        if (!selectedRows.includes(value)) {
+                            rowsToSelect.push(value);
+                        }
+                    }
+                    return __assign(__assign({}, props), { selectedRows: __spreadArrays(selectedRows, rowsToSelect) });
+                }
+            }
+            return __assign(__assign({}, props), { selectedRows: __spreadArrays(selectedRows, [action.rowKeyValueFrom]) });
+        }
+        case enums_1.ActionType.DeselectRow: {
+            var newSelectedRows = __spreadArrays(selectedRows).filter(function (s) { return s !== action.rowKeyValue; });
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.UpdateSortDirection:
+            var sortedColumns = HeadRowUtils_1.getUpdatedSortedColumns(columns, action.columnKey, sortingMode);
+            return __assign(__assign({}, props), { columns: sortedColumns });
+        case enums_1.ActionType.UpdateVirtualScrolling:
+            return __assign(__assign({}, props), { virtualScrolling: action.virtualScrolling });
+        case enums_1.ActionType.UpdateData:
+            return __assign(__assign({}, props), { data: action.data });
+        case enums_1.ActionType.ScrollTable:
+            var scrollTop = action.scrollTop;
+            return __assign(__assign({}, props), { virtualScrolling: __assign(__assign({}, virtualScrolling), { scrollTop: scrollTop }) });
+        case enums_1.ActionType.UpdateGroupsExpanded: {
+            var currentGroupsExpanded = groupsExpanded;
+            if (!currentGroupsExpanded) {
+                var preparedOptions = PropsUtils_1.prepareTableOptions(props);
+                currentGroupsExpanded = GroupUtils_1.getExpandedGroups(preparedOptions.groupedData);
+            }
+            var newGroupsExpanded = GroupUtils_1.updateExpandedGroups(currentGroupsExpanded, action.groupKey);
+            return __assign(__assign({}, props), { groupsExpanded: newGroupsExpanded });
+        }
+        case enums_1.ActionType.ShowNewRow:
+        case enums_1.ActionType.OpenRowEditors: {
+            var rowKeyValue = action.type === enums_1.ActionType.ShowNewRow ? const_1.newRowId : action.rowKeyValue;
+            var newEditableCells = ReducerUtils_1.addColumnsToRowEditableCells(editableCells, columns, rowKeyValue);
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.OpenAllEditors: {
+            var newEditableCells = ReducerUtils_1.getEditableCellsByData(data, rowKeyField, columns);
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.HideNewRow:
+        case enums_1.ActionType.CloseRowEditors: {
+            var rowKeyValue_2 = action.type === enums_1.ActionType.HideNewRow ? const_1.newRowId : action.rowKeyValue;
+            var newEditableCells = editableCells.filter(function (e) { return e.rowKeyValue !== rowKeyValue_2; });
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.Validate: {
+            var newEditableCells = ReducerUtils_1.getValidatedEditableCells(props);
+            return __assign(__assign({}, props), { editableCells: __spreadArrays(newEditableCells) });
+        }
+        case enums_1.ActionType.SaveAllEditors: {
+            var newData_1 = __spreadArrays(data);
+            (_a = editableCells) === null || _a === void 0 ? void 0 : _a.forEach(function (editableCell) {
+                if (editableCell.hasOwnProperty('editorValue')) {
+                    var rowIndex = newData_1.findIndex(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === editableCell.rowKeyValue; });
+                    if (rowIndex != null) {
+                        var column = columns.find(function (c) { return c.key === editableCell.columnKey; });
+                        newData_1[rowIndex] = DataUtils_1.replaceValue(newData_1[rowIndex], column, editableCell.editorValue);
+                    }
+                }
+            });
+            return __assign(__assign({}, props), { data: newData_1 });
+        }
+        case enums_1.ActionType.SaveRowEditors:
+        case enums_1.ActionType.SaveNewRow: {
+            var isNewRow_1 = action.type === enums_1.ActionType.SaveNewRow;
+            var rowEditorKeyValue_1 = isNewRow_1 ? const_1.newRowId : action.rowKeyValue;
+            var updatedRowData_1 = data.find(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === rowEditorKeyValue_1; });
+            var rowEditableCells = editableCells.filter(function (editableCell) { return editableCell.rowKeyValue === rowEditorKeyValue_1
+                && (isNewRow_1 || editableCell.hasOwnProperty('editorValue')); });
+            if (action.validate && !PropsUtils_1.isValid(__assign(__assign({}, props), { editableCells: rowEditableCells }))) {
+                rowEditableCells.forEach(function (cell) {
+                    var column = columns.find(function (c) { return c.key === cell.columnKey; });
+                    cell.validationMessage = validation && validation({
+                        column: column,
+                        value: cell.editorValue,
+                        rowData: updatedRowData_1
+                    });
+                });
+                return __assign(__assign({}, props), { editableCells: __spreadArrays(editableCells) });
+            }
+            var newEditableCells = editableCells.filter(function (e) { return e.rowKeyValue !== rowEditorKeyValue_1; });
+            rowEditableCells.forEach(function (cell) {
+                var column = columns.find(function (c) { return c.key === cell.columnKey; });
+                updatedRowData_1 = DataUtils_1.replaceValue(updatedRowData_1, column, cell.editorValue);
+            });
+            var newData = void 0;
+            if (isNewRow_1) {
+                updatedRowData_1[rowKeyField] = action.rowKeyValue;
+                newData = __spreadArrays([updatedRowData_1], data);
+            }
+            else {
+                newData = ArrayUtils_1.getCopyOfArrayAndInsertOrReplaceItem(updatedRowData_1, rowKeyField, data);
+            }
+            return __assign(__assign({}, props), { data: newData, editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.UpdateRow: {
+            var newData = ArrayUtils_1.getCopyOfArrayAndInsertOrReplaceItem(action.rowData, rowKeyField, data);
+            return __assign(__assign({}, props), { data: newData });
+        }
+        case enums_1.ActionType.UpdateTreeGroupsExpanded: {
+            var rowKeyValue_3 = action.rowKeyValue;
+            var value = treeGroupsExpanded ? !treeGroupsExpanded.some(function (v) { return v === rowKeyValue_3; }) : false;
+            if (value) {
+                return __assign(__assign({}, props), { treeGroupsExpanded: __spreadArrays((treeGroupsExpanded || []), [rowKeyValue_3]) });
+            }
+            var currentExpanded = treeGroupsExpanded;
+            if (!currentExpanded) {
+                var preparedOptions = PropsUtils_1.prepareTableOptions(props);
+                currentExpanded = TreeUtils_1.getExpandedParents(preparedOptions.groupedData, rowKeyField);
+            }
+            return __assign(__assign({}, props), { treeGroupsExpanded: currentExpanded.filter(function (item) { return item !== rowKeyValue_3; }) });
+        }
+    }
+    return props;
+};
+exports.kaReducer = kaReducer;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/ArrayUtils.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ka-table/Utils/ArrayUtils.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, exports) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getCopyOfArrayAndAddItem = function (item, array) {
+    if (array === void 0) { array = []; }
+    return array.concat([item]);
+};
+exports.getCopyOfArrayAndDeleteItem = function (item, rowKeyField, array) {
+    var rowKeyValue = item[rowKeyField];
+    return array.filter(function (i) { return i[rowKeyField] !== rowKeyValue; });
+};
+exports.getCopyOfArrayAndInsertOrReplaceItem = function (item, rowKeyField, array) {
+    var newArray = __spreadArrays(array);
+    var rowKeyValue = item[rowKeyField];
+    var index = newArray.findIndex(function (i) { return i[rowKeyField] === rowKeyValue; });
+    index >= 0 ? newArray.splice(index, 1, item) : newArray.push(item);
+    return newArray;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/CellResizeUtils.js":
+/*!********************************************************!*\
+  !*** ./node_modules/ka-table/Utils/CellResizeUtils.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var actionCreators_1 = __webpack_require__(/*! ../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+exports.isCellResizeShown = function (isResizable, columnResizing) { return !!((isResizable !== false) && (columnResizing || isResizable)); };
+exports.getMouseMove = function (currentWidth, minWidth, startX, key, dispatch) { return function (event) {
+    var newWidth = event.screenX - startX;
+    if (newWidth !== currentWidth) {
+        newWidth = exports.getValidatedWidth(newWidth, minWidth);
+        dispatch(actionCreators_1.resizeColumn(key, newWidth));
+    }
+}; };
+exports.getValidatedWidth = function (newWidth, minWidth) {
+    if (newWidth < minWidth) {
+        return minWidth;
+    }
+    return newWidth;
+};
+exports.isNumberWidth = function (width) { return width && typeof width === 'number'; };
+exports.getMinWidth = function (style) {
+    var minWidth = 20;
+    if (!style) {
+        return minWidth;
+    }
+    var styleMinWidth = style.minWidth;
+    if (exports.isNumberWidth(styleMinWidth)) {
+        minWidth = styleMinWidth;
+    }
+    return minWidth;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/CellUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/CellUtils.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var actionCreators_1 = __webpack_require__(/*! ../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var ArrayUtils_1 = __webpack_require__(/*! ./ArrayUtils */ "./node_modules/ka-table/Utils/ArrayUtils.js");
+exports.isEditableCell = function (editingMode, column, rowEditableCells) {
+    if (column.isEditable !== undefined) {
+        return column.isEditable;
+    }
+    return !!rowEditableCells.find(function (c) { return c.columnKey === column.key; });
+};
+exports.getEditableCell = function (column, rowEditableCells) {
+    if (column.isEditable === false) {
+        return undefined;
+    }
+    return rowEditableCells.find(function (c) { return c.columnKey === column.key; });
+};
+exports.addItemToEditableCells = function (item, editableCells) {
+    return ArrayUtils_1.getCopyOfArrayAndAddItem(item, editableCells);
+};
+exports.getCellEditorDispatchHandler = function (dispatch) {
+    return function (action) {
+        if (action.type === enums_1.ActionType.UpdateEditorValue) {
+            dispatch(actionCreators_1.updateCellValue(action.rowKeyValue, action.columnKey, action.value));
+        }
+        else {
+            dispatch(action);
+        }
+    };
+};
+exports.removeItemFromEditableCells = function (item, editableCells) {
+    return editableCells.filter(function (c) { return c.columnKey !== item.columnKey || c.rowKeyValue !== item.rowKeyValue; });
+};
+exports.checkPopupPosition = function (column, refToElement, dispatch) {
+    var _a, _b, _c, _d;
+    if (refToElement.current && column.isHeaderFilterPopupShown) {
+        var newPopupPosition = {
+            x: refToElement.current.offsetLeft + ((_a = refToElement.current.offsetParent) === null || _a === void 0 ? void 0 : _a.offsetLeft),
+            y: refToElement.current.offsetTop + ((_b = refToElement.current.offsetParent) === null || _b === void 0 ? void 0 : _b.offsetTop) + refToElement.current.offsetHeight
+        };
+        if (newPopupPosition.x !== ((_c = column.headerFilterPopupPosition) === null || _c === void 0 ? void 0 : _c.x) || newPopupPosition.y !== ((_d = column.headerFilterPopupPosition) === null || _d === void 0 ? void 0 : _d.y)) {
+            dispatch(actionCreators_1.updatePopupPosition(newPopupPosition));
+        }
+    }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/ColumnUtils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/ColumnUtils.js ***!
+  \****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+exports.getField = function (column) {
+    return column.field || column.key;
+};
+exports.getLastField = function (field) {
+    if (defaultOptions_1.default.fieldDelimiter) {
+        return field.split(defaultOptions_1.default.fieldDelimiter).pop();
+    }
+    return field;
+};
+exports.getFieldParts = function (field) {
+    return defaultOptions_1.default.fieldDelimiter ? field.split(defaultOptions_1.default.fieldDelimiter) : [field];
+};
+exports.getLastFieldParents = function (field) {
+    if (defaultOptions_1.default.fieldDelimiter) {
+        var fieldParents = field.split(defaultOptions_1.default.fieldDelimiter);
+        fieldParents.pop();
+        return fieldParents;
+    }
+    return [];
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/CommonUtils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/CommonUtils.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isEmpty = function (value) { return (value == null || value.length === 0); };
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/ComponentUtils.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/ka-table/Utils/ComponentUtils.js ***!
+  \*******************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var PropsUtils_1 = __webpack_require__(/*! ./PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var ElementCustomization = /** @class */ (function () {
+    function ElementCustomization() {
+    }
+    return ElementCustomization;
+}());
+function getElementCustomization(childElementAttributes, props, childComponent) {
+    var elementAttributes = PropsUtils_1.extendProps(childElementAttributes, props, childComponent);
+    var content = childComponent && childComponent.content && childComponent.content(props);
+    return {
+        content: content,
+        elementAttributes: elementAttributes,
+    };
+}
+exports.getElementCustomization = getElementCustomization;
+;
+exports.addElementAttributes = function (elementAttributes, props, childComponent) {
+    var updatedChildComponent = __assign({}, childComponent);
+    var defaultElementAttributes = updatedChildComponent.elementAttributes && updatedChildComponent.elementAttributes(props);
+    updatedChildComponent.elementAttributes = function () { return (__assign(__assign({}, defaultElementAttributes), elementAttributes)); };
+    return updatedChildComponent;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/DataUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/DataUtils.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var ColumnUtils_1 = __webpack_require__(/*! ./ColumnUtils */ "./node_modules/ka-table/Utils/ColumnUtils.js");
+exports.getParentValue = function (rowData, fieldParents) {
+    var parentValue = fieldParents.reduce(function (previousValue, currentValue) {
+        var result = (previousValue && previousValue[currentValue]);
+        return result !== undefined ? result : undefined;
+    }, rowData);
+    return parentValue ? __assign({}, parentValue) : undefined;
+};
+exports.createObjByFields = function (fieldParents, field, value) {
+    var parentValue = {};
+    if (fieldParents.length) {
+        fieldParents.reduce(function (previousValue, currentItem, currentIndex) {
+            var lastObj = {};
+            previousValue[currentItem] = lastObj;
+            if (currentIndex === (fieldParents.length - 1)) {
+                lastObj[field] = value;
+            }
+            return lastObj;
+        }, parentValue);
+    }
+    else {
+        parentValue[field] = value;
+    }
+    return __assign({}, parentValue);
+};
+exports.getValueByColumn = function (rowData, column) {
+    return exports.getValueByField(rowData, ColumnUtils_1.getField(column));
+};
+exports.getValueByField = function (rowData, field) {
+    var o = __assign({}, rowData);
+    var names = ColumnUtils_1.getFieldParts(field);
+    for (var i = 0, n = names.length; i < n; ++i) {
+        var k = names[i];
+        if (k in o) {
+            o = o[k];
+        }
+        else {
+            return;
+        }
+    }
+    return o;
+};
+var replaceValueForField = function (rowData, field, newValue, fieldParents) {
+    var result = __assign({}, rowData);
+    if (fieldParents && fieldParents.length) {
+        var parentValue = exports.getParentValue(result, fieldParents) || {};
+        parentValue[field] = newValue;
+        var parentsOfParent = __spreadArrays(fieldParents);
+        var parentFieldName = parentsOfParent.pop();
+        result = replaceValueForField(result, parentFieldName, parentValue, parentsOfParent);
+    }
+    else {
+        result[field] = newValue;
+    }
+    return result;
+};
+exports.replaceValue = function (rowData, column, newValue) {
+    var field = ColumnUtils_1.getField(column);
+    return replaceValueForField(rowData, ColumnUtils_1.getLastField(field), newValue, ColumnUtils_1.getLastFieldParents(field));
+};
+exports.reorderData = function (data, getKey, keyValue, targetKeyValue) {
+    var moved = data.find(function (d) { return getKey(d) === keyValue; });
+    var newData = data.filter(function (d) { return getKey(d) !== keyValue; });
+    var targetIndex = data.findIndex(function (d) { return getKey(d) === targetKeyValue; });
+    newData.splice(targetIndex, 0, moved);
+    return newData;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/DateUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/DateUtils.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getDateInputValue = function (date) {
+    return new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString().split('T')[0];
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/EffectUtils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/EffectUtils.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+/*
+  Used inside effects and returned as result from them,
+  it adds listener to esc & enter keys on life cycle of component
+*/
+exports.addEscEnterKeyEffect = function (escKeyHandler, enterKeyHandler) {
+    var handleKeyboard = function (event) {
+        if (event.keyCode === enums_1.KeyboardEnum.Esc) {
+            escKeyHandler();
+        }
+        if (event.keyCode === enums_1.KeyboardEnum.Enter) {
+            enterKeyHandler();
+        }
+    };
+    return exports.getEventListenerEffect('keyup', handleKeyboard);
+};
+exports.getEventListenerEffect = function (eventName, handler) {
+    window.addEventListener(eventName, handler);
+    return function () {
+        window.removeEventListener(eventName, handler);
+    };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/FilterUtils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/FilterUtils.js ***!
+  \****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var CommonUtils_1 = __webpack_require__(/*! ./CommonUtils */ "./node_modules/ka-table/Utils/CommonUtils.js");
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var TypeUtils_1 = __webpack_require__(/*! ./TypeUtils */ "./node_modules/ka-table/Utils/TypeUtils.js");
+exports.getRowEditableCells = function (rowKeyValue, editableCells) {
+    return editableCells.filter(function (c) { return c.rowKeyValue === rowKeyValue; });
+};
+exports.searchData = function (columns, data, searchText, search) {
+    var searched = columns.reduce(function (initialData, c) {
+        var filterFunction = function (item) {
+            if (initialData.indexOf(item) >= 0) {
+                return false;
+            }
+            var searchContent = search && search({ column: c, searchText: searchText, rowData: item });
+            if (searchContent != null) {
+                return searchContent;
+            }
+            var columnValue = DataUtils_1.getValueByColumn(item, c);
+            if (columnValue == null) {
+                return false;
+            }
+            return columnValue.toString().toLowerCase().includes(searchText.toLowerCase());
+        };
+        return initialData.concat(data.filter(filterFunction));
+    }, []);
+    return data.filter(function (d) { return searched.indexOf(d) >= 0; });
+};
+exports.filterAndSearchData = function (props) {
+    var extendedFilter = props.extendedFilter, searchText = props.searchText, columns = props.columns, search = props.search, filter = props.filter, format = props.format;
+    var _a = props.data, data = _a === void 0 ? [] : _a;
+    data = __spreadArrays(data);
+    data = extendedFilter ? extendedFilter(data) : data;
+    data = searchText ? exports.searchData(columns, data, searchText, search) : data;
+    data = TypeUtils_1.convertToColumnTypes(data, columns);
+    data = exports.filterData(data, columns, filter);
+    data = exports.filterByHeaderFilter(data, columns, format);
+    return data;
+};
+var getCompare = function (column) {
+    var filterRowOperator = column.filterRowOperator
+        || exports.getDefaultOperatorForType(column.dataType || defaultOptions_1.default.columnDataType);
+    var filterOperator = exports.predefinedFilterOperators.find(function (fo) { return filterRowOperator === fo.name; });
+    if (!filterOperator) {
+        throw new Error("'" + column.filterRowOperator + "' has not found in predefinedFilterOperators array, available operators: " + exports.predefinedFilterOperators.map(function (o) { return o.name; }).join(', '));
+    }
+    return filterOperator.compare;
+};
+exports.filterData = function (data, columns, filter) {
+    return columns.reduce(function (initialData, column) {
+        var _a;
+        if (CommonUtils_1.isEmpty(column.filterRowValue)
+            && column.filterRowOperator !== enums_1.FilterOperatorName.IsEmpty
+            && column.filterRowOperator !== enums_1.FilterOperatorName.IsNotEmpty) {
+            return initialData;
+        }
+        var compare = ((_a = filter) === null || _a === void 0 ? void 0 : _a({ column: column })) || getCompare(column);
+        return initialData.filter(function (d) {
+            var fieldValue = DataUtils_1.getValueByColumn(d, column);
+            var conditionValue = column.filterRowValue;
+            if (column.dataType === enums_1.DataType.Date) {
+                fieldValue = fieldValue == null ? fieldValue : new Date(fieldValue).setHours(0, 0, 0, 0);
+                conditionValue = conditionValue == null ? conditionValue : new Date(conditionValue).setHours(0, 0, 0, 0);
+            }
+            return compare(fieldValue, conditionValue);
+        });
+    }, data);
+};
+exports.getDefaultOperatorForType = function (type) {
+    var filterOperator = exports.predefinedFilterOperators.find(function (o) { return o.defaultForTypes && o.defaultForTypes.includes(type); });
+    return (filterOperator && filterOperator.name) || '=';
+};
+exports.predefinedFilterOperators = [{
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue === conditionValue;
+        },
+        defaultForTypes: [enums_1.DataType.Boolean, enums_1.DataType.Number, enums_1.DataType.Date],
+        name: enums_1.FilterOperatorName.Equal,
+    }, {
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue > conditionValue;
+        },
+        name: enums_1.FilterOperatorName.MoreThan,
+    }, {
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue < conditionValue;
+        },
+        name: enums_1.FilterOperatorName.LessThan,
+    }, {
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue >= conditionValue;
+        },
+        name: enums_1.FilterOperatorName.MoreThanOrEqual,
+    }, {
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue <= conditionValue;
+        },
+        name: enums_1.FilterOperatorName.LessThanOrEqual,
+    }, {
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue != null && fieldValue.toString().toLowerCase().includes(conditionValue.toString().toLowerCase());
+        },
+        defaultForTypes: [enums_1.DataType.String],
+        name: enums_1.FilterOperatorName.Contains,
+    }, {
+        compare: function (fieldValue) {
+            return CommonUtils_1.isEmpty(fieldValue);
+        },
+        name: enums_1.FilterOperatorName.IsEmpty,
+    }, {
+        compare: function (fieldValue) {
+            return !CommonUtils_1.isEmpty(fieldValue);
+        },
+        name: enums_1.FilterOperatorName.IsNotEmpty,
+    }];
+exports.filterByHeaderFilter = function (data, columns, format) {
+    return columns.reduce(function (initialData, column) {
+        if (CommonUtils_1.isEmpty(column.headerFilterValues)
+            && column.filterRowOperator !== enums_1.FilterOperatorName.IsEmpty
+            && column.filterRowOperator !== enums_1.FilterOperatorName.IsNotEmpty) {
+            return initialData;
+        }
+        return initialData.filter(function (item) {
+            var _a, _b;
+            var value = DataUtils_1.getValueByColumn(item, column);
+            var fieldValue = (format && format({ column: column, value: value }))
+                || ((_a = value) === null || _a === void 0 ? void 0 : _a.toString());
+            return (_b = column.headerFilterValues) === null || _b === void 0 ? void 0 : _b.includes(fieldValue);
+        });
+    }, data);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/GroupUtils.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ka-table/Utils/GroupUtils.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+exports.groupMark = {};
+exports.groupSummaryMark = {};
+var getGroupSummary = function (groupData, key, groupIndex) { return ({ groupData: groupData, groupSummaryMark: exports.groupSummaryMark, key: JSON.stringify([key, '--:+summary--']), groupIndex: groupIndex }); };
+exports.updateExpandedGroups = function (groupsExpanded, groupKey) {
+    var newGroupsExpanded = groupsExpanded.filter(function (ge) { return JSON.stringify(ge) !== JSON.stringify(groupKey); });
+    if (newGroupsExpanded.length === groupsExpanded.length) {
+        newGroupsExpanded.push(groupKey);
+    }
+    return newGroupsExpanded;
+};
+exports.getExpandedGroups = function (groupedData) {
+    return groupedData
+        .filter(function (g) { return g.groupMark === exports.groupMark; })
+        .map(function (g) { return g.key; });
+};
+exports.getGroupedData = function (data, groups, groupedColumns, groupsExpanded) {
+    var grouped = exports.getGroupedStructure(data, groups, groupedColumns, 0, groupsExpanded);
+    return exports.convertToFlat(grouped);
+};
+exports.convertToFlat = function (grouped, key) {
+    if (key === void 0) { key = []; }
+    var result = [];
+    grouped.forEach(function (value, groupValue) {
+        if (groupValue === exports.groupSummaryMark) {
+            result.push(value);
+        }
+        else {
+            var groupKey = __spreadArrays(key);
+            groupKey.push(groupValue);
+            result.push({ groupMark: exports.groupMark, key: groupKey, value: groupValue });
+            result = __spreadArrays(result, (Array.isArray(value) ? value : exports.convertToFlat(value, groupKey)));
+        }
+    });
+    return result;
+};
+exports.getGroupedStructure = function (data, groups, groupedColumns, expandedDeep, groupsExpanded, parentGroupKey) {
+    if (expandedDeep === void 0) { expandedDeep = 0; }
+    if (parentGroupKey === void 0) { parentGroupKey = []; }
+    groups = __spreadArrays(groups);
+    var group = groups.shift();
+    if (group) {
+        var column_1 = groupedColumns && groupedColumns.find(function (g) { return g.key === group.columnKey; });
+        if (column_1) {
+            var grouped_1 = exports.groupBy(data, function (item) { return DataUtils_1.getValueByColumn(item, column_1); });
+            grouped_1.forEach(function (groupData, key) {
+                var groupExpandedItems = groupsExpanded && groupsExpanded.filter(function (ge) { return ge[expandedDeep] === key; });
+                var isGroupExpanded = !groupExpandedItems
+                    || groupExpandedItems.some(function (ge) { return ge.length === expandedDeep + 1; });
+                if (isGroupExpanded) {
+                    var fullKey = __spreadArrays(parentGroupKey, [key]);
+                    var newStructure = exports.getGroupedStructure(groupData, groups, groupedColumns, expandedDeep + 1, groupExpandedItems && groupExpandedItems.filter(function (ge) { return ge.length > expandedDeep + 1; }), fullKey);
+                    if (newStructure) {
+                        if (group.enableSummary) {
+                            newStructure.set(exports.groupSummaryMark, getGroupSummary(groupData, fullKey, expandedDeep));
+                        }
+                        grouped_1.set(key, newStructure);
+                    }
+                    else if (group.enableSummary) {
+                        groupData.push(getGroupSummary(__spreadArrays(groupData), fullKey, expandedDeep));
+                    }
+                }
+                else {
+                    grouped_1.set(key, []);
+                }
+            });
+            return grouped_1;
+        }
+    }
+};
+exports.groupBy = function (data, keyGetter, isEmptyValue) {
+    if (isEmptyValue === void 0) { isEmptyValue = false; }
+    var map = new Map();
+    data.forEach(function (item) {
+        var key = keyGetter(item);
+        if (isEmptyValue) {
+            map.set(key, []);
+        }
+        else {
+            var collection = map.get(key);
+            if (!collection) {
+                map.set(key, [item]);
+            }
+            else {
+                collection.push(item);
+            }
+        }
+    });
+    return map;
+};
+exports.getGroupMark = function () { return exports.groupMark; };
+exports.getGroupText = function (value, column, format) {
+    return format ? format({ column: column, value: value }) : "" + (column && column.title ? column.title + ': ' : '') + value;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/GroupedColumnsUtils.js":
+/*!************************************************************!*\
+  !*** ./node_modules/ka-table/Utils/GroupedColumnsUtils.js ***!
+  \************************************************************/
+/***/ (function(__unused_webpack_module, exports) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getChain = function (column, groupedColumns, currentChain) {
+    if (currentChain === void 0) { currentChain = []; }
+    var newChain = __spreadArrays([column], currentChain);
+    var groupedColumn = groupedColumns.find(function (gc) { return gc.columnsKeys.includes(column.key); });
+    if (groupedColumn) {
+        return exports.getChain(groupedColumn, groupedColumns, newChain);
+    }
+    return newChain;
+};
+exports.addColumnToRows = function (rows, column, groupedColumns) {
+    var rowsResult = __spreadArrays(rows);
+    var columnsChain = exports.getChain(column, groupedColumns);
+    var isSameLast = true;
+    columnsChain.forEach(function (item, index) {
+        if (!rowsResult[index]) {
+            rowsResult[index] = [];
+        }
+        var last = __spreadArrays(rowsResult[index]).pop();
+        if (last && last.column === item) {
+            if (isSameLast) {
+                last.colSpan++;
+                last.columns.push(column);
+                return;
+            }
+            isSameLast = true;
+        }
+        else {
+            isSameLast = false;
+        }
+        rowsResult[index].push({
+            colSpan: 1,
+            columnChainLength: columnsChain.length,
+            column: item,
+            columns: [column]
+        });
+    });
+    return rowsResult;
+};
+exports.getRowsWithGroupedColumns = function (columns, groupedColumns) {
+    var rows = [];
+    columns.forEach(function (c) {
+        rows = exports.addColumnToRows(rows, c, groupedColumns);
+    });
+    rows.forEach(function (row, index) {
+        row.forEach(function (c) {
+            c.rowSpan = index === c.columnChainLength - 1 ? rows.length - c.columnChainLength + 1 : 1;
+        });
+    });
+    return rows;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/HeadRowUtils.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/HeadRowUtils.js ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var SortUtils_1 = __webpack_require__(/*! ./SortUtils */ "./node_modules/ka-table/Utils/SortUtils.js");
+exports.getUpdatedSortedColumns = function (columns, columnKey, sortingMode) {
+    var newColumns = columns.map(function (c) { return (__assign({}, c)); });
+    var curentColumn = newColumns.find(function (c) { return c.key === columnKey; });
+    if (curentColumn) {
+        var nextSortDirection = exports.getNextSortDirection(curentColumn.sortDirection);
+        if (SortUtils_1.isTripleStateSorting(sortingMode)
+            && curentColumn.sortDirection
+            && nextSortDirection === defaultOptions_1.default.columnSortDirection) {
+            nextSortDirection = undefined;
+        }
+        if (!SortUtils_1.isMultipleSorting(sortingMode)) {
+            newColumns.forEach(function (c) {
+                delete c.sortDirection;
+                delete c.sortIndex;
+            });
+        }
+        if (nextSortDirection) {
+            curentColumn.sortDirection = nextSortDirection;
+            if (SortUtils_1.isMultipleSorting(sortingMode) && !curentColumn.sortIndex) {
+                var sortedColumns = newColumns.filter(function (c) { return c.sortDirection; });
+                curentColumn.sortIndex = sortedColumns.length + 1;
+            }
+        }
+        else {
+            delete curentColumn.sortDirection;
+            delete curentColumn.sortIndex;
+        }
+        if (SortUtils_1.isMultipleSorting(sortingMode)) {
+            var sortedColumns = SortUtils_1.sortColumns(newColumns);
+            sortedColumns.forEach(function (c, i) {
+                c.sortIndex = i + 1;
+            });
+        }
+    }
+    return newColumns;
+};
+exports.getNextSortDirection = function (previousSortdirection) {
+    var nextSortDirection;
+    if (previousSortdirection) {
+        nextSortDirection = previousSortdirection === enums_1.SortDirection.Ascend
+            ? enums_1.SortDirection.Descend : enums_1.SortDirection.Ascend;
+    }
+    else {
+        nextSortDirection = defaultOptions_1.default.columnSortDirection;
+    }
+    return nextSortDirection;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/NavigationUtils.js":
+/*!********************************************************!*\
+  !*** ./node_modules/ka-table/Utils/NavigationUtils.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var PropsUtils_1 = __webpack_require__(/*! ./PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+exports.getRightCell = function (currentCell, props, settings) {
+    var _a, _b;
+    var nextColumnKey;
+    var hasNextColumn = true;
+    if ((_a = settings) === null || _a === void 0 ? void 0 : _a.end) {
+        nextColumnKey = (_b = props.columns[props.columns.length - 1]) === null || _b === void 0 ? void 0 : _b.key;
+    }
+    else {
+        var columnIndex = props.columns.findIndex(function (c) { return c.key === currentCell.columnKey; });
+        hasNextColumn = columnIndex < props.columns.length - 1;
+        nextColumnKey = hasNextColumn
+            ? props.columns[columnIndex + 1].key
+            : currentCell.columnKey;
+    }
+    return { columnKey: nextColumnKey, rowKeyValue: currentCell.rowKeyValue };
+};
+exports.getLeftCell = function (currentCell, props, settings) {
+    var _a, _b;
+    var nextColumnKey;
+    var hasNextColumn = true;
+    if ((_a = settings) === null || _a === void 0 ? void 0 : _a.end) {
+        nextColumnKey = (_b = props.columns[0]) === null || _b === void 0 ? void 0 : _b.key;
+    }
+    else {
+        var columnIndex = props.columns.findIndex(function (c) { return c.key === currentCell.columnKey; });
+        hasNextColumn = 0 < columnIndex;
+        nextColumnKey = hasNextColumn
+            ? props.columns[columnIndex - 1].key
+            : currentCell.columnKey;
+    }
+    return { columnKey: nextColumnKey, rowKeyValue: currentCell.rowKeyValue };
+};
+exports.getUpCell = function (currentCell, props, settings) {
+    var _a, _b;
+    var rowKeyValue = currentCell.rowKeyValue;
+    var visibleData = PropsUtils_1.getData(props);
+    if ((_a = settings) === null || _a === void 0 ? void 0 : _a.end) {
+        var nextRow = visibleData[0];
+        rowKeyValue = DataUtils_1.getValueByField(nextRow, props.rowKeyField);
+    }
+    else {
+        var rowIndex = (_b = visibleData) === null || _b === void 0 ? void 0 : _b.findIndex(function (d) { return DataUtils_1.getValueByField(d, props.rowKeyField) === currentCell.rowKeyValue; });
+        if (rowIndex > 0) {
+            var nextRow = visibleData[rowIndex - 1];
+            rowKeyValue = DataUtils_1.getValueByField(nextRow, props.rowKeyField);
+        }
+    }
+    return { columnKey: currentCell.columnKey, rowKeyValue: rowKeyValue };
+};
+exports.getDownCell = function (currentCell, props, settings) {
+    var _a, _b;
+    var rowKeyValue = currentCell.rowKeyValue;
+    var visibleData = PropsUtils_1.getData(props);
+    if ((_a = settings) === null || _a === void 0 ? void 0 : _a.end) {
+        var nextRow = visibleData[visibleData.length - 1];
+        rowKeyValue = DataUtils_1.getValueByField(nextRow, props.rowKeyField);
+    }
+    else {
+        var rowIndex = (_b = visibleData) === null || _b === void 0 ? void 0 : _b.findIndex(function (d) { return DataUtils_1.getValueByField(d, props.rowKeyField) === currentCell.rowKeyValue; });
+        if (rowIndex < visibleData.length - 1) {
+            var nextRow = visibleData[rowIndex + 1];
+            rowKeyValue = DataUtils_1.getValueByField(nextRow, props.rowKeyField);
+        }
+    }
+    return { columnKey: currentCell.columnKey, rowKeyValue: rowKeyValue };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/PagingUtils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/PagingUtils.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+exports.centerLength = 5;
+var DEFAULT_PAGE_SIZE = 10;
+exports.getPagesCount = function (data, paging) {
+    if (!paging || !paging.enabled) {
+        return 1;
+    }
+    if (paging.pagesCount) {
+        return paging.pagesCount;
+    }
+    return Math.ceil(data.length / ((paging && paging.pageSize) || DEFAULT_PAGE_SIZE));
+};
+exports.getPageData = function (data, paging) {
+    if (!paging || !paging.enabled || paging.pagesCount) {
+        return data;
+    }
+    var pageSize = paging.pageSize || DEFAULT_PAGE_SIZE;
+    var pageIndex = paging.pageIndex || 0;
+    var startIndex = pageSize * pageIndex;
+    return data.slice(startIndex, startIndex + pageSize);
+};
+exports.getPagesForCenter = function (pages, isStartShown, isEndShown, pageIndex) {
+    if (isStartShown && !isEndShown) {
+        return pages.filter(function (page) { return (page >= pages.length - exports.centerLength - 1); });
+    }
+    else if (!isStartShown && isEndShown) {
+        return pages.filter(function (page) { return (page <= exports.centerLength); });
+    }
+    else if (isStartShown && isEndShown) {
+        return pages.filter(function (page) { return (page >= pageIndex - Math.floor(exports.centerLength / 2)) && (page <= pageIndex + Math.floor(exports.centerLength / 2)); });
+    }
+    return pages;
+};
+exports.getPagesArrayBySize = function (pagesCount) { return new Array(pagesCount).fill(undefined).map(function (_, index) { return index; }); };
+exports.isPagingShown = function (position, paging) {
+    var _a;
+    return !!(((_a = paging) === null || _a === void 0 ? void 0 : _a.enabled) && (paging.position
+        ? position === paging.position || paging.position === enums_1.PagingPosition.TopAndBottom
+        : position === enums_1.PagingPosition.Bottom));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/PropsUtils.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ka-table/Utils/PropsUtils.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var FilterUtils_1 = __webpack_require__(/*! ./FilterUtils */ "./node_modules/ka-table/Utils/FilterUtils.js");
+var GroupUtils_1 = __webpack_require__(/*! ./GroupUtils */ "./node_modules/ka-table/Utils/GroupUtils.js");
+var PagingUtils_1 = __webpack_require__(/*! ./PagingUtils */ "./node_modules/ka-table/Utils/PagingUtils.js");
+var ReducerUtils_1 = __webpack_require__(/*! ./ReducerUtils */ "./node_modules/ka-table/Utils/ReducerUtils.js");
+var SortUtils_1 = __webpack_require__(/*! ./SortUtils */ "./node_modules/ka-table/Utils/SortUtils.js");
+var TreeUtils_1 = __webpack_require__(/*! ./TreeUtils */ "./node_modules/ka-table/Utils/TreeUtils.js");
+function extendProps(childElementAttributes, childProps, childComponent) {
+    var resultProps = childElementAttributes;
+    var childCustomAttributes = childComponent && childComponent.elementAttributes && childComponent.elementAttributes(childProps);
+    if (childCustomAttributes) {
+        var dispatch = childProps.dispatch;
+        resultProps = mergeProps(childElementAttributes, childProps, childCustomAttributes, dispatch);
+    }
+    return resultProps;
+}
+exports.extendProps = extendProps;
+;
+var emptyFunc = function () { };
+function mergeProps(childElementAttributes, childProps, childCustomAttributes, dispatch) {
+    var customPropsWithEvents = {};
+    var _loop_1 = function (prop) {
+        if (childCustomAttributes.hasOwnProperty(prop)) {
+            var propName = prop;
+            var propValue_1 = childCustomAttributes[propName];
+            var baseFunc_1 = childElementAttributes[propName] || emptyFunc;
+            if (typeof propValue_1 === 'function') {
+                customPropsWithEvents[prop] = function (e) {
+                    propValue_1(e, {
+                        baseFunc: baseFunc_1,
+                        childElementAttributes: childElementAttributes,
+                        childProps: childProps,
+                        dispatch: dispatch,
+                    });
+                };
+            }
+        }
+    };
+    for (var prop in childCustomAttributes) {
+        _loop_1(prop);
+    }
+    var mergedResult = __assign(__assign(__assign(__assign({}, childElementAttributes), childCustomAttributes), customPropsWithEvents), { className: (childElementAttributes.className || '') + " " + (childCustomAttributes.className || ''), style: __assign(__assign({}, childElementAttributes.style), childCustomAttributes.style) });
+    return mergedResult;
+}
+exports.mergeProps = mergeProps;
+;
+exports.areAllFilteredRowsSelected = function (props) {
+    var _a = props.selectedRows, selectedRows = _a === void 0 ? [] : _a, rowKeyField = props.rowKeyField;
+    return FilterUtils_1.filterAndSearchData(props).every(function (d) { return selectedRows.includes(DataUtils_1.getValueByField(d, rowKeyField)); });
+};
+exports.areAllVisibleRowsSelected = function (props) {
+    var _a = props.selectedRows, selectedRows = _a === void 0 ? [] : _a, rowKeyField = props.rowKeyField;
+    return exports.getData(props).every(function (d) { return selectedRows.includes(DataUtils_1.getValueByField(d, rowKeyField)); });
+};
+exports.getData = function (props) {
+    var columns = props.columns, groups = props.groups, groupsExpanded = props.groupsExpanded, paging = props.paging, treeGroupKeyField = props.treeGroupKeyField, treeGroupsExpanded = props.treeGroupsExpanded, rowKeyField = props.rowKeyField, sort = props.sort, _a = props.sortingMode, sortingMode = _a === void 0 ? enums_1.SortingMode.None : _a;
+    var _b = props.data, data = _b === void 0 ? [] : _b;
+    var resultData = __spreadArrays(data);
+    resultData = FilterUtils_1.filterAndSearchData(props);
+    if (!SortUtils_1.isRemoteSorting(sortingMode)) {
+        resultData = SortUtils_1.sortData(columns, resultData, sort);
+    }
+    var groupedColumns = groups ? columns.filter(function (c) { return groups.some(function (g) { return g.columnKey === c.key; }); }) : [];
+    resultData = groups ? GroupUtils_1.getGroupedData(resultData, groups, groupedColumns, groupsExpanded) : resultData;
+    resultData = treeGroupKeyField ? TreeUtils_1.getTreeData({ data: resultData, rowKeyField: rowKeyField, treeGroupKeyField: treeGroupKeyField, treeGroupsExpanded: treeGroupsExpanded, originalData: data }) : resultData;
+    resultData = PagingUtils_1.getPageData(resultData, paging);
+    return resultData;
+};
+exports.isValid = function (props) {
+    return (!props.validation || !ReducerUtils_1.getValidatedEditableCells(props).some(function (cell) { return cell.validationMessage; }));
+};
+exports.getSelectedData = function (_a) {
+    var data = _a.data, selectedRows = _a.selectedRows, rowKeyField = _a.rowKeyField;
+    return data ? data.filter(function (d) {
+        var _a;
+        var value = DataUtils_1.getValueByField(d, rowKeyField);
+        return (_a = selectedRows) === null || _a === void 0 ? void 0 : _a.some(function (v) { return v === value; });
+    }) : [];
+};
+exports.getSortedColumns = function (props) {
+    return SortUtils_1.sortColumns(props.columns);
+};
+exports.getPagesCountByProps = function (props) {
+    var paging = props.paging;
+    var pagesCount = 1;
+    if (paging && paging.enabled) {
+        var data = FilterUtils_1.filterAndSearchData(props);
+        var rowKeyField = props.rowKeyField, treeGroupKeyField = props.treeGroupKeyField, treeGroupsExpanded = props.treeGroupsExpanded;
+        data = treeGroupKeyField ? TreeUtils_1.getTreeData({ data: data, rowKeyField: rowKeyField, treeGroupKeyField: treeGroupKeyField, treeGroupsExpanded: treeGroupsExpanded, originalData: props.data || [] }) : data;
+        pagesCount = PagingUtils_1.getPagesCount(data, paging);
+    }
+    return pagesCount;
+};
+exports.prepareTableOptions = function (props) {
+    var groups = props.groups;
+    var columns = props.columns;
+    var groupedData = exports.getData(props);
+    var groupColumnsCount = 0;
+    var groupedColumns = [];
+    if (groups) {
+        groupColumnsCount = groups.length;
+        groupedColumns = columns.filter(function (c) { return groups.some(function (g) { return g.columnKey === c.key; }); });
+        columns = columns.filter(function (c) { return !groups.some(function (g) { return g.columnKey === c.key; }); });
+    }
+    columns = columns.filter(function (c) { return c.visible !== false; });
+    return {
+        columns: columns,
+        groupColumnsCount: groupColumnsCount,
+        groupedColumns: groupedColumns,
+        groupedData: groupedData
+    };
+};
+exports.getDraggableProps = function (key, dispatch, actionCreator, draggedClass, dragOverClass) {
+    var count = 0;
+    return {
+        draggable: true,
+        onDragStart: function (event) {
+            count = 0;
+            event.dataTransfer.setData('ka-draggableKeyValue', JSON.stringify(key));
+            event.currentTarget.classList.add(draggedClass);
+            event.dataTransfer.effectAllowed = 'move';
+        },
+        onDragEnd: function (event) {
+            event.currentTarget.classList.remove(draggedClass);
+        },
+        onDrop: function (event) {
+            event.currentTarget.classList.remove(dragOverClass);
+            var draggableKeyValue = JSON.parse(event.dataTransfer.getData('ka-draggableKeyValue'));
+            dispatch(actionCreator(draggableKeyValue, key));
+        },
+        onDragEnter: function (event) {
+            count++;
+            if (!event.currentTarget.classList.contains(dragOverClass)) {
+                event.currentTarget.classList.add(dragOverClass);
+            }
+            event.preventDefault();
+        },
+        onDragLeave: function (event) {
+            count--;
+            if (count === 0) {
+                event.currentTarget.classList.remove(dragOverClass);
+            }
+        },
+        onDragOver: function (event) {
+            if (!event.currentTarget.classList.contains(dragOverClass)) {
+                event.currentTarget.classList.add(dragOverClass);
+            }
+            event.preventDefault();
+        }
+    };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/ReducerUtils.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/ReducerUtils.js ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+exports.getValidatedEditableCells = function (_a) {
+    var data = _a.data, _b = _a.editableCells, editableCells = _b === void 0 ? [] : _b, columns = _a.columns, rowKeyField = _a.rowKeyField, validation = _a.validation;
+    return editableCells.map(function (cell) {
+        var _a;
+        var column = columns.find(function (c) { return c.key === cell.columnKey; });
+        var updatedRowData = (_a = data) === null || _a === void 0 ? void 0 : _a.find(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === cell.rowKeyValue; });
+        var value = cell.hasOwnProperty('editorValue') ? cell.editorValue : DataUtils_1.getValueByField(updatedRowData, cell.columnKey);
+        return __assign(__assign({}, cell), { validationMessage: validation && validation({
+                column: column,
+                rowData: updatedRowData,
+                value: value
+            }) });
+    });
+};
+exports.getEditableCellsByData = function (data, rowKeyField, columns) {
+    var _a;
+    var editableCells = [];
+    (_a = data) === null || _a === void 0 ? void 0 : _a.forEach(function (rowData) {
+        var rowKeyValue = DataUtils_1.getValueByField(rowData, rowKeyField);
+        columns.forEach(function (column) {
+            editableCells.push({ columnKey: column.key, rowKeyValue: rowKeyValue });
+        });
+    });
+    return editableCells;
+};
+exports.addColumnsToRowEditableCells = function (editableCells, columns, rowKeyValue) {
+    var newEditableCells = __spreadArrays(editableCells);
+    columns.forEach(function (column) {
+        if (column.isEditable !== false
+            && !newEditableCells.some(function (e) { return e.columnKey === column.key && e.rowKeyValue === rowKeyValue; })) {
+            newEditableCells.push({
+                columnKey: column.key,
+                rowKeyValue: rowKeyValue
+            });
+        }
+    });
+    return newEditableCells;
+};
+exports.removeDataKeysFromSelectedRows = function (selectedRows, data, rowKeyField) {
+    var newSelectedRows = selectedRows.filter(function (rowKeyValue) {
+        return !data.some(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === rowKeyValue; });
+    });
+    return newSelectedRows;
+};
+exports.getUpdatedFocused = function (props, action, funcToUpdate) {
+    var _a, _b;
+    if (!((_b = (_a = props) === null || _a === void 0 ? void 0 : _a.focused) === null || _b === void 0 ? void 0 : _b.cell))
+        return props;
+    var newFocused = { cell: funcToUpdate(props.focused.cell, props, action.settings) };
+    return __assign(__assign({}, props), { focused: newFocused });
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/SortUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/SortUtils.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+exports.sortColumns = function (columns) {
+    return columns.filter(function (c) { return c.sortDirection; }).sort(function (a, b) {
+        if (a.sortIndex === b.sortIndex) {
+            return 0;
+        }
+        if (!a.sortIndex) {
+            return -1;
+        }
+        if (!b.sortIndex) {
+            return 1;
+        }
+        if (a.sortIndex < b.sortIndex) {
+            return -1;
+        }
+        return 1;
+    });
+};
+exports.sortData = function (columns, data, sort) {
+    var column = columns.find(function (c) { return c.sortDirection; });
+    if (!column) {
+        return data;
+    }
+    var customSort = sort && sort({ column: column });
+    var sortFunc = (customSort && (function (rowDataA, rowDataB) { return customSort(DataUtils_1.getValueByColumn(rowDataA, column), DataUtils_1.getValueByColumn(rowDataB, column)); })) || (column.sortDirection === enums_1.SortDirection.Ascend
+        ? ascendSort(column)
+        : descendSort(column));
+    var newData = __spreadArrays(data).sort(sortFunc);
+    return newData;
+};
+var ascendSort = function (sortedColumn) {
+    return function (a, b) {
+        var aValue = DataUtils_1.getValueByColumn(a, sortedColumn);
+        var bValue = DataUtils_1.getValueByColumn(b, sortedColumn);
+        if (aValue === bValue) {
+            return 0;
+        }
+        else if (aValue == null) {
+            return -1;
+        }
+        else if (bValue == null) {
+            return 1;
+        }
+        return aValue < bValue ? -1 : 1;
+    };
+};
+var descendSort = function (sortedColumn) {
+    return function (a, b) {
+        var aValue = DataUtils_1.getValueByColumn(a, sortedColumn);
+        var bValue = DataUtils_1.getValueByColumn(b, sortedColumn);
+        if (aValue === bValue) {
+            return 0;
+        }
+        else if (aValue == null) {
+            return 1;
+        }
+        else if (bValue == null) {
+            return -1;
+        }
+        return aValue > bValue ? -1 : 1;
+    };
+};
+exports.isTripleStateSorting = function (sortingMode) {
+    return sortingMode === enums_1.SortingMode.MultipleTripleStateRemote
+        || sortingMode === enums_1.SortingMode.SingleTripleState
+        || sortingMode === enums_1.SortingMode.SingleTripleStateRemote;
+};
+exports.isMultipleSorting = function (sortingMode) {
+    return sortingMode === enums_1.SortingMode.MultipleTripleStateRemote
+        || sortingMode === enums_1.SortingMode.MultipleRemote;
+};
+exports.isRemoteSorting = function (sortingMode) {
+    return sortingMode === enums_1.SortingMode.SingleRemote
+        || sortingMode === enums_1.SortingMode.MultipleTripleStateRemote
+        || sortingMode === enums_1.SortingMode.SingleTripleStateRemote
+        || sortingMode === enums_1.SortingMode.MultipleRemote;
+};
+exports.isSortingEnabled = function (sortingMode) {
+    return sortingMode !== enums_1.SortingMode.None;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/TreeUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/TreeUtils.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+exports.treeGroupMark = {};
+exports.treeDataMark = {};
+exports.getExpandedParents = function (treeData, rowKeyField) {
+    return treeData
+        .filter(function (item) { return item.treeGroupMark === exports.treeGroupMark; })
+        .map(function (item) { return DataUtils_1.getValueByField(item.rowData, rowKeyField); });
+};
+var getItemStructure = function (item, dataHash, rowKeyField, treeDeep) {
+    if (treeDeep === void 0) { treeDeep = 0; }
+    var children = dataHash[DataUtils_1.getValueByField(item, rowKeyField)];
+    if (!children) {
+        return [{ treeDataMark: exports.treeDataMark, rowData: item, treeDeep: treeDeep + 1 }];
+    }
+    var result = [{ treeGroupMark: exports.treeGroupMark, rowData: item, treeDeep: treeDeep }];
+    children.forEach(function (c) {
+        var childrenData = getItemStructure(c, dataHash, rowKeyField, treeDeep + 1);
+        result.push.apply(result, childrenData);
+    });
+    return result;
+};
+exports.getTreeGroupChain = function (keyValue, dataMap, treeGroupKeyField, treeGroupKeyValues, groupChain) {
+    if (groupChain === void 0) { groupChain = []; }
+    var value = dataMap[keyValue];
+    var chain = groupChain;
+    if (!treeGroupKeyValues.includes(keyValue)) {
+        treeGroupKeyValues.push(keyValue);
+        chain = __spreadArrays(groupChain, [value]);
+    }
+    var treeGroupKeyValue = DataUtils_1.getValueByField(value, treeGroupKeyField);
+    if (treeGroupKeyValue) {
+        return exports.getTreeGroupChain(treeGroupKeyValue, dataMap, treeGroupKeyField, treeGroupKeyValues, chain);
+    }
+    return chain;
+};
+exports.restoreFilteredData = function (_a) {
+    var data = _a.data, originalData = _a.originalData, rowKeyField = _a.rowKeyField, treeGroupKeyField = _a.treeGroupKeyField, treeGroupsExpanded = _a.treeGroupsExpanded;
+    var filteredData = [];
+    var treeGroupKeyValues = data.map(function (d) { return DataUtils_1.getValueByField(d, rowKeyField); });
+    var dataMap = originalData.reduce(function (acc, d) {
+        acc[DataUtils_1.getValueByField(d, rowKeyField)] = d;
+        return acc;
+    }, {});
+    data.forEach(function (d) {
+        var treeGroupKeyValue = DataUtils_1.getValueByField(d, treeGroupKeyField);
+        if (treeGroupKeyValues.includes(treeGroupKeyValue) || !treeGroupKeyValue) {
+            filteredData.push(d);
+        }
+        else {
+            var groupsChain = exports.getTreeGroupChain(treeGroupKeyValue, dataMap, treeGroupKeyField, treeGroupKeyValues);
+            filteredData = __spreadArrays(filteredData, groupsChain, [d]);
+        }
+    });
+    return filteredData;
+};
+var getDataHashAndRootElements = function (_a) {
+    var data = _a.data, treeGroupKeyField = _a.treeGroupKeyField, treeGroupsExpanded = _a.treeGroupsExpanded;
+    var dataHash = {};
+    var rootElements = [];
+    data.forEach(function (d) {
+        var _a;
+        var parentRowKeyValue = (_a = DataUtils_1.getValueByField(d, treeGroupKeyField), (_a !== null && _a !== void 0 ? _a : undefined));
+        if (!parentRowKeyValue) {
+            rootElements.push(d);
+            return;
+        }
+        if (!dataHash[parentRowKeyValue]) {
+            dataHash[parentRowKeyValue] = [];
+        }
+        if (!treeGroupsExpanded || treeGroupsExpanded.includes(parentRowKeyValue)) {
+            dataHash[parentRowKeyValue].push(d);
+        }
+    });
+    return { dataHash: dataHash, rootElements: rootElements };
+};
+exports.getTreeData = function (_a) {
+    var data = _a.data, originalData = _a.originalData, rowKeyField = _a.rowKeyField, treeGroupKeyField = _a.treeGroupKeyField, treeGroupsExpanded = _a.treeGroupsExpanded;
+    if (data.length !== originalData.length) {
+        data = exports.restoreFilteredData({
+            data: data,
+            originalData: originalData,
+            rowKeyField: rowKeyField,
+            treeGroupKeyField: treeGroupKeyField,
+            treeGroupsExpanded: treeGroupsExpanded
+        });
+    }
+    var _b = getDataHashAndRootElements({
+        data: data,
+        treeGroupKeyField: treeGroupKeyField,
+        treeGroupsExpanded: treeGroupsExpanded
+    }), dataHash = _b.dataHash, rootElements = _b.rootElements;
+    var newData = [];
+    rootElements.forEach(function (d) {
+        newData.push.apply(newData, getItemStructure(d, dataHash, rowKeyField));
+    });
+    return newData;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/TypeUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/TypeUtils.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+exports.convertToColumnTypes = function (data, columns) {
+    var columnsToReplace = __spreadArrays(columns);
+    var dataCopy = __spreadArrays(data);
+    columnsToReplace.forEach(function (c) {
+        if (c.dataType && c.dataType !== enums_1.DataType.Object) {
+            for (var i = 0; i < dataCopy.length; i++) {
+                var value = DataUtils_1.getValueByColumn(dataCopy[i], c);
+                if (value != null) {
+                    switch (c.dataType) {
+                        case enums_1.DataType.String:
+                            if (value.constructor !== String) {
+                                dataCopy[i] = DataUtils_1.replaceValue(dataCopy[i], c, value.toString());
+                                continue;
+                            }
+                            break;
+                        case enums_1.DataType.Number:
+                            if (value.constructor !== Number) {
+                                dataCopy[i] = DataUtils_1.replaceValue(dataCopy[i], c, Number(value));
+                                continue;
+                            }
+                            break;
+                        case enums_1.DataType.Date:
+                            if (value.constructor !== Date) {
+                                dataCopy[i] = DataUtils_1.replaceValue(dataCopy[i], c, new Date(value));
+                                continue;
+                            }
+                            break;
+                        case enums_1.DataType.Boolean:
+                            if (value.constructor !== Boolean) {
+                                dataCopy[i] = DataUtils_1.replaceValue(dataCopy[i], c, exports.toBoolean(value));
+                                continue;
+                            }
+                            break;
+                    }
+                    break;
+                }
+            }
+        }
+    });
+    return dataCopy;
+};
+exports.toBoolean = function (value) {
+    if (typeof value === 'string') {
+        switch (value.toLowerCase().trim()) {
+            case 'true':
+            case 'yes':
+            case '1': return true;
+            case 'false':
+            case 'no':
+            case '0':
+            case null: return false;
+        }
+    }
+    return Boolean(value);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/Validation.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ka-table/Utils/Validation.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getValidationValue = function (value, rowData, column, validation) {
+    if (validation) {
+        return validation({ value: value, rowData: rowData, column: column });
+    }
+    return undefined;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/Virtualize.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ka-table/Utils/Virtualize.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isVirtualScrollingEnabled = function (virtualScrolling) {
+    return virtualScrolling && virtualScrolling.enabled !== false;
+};
+exports.getVirtualized = function (virtualScrolling, data) {
+    var virtualizedData = [];
+    var _a = virtualScrolling.scrollTop, scrollTop = _a === void 0 ? 0 : _a;
+    var _b = virtualScrolling.tbodyHeight, tbodyHeight = _b === void 0 ? 600 : _b;
+    var beginHeight = 0;
+    var endHeight = 0;
+    data.reduce(function (acc, value) {
+        var itemHeight = virtualScrolling.itemHeight ?
+            (typeof virtualScrolling.itemHeight === 'number'
+                ? virtualScrolling.itemHeight
+                : virtualScrolling.itemHeight(value))
+            : 40;
+        if (acc >= scrollTop - itemHeight) {
+            if (tbodyHeight >= -(itemHeight * 5)) {
+                tbodyHeight = tbodyHeight - itemHeight;
+                virtualizedData.push(value);
+            }
+            else {
+                endHeight += itemHeight;
+            }
+        }
+        else {
+            beginHeight = acc + itemHeight;
+        }
+        return acc + itemHeight;
+    }, 0);
+    return {
+        beginHeight: beginHeight,
+        endHeight: endHeight,
+        virtualizedData: virtualizedData,
+    };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/actionCreators.js":
+/*!*************************************************!*\
+  !*** ./node_modules/ka-table/actionCreators.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ./enums */ "./node_modules/ka-table/enums.js");
+exports.updateHeaderFilterValues = function (columnKey, item, checked) { return ({
+    columnKey: columnKey,
+    checked: checked,
+    item: item,
+    type: enums_1.ActionType.UpdateHeaderFilterValues
+}); };
+exports.updatePopupPosition = function (popupPosition) { return ({
+    popupPosition: popupPosition,
+    type: enums_1.ActionType.UpdatePopupPosition
+}); };
+exports.updateHeaderFilterPopupState = function (columnKey, isHeaderFilterPopupShown) { return ({
+    columnKey: columnKey,
+    isHeaderFilterPopupShown: isHeaderFilterPopupShown,
+    type: enums_1.ActionType.UpdateHeaderFilterPopupState
+}); };
+exports.updateFilterRowValue = function (columnKey, filterRowValue) { return ({
+    columnKey: columnKey,
+    filterRowValue: filterRowValue,
+    type: enums_1.ActionType.UpdateFilterRowValue,
+}); };
+exports.updateFilterRowOperator = function (columnKey, filterRowOperator) { return ({
+    columnKey: columnKey,
+    filterRowOperator: filterRowOperator,
+    type: enums_1.ActionType.UpdateFilterRowOperator,
+}); };
+exports.updateEditorValue = function (rowKeyValue, columnKey, value) { return ({
+    columnKey: columnKey,
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.UpdateEditorValue,
+    value: value,
+}); };
+exports.updateCellValue = function (rowKeyValue, columnKey, value) { return ({
+    columnKey: columnKey,
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.UpdateCellValue,
+    value: value,
+}); };
+exports.updateSortDirection = function (columnKey) { return ({
+    columnKey: columnKey,
+    type: enums_1.ActionType.UpdateSortDirection,
+}); };
+exports.closeEditor = function (rowKeyValue, columnKey) { return ({
+    columnKey: columnKey,
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.CloseEditor,
+}); };
+exports.deleteRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.DeleteRow,
+}); };
+exports.deselectAllRows = function () { return ({
+    type: enums_1.ActionType.DeselectAllRows,
+}); };
+exports.deselectAllFilteredRows = function () { return ({
+    type: enums_1.ActionType.DeselectAllFilteredRows,
+}); };
+exports.deselectAllVisibleRows = function () { return ({
+    type: enums_1.ActionType.DeselectAllVisibleRows,
+}); };
+exports.deselectRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.DeselectRow,
+}); };
+exports.openEditor = function (rowKeyValue, columnKey) { return ({
+    columnKey: columnKey,
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.OpenEditor,
+}); };
+exports.search = function (searchText) { return ({
+    searchText: searchText,
+    type: enums_1.ActionType.Search,
+}); };
+exports.selectAllRows = function () { return ({
+    type: enums_1.ActionType.SelectAllRows,
+}); };
+exports.selectAllFilteredRows = function () { return ({
+    type: enums_1.ActionType.SelectAllFilteredRows,
+}); };
+exports.selectAllVisibleRows = function () { return ({
+    type: enums_1.ActionType.SelectAllVisibleRows,
+}); };
+exports.selectSingleRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.SelectSingleRow,
+}); };
+exports.selectRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.SelectRow,
+}); };
+exports.selectRowsRange = function (rowKeyValueFrom, rowKeyValueTo) { return ({
+    rowKeyValueFrom: rowKeyValueFrom,
+    rowKeyValueTo: rowKeyValueTo,
+    type: enums_1.ActionType.SelectRowsRange,
+}); };
+exports.updateGroupsExpanded = function (groupKey) { return ({
+    groupKey: groupKey,
+    type: enums_1.ActionType.UpdateGroupsExpanded,
+}); };
+exports.updateData = function (data) { return ({
+    data: data,
+    type: enums_1.ActionType.UpdateData,
+}); };
+exports.showLoading = function (text) { return ({
+    text: text,
+    type: enums_1.ActionType.ShowLoading,
+}); };
+exports.hideLoading = function () { return ({
+    type: enums_1.ActionType.HideLoading,
+}); };
+exports.showNewRow = function () { return ({
+    type: enums_1.ActionType.ShowNewRow,
+}); };
+exports.hideNewRow = function () { return ({
+    type: enums_1.ActionType.HideNewRow,
+}); };
+exports.showDetailsRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.ShowDetailsRow,
+}); };
+exports.hideDetailsRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.HideDetailsRow,
+}); };
+exports.saveNewRow = function (rowKeyValue, settings) { return ({
+    rowKeyValue: rowKeyValue,
+    validate: settings && settings.validate,
+    type: enums_1.ActionType.SaveNewRow,
+}); };
+exports.openRowEditors = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.OpenRowEditors,
+}); };
+exports.closeRowEditors = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.CloseRowEditors,
+}); };
+exports.saveRowEditors = function (rowKeyValue, settings) { return ({
+    rowKeyValue: rowKeyValue,
+    validate: settings && settings.validate,
+    type: enums_1.ActionType.SaveRowEditors,
+}); };
+exports.updateRow = function (rowData) {
+    return {
+        type: enums_1.ActionType.UpdateRow,
+        rowData: rowData,
+    };
+};
+exports.updatePageIndex = function (pageIndex) { return ({
+    pageIndex: pageIndex,
+    type: enums_1.ActionType.UpdatePageIndex,
+}); };
+exports.updatePageSize = function (pageSize) { return ({
+    pageSize: pageSize,
+    type: enums_1.ActionType.UpdatePageSize,
+}); };
+exports.updatePagesCount = function (pagesCount) { return ({
+    pagesCount: pagesCount,
+    type: enums_1.ActionType.UpdatePagesCount,
+}); };
+exports.resizeColumn = function (columnKey, width) { return ({
+    type: enums_1.ActionType.ResizeColumn,
+    columnKey: columnKey,
+    width: width,
+}); };
+exports.reorderRows = function (rowKeyValue, targetRowKeyValue) { return ({
+    type: enums_1.ActionType.ReorderRows,
+    rowKeyValue: rowKeyValue,
+    targetRowKeyValue: targetRowKeyValue,
+}); };
+exports.reorderColumns = function (columnKey, targetColumnKey) { return ({
+    type: enums_1.ActionType.ReorderColumns,
+    columnKey: columnKey,
+    targetColumnKey: targetColumnKey,
+}); };
+exports.showColumn = function (columnKey) { return ({
+    columnKey: columnKey,
+    type: enums_1.ActionType.ShowColumn,
+}); };
+exports.hideColumn = function (columnKey) { return ({
+    columnKey: columnKey,
+    type: enums_1.ActionType.HideColumn,
+}); };
+exports.loadData = function () { return ({
+    type: enums_1.ActionType.LoadData
+}); };
+exports.clearSingleAction = function () { return ({
+    type: enums_1.ActionType.ClearSingleAction
+}); };
+exports.setSingleAction = function (singleAction) { return ({
+    singleAction: singleAction,
+    type: enums_1.ActionType.SetSingleAction
+}); };
+exports.clearFocused = function () { return ({
+    type: enums_1.ActionType.ClearFocused
+}); };
+exports.setFocused = function (focused) { return ({
+    focused: focused,
+    type: enums_1.ActionType.SetFocused
+}); };
+exports.moveFocusedRight = function (settings) { return ({
+    settings: settings,
+    type: enums_1.ActionType.MoveFocusedRight
+}); };
+exports.moveFocusedLeft = function (settings) { return ({
+    settings: settings,
+    type: enums_1.ActionType.MoveFocusedLeft
+}); };
+exports.moveFocusedUp = function (settings) { return ({
+    settings: settings,
+    type: enums_1.ActionType.MoveFocusedUp
+}); };
+exports.moveFocusedDown = function (settings) { return ({
+    settings: settings,
+    type: enums_1.ActionType.MoveFocusedDown
+}); };
+exports.updateTreeGroupsExpanded = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.UpdateTreeGroupsExpanded,
+}); };
+exports.validate = function () { return ({
+    type: enums_1.ActionType.Validate,
+}); };
+exports.openAllEditors = function () { return ({
+    type: enums_1.ActionType.OpenAllEditors,
+}); };
+exports.saveAllEditors = function () { return ({
+    type: enums_1.ActionType.SaveAllEditors
+}); };
+exports.insertRow = function (rowData, options) { return ({
+    rowData: rowData,
+    options: options,
+    type: enums_1.ActionType.InsertRow
+}); };
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/const.js":
+/*!****************************************!*\
+  !*** ./node_modules/ka-table/const.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.newRowId = {};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/defaultOptions.js":
+/*!*************************************************!*\
+  !*** ./node_modules/ka-table/defaultOptions.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ./enums */ "./node_modules/ka-table/enums.js");
+var CssClasses_1 = __webpack_require__(/*! ./Models/CssClasses */ "./node_modules/ka-table/Models/CssClasses.js");
+var DefaultOptions = /** @class */ (function () {
+    function DefaultOptions() {
+        this.columnDataType = enums_1.DataType.String;
+        this.columnSortDirection = enums_1.SortDirection.Ascend;
+        this.css = new CssClasses_1.CssClasses();
+        this.fieldDelimiter = '.';
+    }
+    return DefaultOptions;
+}());
+var defaultOptions = new DefaultOptions();
+exports["default"] = defaultOptions;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/enums.js":
+/*!****************************************!*\
+  !*** ./node_modules/ka-table/enums.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var PagingPosition;
+(function (PagingPosition) {
+    PagingPosition["Bottom"] = "bottom";
+    PagingPosition["Top"] = "top";
+    PagingPosition["TopAndBottom"] = "topAndBottom";
+})(PagingPosition = exports.PagingPosition || (exports.PagingPosition = {}));
+var DataType;
+(function (DataType) {
+    DataType["Boolean"] = "boolean";
+    DataType["Date"] = "date";
+    DataType["Number"] = "number";
+    DataType["Object"] = "object";
+    DataType["String"] = "string";
+})(DataType = exports.DataType || (exports.DataType = {}));
+var EditingMode;
+(function (EditingMode) {
+    EditingMode["None"] = "none";
+    EditingMode["Cell"] = "cell";
+})(EditingMode = exports.EditingMode || (exports.EditingMode = {}));
+var ActionType;
+(function (ActionType) {
+    ActionType["ClearFocused"] = "ClearFocused";
+    ActionType["ClearSingleAction"] = "ClearSingleAction";
+    ActionType["CloseEditor"] = "CloseEditor";
+    ActionType["CloseRowEditors"] = "CloseRowEditors";
+    ActionType["DeleteRow"] = "DeleteRow";
+    ActionType["DeselectAllFilteredRows"] = "DeselectAllFilteredRows";
+    ActionType["DeselectAllRows"] = "DeselectAllRows";
+    ActionType["DeselectAllVisibleRows"] = "DeselectAllVisibleRows";
+    ActionType["DeselectRow"] = "DeselectRow";
+    ActionType["HideColumn"] = "HideColumn";
+    ActionType["HideDetailsRow"] = "HideDetailsRow";
+    ActionType["HideLoading"] = "HideLoading";
+    ActionType["HideNewRow"] = "HideNewRow";
+    ActionType["InsertRow"] = "InsertRow";
+    ActionType["LoadData"] = "LoadData";
+    ActionType["MoveFocusedDown"] = "MoveFocusedDown";
+    ActionType["MoveFocusedLeft"] = "MoveFocusedLeft";
+    ActionType["MoveFocusedRight"] = "MoveFocusedRight";
+    ActionType["MoveFocusedUp"] = "MoveFocusedUp";
+    ActionType["OpenAllEditors"] = "OpenAllEditors";
+    ActionType["OpenEditor"] = "OpenEditor";
+    ActionType["OpenRowEditors"] = "OpenRowEditors";
+    ActionType["ReorderColumns"] = "ReorderColumns";
+    ActionType["ReorderRows"] = "ReorderRows";
+    ActionType["ResizeColumn"] = "ResizeColumn";
+    ActionType["SaveAllEditors"] = "SaveAllEditors";
+    ActionType["SaveNewRow"] = "SaveNewRow";
+    ActionType["SaveRowEditors"] = "SaveRowEditors";
+    ActionType["ScrollTable"] = "ScrollTable";
+    ActionType["Search"] = "Search";
+    ActionType["SelectAllFilteredRows"] = "SelectAllFilteredRows";
+    ActionType["SelectAllRows"] = "SelectAllRows";
+    ActionType["SelectAllVisibleRows"] = "SelectAllVisibleRows";
+    ActionType["SelectRow"] = "SelectRow";
+    ActionType["SelectRowsRange"] = "SelectRowsRange";
+    ActionType["SelectSingleRow"] = "SelectSingleRow";
+    ActionType["SetFocused"] = "SetFocused";
+    ActionType["SetSingleAction"] = "SetSingleAction";
+    ActionType["ShowColumn"] = "ShowColumn";
+    ActionType["ShowDetailsRow"] = "ShowDetailsRow";
+    ActionType["ShowLoading"] = "ShowLoading";
+    ActionType["ShowNewRow"] = "ShowNewRow";
+    ActionType["UpdateCellValue"] = "UpdateCellValue";
+    ActionType["UpdateData"] = "UpdateData";
+    ActionType["UpdateEditorValue"] = "UpdateEditorValue";
+    ActionType["UpdateFilterRowOperator"] = "UpdateFilterRowOperator";
+    ActionType["UpdateFilterRowValue"] = "UpdateFilterRowValue";
+    ActionType["UpdateGroupsExpanded"] = "UpdateGroupsExpanded";
+    ActionType["UpdateHeaderFilterValues"] = "UpdateHeaderFilterValues";
+    ActionType["UpdateHeaderFilterPopupState"] = "UpdateHeaderFilterPopupState";
+    ActionType["UpdatePopupPosition"] = "UpdatePopupPosition";
+    ActionType["UpdatePageIndex"] = "UpdatePageIndex";
+    ActionType["UpdatePageSize"] = "UpdatePageSize";
+    ActionType["UpdatePagesCount"] = "UpdatePagesCount";
+    ActionType["UpdateRow"] = "UpdateRow";
+    ActionType["UpdateSortDirection"] = "UpdateSortDirection";
+    ActionType["UpdateTreeGroupsExpanded"] = "UpdateTreeGroupsExpanded ";
+    ActionType["UpdateVirtualScrolling"] = "UpdateVirtualScrolling";
+    ActionType["Validate"] = "Validate";
+})(ActionType = exports.ActionType || (exports.ActionType = {}));
+var KeyboardEnum;
+(function (KeyboardEnum) {
+    KeyboardEnum[KeyboardEnum["Esc"] = 27] = "Esc";
+    KeyboardEnum[KeyboardEnum["Enter"] = 13] = "Enter";
+})(KeyboardEnum = exports.KeyboardEnum || (exports.KeyboardEnum = {}));
+var SortDirection;
+(function (SortDirection) {
+    SortDirection["Ascend"] = "ascend";
+    SortDirection["Descend"] = "descend";
+})(SortDirection = exports.SortDirection || (exports.SortDirection = {}));
+var SortingMode;
+(function (SortingMode) {
+    SortingMode["None"] = "none";
+    SortingMode["Single"] = "single";
+    SortingMode["SingleTripleState"] = "singleTripleState";
+    SortingMode["SingleRemote"] = "singleRemote";
+    SortingMode["SingleTripleStateRemote"] = "singleTripleStateRemote";
+    SortingMode["MultipleRemote"] = "multipleRemote";
+    SortingMode["MultipleTripleStateRemote"] = "multipleTripleStateRemote";
+})(SortingMode = exports.SortingMode || (exports.SortingMode = {}));
+var FilteringMode;
+(function (FilteringMode) {
+    FilteringMode["None"] = "none";
+    FilteringMode["FilterRow"] = "filterRow";
+    FilteringMode["HeaderFilter"] = "headerFilter";
+})(FilteringMode = exports.FilteringMode || (exports.FilteringMode = {}));
+var FilterOperatorName;
+(function (FilterOperatorName) {
+    FilterOperatorName["Equal"] = "=";
+    FilterOperatorName["MoreThan"] = ">";
+    FilterOperatorName["LessThan"] = "<";
+    FilterOperatorName["MoreThanOrEqual"] = ">=";
+    FilterOperatorName["LessThanOrEqual"] = "<=";
+    FilterOperatorName["Contains"] = "contains";
+    FilterOperatorName["IsEmpty"] = "IsEmpty";
+    FilterOperatorName["IsNotEmpty"] = "IsNotEmpty";
+})(FilterOperatorName = exports.FilterOperatorName || (exports.FilterOperatorName = {}));
+var InsertRowPosition;
+(function (InsertRowPosition) {
+    InsertRowPosition["before"] = "before";
+    InsertRowPosition["after"] = "after";
+})(InsertRowPosition = exports.InsertRowPosition || (exports.InsertRowPosition = {}));
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/hooks/UseOuterClick.js":
+/*!******************************************************!*\
+  !*** ./node_modules/ka-table/hooks/UseOuterClick.js ***!
+  \******************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+function useOuterClick(callback) {
+    var callbackRef = react_1.default.useRef(function (event) { });
+    var innerRef = react_1.default.useRef(document.createElement('div'));
+    react_1.default.useEffect(function () {
+        callbackRef.current = callback;
+    });
+    react_1.default.useEffect(function () {
+        document.addEventListener('click', handleClick);
+        return function () { return document.removeEventListener('click', handleClick); };
+        function handleClick(event) {
+            if (innerRef.current && callbackRef.current &&
+                !innerRef.current.contains(event.target))
+                callbackRef.current(event);
+        }
+    }, []);
+    return innerRef;
+}
+exports.useOuterClick = useOuterClick;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/ka-table/index.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__export(__webpack_require__(/*! ./Components/Table/Table */ "./node_modules/ka-table/Components/Table/Table.js"));
+__export(__webpack_require__(/*! ./Reducers/kaReducer */ "./node_modules/ka-table/Reducers/kaReducer.js"));
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/utils.js":
+/*!****************************************!*\
+  !*** ./node_modules/ka-table/utils.js ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var kaColumnUtils = __importStar(__webpack_require__(/*! ./Utils/ColumnUtils */ "./node_modules/ka-table/Utils/ColumnUtils.js"));
+exports.kaColumnUtils = kaColumnUtils;
+var kaDateUtils = __importStar(__webpack_require__(/*! ./Utils/DateUtils */ "./node_modules/ka-table/Utils/DateUtils.js"));
+exports.kaDateUtils = kaDateUtils;
+var kaPropsUtils = __importStar(__webpack_require__(/*! ./Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js"));
+exports.kaPropsUtils = kaPropsUtils;
+var kaTypeUtils = __importStar(__webpack_require__(/*! ./Utils/TypeUtils */ "./node_modules/ka-table/Utils/TypeUtils.js"));
+exports.kaTypeUtils = kaTypeUtils;
+
+
+/***/ }),
+
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!***************************************************!*\
   !*** ./node_modules/prop-types/checkPropTypes.js ***!
@@ -13214,24 +17827,6 @@ exports.typeOf = typeOf;
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
 }
-
-
-/***/ }),
-
-/***/ "./node_modules/react-multiple-select-dropdown-lite/dist/index.modern.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/react-multiple-select-dropdown-lite/dist/index.modern.js ***!
-  \*******************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-function a(){return(a=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var l in n)Object.prototype.hasOwnProperty.call(n,l)&&(e[l]=n[l])}return e}).apply(this,arguments)}function r(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,l=new Array(t);n<t;n++)l[n]=e[n];return l}function o(){return react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg",{viewBox:"0 0 10 10",className:"msl-close-icn"},react__WEBPACK_IMPORTED_MODULE_0__.createElement("line",{stroke:"currentColor",strokeLinecap:"round",x1:"0",y1:"0",x2:"10",y2:"10"}),react__WEBPACK_IMPORTED_MODULE_0__.createElement("line",{stroke:"currentColor",strokeLinecap:"round",x1:"0",y1:"10",x2:"10",y2:"0"}))}function i(t){var n,l=t.deleteAction;return react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{clickable:"true",className:"msl-chip"},"object"==typeof(n=t.value).label?(null==n?void 0:n.title)||n.value:n.label,react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{role:"button",clickable:"true","aria-label":"delete-value",onClick:l,onKeyPress:l,tabIndex:"0",className:"msl-btn msl-chip-delete msl-flx"},react__WEBPACK_IMPORTED_MODULE_0__.createElement(o,null)),react__WEBPACK_IMPORTED_MODULE_0__.createElement("span",null))}function c(){return react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg",{viewBox:"0 0 20 20",className:"msl-arrow-icn"},react__WEBPACK_IMPORTED_MODULE_0__.createElement("line",{stroke:"currentColor",strokeLinecap:"round",x1:"10",y1:"14",x2:"4",y2:"8"}),react__WEBPACK_IMPORTED_MODULE_0__.createElement("line",{stroke:"currentColor",strokeLinecap:"round",x1:"16",y1:"8",x2:"10",y2:"14"}))}function s(t){var n=t.singleSelect,l=t.addValue,o=t.checkValueExist,i=t.value;if(t.largeData&&!t.menuOpen)return null;var c=[];return function t(s){for(var u,d=function(){var r=u.value,s=r[0],d=r[1];"group"===d.type?(c.push(react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{key:d.title+s,"data-msl":!0,className:"msl-grp-title"},d.title)),d.childs.length>0?t(d.childs):c.push(react__WEBPACK_IMPORTED_MODULE_0__.createElement("option",{className:"msl-option msl-option-disable"},d.emptyDataLabel||"No Data Found"))):c.push(react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",a({tabIndex:"0",key:d.value+d.label+s+10},!n&&{"data-msl":!0},{style:a({},d.style&&d.style),onClick:function(){!d.disabled&&l(d)},onKeyPress:function(e){"Enter"===e.key&&!d.disabled&&l(d)},title:"object"==typeof d.label?null==d?void 0:d.title:d.label,className:"msl-option "+(o(d,i)?"msl-option-active":"")+" "+(d.disabled?"msl-option-disable":"")+" "+(void 0!==d.classes?d.classes:""),value:d.value}),d.label))},m=function(e,t){var n;if("undefined"==typeof Symbol||null==e[Symbol.iterator]){if(Array.isArray(e)||(n=function(e,t){if(e){if("string"==typeof e)return r(e,void 0);var n=Object.prototype.toString.call(e).slice(8,-1);return"Object"===n&&e.constructor&&(n=e.constructor.name),"Map"===n||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?r(e,void 0):void 0}}(e))){n&&(e=n);var l=0;return function(){return l>=e.length?{done:!0}:{done:!1,value:e[l++]}}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}return(n=e[Symbol.iterator]()).next.bind(n)}(s.entries());!(u=m()).done;)d()}(t.opts),react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",null,c)}function u(r){var u=r.options,d=r.downArrowIcon,m=r.closeIcon,p=r.clearable,v=r.downArrow,f=r.onChange,b=r.singleSelect,h=r.jsonValue,y=r.defaultValue,g=r.className,E=r.placeholder,k=r.disableChip,x=r.name,w=r.style,N=r.attr,C=r.largeData,A=r.disabled,V=r.limit,j=r.emptyDataLabel,I=r.customValue,S=r.onMenuOpen,L=r.onMenuClose,O=r.chipAlternateText,D=r.closeOnSelect,M=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),P=M[0],K=M[1],R=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(u||[]),T=R[0],B=R[1],H=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),F=H[0],U=H[1],$=(0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null),q=function(e){var a=e.onClickOutside,r=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(e.initialIsVisible),o=r[0],i=r[1],c=(0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null),s=function(e){"Escape"===e.key&&i(!1)},u=function e(t){c.current&&!c.current.contains(t.target)&&(document.removeEventListener("keydown",s,!0),document.removeEventListener("click",e,!0),i(!1),a())};return (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function(){return document.addEventListener("keydown",s,!0),document.addEventListener("click",u,!0),function(){document.removeEventListener("keydown",s,!0),document.removeEventListener("click",u,!0)}}),{ref:c,isComponentVisible:o,setIsComponentVisible:i}}({initialIsVisible:!1,onClickOutside:L}),z=q.ref,G=q.isComponentVisible,J=q.setIsComponentVisible,Q="calc(100% - "+(p&&v?60:v||p?40:5)+"px)";(0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function(){B(u)},[u]),(0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function(){var e=function(e,t){if(!e)return[];var n=e,l=[],a=[];"string"==typeof e&&(n=e.split(","));for(var r=function(e){if("string"==typeof e)l.push({label:e,value:e});else if("object"==typeof e){var t={label:e,value:e};"label"in e&&"string"==typeof e.label?t.label=e.label:"title"in e&&(t.label=e.title),l.push(t)}},o=0;o<n.length;o++)if("string"==typeof n[o]){var i=te(n[o],t,!0,"value");i.length>0?a.push(i[0]):I&&r(n[o])}else if("object"==typeof n[o]){var c=te(n[o].value,t,!0,"value");c.length>0?a.push(c[0]):I&&r(n[o])}var s=[];return l.length&&(s=ne(l)),B([].concat(t,s)),[].concat(a,l)}(y,T);b&&e.length>0&&(e=[e[0]]),K(e),D&&b&&J(!1)},[y]);var W,X,Y=function(e){if(K(e),h)f(e);else{var t="";t+=e.map(function(e){return e.value}),f(t)}},Z=function(e,t){return t.some(function(t){return t.value===e.value})},_=function(e){var t=[].concat(P);b?t=Z(e,P)?[]:[e]:Z(e,P)?t=t.filter(function(t){return t.value!==e.value}):(null===V||V>P.length)&&t.push(e),Y(t),U(null),$.current&&($.current.innerHTML="")},ee=function(){Y([])},te=function(e,t,n,l){var a=[],r=[];return function t(o){for(var i=0;i<o.length;i++){var c;if("group"===(null===(c=o[i])||void 0===c?void 0:c.type))t(o[i].childs);else if(n)n&&o[i][l]===e&&a.push(o[i]);else{var s,u;"object"!=typeof o[i].label&&o[i].label.match(new RegExp(""+e,"gi"))||"object"==typeof o[i].label&&(null===(s=o[i])||void 0===s||null===(u=s.title)||void 0===u?void 0:u.match(new RegExp(""+e,"gi")))?a.push(o[i]):o[i].value.match(new RegExp(""+e,"gi"))&&r.push(o[i])}"object"!=typeof o[i].label||"title"in o[i]||console.warn("[multiselect] you must provide a title property as typeof string, if you want to render jsx in option label")}}(t),[].concat(a,r)},ne=function(e){var t=[],n=T.findIndex(function(e){return"group"===(null==e?void 0:e.type)&&"Custom Values"===(null==e?void 0:e.title)});return-1===n?t.push({title:"Custom Values",type:"group",childs:[].concat(e)}):Array.isArray(e)?e.map(function(e){return T[n].childs.push(e)}):"object"==typeof e&&T[n].childs.push(e),B([].concat(T,t)),t},le=function(e){var t=e.target;(function(e){return!(e.hasAttribute("clickable")||e.parentNode.hasAttribute("clickable")||e.parentNode.parentNode.hasAttribute("clickable")||e.parentNode.parentNode.parentNode.hasAttribute("clickable"))})(t)&&(function(e){if(e.hasAttribute("dropdown-handle")||e.parentNode.hasAttribute("dropdown-handle")||e.parentNode.parentNode.hasAttribute("dropdown-handle"))return!0}(t)&&G?(J(!1),L()):(J(!0),S(),$.current&&$.current.focus()))},ae=function(e){return"object"==typeof e.label?(null==e?void 0:e.title)||e.value:e.label};return react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",a({ref:z},N,{onClick:le,tabIndex:"0",onKeyPress:le,style:a({},w),className:"msl-wrp msl-vars "+g+" "+(A?"msl-disabled":"")}),react__WEBPACK_IMPORTED_MODULE_0__.createElement("input",{name:x,type:"hidden",value:null==P?void 0:P.map(function(e){return e.value})}),react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{"data-msl":!0,className:"msl "+(G&&(W=z.current,X=W.getBoundingClientRect(),window.innerHeight-(X.top+W.clientHeight)<200?"msl-active-up":"msl-active"))+" "},react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{"data-msl":!0,className:"msl-input-wrp",style:{width:Q}},!b&&!k&&P.map(function(t,n){return react__WEBPACK_IMPORTED_MODULE_0__.createElement(i,{key:"msl-chip-"+(n+11),value:t,deleteAction:function(){return function(e){var t=[].concat(P);t.splice(e,1),Y(t)}(n)}})}),!b&&k&&P.length>0&&react__WEBPACK_IMPORTED_MODULE_0__.createElement("span",{className:"msl-single-value","data-msl":!0},1===P.length?ae(P[0]):P.length+" "+O),b&&1===P.length&&react__WEBPACK_IMPORTED_MODULE_0__.createElement("span",{className:"msl-single-value","data-msl":!0},ae(P[0])),(!b&&!k||!(!b||P.length)||!(b||!k||P.length))&&react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{"data-msl":!0,"data-placeholder":E,className:"msl-input",contentEditable:!A,onKeyUp:function(e){var t=e.target.textContent.trim().replace(/,+/g,"");if(t){var n={label:'Create "'+t+'"',value:t},l=te(t,T);l.length?(I&&!te(t,T,!0,"value").length&&l.push(n),U(l)):U(I?[n]:[]);var a=function(e){var t=e.label,n=e.value;return"object"!=typeof t&&t.match(/Create "|"+/g)&&(t=t.replace(/Create "|"+/g,"")),{label:t,value:n}}(n);"Enter"!==e.key&&","!==e.key||(!I||l.length||Z(a,P)?F.length>0&&_(F[0]):(ne(a),_(n)))}else U(null)},ref:$})),(p||v)&&react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{className:"msl-actions msl-flx"},p&&P.length>0&&react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{role:"button",clickable:"true","aria-label":"close-menu",onClick:ee,onKeyPress:ee,tabIndex:"0",className:"msl-btn msl-clear-btn msl-flx"},m||react__WEBPACK_IMPORTED_MODULE_0__.createElement(o,null)),v&&react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{role:"button",tabIndex:"0","dropdown-handle":"true",className:"msl-btn msl-arrow-btn msl-flx",style:a({},G&&{transform:"rotate(180deg)"})},d||react__WEBPACK_IMPORTED_MODULE_0__.createElement(c,null)))),react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{className:"msl-options"},!F&&T.length?react__WEBPACK_IMPORTED_MODULE_0__.createElement(s,a({opts:T},{singleSelect:b,addValue:_,checkValueExist:Z,value:P,largeData:C,menuOpen:G})):F&&F.length?react__WEBPACK_IMPORTED_MODULE_0__.createElement(s,a({opts:F},{singleSelect:b,addValue:_,checkValueExist:Z,value:P,largeData:C,menuOpen:G})):(F&&!F.length||T&&!T.length)&&react__WEBPACK_IMPORTED_MODULE_0__.createElement("option",{className:"msl-option msl-option-disable"},j)))}u.defaultProps={clearable:!0,downArrow:!0,singleSelect:!1,jsonValue:!1,defaultValue:"",disableChip:!1,name:"",style:{},disabled:!1,limit:null,emptyDataLabel:"No Data Found",placeholder:"Select...",onChange:function(){},onMenuOpen:function(){},onMenuClose:function(){},options:[{label:"Empty",value:"",disabled:!0,style:{textAlign:"center"}}],customValue:!1,chipAlternateText:"Item Selected",closeOnSelect:!0};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (u);
-//# sourceMappingURL=index.modern.js.map
 
 
 /***/ }),
@@ -14319,10 +18914,10 @@ var classNamesShape =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default().
 
 /***/ }),
 
-/***/ "./node_modules/react-multiple-select-dropdown-lite/dist/index.css":
-/*!*************************************************************************!*\
-  !*** ./node_modules/react-multiple-select-dropdown-lite/dist/index.css ***!
-  \*************************************************************************/
+/***/ "./node_modules/ka-table/style.scss":
+/*!******************************************!*\
+  !*** ./node_modules/ka-table/style.scss ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -14330,9 +18925,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!../../postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./index.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/react-multiple-select-dropdown-lite/dist/index.css");
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_2_sass_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!../postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!../sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./style.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./node_modules/ka-table/style.scss");
 
             
 
@@ -14341,11 +18936,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_index_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_2_sass_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_index_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_2_sass_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 

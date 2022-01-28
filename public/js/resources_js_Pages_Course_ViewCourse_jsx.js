@@ -6849,8 +6849,8 @@ var ViewCourse = function ViewCourse() {
       enabled: true
     },
     selectedRows: [3, 5],
-    sortingMode: SortingMode.Single,
-    filteringMode: FilteringMode.FilterRow,
+    sortingMode: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.SortingMode.Single,
+    filteringMode: ka_table_enums__WEBPACK_IMPORTED_MODULE_3__.FilteringMode.FilterRow,
     searchText: ""
   };
 
