@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Course;
 use App\Models\Mark;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
 
 class ReportController extends Controller
@@ -30,14 +31,23 @@ class ReportController extends Controller
     {
         $data = $request->all();
         $finalData = [];
-        $marksInfo = Mark::where($data)->get()->toArray();
+        $basicInfo = $data;
+        $marksInfo = Mark::select('student_id', 'ass_mark', 'att_mark', 'ct_mark', 'written_mark')->where($data)->get()->toArray();
+        // $sumInv = Mark::select('ass_mark', '(ass_mark + att_mark) as total')->where($data)->get();
+        //dd($marksInfo);
         if (is_array($marksInfo)) {
-            foreach ($marksInfo as $value) {
+            foreach ($marksInfo as $key => $value) {
+                $tmpValue = $value;
+                $marks = array_shift($tmpValue);
+                $totalSum = array_sum($tmpValue);
+                $value['total_mark'] = $totalSum;
                 $finalData[] = (object)$value;
             }
         }
+        // dd($basicInfo);
         return [
-            'marksInfo'         => $finalData,
+            'basicInfo' => $basicInfo,
+            'marksInfo' => $finalData,
         ];
     }
 }

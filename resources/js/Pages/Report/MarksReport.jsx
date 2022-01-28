@@ -74,25 +74,21 @@ const MarksReport = () => {
     const fileExtension = ".xlsx";
     const exportToCSV = (apiData, fileName) => {
         let ws = XLSX.utils.json_to_sheet(apiData.marksInfo, fileName);
-        //ws.A1.v = "Name";
-        // ws['A2'].v = "https://docs.sheetjs.com/#hyperlinks";
-        // console.log(apiData)
-        // console.log(ws)
-        //const secondData = apiData.data.length + 5;
-        //const call_summary = [];
-        // call_summary.push(["Summary of Calls", ""]);
-        // Object.keys(apiData.call_summary).forEach((cf) => {
-        //     call_summary.push([cf, apiData.call_summary[cf]]);
-        // });
-        //const thirdData = apiData.data.length + call_summary.length + 6;
-        // const category = [];
-        // category.push(["Category", "Total Calls", "Total Revenue"]);
-        // Object.keys(apiData.tag_count).forEach((cat) => {
-        //     category.push(Object.values(apiData.tag_count[cat]));
-        // });
+        ws.A1.v = "Student ID";
+        ws.B1.v = "Assignment Mark";
+        ws.C1.v = "Attendence Mark";
+        ws.D1.v = "CT Mark";
+        ws.E1.v = "Written Mak";
+        ws.F1.v = "Total";
+        const secondData = apiData.marksInfo.length + 5;
+        const basicInfo = [];
+        basicInfo.push(["Basic Info", ""]);
+        Object.keys(apiData.basicInfo).forEach((cf) => {
+            basicInfo.push([cf, apiData.basicInfo[cf]]);
+        });
 
-        // XLSX.utils.sheet_add_aoa(ws, call_summary, { origin: `C${secondData}` });
-        // XLSX.utils.sheet_add_aoa(ws, category, { origin: `C${thirdData}` });
+
+        XLSX.utils.sheet_add_aoa(ws, basicInfo, { origin: `C${secondData}` });
         const wb = { Sheets: { data: ws }, SheetNames: ["data"] };
         const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
         const data = new Blob([excelBuffer], { type: fileType });
