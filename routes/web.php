@@ -160,9 +160,25 @@ Route::get('student/view')
 //Manage Report
 Route::get('report/marks')
     ->name('marks_report')
-    ->uses('App\Http\Controllers\ReportController@index')
+    ->uses('App\Http\Controllers\ReportController@viewMarksReportForm')
+    ->middleware('auth');
+Route::get('report/studentsList')
+    ->name('studentlist_report')
+    ->uses('App\Http\Controllers\ReportController@viewStudentReportForm')
+    ->middleware('auth');
+Route::get('report/routine')
+    ->name('routine_report')
+    ->uses('App\Http\Controllers\ReportController@viewRoutineReportForm')
     ->middleware('auth');
 Route::post('report/marks/generation')
     ->name('marks_report_generator')
     ->uses('App\Http\Controllers\ReportController@marksReportGerneration')
+    ->middleware('auth');
+Route::post('report/studentlist/generation')
+    ->name('studentlist_report_generator')
+    ->uses('App\Http\Controllers\ReportController@studentsReportGerneration')
+    ->middleware('auth');
+Route::get('report/routine/generation')
+    ->name('routine_report_generator')
+    ->uses('App\Http\Controllers\ReportController@routineReportGerneration')
     ->middleware('auth');

@@ -1,14 +1,42 @@
 import React, { useState } from 'react'
 import { usePage } from '@inertiajs/inertia-react';
 import { kaReducer, Table } from 'ka-table';
-import { DataType } from 'ka-table/enums';
+import { DataType, FilteringMode, SortingMode } from 'ka-table/enums';
 import Layout from '../Layout/Layout'
 import "ka-table/style.scss";
 
 const ViewRoutine = () => {
     const { routineInfo } = usePage().props;
     const dataArray = routineInfo
+    const tablePropsInit = {
+        columns: [
+            { key: 'day', title: 'Day', dataType: DataType.String, style: { width: '15%' } },
+            { key: 'start_time', title: 'Start Time', dataType: DataType.String, style: { width: '15%' } },
+            { key: 'end_time', title: 'End Time', dataType: DataType.String, style: { width: '15%' } },
+            { key: 'room_no', title: 'Room No', dataType: DataType.String, style: { width: '15%' } },
+            { key: 'building', title: 'Building', dataType: DataType.String, style: { width: '15%' } },
+            { key: 'course_title', title: 'Course Name', dataType: DataType.String, style: { width: '15%' } },
+            { key: 'batch', title: 'Batch', dataType: DataType.String, style: { width: '15%' } },
 
+        ],
+        data: dataArray,
+        rowKeyField: "id",
+        paging: {
+            enabled: true,
+        },
+        selectedRows: [3, 5],
+        sortingMode: SortingMode.Single,
+        filteringMode: FilteringMode.FilterRow,
+        searchText: "",
+    };
+
+
+
+
+    const [tableProps, changeTableProps] = useState(tablePropsInit);
+    const dispatch = (action) => {
+        changeTableProps((prevState) => kaReducer(prevState, action));
+    };
 
 
     return (
@@ -17,7 +45,16 @@ const ViewRoutine = () => {
                 <span>Routine Details</span>
             </div>
             <div className="main-card">
-                hi
+                <Table
+                    {...tableProps}
+                    childComponents={{
+                        noDataRow: {
+                            content: () => 'No Data Found'
+                        },
+
+                    }}
+                    dispatch={dispatch}
+                />
             </div>
         </div>
     )
