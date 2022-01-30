@@ -344,6 +344,48 @@ export default function Sidebar() {
                             </List>
                         </Collapse>
                         {/* .........Manage Marksheet End............ */}
+                        {/* .........Manage Assignment Start.......... */}
+                        <ListItem button onClick={() => handleOpen("manage_assignment")}>
+                            <ListItemIcon>
+                                <Profile className="sidebar-svg" />
+                            </ListItemIcon>
+                            <ListItemText primary="Manage Assignment" />
+                            {open?.manage_assignment ? <ExpandLess /> : <ExpandMore />}
+                        </ListItem>
+                        <Collapse in={open?.manage_assignment} timeout="auto" unmountOnExit>
+                            <List component="div" disablePadding>
+                                <ListItem
+                                    button
+                                    className={classes.nested}
+                                    onClick={handleClickSecondLevel}
+                                >
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+
+                                    <InertiaLink
+                                        className="nounderline"
+                                        href={route('view_assignment')}
+                                    >
+                                        <ListItemText primary="View Assignment" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                            <List component="div" disablePadding>
+                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+                                    <InertiaLink
+                                        className="nounderline"
+                                        href={route('assignment')}
+                                    >
+                                        <ListItemText primary="Add Assignment" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                        </Collapse>
+                        {/* .........Manage Assignment End............ */}
 
                         {/* .........Generate Report Start.......... */}
                         <ListItem button onClick={() => handleOpen("generate_report")}>

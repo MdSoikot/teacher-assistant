@@ -94,6 +94,8 @@ class ReportController extends Controller
             $data[$value] = $tmpData;
             $uniqueStartTime[$value] = $spreadArr;
             $finalUniqueTime = array_unique(array_merge($finalUniqueTime, $spreadArr));
+        }
+        foreach ($days as $key => $value) {
             foreach ($finalUniqueTime as $keyTmp => $valTmp) {
                 $test = Routine::select('course_title', 'start_time', 'end_time', 'batch', 'room_no', 'building')->where(['day' => $value, 'start_time' => $valTmp])->get()->toArray();
                 if (is_array($test)) {
@@ -103,6 +105,7 @@ class ReportController extends Controller
         }
         $lengths = array_map('count', $uniqueStartTime);
         $totalColumns = max($lengths);
+        dd($schedule);
         $routInfo = Routine::select('course_title', 'start_time', 'end_time', 'batch', 'room_no', 'building')->get()->toArray();
         return [
             'routineInfo' => $routInfo,

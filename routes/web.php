@@ -156,6 +156,19 @@ Route::get('student/view')
     ->name('view_student')
     ->uses('App\Http\Controllers\StudentController@show')
     ->middleware('auth');
+//Manage Assignment
+Route::get('assignment')
+    ->name('assignment')
+    ->uses('App\Http\Controllers\AssignmentController@index')
+    ->middleware('auth');
+Route::post('assignment/add')
+    ->name('add_assignment')
+    ->uses('App\Http\Controllers\AssignmentController@create')
+    ->middleware('auth');
+Route::get('assignment/view')
+    ->name('view_assignment')
+    ->uses('App\Http\Controllers\AssignmentController@show')
+    ->middleware('auth');
 
 //Manage Report
 Route::get('report/marks')
