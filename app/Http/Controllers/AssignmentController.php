@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Assignment;
 use App\Models\Course;
 use App\Models\Student;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
 class AssignmentController extends Controller
@@ -30,10 +32,10 @@ class AssignmentController extends Controller
     public function create(Request $request)
     {
         $data = $request->all();
-        dd($data);
-        $data['marks'] = json_encode($data['marks']);
-        //dd($data);
-        $user = Mark::create($data);
+        // dd($data);
+        // $data['marks'] = json_encode($data['marks']);
+        // //dd($data);
+        $user = Assignment::create($data);
         return Redirect::back();
     }
 }

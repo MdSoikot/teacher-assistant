@@ -51,6 +51,14 @@ const AddAssignment = () => {
             [key]: val,
         }));
     }
+    const dateFormat = (newVal) => {
+        let date = new Date(newVal)
+        let day = date.getDay()
+        let month = date.getMonth()
+        let year = date.getFullYear()
+        let dateString = day + "-" + month + "-" + year
+        return dateString
+    }
     const handleSubmit = (e) => {
         e.preventDefault();
         const mapping = Object.values(values).filter((item => !item.length))
@@ -74,10 +82,11 @@ const AddAssignment = () => {
     }
     const handleDateChange = (newVal) => {
         let type = 'submit_date'
-        setDate(newVal)
+        let tmpDate = dateFormat(newVal)
+        setDate(tmpDate)
         setValues((oldVal) => ({
             ...oldVal,
-            [type]: newVal
+            [type]: tmpDate
         }))
     };
     console.log('values', values);
