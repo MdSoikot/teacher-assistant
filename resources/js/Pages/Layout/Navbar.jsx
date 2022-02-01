@@ -1,9 +1,15 @@
 import { Link } from '@inertiajs/inertia-react'
 import { usePage } from '@inertiajs/inertia-react';
+import { useRecoilState, useSetRecoilState } from 'recoil'
+import { $user } from '../../GlobalStates';
 
 const Navbar = () => {
-    const { userInfo } = usePage().props;
-    console.log({ userInfo })
+    // const { userInfo } = usePage().props;
+    const [userInfo, setUserInfo] = useRecoilState($user)
+    console.log("ams", userInfo)
+    // const test = { ...userInfo }
+    // setUser(test)
+    // console.log('test', test);
     const photoSrc = userInfo?.photo_path || ""
     const userName = userInfo?.name || ""
     return (

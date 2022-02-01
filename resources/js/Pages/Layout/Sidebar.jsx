@@ -12,6 +12,8 @@ import Collapse from "@material-ui/core/Collapse";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import StarBorder from "@material-ui/icons/StarBorder";
+import { $user } from '../../GlobalStates';
+import { useRecoilValue } from 'recoil';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -33,6 +35,8 @@ export default function Sidebar() {
     const classes = useStyles();
     const [open, setOpen] = useState({});
     const [openSecondLevel, setOpenSecondLevel] = useState(true);
+    const userInfo = useRecoilValue($user)
+    console.log("yyy", userInfo)
 
     const handleOpen = (item) => {
         setOpen(oldValues => ({
@@ -89,46 +93,48 @@ export default function Sidebar() {
                         {/* .........Manage Profile End.......... */}
 
                         {/* .........Manage User Start.......... */}
-                        <ListItem button onClick={() => handleOpen("manage_user")}>
-                            <ListItemIcon>
-                                <Profile className="sidebar-svg" />
-                            </ListItemIcon>
-                            <ListItemText primary="Manage User" />
-                            {open?.manage_user ? <ExpandLess /> : <ExpandMore />}
-                        </ListItem>
-                        <Collapse in={open?.manage_user} timeout="auto" unmountOnExit>
-                            <List component="div" disablePadding>
-                                <ListItem
-                                    button
-                                    className={classes.nested}
-                                    onClick={handleClickSecondLevel}
-                                >
-                                    <ListItemIcon>
-                                        <StarBorder className="sidebar-svg" />
-                                    </ListItemIcon>
+                        {userInfo.role === 'admin' && <>
+                            <ListItem button onClick={() => handleOpen("manage_user")}>
+                                <ListItemIcon>
+                                    <Profile className="sidebar-svg" />
+                                </ListItemIcon>
+                                <ListItemText primary="Manage User" />
+                                {open?.manage_user ? <ExpandLess /> : <ExpandMore />}
+                            </ListItem>
+                            <Collapse in={open?.manage_user} timeout="auto" unmountOnExit>
+                                <List component="div" disablePadding>
+                                    <ListItem
+                                        button
+                                        className={classes.nested}
+                                        onClick={handleClickSecondLevel}
+                                    >
+                                        <ListItemIcon>
+                                            <StarBorder className="sidebar-svg" />
+                                        </ListItemIcon>
 
-                                    <InertiaLink
-                                        className="nounderline"
-                                        href={route('pending_user')}
-                                    >
-                                        <ListItemText primary="Pending User" />
-                                    </InertiaLink>
-                                </ListItem>
-                            </List>
-                            <List component="div" disablePadding>
-                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
-                                    <ListItemIcon>
-                                        <StarBorder className="sidebar-svg" />
-                                    </ListItemIcon>
-                                    <InertiaLink
-                                        className="nounderline"
-                                        href={route('approved_user')}
-                                    >
-                                        <ListItemText primary="Approved User" />
-                                    </InertiaLink>
-                                </ListItem>
-                            </List>
-                        </Collapse>
+                                        <InertiaLink
+                                            className="nounderline"
+                                            href={route('pending_user')}
+                                        >
+                                            <ListItemText primary="Pending User" />
+                                        </InertiaLink>
+                                    </ListItem>
+                                </List>
+                                <List component="div" disablePadding>
+                                    <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                        <ListItemIcon>
+                                            <StarBorder className="sidebar-svg" />
+                                        </ListItemIcon>
+                                        <InertiaLink
+                                            className="nounderline"
+                                            href={route('approved_user')}
+                                        >
+                                            <ListItemText primary="Approved User" />
+                                        </InertiaLink>
+                                    </ListItem>
+                                </List>
+                            </Collapse>
+                        </>}
                         {/* .........Manage User End.......... */}
 
                         {/* .........Manage Course Start.......... */}

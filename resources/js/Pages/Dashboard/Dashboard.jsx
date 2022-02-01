@@ -1,9 +1,12 @@
 import { $user } from "../../GlobalStates"
 import Layout from "../Layout/Layout"
-import { useRecoilValue } from 'recoil'
+import { useRecoilState, useRecoilValue } from 'recoil'
+import { usePage } from "@inertiajs/inertia-react";
 
 const Dashboard = () => {
-    //const user = useRecoilValue($user)
+    const { user } = usePage().props;
+    const [userInfo, setUserInfo] = useRecoilState($user)
+    setUserInfo(user)
     return (
         <div>
             <h1>Dashboard</h1>

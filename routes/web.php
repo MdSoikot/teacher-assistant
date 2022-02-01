@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 /*
@@ -41,7 +43,9 @@ Route::get('/', function () {
     return inertia::render('Auth/Login');
 });
 Route::get('/dashboard', function () {
-    return inertia::render('Dashboard/Dashboard');
+    // $user = User::get()->toArray();
+    $user = Auth::user();
+    return inertia::render('Dashboard/Dashboard', ['user' => $user]);
 })->middleware('auth');
 
 //profile

@@ -95,7 +95,7 @@ class RegisterController extends Controller
             'status' => null
         ]);
         $userEmail = $data['email'];
-        // $test = Mail::to($userEmail)->send(new EmailValidation($userEmail, $data['name']));
+        $test = Mail::to($userEmail)->send(new EmailValidation($userEmail, $data['name']));
         // dd($test);
         return $user;
     }

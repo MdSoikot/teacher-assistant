@@ -1,6 +1,7 @@
 import { InertiaApp } from '@inertiajs/inertia-react';
 import { render } from 'react-dom';
 import { Toaster } from 'react-hot-toast';
+import { RecoilRoot } from 'recoil';
 
 if (window?.Ziggy?.baseProtocol === 'http' && window.location.protocol === 'https:') {
   window.Ziggy.baseProtocol = 'https'
@@ -10,7 +11,7 @@ if (window?.Ziggy?.baseProtocol === 'http' && window.location.protocol === 'http
 const app = document.getElementById('app');
 
 render(
-  <>
+  <RecoilRoot>
     <Toaster
       position="bottom-right"
       reverseOrder={false}
@@ -28,6 +29,6 @@ render(
     <InertiaApp
       initialPage={JSON.parse(app.dataset.page)}
       resolveComponent={name => import(`./Pages/${name}`).then(module => module.default)} />
-  </>,
+  </RecoilRoot>,
   app,
 );
