@@ -149,7 +149,7 @@ const AddAssignment = () => {
                         <div className="mt-4">
                             <LocalizationProvider dateAdapter={AdapterDateFns}>
                                 <DesktopDatePicker
-                                    label="Date desktop"
+                                    label="Submit Date"
                                     inputFormat="MM/dd/yyyy"
                                     value={date}
                                     onChange={handleDateChange}
