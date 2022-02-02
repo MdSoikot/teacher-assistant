@@ -428,45 +428,47 @@ export default function Sidebar() {
                                     </InertiaLink>
                                 </ListItem>
                             </List>
-                            <List component="div" disablePadding>
-                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
-                                    <ListItemIcon>
-                                        <StarBorder className="sidebar-svg" />
-                                    </ListItemIcon>
-                                    <InertiaLink
-                                        className="nounderline"
-                                        href={route('marks_report')}
-                                    >
-                                        <ListItemText primary="Marks Report" />
-                                    </InertiaLink>
-                                </ListItem>
-                            </List>
-                            <List component="div" disablePadding>
-                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
-                                    <ListItemIcon>
-                                        <StarBorder className="sidebar-svg" />
-                                    </ListItemIcon>
-                                    <InertiaLink
-                                        className="nounderline"
-                                        href={route('studentlist_report')}
-                                    >
-                                        <ListItemText primary="Students List" />
-                                    </InertiaLink>
-                                </ListItem>
-                            </List>
-                            <List component="div" disablePadding>
-                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
-                                    <ListItemIcon>
-                                        <StarBorder className="sidebar-svg" />
-                                    </ListItemIcon>
-                                    <InertiaLink
-                                        className="nounderline"
-                                        href={route('routine_report')}
-                                    >
-                                        <ListItemText primary="Routine" />
-                                    </InertiaLink>
-                                </ListItem>
-                            </List>
+                            {userInfo?.role !== 'student' && <>
+                                <List component="div" disablePadding>
+                                    <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                        <ListItemIcon>
+                                            <StarBorder className="sidebar-svg" />
+                                        </ListItemIcon>
+                                        <InertiaLink
+                                            className="nounderline"
+                                            href={route('marks_report')}
+                                        >
+                                            <ListItemText primary="Marks Report" />
+                                        </InertiaLink>
+                                    </ListItem>
+                                </List>
+                                <List component="div" disablePadding>
+                                    <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                        <ListItemIcon>
+                                            <StarBorder className="sidebar-svg" />
+                                        </ListItemIcon>
+                                        <InertiaLink
+                                            className="nounderline"
+                                            href={route('studentlist_report')}
+                                        >
+                                            <ListItemText primary="Students List" />
+                                        </InertiaLink>
+                                    </ListItem>
+                                </List>
+                                <List component="div" disablePadding>
+                                    <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                        <ListItemIcon>
+                                            <StarBorder className="sidebar-svg" />
+                                        </ListItemIcon>
+                                        <InertiaLink
+                                            className="nounderline"
+                                            href={route('routine_report')}
+                                        >
+                                            <ListItemText primary="Routine" />
+                                        </InertiaLink>
+                                    </ListItem>
+                                </List>
+                            </>}
                         </Collapse>
                         {/* .........Generate Report End............ */}
                     </List>
