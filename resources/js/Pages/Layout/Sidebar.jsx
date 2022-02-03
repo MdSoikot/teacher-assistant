@@ -49,6 +49,7 @@ export default function Sidebar() {
     const handleClickSecondLevel = () => {
         setOpenSecondLevel(!openSecondLevel);
     };
+    console.log('userInfo', userInfo);
     return (
         <div className="sidebar-main">
             <div className='flex col sidebar-main__menu'>
@@ -385,19 +386,35 @@ export default function Sidebar() {
                                     </InertiaLink>
                                 </ListItem>
                             </List>
-                            {userInfo?.role !== 'student' && <List component="div" disablePadding>
-                                <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
-                                    <ListItemIcon>
-                                        <StarBorder className="sidebar-svg" />
-                                    </ListItemIcon>
-                                    <InertiaLink
-                                        className="nounderline"
-                                        href={route('assignment')}
-                                    >
-                                        <ListItemText primary="Add Assignment" />
-                                    </InertiaLink>
-                                </ListItem>
-                            </List>}
+                            {userInfo?.role !== 'student' &&
+                                <>
+                                    <List component="div" disablePadding>
+                                        <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                            <ListItemIcon>
+                                                <StarBorder className="sidebar-svg" />
+                                            </ListItemIcon>
+                                            <InertiaLink
+                                                className="nounderline"
+                                                href={route('assignment')}
+                                            >
+                                                <ListItemText primary="Add Assignment" />
+                                            </InertiaLink>
+                                        </ListItem>
+                                    </List>
+                                    <List component="div" disablePadding>
+                                        <ListItem button className={classes.nested} onClick={handleClickSecondLevel}>
+                                            <ListItemIcon>
+                                                <StarBorder className="sidebar-svg" />
+                                            </ListItemIcon>
+                                            <InertiaLink
+                                                className="nounderline"
+                                                href={route('sub_assignment')}
+                                            >
+                                                <ListItemText primary="Submit Assignment" />
+                                            </InertiaLink>
+                                        </ListItem>
+                                    </List>
+                                </>}
                         </Collapse>
                         {/* .........Manage Assignment End............ */}
 

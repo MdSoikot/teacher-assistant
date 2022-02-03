@@ -116,7 +116,7 @@ const AddCourse = () => {
                             //errors={errors?.image}
                             // value={values?.photo}
                             accept="image/*, *.pdf"
-                            onChange={handleFileChange}
+                            //onChange={handleFileChange}
                             multiple={false}
                         />
 

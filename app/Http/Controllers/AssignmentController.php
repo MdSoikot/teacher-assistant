@@ -31,6 +31,25 @@ class AssignmentController extends Controller
         // $studentInfo = Student::select('student_id', 'student_name')->get()->toArray();
         return Inertia::render('Assignment/AddAssignment', ['courseInfo' => $courseInfo, 'courseTitles' => $courseTitles]);
     }
+    public function showSubmitAssignment()
+    {
+        $courses = Course::all()->toArray();
+        $courseInfo = [];
+        $courseTitles = [];
+        foreach ($courses as $key => $val) {
+            $courseInfo[] = [
+                'course_title' => $val['course_title'],
+                'course_code' => $val['course_code']
+            ];
+            $courseTitles[] = [
+                'label' => $val['course_title'],
+                'value' => $val['course_title']
+            ];
+        }
+        // $studentInfo = Student::select('student_id', 'student_name')->get()->toArray();
+        return Inertia::render('Assignment/SubmitAssignment', ['courseInfo' => $courseInfo, 'courseTitles' => $courseTitles]);
+    }
+
     public function create(Request $request)
     {
         $data = $request->all();

@@ -170,6 +170,10 @@ Route::get('assignment')
     ->name('assignment')
     ->uses('App\Http\Controllers\AssignmentController@index')
     ->middleware('auth');
+Route::get('assignment/submit')
+    ->name('sub_assignment')
+    ->uses('App\Http\Controllers\AssignmentController@showSubmitAssignment')
+    ->middleware('auth');
 Route::post('assignment/add')
     ->name('add_assignment')
     ->uses('App\Http\Controllers\AssignmentController@create')
