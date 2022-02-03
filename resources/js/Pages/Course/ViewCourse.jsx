@@ -4,6 +4,7 @@ import { kaReducer, Table } from 'ka-table';
 import { DataType, FilteringMode, SortingMode } from 'ka-table/enums';
 import Layout from '../Layout/Layout'
 import "ka-table/style.scss";
+import axios from 'axios';
 
 const ViewCourse = () => {
     const { courses } = usePage().props;
@@ -14,6 +15,7 @@ const ViewCourse = () => {
             { key: 'course_code', title: 'Course Code', dataType: DataType.String, style: { width: '20%' } },
             { key: 'course_credit', title: 'Course Credit', dataType: DataType.String, style: { width: '15%' } },
             { key: 'department', title: 'Department', dataType: DataType.String, style: { width: '20%' } },
+            { key: ':action', title: 'Action', width: '20%', style: { textAlign: 'center' } },
 
         ],
         data: dataArray,
@@ -27,13 +29,40 @@ const ViewCourse = () => {
         searchText: "",
     };
 
+    const handleAction = (id, status) => {
+        console.log('id', id);
+        // axios.delete('delete_course', { 'id': $id })
+        //     .then((res) => {
+        //         console.log('res', res);
+        //     })
+    }
 
+    const ActionOption = ({ dispatch, rowKeyValue }) => {
+        return (
+            <div className='flex justify-center gap-2'>
+                <span
+                    className='cursor-pointer edit-button'
+                    onClick={() => handleAction(rowKeyValue, "Edit")}
+                >
+                    Edit
+                </span>
+                <span
+                    className='cursor-pointer delete-button'
+                    onClick={() => handleAction(rowKeyValue, "delete")}
+                >
+                    Delete
+                </span>
+
+            </div>
+        );
+    };
 
 
     const [tableProps, changeTableProps] = useState(tablePropsInit);
     const dispatch = (action) => {
         changeTableProps((prevState) => kaReducer(prevState, action));
     };
+
 
 
     return (
@@ -47,6 +76,18 @@ const ViewCourse = () => {
                     childComponents={{
                         noDataRow: {
                             content: () => 'No Data Found'
+                        },
+                        cellText: {
+                            content: props => {
+                                switch (props.column.key) {
+                                    case ':action':
+                                        return <ActionOption {...props} />;
+
+                                    // case 'selection-cell': return <SelectionCell {...props} />;
+                                }
+
+                                return ''
+                            }
                         },
 
                     }}

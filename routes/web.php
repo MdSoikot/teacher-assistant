@@ -89,6 +89,11 @@ Route::get('course/view')
     ->name('view_course')
     ->uses('App\Http\Controllers\CourseController@show')
     ->middleware('auth');
+Route::delete('course/delete/{id}')
+    ->name('delete_course')
+    ->uses('App\Http\Controllers\CourseController@destroy')
+    ->middleware('auth');
+
 // Manage Routine
 Route::get('routine')
     ->name('routine')

@@ -53,9 +53,11 @@
 .main-body {
     background: #4E1661;
 }
-.main{
+
+.main {
     min-height: 100vh;
 }
+
 /*...............SignUp.........*/
 
 .signup-leftside {
@@ -164,7 +166,7 @@
     flex-direction: column;
     padding-top   : 36px;
     gap           : 32px;
-    padding: 20px;
+    padding       : 20px;
 }
 
 .form-error {
@@ -218,7 +220,7 @@
 }
 
 .main-div {
-    width: calc(100% - 250px);
+    width      : calc(100% - 250px);
     margin-top : 48px;
     margin-left: 40px;
 }
@@ -450,10 +452,27 @@
 
 /*--ka-table--*/
 
-.ka-paging-page-index, .ka-paging-size{
-    min-width: 30px!important;
-    height: 30px!important;
-    display: flex;
+.ka-paging-page-index,
+.ka-paging-size {
+    min-width      : 30px !important;
+    height         : 30px !important;
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
+}
+
+.delete-button {
+    border    : 1px solid;
+    width     : 50px;
+    height    : 29px;
+    background: #b25757;
+    color     : lemonchiffon;
+}
+
+.edit-button {
+    border    : 1px solid;
+    width     : 50px;
+    height    : 29px;
+    background: #d6b8b8;
+    color     : #191818;
 }

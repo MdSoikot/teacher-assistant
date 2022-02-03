@@ -8,13 +8,22 @@ import "ka-table/style.scss";
 const ViewAssignment = () => {
     const { assignments } = usePage().props;
     const dataArray = assignments
+
+    const trancateStr = (string) => {
+        if (string.length <= 25) {
+            return string
+        }
+        return string.slice(0, 25).concat('...');
+    }
+
     const tablePropsInit = {
         columns: [
-            { key: 'student_id', title: 'Student ID', dataType: DataType.String, style: { width: '15%' } },
-            { key: 'course_title', title: 'Course Name', dataType: DataType.String, style: { width: '15%' } },
-            { key: 'course_code', title: 'Course Code', dataType: DataType.String, style: { width: '20%' } },
-            { key: 'assignment_desc', title: 'Assignment Topic', dataType: DataType.String, style: { width: '15%' } },
-            { key: 'submit_date', title: 'Submit Date', dataType: DataType.String, style: { width: '20%' } },
+            { key: 'student_id', title: 'Student ID', dataType: DataType.String },
+            { key: 'course_title', title: 'Course Name', dataType: DataType.String },
+            { key: 'course_code', title: 'Course Code', dataType: DataType.String },
+            { key: 'assignment_desc', title: 'Assignment Topic', dataType: DataType.String, width: '30%' },
+            { key: 'submit_date', title: 'Submit Date', dataType: DataType.String },
+            { key: ':action', title: 'Action', width: '20%', style: { textAlign: 'center' } },
 
         ],
         data: dataArray,
@@ -28,11 +37,30 @@ const ViewAssignment = () => {
         searchText: "",
     };
 
+    const ActionOption = ({ dispatch, rowKeyValue }) => {
+        return (
+            <div className='flex justify-center gap-2'>
+                <span
+                    className='cursor-pointer edit-button'
+                    onClick={() => handleAction(rowKeyValue, "Edit")}
+                >
+                    Edit
+                </span>
+                <span
+                    className='cursor-pointer delete-button'
+                    onClick={() => handleAction(rowKeyValue, "delete")}
+                >
+                    Delete
+                </span>
 
+            </div>
+        );
+    };
 
 
     const [tableProps, changeTableProps] = useState(tablePropsInit);
     const dispatch = (action) => {
+        console.log('action', action)
         changeTableProps((prevState) => kaReducer(prevState, action));
     };
 
@@ -48,6 +76,18 @@ const ViewAssignment = () => {
                     childComponents={{
                         noDataRow: {
                             content: () => 'No Data Found'
+                        },
+                        cellText: {
+                            content: props => {
+                                switch (props.column.key) {
+                                    case ':action':
+                                        return <ActionOption {...props} />;
+
+                                    // case 'selection-cell': return <SelectionCell {...props} />;
+                                }
+
+                                return ''
+                            }
                         },
 
                     }}

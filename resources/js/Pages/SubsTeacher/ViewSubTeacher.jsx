@@ -13,15 +13,36 @@ const ViewSubTeacher = () => {
         columns: [
             { key: 'name', title: 'Name', dataType: DataType.String, style: { width: '15%' } },
             { key: 'teacher_id', title: 'ID', dataType: DataType.String, style: { width: '15%' } },
-            { key: 'email', title: 'Email', dataType: DataType.String, style: { width: '15%' } },
+            { key: 'email', title: 'Email', dataType: DataType.String, style: { width: '20%' } },
             { key: 'department', title: 'Department', dataType: DataType.String, style: { width: '10%' } },
             { key: 'designation', title: 'Designation', dataType: DataType.String, style: { width: '15%' } },
             { key: 'phone', title: 'Phone', dataType: DataType.String, style: { width: '15%' } },
             { key: 'office_room_no', title: 'Room', dataType: DataType.String, style: { width: '15%' } },
+            { key: ':action', title: 'Action', width: '20%', style: { textAlign: 'center' } },
+
         ],
         data: dataArray,
         rowKeyField: 'id',
         searchText: '',
+    };
+    const ActionOption = ({ dispatch, rowKeyValue }) => {
+        return (
+            <div className='flex justify-center gap-2'>
+                <span
+                    className='cursor-pointer edit-button'
+                    onClick={() => handleAction(rowKeyValue, "Edit")}
+                >
+                    Edit
+                </span>
+                <span
+                    className='cursor-pointer delete-button'
+                    onClick={() => handleAction(rowKeyValue, "delete")}
+                >
+                    Delete
+                </span>
+
+            </div>
+        );
     };
 
     const [tableProps, changeTableProps] = useState(tablePropsInit);
@@ -42,7 +63,19 @@ const ViewSubTeacher = () => {
                     childComponents={{
                         noDataRow: {
                             content: () => 'No Data Found'
-                        }
+                        },
+                        cellText: {
+                            content: props => {
+                                switch (props.column.key) {
+                                    case ':action':
+                                        return <ActionOption {...props} />;
+
+                                    // case 'selection-cell': return <SelectionCell {...props} />;
+                                }
+
+                                return ''
+                            }
+                        },
                     }}
                     dispatch={dispatch}
                 />

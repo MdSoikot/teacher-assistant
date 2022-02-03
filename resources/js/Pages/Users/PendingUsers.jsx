@@ -137,12 +137,6 @@ const PendingUsers = () => {
                     />
                 </span>
             </div>
-            // <img
-            //     src="https://komarovalexander.github.io/ka-table/static/icons/delete.svg"
-            //     className="delete-row-column-button"
-            //     onClick={() => dispatch(deleteRow(rowKeyValue))}
-            //     alt=""
-            // />
         );
     };
     const SelectionCell = ({

@@ -15,6 +15,7 @@ const ViewStudent = () => {
             { key: 'section', title: 'Section', dataType: DataType.String, style: { width: '15%' } },
             { key: 'department', title: 'Department', dataType: DataType.String, style: { width: '20%' } },
             { key: 'batch', title: 'Batch', dataType: DataType.String, style: { width: '20%' } },
+            { key: ':action', title: 'Action', width: '20%', style: { textAlign: 'center' } },
 
         ],
         data: dataArray,
@@ -28,7 +29,25 @@ const ViewStudent = () => {
         searchText: "",
     };
 
+    const ActionOption = ({ dispatch, rowKeyValue }) => {
+        return (
+            <div className='flex justify-center gap-2'>
+                <span
+                    className='cursor-pointer edit-button'
+                    onClick={() => handleAction(rowKeyValue, "Edit")}
+                >
+                    Edit
+                </span>
+                <span
+                    className='cursor-pointer delete-button'
+                    onClick={() => handleAction(rowKeyValue, "delete")}
+                >
+                    Delete
+                </span>
 
+            </div>
+        );
+    };
 
 
     const [tableProps, changeTableProps] = useState(tablePropsInit);
@@ -48,6 +67,18 @@ const ViewStudent = () => {
                     childComponents={{
                         noDataRow: {
                             content: () => 'No Data Found'
+                        },
+                        cellText: {
+                            content: props => {
+                                switch (props.column.key) {
+                                    case ':action':
+                                        return <ActionOption {...props} />;
+
+                                    // case 'selection-cell': return <SelectionCell {...props} />;
+                                }
+
+                                return ''
+                            }
                         },
 
                     }}

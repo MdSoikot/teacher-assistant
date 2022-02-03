@@ -26,7 +26,8 @@ const ViewMarks = () => {
             { key: "ct_mark", title: "CT", dataType: DataType.Number },
             { key: "att_mark", title: "Attendent", dataType: DataType.Number },
             { key: "ass_mark", title: "Assignment", dataType: DataType.Number },
-            { key: "written_mark", title: "Written", dataType: DataType.Number }
+            { key: "written_mark", title: "Written", dataType: DataType.Number },
+            { key: ':action', title: 'Action', width: '20%', style: { textAlign: 'center' } },
         ],
         virtualScrolling: {},
         data: dataArray,
@@ -53,6 +54,25 @@ const ViewMarks = () => {
 
         doc.save("table.pdf");
     };
+    const ActionOption = ({ dispatch, rowKeyValue }) => {
+        return (
+            <div className='flex justify-center gap-2'>
+                <span
+                    className='cursor-pointer edit-button'
+                    onClick={() => handleAction(rowKeyValue, "Edit")}
+                >
+                    Edit
+                </span>
+                <span
+                    className='cursor-pointer delete-button'
+                    onClick={() => handleAction(rowKeyValue, "delete")}
+                >
+                    Delete
+                </span>
+
+            </div>
+        );
+    };
     return (
         <div className="main-div">
             <div className='font-inter-600 text-3xl mb-4 flex gap-4'>
@@ -78,7 +98,20 @@ const ViewMarks = () => {
                             elementAttributes: () => ({
                                 id: 'table-to-xls'
                             })
-                        }
+                        },
+                        cellText: {
+                            content: props => {
+                                switch (props.column.key) {
+                                    case ':action':
+                                        return <ActionOption {...props} />;
+
+                                    // case 'selection-cell': return <SelectionCell {...props} />;
+                                }
+
+                                return ''
+                            }
+                        },
+
                     }}
                 />
             </div>
