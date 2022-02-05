@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import { usePage } from '@inertiajs/inertia-react';
+import { InertiaLink, usePage } from '@inertiajs/inertia-react';
 import { kaReducer, Table } from 'ka-table';
 import { DataType, FilteringMode, SortingMode } from 'ka-table/enums';
 import Layout from '../Layout/Layout'
 import "ka-table/style.scss";
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
 const ViewRoutine = () => {
     const { routineInfo } = usePage().props;
@@ -33,12 +35,12 @@ const ViewRoutine = () => {
     const ActionOption = ({ dispatch, rowKeyValue }) => {
         return (
             <div className='flex justify-center gap-2'>
-                <span
-                    className='cursor-pointer edit-button'
-                    onClick={() => handleAction(rowKeyValue, "Edit")}
+                <InertiaLink
+                    className="nounderline edit-button"
+                    href={route('edit_routine_form', rowKeyValue)}
                 >
                     Edit
-                </span>
+                </InertiaLink>
                 <span
                     className='cursor-pointer delete-button'
                     onClick={() => handleAction(rowKeyValue, "delete")}
@@ -49,7 +51,25 @@ const ViewRoutine = () => {
             </div>
         );
     };
+    const handleAction = (id, status) => {
+        console.log('id', id);
+        if (status === 'delete') {
+            axios.delete(route('delete_routine', id))
+                .then((res) => {
+                    const { data } = res
+                    if (data.status === 'success') {
+                        toast.success('Delete Successfully')
+                        let tempData = { ...tableProps }
+                        const filteredData = tempData.data.filter(item => item.id !== id)
+                        tempData.data = filteredData
+                        changeTableProps(tempData)
+                    } else {
+                        toast.error('Failed to delete')
+                    }
+                })
+        }
 
+    }
 
 
     const [tableProps, changeTableProps] = useState(tablePropsInit);

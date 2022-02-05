@@ -24,4 +24,38 @@ class RoutineController extends Controller
         $routineInfo = Routine::all();
         return Inertia::render('Routine/ViewRoutine', ['routineInfo' => $routineInfo]);
     }
+
+
+    public function edit($id)
+    {
+        $res = Routine::where('id', $id)->get()->toArray();
+        return Inertia::render('Routine/EditRoutine', ['routineInfo' => $res[0]]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        // dd($request->all(), $id);
+        $data = $request->all();
+        $res = Routine::where('id', $id)->update($data);
+
+        if ($res) {
+            return ['status' => 'success'];
+        } else {
+            return ['status' => 'error'];
+        }
+        // return back();
+    }
+
+
+    public function destroy($id)
+    {
+        $res = Routine::where('id', $id)->delete();
+        if ($res) {
+            return [
+                'status' => 'success'
+            ];
+        } else {
+            return ['status' => 'error'];
+        }
+    }
 }

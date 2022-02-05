@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
-import { usePage } from '@inertiajs/inertia-react';
+import React, { useEffect, useState } from 'react'
+import { InertiaLink, usePage } from '@inertiajs/inertia-react';
 import { kaReducer, Table } from 'ka-table';
 import { DataType, FilteringMode, SortingMode } from 'ka-table/enums';
 import Layout from '../Layout/Layout'
 import "ka-table/style.scss";
 import axios from 'axios';
+import { Inertia } from '@inertiajs/inertia';
+import toast from 'react-hot-toast';
 
 const ViewCourse = () => {
     const { courses } = usePage().props;
@@ -31,21 +33,45 @@ const ViewCourse = () => {
 
     const handleAction = (id, status) => {
         console.log('id', id);
-        // axios.delete('delete_course', { 'id': $id })
-        //     .then((res) => {
-        //         console.log('res', res);
-        //     })
+        // Inertia.delete(route('delete_course', id))
+        if (status === 'delete') {
+            axios.delete(route('delete_course', id))
+                .then((res) => {
+                    const { data } = res
+                    if (data.status === 'success') {
+                        toast.success('Delete Successfully')
+                        let tempData = { ...tableProps }
+                        const filteredData = tempData.data.filter(item => item.id !== id)
+                        tempData.data = filteredData
+                        changeTableProps(tempData)
+                    } else {
+                        toast.error('Failed to delete')
+                    }
+                })
+        } else {
+            axios.get(route('edit_course_form', id))
+                .then((res) => {
+
+                })
+        }
+
     }
 
     const ActionOption = ({ dispatch, rowKeyValue }) => {
         return (
             <div className='flex justify-center gap-2'>
-                <span
+                {/* <span
                     className='cursor-pointer edit-button'
-                    onClick={() => handleAction(rowKeyValue, "Edit")}
+                    onClick={() => handleAction(rowKeyValue, "edit")}
                 >
                     Edit
-                </span>
+                </span> */}
+                <InertiaLink
+                    className="nounderline edit-button"
+                    href={route('edit_course_form', rowKeyValue)}
+                >
+                    Edit
+                </InertiaLink>
                 <span
                     className='cursor-pointer delete-button'
                     onClick={() => handleAction(rowKeyValue, "delete")}
@@ -62,7 +88,9 @@ const ViewCourse = () => {
     const dispatch = (action) => {
         changeTableProps((prevState) => kaReducer(prevState, action));
     };
-
+    useEffect(() => {
+        console.log("i")
+    }, [])
 
 
     return (

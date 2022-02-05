@@ -68,4 +68,49 @@ class AssignmentController extends Controller
         $assignments = Assignment::all();
         return Inertia::render('Assignment/ViewAssignment', ['assignments' => $assignments]);
     }
+
+    public function edit($id)
+    {
+        $courses = Course::all()->toArray();
+        $courseInfo = [];
+        $courseTitles = [];
+        foreach ($courses as $key => $val) {
+            $courseInfo[] = [
+                'course_title' => $val['course_title'],
+                'course_code' => $val['course_code']
+            ];
+            $courseTitles[] = [
+                'label' => $val['course_title'],
+                'value' => $val['course_title']
+            ];
+        }
+        $res = Assignment::where('id', $id)->get()->toArray();
+        return Inertia::render('Assignment/EditAssignment', ['assignmentInfo' => $res[0], 'courseInfo' => $courseInfo, 'courseTitles' => $courseTitles]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = $request->all();
+        $res = Assignment::where('id', $id)->update($data);
+
+        if ($res) {
+            return ['status' => 'success'];
+        } else {
+            return ['status' => 'error'];
+        }
+        // return back();
+    }
+
+
+    public function destroy($id)
+    {
+        $res = Assignment::where('id', $id)->delete();
+        if ($res) {
+            return [
+                'status' => 'success'
+            ];
+        } else {
+            return ['status' => 'error'];
+        }
+    }
 }

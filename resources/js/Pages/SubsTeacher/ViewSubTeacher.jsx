@@ -1,8 +1,10 @@
-import { usePage } from '@inertiajs/inertia-react';
+import { InertiaLink, usePage } from '@inertiajs/inertia-react';
+import axios from 'axios';
 import { Table } from 'ka-table';
 import { DataType } from 'ka-table/enums';
 import "ka-table/style.scss";
 import React, { useState } from 'react';
+import toast from 'react-hot-toast';
 import Layout from '../Layout/Layout';
 
 const ViewSubTeacher = () => {
@@ -25,15 +27,36 @@ const ViewSubTeacher = () => {
         rowKeyField: 'id',
         searchText: '',
     };
+
+    const handleAction = (id, status) => {
+        console.log('id', id);
+        if (status === 'delete') {
+            axios.delete(route('delete_teacher', id))
+                .then((res) => {
+                    const { data } = res
+                    if (data.status === 'success') {
+                        toast.success('Delete Successfully')
+                        let tempData = { ...tableProps }
+                        const filteredData = tempData.data.filter(item => item.id !== id)
+                        tempData.data = filteredData
+                        changeTableProps(tempData)
+                    } else {
+                        toast.error('Failed to delete')
+                    }
+                })
+        }
+
+    }
+
     const ActionOption = ({ dispatch, rowKeyValue }) => {
         return (
             <div className='flex justify-center gap-2'>
-                <span
-                    className='cursor-pointer edit-button'
-                    onClick={() => handleAction(rowKeyValue, "Edit")}
+                <InertiaLink
+                    className="nounderline edit-button"
+                    href={route('edit_teacher_form', rowKeyValue)}
                 >
                     Edit
-                </span>
+                </InertiaLink>
                 <span
                     className='cursor-pointer delete-button'
                     onClick={() => handleAction(rowKeyValue, "delete")}

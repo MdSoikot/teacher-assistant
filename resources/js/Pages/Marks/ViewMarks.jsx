@@ -2,7 +2,7 @@
 
 // import jsPDF from "jspdf";
 import React, { useState } from 'react'
-import { usePage } from '@inertiajs/inertia-react';
+import { InertiaLink, usePage } from '@inertiajs/inertia-react';
 import { CSVLink } from 'react-csv';
 
 import { kaReducer, Table } from 'ka-table';
@@ -10,6 +10,8 @@ import { DataType } from 'ka-table/enums';
 import { kaPropsUtils } from 'ka-table/utils';
 import Layout from '../Layout/Layout'
 import "ka-table/style.scss";
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
 const ViewMarks = () => {
     const { marks } = usePage().props;
@@ -54,15 +56,35 @@ const ViewMarks = () => {
 
         doc.save("table.pdf");
     };
+    const handleAction = (id, status) => {
+        console.log('id', id);
+        if (status === 'delete') {
+            axios.delete(route('delete_marks', id))
+                .then((res) => {
+                    const { data } = res
+                    if (data.status === 'success') {
+                        toast.success('Delete Successfully')
+                        let tempData = { ...tableProps }
+                        const filteredData = tempData.data.filter(item => item.id !== id)
+                        tempData.data = filteredData
+                        changeTableProps(tempData)
+                    } else {
+                        toast.error('Failed to delete')
+                    }
+                })
+        }
+
+    }
+
     const ActionOption = ({ dispatch, rowKeyValue }) => {
         return (
             <div className='flex justify-center gap-2'>
-                <span
-                    className='cursor-pointer edit-button'
-                    onClick={() => handleAction(rowKeyValue, "Edit")}
+                <InertiaLink
+                    className="nounderline edit-button"
+                    href={route('edit_marks_form', rowKeyValue)}
                 >
                     Edit
-                </span>
+                </InertiaLink>
                 <span
                     className='cursor-pointer delete-button'
                     onClick={() => handleAction(rowKeyValue, "delete")}

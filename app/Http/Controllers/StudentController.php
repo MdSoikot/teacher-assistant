@@ -24,4 +24,50 @@ class StudentController extends Controller
         $user = Student::create($data);
         return Redirect::back();
     }
+
+
+    public function edit($id)
+    {
+        $res = Student::where('id', $id)->get()->toArray();
+        return Inertia::render('Student/EditStudent', ['studentInfo' => $res[0]]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\Course  $course
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        // dd($request->all(), $id);
+        $data = $request->all();
+        $res = Student::where('id', $id)->update($data);
+
+        if ($res) {
+            return ['status' => 'success'];
+        } else {
+            return ['status' => 'error'];
+        }
+        // return back();
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\Course  $course
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        $res = Student::where('id', $id)->delete();
+        if ($res) {
+            return [
+                'status' => 'success'
+            ];
+        } else {
+            return ['status' => 'error'];
+        }
+    }
 }

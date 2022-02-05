@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../Layout/Layout";
 import TextInput from "../../Shared/TextInput";
 import SingleSelect from "../../Shared/SingleSelect";
@@ -8,15 +8,19 @@ import { toFormData } from "../../utils";
 import { Inertia } from "@inertiajs/inertia";
 import toast from "react-hot-toast";
 import Dropzone from "../../Shared/Dropzone";
+import axios from "axios";
 
-const AddCourse = () => {
+const EditCourse = () => {
+    const { courseInfo } = usePage().props;
+    console.log('courseInfo', courseInfo);
     const [values, setValues] = useState({
-        course_title: '',
-        course_code: '',
-        department: '',
-        course_credit: '',
-        course_outline: ''
+        course_title: courseInfo.course_title,
+        course_code: courseInfo.course_code,
+        department: courseInfo.department,
+        course_credit: courseInfo.course_credit,
+        course_outline: courseInfo.course_outline
     })
+
     const handleChange = (e) => {
         const key = e.target.name;
         const value = e.target.value;
@@ -33,21 +37,26 @@ const AddCourse = () => {
         }));
     }
     const handleSubmit = (e) => {
+        console.log('courseInfo.id', courseInfo.id);
         e.preventDefault();
         console.log(typeof (values.course_outline), values.course_outline.preview)
         const mapping = Object.values(values).filter((item => !values?.course_outline?.preview && !item.length))
         if (!mapping.length) {
-            Inertia.post(route('add_course'), values, {
-                onFinish: () => {
-                    setValues({
-                        course_title: '',
-                        course_code: '',
-                        course_credit: '',
-                        course_outline: '',
-                    }),
-                        toast.success("Save Successfuly!")
-                }
-            });
+
+            axios.put(route('edit_course', courseInfo.id), values)
+                .then((res) => {
+                    const { data } = res
+                    if (data.status === 'success') {
+                        console.log('res', res);
+
+                        toast.success("Update Successfuly!")
+                        useEffect(() => {
+                            console.log("i")
+                        }, [])
+                    } else {
+                        toast.error("Update Failed!")
+                    }
+                })
         } else {
             toast.error("Field Can't be empty!")
         }
@@ -55,9 +64,10 @@ const AddCourse = () => {
     return (
         <div className="main-div">
             <div className="font-inter-600 text-3xl mb-4 flex gap-4">
-                <span>Add Course</span>
+                <span>Update Course</span>
             </div>
             <form
+                encType="multipart/form-data"
                 onSubmit={handleSubmit}
             >
                 <div className="main-card flex">
@@ -70,7 +80,7 @@ const AddCourse = () => {
                             onChange={handleChange}
                             inputClass="profile-textinput-input"
                             inputLabelClass="font-inter-600 text-md"
-                            // value={values?.name}
+                            value={values?.course_title}
                             placeholder="Course Name"
                         />
                         <TextInput
@@ -81,7 +91,7 @@ const AddCourse = () => {
                             onChange={handleChange}
                             inputClass="profile-textinput-input"
                             inputLabelClass="font-inter-600 text-md"
-                            // value={values?.email}
+                            value={values?.course_code}
                             placeholder="Course Code"
                         />
 
@@ -94,7 +104,7 @@ const AddCourse = () => {
                             inputClass="profile-textinput-input"
                             inputLabelClass="font-inter-600 text-md"
                             placeholder="Course Cradit"
-                        // value={values?.phone}
+                            value={values?.course_credit}
                         />
                         <TextInput
                             id="department"
@@ -105,7 +115,7 @@ const AddCourse = () => {
                             inputClass="profile-textinput-input"
                             inputLabelClass="font-inter-600 text-md"
                             placeholder="Department"
-                        // value={values?.studentId}
+                            value={values?.department}
                         />
                     </div>
                     <div className="main-card__right font-inter-600 text-md">
@@ -114,7 +124,7 @@ const AddCourse = () => {
                             name="course_outline"
                             className="w-full pb-8 pr-6 lg:w-1/2"
                             //errors={errors?.image}
-                            // value={values?.photo}
+                            // value={values?.course_outline}
                             accept="image/*, *.pdf"
                             onChange={handleFileChange}
                             multiple={false}
@@ -123,7 +133,7 @@ const AddCourse = () => {
 
                         <div className="pt-3">
                             <button className="btn-signup" type="submit">
-                                Submit
+                                Update
                             </button>
                         </div>
                     </div>
@@ -133,5 +143,5 @@ const AddCourse = () => {
     );
 };
 
-AddCourse.layout = (page) => <Layout>{page}</Layout>;
-export default AddCourse;
+EditCourse.layout = (page) => <Layout>{page}</Layout>;
+export default EditCourse;

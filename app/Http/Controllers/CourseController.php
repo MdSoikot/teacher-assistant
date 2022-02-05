@@ -18,6 +18,12 @@ class CourseController extends Controller
     {
         return Inertia::render('Course/AddCourse');
     }
+    public function showEditCourseForm($id)
+    {
+        $res = Course::where('id', $id)->get()->toArray();
+        return Inertia::render('Course/EditCourse', ['courseInfo' => $res[0]]);
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -70,9 +76,10 @@ class CourseController extends Controller
      * @param  \App\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
-    public function edit(Course $course)
+    public function edit(Course $course, $id)
     {
-        //
+        $res = Course::where('id', $id)->get()->toArray();
+        return Inertia::render('Course/EditCourse', ['courseInfo' => $res[0]]);
     }
 
     /**
@@ -82,9 +89,18 @@ class CourseController extends Controller
      * @param  \App\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Course $course)
+    public function update(Request $request, $id)
     {
-        //
+        // dd($request->all(), $id);
+        $data = $request->all();
+        $res = Course::where('id', $id)->update($data);
+
+        if ($res) {
+            return ['status' => 'success'];
+        } else {
+            return ['status' => 'error'];
+        }
+        // return back();
     }
 
     /**
@@ -95,6 +111,13 @@ class CourseController extends Controller
      */
     public function destroy(Course $course, $id)
     {
-        dd($id);
+        $res = Course::where('id', $id)->delete();
+        if ($res) {
+            return [
+                'status' => 'success'
+            ];
+        } else {
+            return ['status' => 'error'];
+        }
     }
 }

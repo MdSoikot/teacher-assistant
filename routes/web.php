@@ -93,6 +93,14 @@ Route::delete('course/delete/{id}')
     ->name('delete_course')
     ->uses('App\Http\Controllers\CourseController@destroy')
     ->middleware('auth');
+Route::get('course/edit/{id}')
+    ->name('edit_course_form')
+    ->uses('App\Http\Controllers\CourseController@edit')
+    ->middleware('auth');
+Route::put('course/edit/{id}')
+    ->name('edit_course')
+    ->uses('App\Http\Controllers\CourseController@update')
+    ->middleware('auth');
 
 // Manage Routine
 Route::get('routine')
@@ -106,6 +114,19 @@ Route::post('routine/add')
 Route::get('routine/view')
     ->name('view_routine')
     ->uses('App\Http\Controllers\RoutineController@show')
+    ->middleware('auth');
+
+Route::delete('routine/delete/{id}')
+    ->name('delete_routine')
+    ->uses('App\Http\Controllers\RoutineController@destroy')
+    ->middleware('auth');
+Route::get('routine/edit/{id}')
+    ->name('edit_routine_form')
+    ->uses('App\Http\Controllers\RoutineController@edit')
+    ->middleware('auth');
+Route::put('routine/edit/{id}')
+    ->name('edit_routine')
+    ->uses('App\Http\Controllers\RoutineController@update')
     ->middleware('auth');
 
 // Manage Marks
@@ -122,6 +143,19 @@ Route::get('marks/view')
     ->uses('App\Http\Controllers\MarkController@show')
     ->middleware('auth');
 
+Route::delete('marks/delete/{id}')
+    ->name('delete_marks')
+    ->uses('App\Http\Controllers\MarkController@destroy')
+    ->middleware('auth');
+Route::get('marks/edit/{id}')
+    ->name('edit_marks_form')
+    ->uses('App\Http\Controllers\MarkController@edit')
+    ->middleware('auth');
+Route::put('marks/edit/{id}')
+    ->name('edit_marks')
+    ->uses('App\Http\Controllers\MarkController@update')
+    ->middleware('auth');
+
 //Manage Substitue Teacher
 Route::get('substitute_teacher')
     ->name('substitute_teacher')
@@ -134,6 +168,19 @@ Route::post('substitute_teacher/add')
 Route::get('substitute_teacher/view')
     ->name('view_substitute_teacher')
     ->uses('App\Http\Controllers\SubstituteTeacherController@show')
+    ->middleware('auth');
+
+Route::delete('substitute_teacher/delete/{id}')
+    ->name('delete_teacher')
+    ->uses('App\Http\Controllers\SubstituteTeacherController@destroy')
+    ->middleware('auth');
+Route::get('substitute_teacher/edit/{id}')
+    ->name('edit_teacher_form')
+    ->uses('App\Http\Controllers\SubstituteTeacherController@edit')
+    ->middleware('auth');
+Route::put('substitute_teacher/edit/{id}')
+    ->name('edit_teacher')
+    ->uses('App\Http\Controllers\SubstituteTeacherController@update')
     ->middleware('auth');
 
 //Manage Report
@@ -165,6 +212,19 @@ Route::get('student/view')
     ->name('view_student')
     ->uses('App\Http\Controllers\StudentController@show')
     ->middleware('auth');
+
+Route::delete('student/delete/{id}')
+    ->name('delete_student')
+    ->uses('App\Http\Controllers\StudentController@destroy')
+    ->middleware('auth');
+Route::get('student/edit/{id}')
+    ->name('edit_student_form')
+    ->uses('App\Http\Controllers\StudentController@edit')
+    ->middleware('auth');
+Route::put('student/edit/{id}')
+    ->name('edit_student')
+    ->uses('App\Http\Controllers\StudentController@update')
+    ->middleware('auth');
 //Manage Assignment
 Route::get('assignment')
     ->name('assignment')
@@ -181,6 +241,19 @@ Route::post('assignment/add')
 Route::get('assignment/view')
     ->name('view_assignment')
     ->uses('App\Http\Controllers\AssignmentController@show')
+    ->middleware('auth');
+
+Route::delete('assignment/delete/{id}')
+    ->name('delete_assignment')
+    ->uses('App\Http\Controllers\AssignmentController@destroy')
+    ->middleware('auth');
+Route::get('assignment/edit/{id}')
+    ->name('edit_assignment_form')
+    ->uses('App\Http\Controllers\AssignmentController@edit')
+    ->middleware('auth');
+Route::put('assignment/edit/{id}')
+    ->name('edit_assignment')
+    ->uses('App\Http\Controllers\AssignmentController@update')
     ->middleware('auth');
 
 //Manage Report
