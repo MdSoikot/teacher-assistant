@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Notice;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -43,9 +44,9 @@ Route::get('/', function () {
     return inertia::render('Auth/Login');
 });
 Route::get('/dashboard', function () {
-    // $user = User::get()->toArray();
     $user = Auth::user();
-    return inertia::render('Dashboard/Dashboard', ['user' => $user]);
+    $notice = Notice::get()->toArray();
+    return inertia::render('Dashboard/Dashboard', ['user' => $user, 'notices' => $notice]);
 })->middleware('auth');
 
 //profile
@@ -280,4 +281,14 @@ Route::post('report/studentlist/generation')
 Route::get('report/routine/generation')
     ->name('routine_report_generator')
     ->uses('App\Http\Controllers\ReportController@routineReportGerneration')
+    ->middleware('auth');
+
+//Manage Notice
+Route::get('notice')
+    ->name('notice')
+    ->uses('App\Http\Controllers\NoticeController@index')
+    ->middleware('auth');
+Route::post('notice/add')
+    ->name('add_notice')
+    ->uses('App\Http\Controllers\NoticeController@create')
     ->middleware('auth');

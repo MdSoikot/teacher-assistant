@@ -418,6 +418,36 @@ export default function Sidebar() {
                         </Collapse>
                         {/* .........Manage Assignment End............ */}
 
+                        {/* .........Manage Notice Start.......... */}
+                        <ListItem button onClick={() => handleOpen("manage_notice")}>
+                            <ListItemIcon>
+                                <Profile className="sidebar-svg" />
+                            </ListItemIcon>
+                            <ListItemText primary="Manage Notice" />
+                            {open?.manage_notice ? <ExpandLess /> : <ExpandMore />}
+                        </ListItem>
+                        <Collapse in={open?.manage_notice} timeout="auto" unmountOnExit>
+                            <List component="div" disablePadding>
+                                <ListItem
+                                    button
+                                    className={classes.nested}
+                                    onClick={handleClickSecondLevel}
+                                >
+                                    <ListItemIcon>
+                                        <StarBorder className="sidebar-svg" />
+                                    </ListItemIcon>
+
+                                    <InertiaLink
+                                        className="nounderline"
+                                        href={route('notice')}
+                                    >
+                                        <ListItemText primary="Add Notice" />
+                                    </InertiaLink>
+                                </ListItem>
+                            </List>
+                        </Collapse>
+                        {/* .........Manage Notice End............ */}
+
                         {/* .........Generate Report Start.......... */}
                         <ListItem button onClick={() => handleOpen("generate_report")}>
                             <ListItemIcon>
