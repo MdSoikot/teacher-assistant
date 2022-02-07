@@ -501,3 +501,7 @@
     padding-left : 8%;
     padding-right: 8%;
 }
+
+.dash-main {
+    width: calc(100% - 250px)
+}

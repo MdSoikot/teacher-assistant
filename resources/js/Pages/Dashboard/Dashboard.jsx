@@ -2,32 +2,43 @@ import { $user } from "../../GlobalStates"
 import Layout from "../Layout/Layout"
 import { useRecoilState, useRecoilValue } from 'recoil'
 import { usePage } from "@inertiajs/inertia-react";
+import { useState } from "react";
+import ModalCommon from "../../Shared/ModalCommon";
 
 const Dashboard = () => {
     const { user, notices } = usePage().props;
     const [userInfo, setUserInfo] = useRecoilState($user)
+    const [actionMdl, setActionMdl] = useState({})
     console.log('notices', notices);
     setUserInfo(user)
+
+    const showModal = (name, item) => {
+        setActionMdl({ show: name, value: item })
+    }
+    const closeAction = () => {
+        setActionMdl({ show: false })
+    }
+    const trancateStr = (string) => {
+        if (string.length <= 200) {
+            return string
+        }
+        return string.slice(0, 200).concat('...');
+    }
     return (
-        <div className="pl-6 pt-6">
+        <div className="dash-main flex flex-wrap ml-12 mt-12">
             {
                 notices?.map((itm) => {
                     return (
-                        <div className="notice-card">
-                            <div className="font-inter-600 text-md flex justify-center">
+                        <div className="notice-card mr-12 mb-12">
+                            <div className="font-inter-600 text-md flex justify-center mt-4">
                                 Class posponded tommorow
                             </div>
-                            <div className="mt-4 font-inter-normal">
-                                <span>
-                                    dsfsfs fsfdsfsf sfddfsdfsd sdfdsf sdfsdf
-                                    sdfdsf sdfdsfsd fsfsdf sdfdsf sdfsdf dfsf
-                                    sdfdsf sdf dsff sdfsdf sdf sdfsf sdfsff sds
-                                    sdffs sdfsfd fsfsdf fsdfsfsf sdfsdf.....
-                                </span>
+                            <div className="font-inter-normal mt-4 ml-4">
+                                <span className="font-inter-normal" dangerouslySetInnerHTML={{ __html: trancateStr(itm?.notice_body) }} />
 
                                 {/* <div dangerouslySetInnerHTML={{ __html: description }} /> */}
-                                <div className="flex justify-center">
-                                    <button className="mt-2 view-more">
+                                <div className="flex justify-center mt-4">
+                                    <button className="view-more" onClick={() => showModal('notice', itm)}>
                                         view more
                                     </button>
                                 </div>
@@ -37,7 +48,22 @@ const Dashboard = () => {
                     )
                 })
             }
-
+            <ModalCommon
+                show={actionMdl.show === 'notice'}
+                size="lg"
+                closeAction={() => closeAction()}
+            // btnTitle="Save"
+            // btnAction={() => handleSubmitBtn('view_user')}
+            >
+                <div className="mt-2 mb-2 gap-2">
+                    <div className="flex justify-center w-full">
+                        <span className="font-inter-700">{actionMdl?.value?.notice_title}</span>
+                    </div>
+                    <div className="notice-body w-full flex justify-center mt-4">
+                        <span className="font-inter-normal" dangerouslySetInnerHTML={{ __html: actionMdl?.value?.notice_body }} />
+                    </div>
+                </div>
+            </ModalCommon>
         </div>
     )
 }
