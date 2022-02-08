@@ -120,4 +120,10 @@ class CourseController extends Controller
             return ['status' => 'error'];
         }
     }
+    public function getPath()
+    {
+        $path = public_path() . '/sample.pdf';
+        dd($path);
+        return $path;
+    }
 }

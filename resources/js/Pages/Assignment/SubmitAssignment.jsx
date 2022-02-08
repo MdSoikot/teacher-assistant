@@ -71,22 +71,22 @@ const SubmitAssignment = () => {
         e.preventDefault();
         // const mapping = Object.values(values).filter((item => !item.length))
         // console.log('mapping', mapping);
-        // if (!mapping.length) {
-        //     Inertia.post(route('add_assignment'), values, {
-        //         onFinish: () => {
-        //             setValues({
-        //                 course_title: '',
-        //                 course_code: '',
-        //                 assignment_desc: '',
-        //                 submit_date: '',
-        //                 student_id: ''
-        //             }),
-        //                 toast.success("Save Successfuly!")
-        //         }
-        //     });
-        // } else {
-        //     toast.error("Field Can't be empty!")
-        // }
+        if (true) {
+            Inertia.post(route('submit_assignment'), values, {
+                onFinish: () => {
+                    setValues({
+                        course_title: '',
+                        course_code: '',
+                        assignment_file: '',
+                        assignment_topic: '',
+                        student_id: ''
+                    }),
+                        toast.success("Save Successfuly!")
+                }
+            });
+        } else {
+            toast.error("Field Can't be empty!")
+        }
     }
     const handleDateChange = (newVal) => {
         let type = 'submit_date'

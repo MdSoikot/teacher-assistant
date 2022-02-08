@@ -63,6 +63,12 @@ class AssignmentController extends Controller
         // dd($test);
         return Redirect::back();
     }
+    public function submitAssignment(Request $request)
+    {
+        $data = $request->all();
+        $user = Assignment::create($data);
+        return Redirect::back();
+    }
     public function show()
     {
         $assignments = Assignment::all();

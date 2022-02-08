@@ -239,6 +239,7 @@ Route::post('assignment/add')
     ->name('add_assignment')
     ->uses('App\Http\Controllers\AssignmentController@create')
     ->middleware('auth');
+
 Route::get('assignment/view')
     ->name('view_assignment')
     ->uses('App\Http\Controllers\AssignmentController@show')
@@ -255,6 +256,11 @@ Route::get('assignment/edit/{id}')
 Route::put('assignment/edit/{id}')
     ->name('edit_assignment')
     ->uses('App\Http\Controllers\AssignmentController@update')
+    ->middleware('auth');
+
+Route::post('assignment/submit')
+    ->name('submit_assignment')
+    ->uses('App\Http\Controllers\SubmitAssignmentController@create')
     ->middleware('auth');
 
 //Manage Report
@@ -291,4 +297,8 @@ Route::get('notice')
 Route::post('notice/add')
     ->name('add_notice')
     ->uses('App\Http\Controllers\NoticeController@create')
+    ->middleware('auth');
+Route::get('get_url')
+    ->name('get_path')
+    ->uses('App\Http\Controllers\CourseController@getPath')
     ->middleware('auth');

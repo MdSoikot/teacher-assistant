@@ -35,6 +35,8 @@ class ReportController extends Controller
     }
     public function viewRoutineReportForm()
     {
+        // $path = public_path() . '/sample.pdf';
+        // dd($path);
         return Inertia::render('Report/RoutineReport');
     }
     public function marksReportGerneration(Request $request)
@@ -105,8 +107,8 @@ class ReportController extends Controller
         }
         $lengths = array_map('count', $uniqueStartTime);
         $totalColumns = max($lengths);
-        dd($schedule);
-        $routInfo = Routine::select('course_title', 'start_time', 'end_time', 'batch', 'room_no', 'building')->get()->toArray();
+        // dd($schedule);
+        $routInfo = Routine::select('day', 'course_title', 'start_time', 'end_time', 'batch', 'room_no', 'building')->get()->toArray();
         return [
             'routineInfo' => $routInfo,
         ];
