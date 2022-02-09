@@ -33,6 +33,23 @@ class ReportController extends Controller
     {
         return Inertia::render('Report/StudentListReport');
     }
+    public function viewStaticReportForm()
+    {
+        $courses = Course::all()->toArray();
+        $courseInfo = [];
+        $courseTitles = [];
+        foreach ($courses as $key => $val) {
+            $courseInfo[] = [
+                'course_title' => $val['course_title'],
+                'course_code' => $val['course_code']
+            ];
+            $courseTitles[] = [
+                'label' => $val['course_title'],
+                'value' => $val['course_title']
+            ];
+        }
+        return Inertia::render('Report/StaticReport', ['courseTitles' => $courseTitles]);
+    }
     public function viewRoutineReportForm()
     {
         // $path = public_path() . '/sample.pdf';
@@ -112,5 +129,18 @@ class ReportController extends Controller
         return [
             'routineInfo' => $routInfo,
         ];
+    }
+
+    public function outlineReportGerneration(Request $request)
+    {
+        // dd("hi");
+        // $data = $request->all();
+        // $course_title = $data['course_title'];
+        return Inertia::render('Report/PdfShow');
+    }
+
+    public function showPdf()
+    {
+        return Inertia::render('Report/PdfShow');
     }
 }

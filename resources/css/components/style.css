@@ -505,3 +505,7 @@
 .dash-main {
     width: calc(100% - 250px)
 }
+
+.btn-a {
+    width: 10px
+}

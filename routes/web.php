@@ -276,6 +276,10 @@ Route::get('report/routine')
     ->name('routine_report')
     ->uses('App\Http\Controllers\ReportController@viewRoutineReportForm')
     ->middleware('auth');
+Route::get('report/static')
+    ->name('static_report')
+    ->uses('App\Http\Controllers\ReportController@viewStaticReportForm')
+    ->middleware('auth');
 Route::post('report/marks/generation')
     ->name('marks_report_generator')
     ->uses('App\Http\Controllers\ReportController@marksReportGerneration')
@@ -289,6 +293,18 @@ Route::get('report/routine/generation')
     ->uses('App\Http\Controllers\ReportController@routineReportGerneration')
     ->middleware('auth');
 
+Route::get('pdfShow')
+    ->name('show_pdf')
+    ->uses('App\Http\Controllers\ReportController@showPdf')
+    ->middleware('auth');
+
+Route::get('report/outline/generation')
+    ->name('outline_report_generator')
+    ->uses('App\Http\Controllers\ReportController@outlineReportGerneration')
+    ->middleware('auth');
+
+
+
 //Manage Notice
 Route::get('notice')
     ->name('notice')
@@ -298,7 +314,7 @@ Route::post('notice/add')
     ->name('add_notice')
     ->uses('App\Http\Controllers\NoticeController@create')
     ->middleware('auth');
-Route::get('get_url')
-    ->name('get_path')
-    ->uses('App\Http\Controllers\CourseController@getPath')
-    ->middleware('auth');
+// Route::get('get_url')
+//     ->name('get_path')
+//     ->uses('App\Http\Controllers\CourseController@getPath')
+//     ->middleware('auth');
